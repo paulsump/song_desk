@@ -1,3 +1,4 @@
+import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -30,8 +31,10 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
+  static final player = AudioCache();
 
   void _incrementCounter() {
+    player.play('laser.wav');
     setState(() {
       _counter++;
     });
