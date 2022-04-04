@@ -3,6 +3,7 @@
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
+import 'package:song_desk/scheduler.dart';
 
 void main() => runApp(const MyApp());
 
@@ -34,7 +35,9 @@ class _MyHomePageState extends State<MyHomePage>
   Duration time = Duration.zero;
   late final Ticker ticker;
 
-  static const names = <String>[
+  final scheduler = Scheduler();
+
+  static const fileNames = <String>[
     'piano.mf.a2.wav',
     'piano.mf.b2.wav',
     'piano.mf.c2.wav',
@@ -44,8 +47,8 @@ class _MyHomePageState extends State<MyHomePage>
   void initState() {
     super.initState();
 
-    for (final name in names) {
-      player.load(name);
+    for (final fileName in fileNames) {
+      player.load(fileName);
     }
 
     ticker = createTicker((elapsed) {
@@ -53,6 +56,7 @@ class _MyHomePageState extends State<MyHomePage>
         time = elapsed;
       });
     });
+
     ticker.start();
   }
 
@@ -63,8 +67,15 @@ class _MyHomePageState extends State<MyHomePage>
   }
 
   void _play() {
+    // TODO REMOVe this
     player.play('piano.mf.ab1.wav');
 
+    for (int i = 0; i < fileNames.length; ++i) {
+      scheduler.add(
+          Event(start: time + Duration(seconds: i), fileName: fileNames[i]));
+    }
+
+    // TODO try removing this
     setState(() {});
   }
 
