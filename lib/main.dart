@@ -30,28 +30,29 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage>
     with SingleTickerProviderStateMixin {
   static final player = AudioCache();
-  Duration _elapsed = Duration.zero;
 
-  late final Ticker _ticker;
+  Duration time = Duration.zero;
+  late final Ticker ticker;
 
   @override
   void initState() {
     super.initState();
-    _ticker = createTicker((elapsed) {
+
+    ticker = createTicker((elapsed) {
       setState(() {
-        _elapsed = elapsed;
+        time = elapsed;
       });
     });
-    _ticker.start();
+    ticker.start();
   }
 
   @override
   void dispose() {
-    _ticker.dispose();
+    ticker.dispose();
     super.dispose();
   }
 
-  void _incrementCounter() {
+  void _play() {
     player.play('piano.mf.ab1.wav');
 
     setState(() {});
@@ -64,20 +65,16 @@ class _MyHomePageState extends State<MyHomePage>
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const Text(
-              'You have pushed the button this many times:',
-            ),
             Text(
-              '$_elapsed',
+              '$time',
               style: Theme.of(context).textTheme.headline4,
             ),
           ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
+        onPressed: _play,
+        child: const Icon(Icons.play_arrow_rounded),
       ),
     );
   }
