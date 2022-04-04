@@ -34,9 +34,19 @@ class _MyHomePageState extends State<MyHomePage>
   Duration time = Duration.zero;
   late final Ticker ticker;
 
+  static const names = <String>[
+    'piano.mf.a2.wav',
+    'piano.mf.b2.wav',
+    'piano.mf.c2.wav',
+  ];
+
   @override
   void initState() {
     super.initState();
+
+    for (final name in names) {
+      player.load(name);
+    }
 
     ticker = createTicker((elapsed) {
       setState(() {
