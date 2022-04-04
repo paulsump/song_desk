@@ -2,6 +2,7 @@
 
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/scheduler.dart';
 
 void main() => runApp(const MyApp());
 
@@ -26,16 +27,34 @@ class MyHomePage extends StatefulWidget {
   State<MyHomePage> createState() => _MyHomePageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
+class _MyHomePageState extends State<MyHomePage>
+    with SingleTickerProviderStateMixin {
   static final player = AudioCache();
+  Duration _elapsed = Duration.zero;
+
+  late final Ticker _ticker;
+
+  @override
+  void initState() {
+    super.initState();
+    _ticker = createTicker((elapsed) {
+      setState(() {
+        _elapsed = elapsed;
+      });
+    });
+    _ticker.start();
+  }
+
+  @override
+  void dispose() {
+    _ticker.dispose();
+    super.dispose();
+  }
 
   void _incrementCounter() {
     player.play('piano.mf.ab1.wav');
 
-    setState(() {
-      _counter++;
-    });
+    setState(() {});
   }
 
   @override
@@ -49,7 +68,7 @@ class _MyHomePageState extends State<MyHomePage> {
               'You have pushed the button this many times:',
             ),
             Text(
-              '$_counter',
+              '$_elapsed',
               style: Theme.of(context).textTheme.headline4,
             ),
           ],
