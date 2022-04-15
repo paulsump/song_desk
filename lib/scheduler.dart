@@ -9,9 +9,9 @@ class Scheduler {
 }
 
 class Event {
-  Event({required this.start, required this.fileName});
+  Event({required this.offset, required this.fileName});
 
-  final Duration start;
+  final Duration offset;
   final String fileName;
 
   void execute() {

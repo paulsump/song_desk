@@ -45,7 +45,7 @@ class _HomePageState extends State<HomePage>
 
     for (int i = 0; i < fileNames.length; ++i) {
       scheduler.add(
-          Event(start: time + Duration(seconds: i), fileName: fileNames[i]));
+          Event(offset: time + Duration(seconds: i), fileName: fileNames[i]));
     }
   }
 
@@ -58,9 +58,6 @@ class _HomePageState extends State<HomePage>
   void _play() {
     // TODO REMOVe this
     player.play('piano.mf.ab1.wav');
-
-    // TODO try removing this
-    setState(() {});
   }
 
   @override
