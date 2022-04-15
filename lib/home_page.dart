@@ -3,6 +3,7 @@
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
+import 'package:song_desk/out.dart';
 import 'package:song_desk/scheduler.dart';
 
 final audioCache = AudioCache();
@@ -24,9 +25,9 @@ class _HomePageState extends State<HomePage>
   Duration _playTime = Duration.zero;
 
   static const _fileNames = <String>[
+    'piano.mf.a1.wav',
     'piano.mf.a2.wav',
-    'piano.mf.b2.wav',
-    'piano.mf.c2.wav',
+    'piano.mf.a3.wav',
   ];
 
   @override
@@ -34,13 +35,18 @@ class _HomePageState extends State<HomePage>
     super.initState();
 
     for (final fileName in _fileNames) {
+      //TODO KEep urls
       audioCache.load(fileName);
     }
 
     _ticker = createTicker((elapsed) {
       setState(() {
         _time = elapsed;
-        _scheduler.update(_time - _playTime);
+
+        final time = _time - _playTime;
+        _scheduler.update(time);
+
+        out(time);
       });
     });
 
