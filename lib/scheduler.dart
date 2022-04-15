@@ -13,4 +13,8 @@ class Event {
 
   final Duration start;
   final String fileName;
+
+  void execute() {
+    // player.play(fileName);
+  }
 }
