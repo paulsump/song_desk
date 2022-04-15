@@ -5,6 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:song_desk/scheduler.dart';
 
+final audioCache = AudioCache();
+
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
 
@@ -14,14 +16,14 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage>
     with SingleTickerProviderStateMixin {
-  static final player = AudioCache();
+  late final Ticker _ticker;
 
-  Duration time = Duration.zero;
-  late final Ticker ticker;
+  final _scheduler = Scheduler();
+  Duration _time = Duration.zero;
 
-  final scheduler = Scheduler();
+  Duration _playTime = Duration.zero;
 
-  static const fileNames = <String>[
+  static const _fileNames = <String>[
     'piano.mf.a2.wav',
     'piano.mf.b2.wav',
     'piano.mf.c2.wav',
@@ -31,33 +33,38 @@ class _HomePageState extends State<HomePage>
   void initState() {
     super.initState();
 
-    for (final fileName in fileNames) {
-      player.load(fileName);
+    for (final fileName in _fileNames) {
+      audioCache.load(fileName);
     }
 
-    ticker = createTicker((elapsed) {
+    _ticker = createTicker((elapsed) {
       setState(() {
-        time = elapsed;
+        _time = elapsed;
+        _scheduler.update(_time - _playTime);
       });
     });
 
-    ticker.start();
+    _ticker.start();
 
-    for (int i = 0; i < fileNames.length; ++i) {
-      scheduler.add(
-          Event(offset: time + Duration(seconds: i), fileName: fileNames[i]));
+    for (int i = 0; i < _fileNames.length; ++i) {
+      _scheduler.add(
+        Event(
+          startTime: Duration(seconds: i),
+          fileName: _fileNames[i],
+        ),
+      );
     }
   }
 
   @override
   void dispose() {
-    ticker.dispose();
+    _ticker.dispose();
     super.dispose();
   }
 
   void _play() {
-    // TODO REMOVe this
-    player.play('piano.mf.ab1.wav');
+    _playTime = _time;
+    _scheduler.play();
   }
 
   @override
@@ -68,7 +75,7 @@ class _HomePageState extends State<HomePage>
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              '$time',
+              '$_time',
               style: Theme.of(context).textTheme.headline4,
             ),
           ],
