@@ -6,15 +6,12 @@ class Scheduler {
   Scheduler();
 
   final _events = <Event>[];
-  bool _isPlaying = false;
 
   void add(Event event) {
     _events.add(event);
   }
 
   void play() {
-    _isPlaying = true;
-
     for (final event in _events) {
       event.reset();
     }
@@ -24,8 +21,6 @@ class Scheduler {
     for (final event in _events) {
       if (!event.isPlaying && event.startTime < currentTime) {
         event.play();
-
-        // out('P: $currentTime');
       }
     }
   }
@@ -46,8 +41,12 @@ class Event {
   bool isPlaying = false;
 
   void play() {
-    isPlaying = true;
-    unawaited(audioPlayer.resume());
+    if (isPlaying) {
+      unawaited(audioPlayer.seek(Duration.zero));
+    } else {
+      unawaited(audioPlayer.resume());
+      isPlaying = true;
+    }
   }
 
   void reset() {

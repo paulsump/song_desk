@@ -1,9 +1,10 @@
 // © 2022, Paul Sumpner <sumpner@hotmail.com>
 
+import 'dart:async';
+
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
-import 'package:song_desk/out.dart';
 import 'package:song_desk/scheduler.dart';
 
 final audioCache = AudioCache();
@@ -64,15 +65,19 @@ class _HomePageState extends State<HomePage>
   void _preLoad() async {
     for (final fileName in _fileNames) {
       final url = await audioCache.load(fileName);
-      out(url);
-      final audioPlayer = AudioPlayer();
-      // prepare the player with this audio but do not start playing
-      audioPlayer.setUrl(url.path);
 
+      // LOW_LATENCY seems to be needed to replay
+      final audioPlayer = AudioPlayer(mode: PlayerMode.LOW_LATENCY);
       _audioPlayers.add(audioPlayer);
+
+      // prepare the player with this audio but do not start playing
+      unawaited(audioPlayer.setUrl(url.path));
+
+      // set release mode so that it never releases
+      // unawaited(audioPlayer.setReleaseMode(ReleaseMode.STOP));
     }
 
-    // TODO MOve elsewhere
+    // TODO MOve this call elsewhere
     _addEvents();
   }
 
