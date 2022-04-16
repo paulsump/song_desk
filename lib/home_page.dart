@@ -7,8 +7,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:song_desk/scheduler.dart';
 
-final audioCache = AudioCache();
-
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
 
@@ -20,10 +18,12 @@ class _HomePageState extends State<HomePage>
     with SingleTickerProviderStateMixin {
   late final Ticker _ticker;
 
-  final _scheduler = Scheduler();
   Duration _time = Duration.zero;
-
   Duration _playTime = Duration.zero;
+
+  final _scheduler = Scheduler();
+  final audioCache = AudioCache();
+
   final _audioPlayers = <AudioPlayer>[];
 
   static const _fileNames = <String>[
@@ -40,11 +40,7 @@ class _HomePageState extends State<HomePage>
     _ticker = createTicker((elapsed) {
       _time = elapsed;
 
-      final time = _time - _playTime;
-      _scheduler.update(time);
-
-      // out(time);
-      // setState(() {});
+      _scheduler.update(_time - _playTime);
     });
 
     _ticker.start();
@@ -73,8 +69,8 @@ class _HomePageState extends State<HomePage>
       // prepare the player with this audio but do not start playing
       unawaited(audioPlayer.setUrl(url.path));
 
-      // set release mode so that it never releases
-      // unawaited(audioPlayer.setReleaseMode(ReleaseMode.STOP));
+      // set release mode so that it never releases (I can't hear effect though currently)
+      unawaited(audioPlayer.setReleaseMode(ReleaseMode.STOP));
     }
 
     // TODO MOve this call elsewhere
