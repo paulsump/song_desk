@@ -32,8 +32,8 @@ const letters = [
 ];
 
 // TODO octave 7 is missing some letters
-const octaves = [1, 2, 3];
-// const octaves = [1, 2, 3, 4, 5, 6];
+// const octaves = [1, 2, 3];
+const octaves = [1, 2, 3, 4, 5, 6];
 
 /// loads and plays notes.
 class Notes {
@@ -41,9 +41,7 @@ class Notes {
   final audioCache = AudioCache();
 
   Note? getNote(String letter, int octave) {
-
     for (final note in list) {
-      out(note);
       if (letter == note.letter && octave == note.octave) {
         return note;
       }
@@ -58,7 +56,8 @@ class Notes {
 
         // LOW_LATENCY seems to be needed to replay
         final audioPlayer = AudioPlayer(mode: PlayerMode.LOW_LATENCY);
-        list.add(Note(letter: letter, octave: octave, audioPlayer: audioPlayer));
+        list.add(
+            Note(letter: letter, octave: octave, audioPlayer: audioPlayer));
 
         // prepare the player with this audio but do not start playing
         unawaited(audioPlayer.setUrl(url.path));

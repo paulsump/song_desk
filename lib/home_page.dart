@@ -1,8 +1,5 @@
 // © 2022, Paul Sumpner <sumpner@hotmail.com>
 
-import 'dart:async';
-
-import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:song_desk/note.dart';
@@ -48,9 +45,8 @@ class _HomePageState extends State<HomePage>
     _ticker.start();
   }
 
-  void _init() async{
-
-await    _notes.preLoad();
+  void _init() async {
+    await _notes.preLoad();
     _addEvents();
   }
 
@@ -61,7 +57,6 @@ await    _notes.preLoad();
     for (final octave in octaves) {
       final Note? note = _notes.getNote(letter, octave);
 
-      out(octave);
       if (note != null) {
         out(count);
         _scheduler.add(
