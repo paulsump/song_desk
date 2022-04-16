@@ -5,7 +5,11 @@ import 'dart:async';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
+import 'package:song_desk/note.dart';
+import 'package:song_desk/out.dart';
 import 'package:song_desk/scheduler.dart';
+
+const noWarn = out;
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -22,21 +26,19 @@ class _HomePageState extends State<HomePage>
   Duration _playTime = Duration.zero;
 
   final _scheduler = Scheduler();
-  final audioCache = AudioCache();
+  final _notes = Notes();
 
-  final _audioPlayers = <AudioPlayer>[];
-
-  static const _fileNames = <String>[
-    'piano.mf.a1.wav',
-    'piano.mf.a2.wav',
-    'piano.mf.a3.wav',
-  ];
+  //TODO Trim the rest
+  // 'piano.mf.a1.wav',
+  // 'piano.mf.a2.wav',
+  // 'piano.mf.a3.wav',
 
   @override
   void initState() {
     super.initState();
 
-    _preLoad();
+    _init();
+
     _ticker = createTicker((elapsed) {
       _time = elapsed;
 
@@ -46,35 +48,31 @@ class _HomePageState extends State<HomePage>
     _ticker.start();
   }
 
-  void _addEvents() {
-    for (int i = 0; i < _fileNames.length; ++i) {
-      _scheduler.add(
-        Event(
-          startTime: Duration(milliseconds: i * 400),
-          fileName: _fileNames[i],
-          audioPlayer: _audioPlayers[i],
-        ),
-      );
-    }
+  void _init() async{
+
+await    _notes.preLoad();
+    _addEvents();
   }
 
-  void _preLoad() async {
-    for (final fileName in _fileNames) {
-      final url = await audioCache.load(fileName);
+  void _addEvents() {
+    int count = 0;
 
-      // LOW_LATENCY seems to be needed to replay
-      final audioPlayer = AudioPlayer(mode: PlayerMode.LOW_LATENCY);
-      _audioPlayers.add(audioPlayer);
+    const letter = 'a';
+    for (final octave in octaves) {
+      final Note? note = _notes.getNote(letter, octave);
 
-      // prepare the player with this audio but do not start playing
-      unawaited(audioPlayer.setUrl(url.path));
-
-      // set release mode so that it never releases (I can't hear effect though currently)
-      unawaited(audioPlayer.setReleaseMode(ReleaseMode.STOP));
+      out(octave);
+      if (note != null) {
+        out(count);
+        _scheduler.add(
+          Event(
+            startTime: Duration(milliseconds: count * 400),
+            audioPlayer: note.audioPlayer,
+          ),
+        );
+      }
+      ++count;
     }
-
-    // TODO MOve this call elsewhere
-    _addEvents();
   }
 
   @override

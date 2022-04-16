@@ -30,12 +30,10 @@ class Scheduler {
 class Event {
   Event({
     required this.startTime,
-    required this.fileName,
     required this.audioPlayer,
   });
 
   final Duration startTime;
-  final String fileName;
 
   final AudioPlayer audioPlayer;
   bool isPlaying = false;
