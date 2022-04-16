@@ -1,7 +1,6 @@
 import 'dart:async';
 
-import 'package:song_desk/home_page.dart';
-import 'package:song_desk/out.dart';
+import 'package:audioplayers/audioplayers.dart';
 
 class Scheduler {
   Scheduler();
@@ -26,7 +25,7 @@ class Scheduler {
       if (!event.isPlaying && event.startTime < currentTime) {
         event.play();
 
-        out('P: $currentTime');
+        // out('P: $currentTime');
       }
     }
   }
@@ -34,18 +33,21 @@ class Scheduler {
 
 /// Note events
 class Event {
-  Event({required this.startTime, required this.fileName});
+  Event({
+    required this.startTime,
+    required this.fileName,
+    required this.audioPlayer,
+  });
 
   final Duration startTime;
   final String fileName;
 
+  final AudioPlayer audioPlayer;
   bool isPlaying = false;
 
   void play() {
-    // TODO USE await audioPlayer.setUrl('clicking.mp3'); // prepare the player with this audio but do not start playing
-    //   await audioPlayer.resume(); // quickly plays the sound
-    unawaited(audioCache.play(fileName));
     isPlaying = true;
+    unawaited(audioPlayer.resume());
   }
 
   void reset() {

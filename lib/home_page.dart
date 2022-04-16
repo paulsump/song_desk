@@ -23,6 +23,7 @@ class _HomePageState extends State<HomePage>
   Duration _time = Duration.zero;
 
   Duration _playTime = Duration.zero;
+  final _audioPlayers = <AudioPlayer>[];
 
   static const _fileNames = <String>[
     'piano.mf.a1.wav',
@@ -34,32 +35,45 @@ class _HomePageState extends State<HomePage>
   void initState() {
     super.initState();
 
-    for (final fileName in _fileNames) {
-      //TODO KEep urls
-      audioCache.load(fileName);
-    }
-
+    _preLoad();
     _ticker = createTicker((elapsed) {
-      setState(() {
-        _time = elapsed;
+      _time = elapsed;
 
-        final time = _time - _playTime;
-        _scheduler.update(time);
+      final time = _time - _playTime;
+      _scheduler.update(time);
 
-        out(time);
-      });
+      // out(time);
+      // setState(() {});
     });
 
     _ticker.start();
+  }
 
+  void _addEvents() {
     for (int i = 0; i < _fileNames.length; ++i) {
       _scheduler.add(
         Event(
-          startTime: Duration(seconds: i),
+          startTime: Duration(milliseconds: i * 400),
           fileName: _fileNames[i],
+          audioPlayer: _audioPlayers[i],
         ),
       );
     }
+  }
+
+  void _preLoad() async {
+    for (final fileName in _fileNames) {
+      final url = await audioCache.load(fileName);
+      out(url);
+      final audioPlayer = AudioPlayer();
+      // prepare the player with this audio but do not start playing
+      audioPlayer.setUrl(url.path);
+
+      _audioPlayers.add(audioPlayer);
+    }
+
+    // TODO MOve elsewhere
+    _addEvents();
   }
 
   @override
