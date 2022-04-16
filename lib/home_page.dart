@@ -25,11 +25,6 @@ class _HomePageState extends State<HomePage>
   final _scheduler = Scheduler();
   final _notes = Notes();
 
-  //TODO Trim the rest
-  // 'piano.mf.a1.wav',
-  // 'piano.mf.a2.wav',
-  // 'piano.mf.a3.wav',
-
   @override
   void initState() {
     super.initState();
@@ -53,20 +48,20 @@ class _HomePageState extends State<HomePage>
   void _addEvents() {
     int count = 0;
 
-    const letter = 'a';
-    for (final octave in octaves) {
-      final Note? note = _notes.getNote(letter, octave);
+    for (final letter in letters) {
+      for (final octave in octaves) {
+        final Note? note = _notes.getNote(letter, octave);
 
-      if (note != null) {
-        out(count);
-        _scheduler.add(
-          Event(
-            startTime: Duration(milliseconds: count * 400),
-            audioPlayer: note.audioPlayer,
-          ),
-        );
+        if (note != null) {
+          _scheduler.add(
+            Event(
+              startTime: Duration(milliseconds: count * 400),
+              audioPlayer: note.audioPlayer,
+            ),
+          );
+        }
+        ++count;
       }
-      ++count;
     }
   }
 

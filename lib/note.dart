@@ -3,6 +3,8 @@ import 'dart:async';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:song_desk/out.dart';
 
+const noWarn = out;
+
 /// play a note
 class Note {
   Note({
@@ -18,7 +20,7 @@ class Note {
 
 const letters = [
   'a',
-  // 'ab',
+  'ab',
   // 'b',
   // 'bb',
   // 'c',
@@ -32,8 +34,8 @@ const letters = [
 ];
 
 // TODO octave 7 is missing some letters
-// const octaves = [1, 2, 3];
-const octaves = [1, 2, 3, 4, 5, 6];
+const octaves = [1, 2, 3];
+// const octaves = [1, 2, 3, 4, 5, 6];
 
 /// loads and plays notes.
 class Notes {
