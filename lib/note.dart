@@ -20,11 +20,11 @@ class Note {
 }
 
 const letters = [
-  // 'a',
-  // 'ab',
-  // 'b',
-  // 'bb',
-  // 'c',
+  'ab',
+  'a',
+  'bb',
+  'b',
+  'c',
   // 'd',
   // 'db',
   // 'e',
@@ -45,23 +45,24 @@ class Notes {
 
   final audioCache = AudioCache();
 
-  Note? getNote(String letter, int octave) {
-    for (final note in list) {
-      // TODO optimize into two loops
-      if (letter == note.letter && octave == note.octave) {
-        return note;
-      }
-    }
-    return null;
-  }
+  // TODO optimize into two loops - or just remove this function?
+  // Note? getNote(String letter, int octave) {
+  //   for (final note in list) {
+  //     if (letter == note.letter && octave == note.octave) {
+  //       return note;
+  //     }
+  //   }
+  //   return null;
+  // }
 
   Future<void> preLoad() async {
-    for (final letter in letters) {
-      for (final octave in octaves) {
+    for (final octave in octaves) {
+      for (final letter in letters) {
         final url = await audioCache.load('piano.mf.$letter$octave.wav');
 
         // LOW_LATENCY seems to be needed to replay
         final audioPlayer = AudioPlayer(mode: PlayerMode.LOW_LATENCY);
+
         list.add(Note(
           letter: letter,
           octave: octave,

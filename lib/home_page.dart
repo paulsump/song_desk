@@ -46,22 +46,13 @@ class _HomePageState extends State<HomePage>
   }
 
   void _addEvents() {
-    int count = 0;
-
-    for (final letter in letters) {
-      for (final octave in octaves) {
-        final Note? note = _notes.getNote(letter, octave);
-
-        if (note != null) {
-          _scheduler.add(
-            Event(
-              startTime: Duration(milliseconds: count * 200),
-              audioPlayer: note.audioPlayer,
-            ),
-          );
-        }
-        ++count;
-      }
+    for (int i= 0; i< _notes.list.length;++i) {
+      _scheduler.add(
+        Event(
+          startTime: Duration(milliseconds: i * 200),
+          audioPlayer: _notes.list[i].audioPlayer,
+        ),
+      );
     }
   }
 
