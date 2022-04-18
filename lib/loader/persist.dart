@@ -1,3 +1,5 @@
+// © 2022, Paul Sumpner <sumpner@hotmail.com>
+
 import 'package:song_desk/loader/song.dart';
 import 'package:flutter/foundation.dart';
 import 'dart:convert';

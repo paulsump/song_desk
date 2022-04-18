@@ -1,3 +1,5 @@
+// © 2022, Paul Sumpner <sumpner@hotmail.com>
+
 class Song {
   final List<Bar> bars;
 
