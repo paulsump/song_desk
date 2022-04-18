@@ -49,12 +49,24 @@ class _HomePageState extends State<HomePage>
     _ticker.start();
   }
 
+  void _addEvents() {
+    for (int i = 0; i < _notes.list.length; ++i) {
+      _scheduler.add(
+        Event(
+          startTime: Duration(milliseconds: i * 500),
+          audioPlayer: _notes.list[i].audioPlayer,
+        ),
+      );
+    }
+  }
+
   void _init() async {
-    await _loadSongs();
+    // await _loadSongs();
     await _notes.preLoad();
 
-    await _loadBible();
-    _addNotes();
+    // await _loadBible();
+    // _addNotes();
+    _addEvents();
   }
 
   Future<void> _loadBible() async {

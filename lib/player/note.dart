@@ -20,7 +20,6 @@ class Note {
 }
 
 const letters = [
-  'b',
   'c',
   'db',
   'd',
@@ -32,8 +31,10 @@ const letters = [
   'ab',
   'a',
   'bb',
+  'b',
 ];
 
+// const octaves = [3];
 const octaves = [1, 2, 3];
 // const octaves = [1, 2, 3, 4, 5, 6];
 // TODO octave 0 & 7 is missing some letters
