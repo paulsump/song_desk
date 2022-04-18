@@ -20,18 +20,18 @@ class Note {
 }
 
 const letters = [
-  'ab',
-  'a',
-  'bb',
-  'b',
   'c',
-  'db',
+  // 'db',
   'd',
-  'eb',
+  // 'eb',
   'e',
   'f',
-  'gb'
-  // 'g',
+  // 'gb',
+  'g',
+  // 'ab',
+  'a',
+  // 'bb',
+  'b',
 ];
 
 const octaves = [1, 2, 3];
@@ -59,7 +59,7 @@ class Notes {
     for (final octave in octaves) {
       for (final letter in letters) {
         final url = await audioCache.load('piano.mf.$letter$octave.wav');
-
+out(letter);
         // LOW_LATENCY seems to be needed to replay
         final audioPlayer = AudioPlayer(mode: PlayerMode.LOW_LATENCY);
 
