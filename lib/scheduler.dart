@@ -11,6 +11,7 @@ class Scheduler {
     _events.add(event);
   }
 
+  //TODO Switch this around , it's back to front
   void play() {
     for (final event in _events) {
       event.reset();
@@ -38,6 +39,7 @@ class Event {
   final AudioPlayer audioPlayer;
   bool isPlaying = false;
 
+  //TODO Move to Note
   void play() {
     if (isPlaying) {
       unawaited(audioPlayer.seek(Duration.zero));
