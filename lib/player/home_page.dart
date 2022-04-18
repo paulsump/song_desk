@@ -5,7 +5,9 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter/services.dart';
+import 'package:song_desk/loader/bible.dart';
 import 'package:song_desk/loader/persist.dart';
+import 'package:song_desk/loader/song.dart';
 import 'package:song_desk/player/note.dart';
 import 'package:song_desk/out.dart';
 import 'package:song_desk/player/scheduler.dart';
@@ -30,6 +32,7 @@ class _HomePageState extends State<HomePage>
   final _notes = Notes();
 
   final persist = Persist();
+  late final bible;
 
   @override
   void initState() {
@@ -49,10 +52,26 @@ class _HomePageState extends State<HomePage>
   void _init() async {
     await _loadSongs();
 
-    await _notes.preLoad();
-    _addEvents();
+    // await _notes.preLoad();
+    // _addEvents();
 
-    _addNotes();
+    await _loadBible();
+    // _addNotes();
+  }
+
+  Future<void> _loadBible() async {
+    final String response = await rootBundle.loadString('config/bible.json');
+
+    final map = await json.decode(response);
+    bible = Bible.fromJson(map);
+    out(bible);
+  }
+
+  int _quaverToSemitone(Quaver quaver) {
+    final song = persist.songs['Age Aint Nothing But a Number'];
+    if (song != null) {}
+
+    return 0;
   }
 
   void _addNotes() {

@@ -1,0 +1,681 @@
+{
+    "A": [
+        {
+            "accidental": "natural",
+            "chord": "C",
+            "pitch": 1
+        },
+        {
+            "chord": "C#",
+            "fakeAccidental": "sharp",
+            "pitch": 1
+        },
+        {
+            "chord": "D",
+            "pitch": 2
+        },
+        {
+            "accidental": "sharp",
+            "chord": "D#",
+            "pitch": 2
+        },
+        {
+            "chord": "E",
+            "pitch": 3
+        },
+        {
+            "accidental": "natural",
+            "chord": "F",
+            "pitch": 4
+        },
+        {
+            "chord": "F#",
+            "pitch": 4
+        },
+        {
+            "accidental": "natural",
+            "chord": "G",
+            "pitch": 5
+        },
+        {
+            "chord": "G#",
+            "fakeAccidental": "sharp",
+            "pitch": 5
+        },
+        {
+            "chord": "A",
+            "pitch": 6
+        },
+        {
+            "accidental": "flat",
+            "chord": "Bb",
+            "pitch": 7
+        },
+        {
+            "chord": "B",
+            "fakeAccidental": "natural",
+            "pitch": 7
+        }
+    ],
+    "G#": [
+        {
+            "chord": "C",
+            "pitch": 1
+        },
+        {
+            "chord": "C#",
+            "pitch": 2
+        },
+        {
+            "accidental": "natural",
+            "chord": "D",
+            "pitch": 2
+        },
+        {
+            "chord": "D#",
+            "pitch": 3
+        },
+        {
+            "accidental": "natural",
+            "chord": "E",
+            "pitch": 3
+        },
+        {
+            "chord": "F",
+            "pitch": 4
+        },
+        {
+            "accidental": "flat",
+            "chord": "F#",
+            "pitch": 5
+        },
+        {
+            "chord": "G",
+            "fakeAccidental": "natural",
+            "pitch": 5
+        },
+        {
+            "chord": "G#",
+            "pitch": 6
+        },
+        {
+            "accidental": "natural",
+            "chord": "A",
+            "pitch": 6
+        },
+        {
+            "chord": "Bb",
+            "pitch": 7
+        },
+        {
+            "accidental": "natural",
+            "chord": "B",
+            "pitch": 7
+        }
+    ],
+    "B": [
+        {
+            "accidental": "natural",
+            "chord": "C",
+            "pitch": 1
+        },
+        {
+            "chord": "C#",
+            "fakeAccidental": "sharp",
+            "pitch": 1
+        },
+        {
+            "accidental": "natural",
+            "chord": "D",
+            "pitch": 2
+        },
+        {
+            "chord": "D#",
+            "pitch": 2
+        },
+        {
+            "chord": "E",
+            "pitch": 3
+        },
+        {
+            "accidental": "natural",
+            "chord": "F",
+            "pitch": 4
+        },
+        {
+            "chord": "F#",
+            "pitch": 4
+        },
+        {
+            "accidental": "natural",
+            "chord": "G",
+            "pitch": 5
+        },
+        {
+            "chord": "G#",
+            "fakeAccidental": "sharp",
+            "pitch": 5
+        },
+        {
+            "accidental": "natural",
+            "chord": "A",
+            "pitch": 6
+        },
+        {
+            "chord": "Bb",
+            "pitch": 6
+        },
+        {
+            "chord": "B",
+            "pitch": 7
+        }
+    ],
+    "Bb": [
+        {
+            "chord": "C",
+            "pitch": 1
+        },
+        {
+            "accidental": "flat",
+            "chord": "C#",
+            "pitch": 2
+        },
+        {
+            "chord": "D",
+            "fakeAccidental": "natural",
+            "pitch": 2
+        },
+        {
+            "chord": "D#",
+            "pitch": 3
+        },
+        {
+            "accidental": "natural",
+            "chord": "E",
+            "pitch": 3
+        },
+        {
+            "chord": "F",
+            "pitch": 4
+        },
+        {
+            "accidental": "flat",
+            "chord": "F#",
+            "pitch": 5
+        },
+        {
+            "chord": "G",
+            "fakeAccidental": "natural",
+            "pitch": 5
+        },
+        {
+            "accidental": "flat",
+            "chord": "G#",
+            "pitch": 6
+        },
+        {
+            "chord": "A",
+            "fakeAccidental": "natural",
+            "pitch": 6
+        },
+        {
+            "chord": "Bb",
+            "pitch": 7
+        },
+        {
+            "accidental": "natural",
+            "chord": "B",
+            "pitch": 7
+        }
+    ],
+    "C": [
+        {
+            "chord": "C",
+            "pitch": 1
+        },
+        {
+            "accidental": "sharp",
+            "chord": "C#",
+            "pitch": 1
+        },
+        {
+            "chord": "D",
+            "pitch": 2
+        },
+        {
+            "accidental": "sharp",
+            "chord": "D#",
+            "pitch": 2
+        },
+        {
+            "chord": "E",
+            "pitch": 3
+        },
+        {
+            "chord": "F",
+            "pitch": 4
+        },
+        {
+            "accidental": "sharp",
+            "chord": "F#",
+            "pitch": 4
+        },
+        {
+            "chord": "G",
+            "pitch": 5
+        },
+        {
+            "accidental": "sharp",
+            "chord": "G#",
+            "pitch": 5
+        },
+        {
+            "chord": "A",
+            "pitch": 6
+        },
+        {
+            "accidental": "flat",
+            "chord": "Bb",
+            "pitch": 7
+        },
+        {
+            "chord": "B",
+            "fakeAccidental": "natural",
+            "pitch": 7
+        }
+    ],
+    "D": [
+        {
+            "accidental": "natural",
+            "chord": "C",
+            "pitch": 1
+        },
+        {
+            "chord": "C#",
+            "fakeAccidental": "sharp",
+            "pitch": 1
+        },
+        {
+            "chord": "D",
+            "pitch": 2
+        },
+        {
+            "accidental": "sharp",
+            "chord": "D#",
+            "pitch": 2
+        },
+        {
+            "chord": "E",
+            "pitch": 3
+        },
+        {
+            "accidental": "natural",
+            "chord": "F",
+            "pitch": 4
+        },
+        {
+            "chord": "F#",
+            "pitch": 4
+        },
+        {
+            "chord": "G",
+            "pitch": 5
+        },
+        {
+            "accidental": "sharp",
+            "chord": "G#",
+            "pitch": 5
+        },
+        {
+            "chord": "A",
+            "pitch": 6
+        },
+        {
+            "accidental": "flat",
+            "chord": "Bb",
+            "pitch": 7
+        },
+        {
+            "chord": "B",
+            "fakeAccidental": "natural",
+            "pitch": 7
+        }
+    ],
+    "C#": [
+        {
+            "chord": "C",
+            "pitch": 1
+        },
+        {
+            "chord": "C#",
+            "pitch": 2
+        },
+        {
+            "accidental": "natural",
+            "chord": "D",
+            "pitch": 2
+        },
+        {
+            "chord": "D#",
+            "pitch": 3
+        },
+        {
+            "accidental": "natural",
+            "chord": "E",
+            "pitch": 3
+        },
+        {
+            "chord": "F",
+            "pitch": 4
+        },
+        {
+            "chord": "F#",
+            "pitch": 5
+        },
+        {
+            "accidental": "natural",
+            "chord": "G",
+            "pitch": 5
+        },
+        {
+            "chord": "G#",
+            "pitch": 6
+        },
+        {
+            "accidental": "natural",
+            "chord": "A",
+            "pitch": 6
+        },
+        {
+            "chord": "Bb",
+            "pitch": 7
+        },
+        {
+            "accidental": "natural",
+            "chord": "B",
+            "pitch": 7
+        }
+    ],
+    "E": [
+        {
+            "accidental": "natural",
+            "chord": "C",
+            "pitch": 1
+        },
+        {
+            "chord": "C#",
+            "fakeAccidental": "sharp",
+            "pitch": 1
+        },
+        {
+            "accidental": "natural",
+            "chord": "D",
+            "pitch": 2
+        },
+        {
+            "chord": "D#",
+            "pitch": 2
+        },
+        {
+            "chord": "E",
+            "pitch": 3
+        },
+        {
+            "accidental": "natural",
+            "chord": "F",
+            "pitch": 4
+        },
+        {
+            "chord": "F#",
+            "pitch": 4
+        },
+        {
+            "accidental": "natural",
+            "chord": "G",
+            "pitch": 5
+        },
+        {
+            "chord": "G#",
+            "fakeAccidental": "sharp",
+            "pitch": 5
+        },
+        {
+            "chord": "A",
+            "pitch": 6
+        },
+        {
+            "accidental": "flat",
+            "chord": "Bb",
+            "pitch": 7
+        },
+        {
+            "chord": "B",
+            "fakeAccidental": "natural",
+            "pitch": 7
+        }
+    ],
+    "D#": [
+        {
+            "chord": "C",
+            "pitch": 1
+        },
+        {
+            "accidental": "flat",
+            "chord": "C#",
+            "pitch": 2
+        },
+        {
+            "chord": "D",
+            "fakeAccidental": "natural",
+            "pitch": 2
+        },
+        {
+            "chord": "D#",
+            "pitch": 3
+        },
+        {
+            "accidental": "natural",
+            "chord": "E",
+            "pitch": 3
+        },
+        {
+            "chord": "F",
+            "pitch": 4
+        },
+        {
+            "accidental": "flat",
+            "chord": "F#",
+            "pitch": 5
+        },
+        {
+            "chord": "G",
+            "fakeAccidental": "natural",
+            "pitch": 5
+        },
+        {
+            "chord": "G#",
+            "pitch": 6
+        },
+        {
+            "accidental": "natural",
+            "chord": "A",
+            "pitch": 6
+        },
+        {
+            "chord": "Bb",
+            "pitch": 7
+        },
+        {
+            "accidental": "natural",
+            "chord": "B",
+            "pitch": 7
+        }
+    ],
+    "F": [
+        {
+            "chord": "C",
+            "pitch": 1
+        },
+        {
+            "accidental": "sharp",
+            "chord": "C#",
+            "pitch": 1
+        },
+        {
+            "chord": "D",
+            "pitch": 2
+        },
+        {
+            "accidental": "sharp",
+            "chord": "D#",
+            "pitch": 2
+        },
+        {
+            "chord": "E",
+            "pitch": 3
+        },
+        {
+            "chord": "F",
+            "pitch": 4
+        },
+        {
+            "accidental": "sharp",
+            "chord": "F#",
+            "pitch": 4
+        },
+        {
+            "chord": "G",
+            "pitch": 5
+        },
+        {
+            "accidental": "sharp",
+            "chord": "G#",
+            "pitch": 5
+        },
+        {
+            "chord": "A",
+            "pitch": 6
+        },
+        {
+            "chord": "Bb",
+            "pitch": 7
+        },
+        {
+            "accidental": "natural",
+            "chord": "B",
+            "pitch": 7
+        }
+    ],
+    "G": [
+        {
+            "chord": "C",
+            "pitch": 1
+        },
+        {
+            "accidental": "sharp",
+            "chord": "C#",
+            "pitch": 1
+        },
+        {
+            "chord": "D",
+            "pitch": 2
+        },
+        {
+            "accidental": "sharp",
+            "chord": "D#",
+            "pitch": 2
+        },
+        {
+            "chord": "E",
+            "pitch": 3
+        },
+        {
+            "accidental": "natural",
+            "chord": "F",
+            "pitch": 4
+        },
+        {
+            "chord": "F#",
+            "pitch": 4
+        },
+        {
+            "chord": "G",
+            "pitch": 5
+        },
+        {
+            "accidental": "sharp",
+            "chord": "G#",
+            "pitch": 5
+        },
+        {
+            "chord": "A",
+            "pitch": 6
+        },
+        {
+            "accidental": "flat",
+            "chord": "Bb",
+            "pitch": 7
+        },
+        {
+            "chord": "B",
+            "fakeAccidental": "natural",
+            "pitch": 7
+        }
+    ],
+    "F#": [
+        {
+            "accidental": "natural",
+            "chord": "C",
+            "pitch": 1
+        },
+        {
+            "chord": "C#",
+            "pitch": 2
+        },
+        {
+            "accidental": "natural",
+            "chord": "D",
+            "pitch": 2
+        },
+        {
+            "chord": "D#",
+            "pitch": 3
+        },
+        {
+            "accidental": "natural",
+            "chord": "E",
+            "pitch": 3
+        },
+        {
+            "chord": "F",
+            "pitch": 4
+        },
+        {
+            "chord": "F#",
+            "pitch": 5
+        },
+        {
+            "accidental": "natural",
+            "chord": "G",
+            "pitch": 5
+        },
+        {
+            "chord": "G#",
+            "pitch": 6
+        },
+        {
+            "accidental": "natural",
+            "chord": "A",
+            "pitch": 6
+        },
+        {
+            "chord": "Bb",
+            "pitch": 7
+        },
+        {
+            "accidental": "natural",
+            "chord": "B",
+            "pitch": 7
+        }
+    ]
+}
