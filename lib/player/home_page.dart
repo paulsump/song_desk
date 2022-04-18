@@ -5,11 +5,10 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter/services.dart';
-import 'package:song_desk/loader/bible.dart';
+import 'package:song_desk/loader/convert.dart';
 import 'package:song_desk/loader/persist.dart';
-import 'package:song_desk/loader/song.dart';
-import 'package:song_desk/player/note.dart';
 import 'package:song_desk/out.dart';
+import 'package:song_desk/player/note.dart';
 import 'package:song_desk/player/scheduler.dart';
 
 const noWarn = out;
@@ -32,7 +31,7 @@ class _HomePageState extends State<HomePage>
   final _notes = Notes();
 
   final persist = Persist();
-  late final Bible bible;
+  final convert = Convert();
 
   @override
   void initState() {
@@ -64,58 +63,9 @@ class _HomePageState extends State<HomePage>
     await _loadSongs();
     await _notes.preLoad();
 
-    await _loadBible();
+    await convert.init();
     _addNotes();
     // _addEvents();
-  }
-
-  Future<void> _loadBible() async {
-    final String response = await rootBundle.loadString('config/bible.json');
-
-    final map = await json.decode(response);
-    bible = Bible.fromJson(map);
-  }
-
-  int _quaverToSemitone(Quaver quaver, String key) {
-    final pitch = quaver.pitch!;
-
-    final semitoneOffset = _getSemitoneOffset(quaver, key);
-    final octave = 12 * ((pitch - 1) ~/ 7);
-
-    out('$pitch: $semitoneOffset,$octave');
-    return semitoneOffset + octave;
-  }
-
-  int _getSemitoneOffset(Quaver quaver, String key) {
-    final pitch = quaver.pitch;
-
-    final accidental = quaver.accidental;
-    int semitoneOffset = 0;
-
-    for (final note in bible.keys[key]!.notes) {
-      if (accidental == note.accidental) {
-        final pitchOffset = note.pitch;
-
-        if (_isPitchInAnyOctaveOf(pitch!, pitchOffset)) {
-          return semitoneOffset;
-        }
-      }
-
-      semitoneOffset += 1;
-    }
-
-    return semitoneOffset;
-  }
-
-  bool _isPitchInAnyOctaveOf(int pitch, pitchOffset) {
-    final octaves = {-35, -28, -21, -14, -7, 0, 7, 14, 21, 28, 35};
-
-    for (final octave in octaves) {
-      if (pitchOffset == pitch + octave) {
-        return true;
-      }
-    }
-    return false;
   }
 
   void _addNotes() {
@@ -133,10 +83,10 @@ class _HomePageState extends State<HomePage>
 
           for (final quaver in backing) {
             if (quaver.pitch != null) {
-              final semitone = _quaverToSemitone(quaver, key);
+              final semitone = convert.quaverToSemitone(quaver, key);
 
               final int t = b * 4 + q;
-              final int i = semitone + 12*2;
+              final int i = semitone + 12 * 2;
 
               _scheduler.add(
                 Event(
