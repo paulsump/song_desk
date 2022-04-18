@@ -27,7 +27,7 @@ const letters = [
   'c',
   'db',
   'd',
-  // 'e',
+  'e',
   // 'eb',
   // 'f',
   // 'g',
