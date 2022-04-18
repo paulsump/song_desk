@@ -47,12 +47,17 @@ class _HomePageState extends State<HomePage>
   }
 
   void _init() async {
-    // await _notes.preLoad();
-    // _addEvents();
-
     await _loadSongs();
 
+    await _notes.preLoad();
+    _addEvents();
+
+    _addNotes();
+  }
+
+  void _addNotes() {
     final song = persist.songs['Age Aint Nothing But a Number'];
+
     if (song != null) {
       for (final bar in song.bars) {
         final vocal = bar.vocal;

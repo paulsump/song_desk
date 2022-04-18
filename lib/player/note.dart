@@ -20,18 +20,18 @@ class Note {
 }
 
 const letters = [
+  'b',
   'c',
-  // 'db',
+  'db',
   'd',
-  // 'eb',
+  'eb',
   'e',
   'f',
-  // 'gb',
+  'gb',
   'g',
-  // 'ab',
+  'ab',
   'a',
-  // 'bb',
-  'b',
+  'bb',
 ];
 
 const octaves = [1, 2, 3];
