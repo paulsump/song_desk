@@ -55,7 +55,7 @@ class _HomePageState extends State<HomePage>
         if (note != null) {
           _scheduler.add(
             Event(
-              startTime: Duration(milliseconds: count * 400),
+              startTime: Duration(milliseconds: count * 200),
               audioPlayer: note.audioPlayer,
             ),
           );
