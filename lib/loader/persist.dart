@@ -3,6 +3,8 @@ import 'package:flutter/foundation.dart';
 import 'dart:convert';
 import 'package:flutter/services.dart'; // rootBundle
 
+// final persist = Provider.of<Persist>(context, listen: false);
+
 class Persist{// with ChangeNotifier {
   final songs = <String, Song?>{};
 
@@ -12,8 +14,8 @@ class Persist{// with ChangeNotifier {
   Future<void> loadSong(String folderPath, String name) async {
     final String response =
         await rootBundle.loadString('$folderPath$name$extension');
-    final map = await json.decode(response);
 
+    final map = await json.decode(response);
     songs[name] = Song.fromJson(map);
   }
 }

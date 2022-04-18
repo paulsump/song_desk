@@ -47,13 +47,24 @@ class _HomePageState extends State<HomePage>
   }
 
   void _init() async {
-    await _notes.preLoad();
-    _addEvents();
+    // await _notes.preLoad();
+    // _addEvents();
 
-    _loadSongs();
+    await _loadSongs();
+
+    final song = persist.songs['Age Aint Nothing But a Number'];
+    if (song != null) {
+      for (final bar in song.bars) {
+        final vocal = bar.vocal;
+
+        if (vocal != null) {
+          out(vocal);
+        }
+      }
+    }
   }
 
-  void _loadSongs() async {
+  Future<void> _loadSongs() async {
     final manifestJson = await rootBundle.loadString('AssetManifest.json');
 
     for (String folderPath in Persist.folderPaths) {
@@ -62,15 +73,11 @@ class _HomePageState extends State<HomePage>
           .keys
           .where((String key) => key.startsWith(folderPath));
 
-      // final persist = Provider.of<Persist>(context, listen: false);
       for (String file in files) {
         final name = file
             .replaceAll('%20', ' ')
             .replaceAll(folderPath, '')
             .replaceAll(Persist.extension, '');
-
-        // songNames.add(name);
-        // _pages.add(SongPage(name: name));
 
         await persist.loadSong(folderPath, name);
       }

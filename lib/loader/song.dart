@@ -97,4 +97,9 @@ class Quaver {
       return Quaver(pitch: 668);
     }
   }
+
+  @override
+  String toString() {
+    return "${pitch ?? ''},${accidental ?? ''}";
+  }
 }
