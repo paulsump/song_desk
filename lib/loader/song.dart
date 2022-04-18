@@ -10,6 +10,7 @@ class Song {
 
   factory Song.fromJson(Map<String, dynamic> json) {
     final bars = json["bars"];
+
     return Song(
       bars: List<Bar>.from(bars.map((source) => Bar.fromJson(source))),
       key: json['key'],
