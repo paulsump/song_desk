@@ -42,11 +42,12 @@ class _Note {
   _Note.fromJson(Map<String, dynamic> json)
       : pitch = json['pitch'],
         chord = json['chord'],
-        accidental = json.containsKey('accidental') ? json['accidental'] : '',
+        accidental = json.containsKey('accidental') ? json['accidental'] : null,
         fakeAccidental =
-            json.containsKey('fakeAccidental') ? json['fakeAccidental'] : '';
+            json.containsKey('fakeAccidental') ? json['fakeAccidental'] : null;
 
-  final String accidental, chord, fakeAccidental;
+  final String? accidental, fakeAccidental;
+  final String chord;
   final int pitch;
 
   @override

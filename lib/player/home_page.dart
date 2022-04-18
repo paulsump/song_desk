@@ -32,7 +32,7 @@ class _HomePageState extends State<HomePage>
   final _notes = Notes();
 
   final persist = Persist();
-  late final bible;
+  late final Bible bible;
 
   @override
   void initState() {
@@ -51,12 +51,11 @@ class _HomePageState extends State<HomePage>
 
   void _init() async {
     await _loadSongs();
-
     // await _notes.preLoad();
     // _addEvents();
 
     await _loadBible();
-    // _addNotes();
+    _addNotes();
   }
 
   Future<void> _loadBible() async {
@@ -64,25 +63,67 @@ class _HomePageState extends State<HomePage>
 
     final map = await json.decode(response);
     bible = Bible.fromJson(map);
-    out(bible);
   }
 
-  int _quaverToSemitone(Quaver quaver) {
-    final song = persist.songs['Age Aint Nothing But a Number'];
-    if (song != null) {}
+  int _quaverToSemitone(Quaver quaver, String key) {
+    final pitch = quaver.pitch;
 
-    return 0;
+    final semitoneOffset = _getSemitoneOffset(quaver, key);
+
+    final octave = 12 * ((pitch! - 1) ~/ 7);
+    return semitoneOffset + octave;
+  }
+
+  int _getSemitoneOffset(Quaver quaver, String key) {
+    final pitch = quaver.pitch;
+
+    final accidental = quaver.accidental;
+    int semitoneOffset = 0;
+
+    for (final note in bible.keys[key]!.notes) {
+      if (accidental == note.accidental) {
+        final pitchOffset = note.pitch;
+
+        if (_isPitchInAnyOctaveOf(pitch!, pitchOffset)) {
+          return semitoneOffset;
+        }
+      }
+
+      semitoneOffset += 1;
+    }
+
+    return semitoneOffset;
+  }
+
+  bool _isPitchInAnyOctaveOf(int pitch, pitchOffset) {
+    final octaves = {-35, -28, -21, -14, -7, 0, 7, 14, 21, 28, 35};
+
+    for (final octave in octaves) {
+      if (pitchOffset == pitch + octave) {
+        return true;
+      }
+    }
+    return false;
   }
 
   void _addNotes() {
     final song = persist.songs['Age Aint Nothing But a Number'];
 
     if (song != null) {
+      final key = song.key;
+
       for (final bar in song.bars) {
         final vocal = bar.vocal;
 
         if (vocal != null) {
-          out(vocal);
+          for (final quaver in vocal) {
+            if (quaver.pitch != null) {
+              final semitone = _quaverToSemitone(quaver, key);
+              // out("${quaver.pitch}:$semitone");
+
+
+            }
+          }
         }
       }
     }
