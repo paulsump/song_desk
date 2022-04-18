@@ -1,7 +1,11 @@
 // © 2022, Paul Sumpner <sumpner@hotmail.com>
 
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
+import 'package:flutter/services.dart';
+import 'package:song_desk/loader/persist.dart';
 import 'package:song_desk/player/note.dart';
 import 'package:song_desk/out.dart';
 import 'package:song_desk/player/scheduler.dart';
@@ -25,6 +29,8 @@ class _HomePageState extends State<HomePage>
   final _scheduler = Scheduler();
   final _notes = Notes();
 
+  final persist = Persist();
+
   @override
   void initState() {
     super.initState();
@@ -43,10 +49,36 @@ class _HomePageState extends State<HomePage>
   void _init() async {
     await _notes.preLoad();
     _addEvents();
+
+    _loadSongs();
+  }
+
+  void _loadSongs() async {
+    final manifestJson = await rootBundle.loadString('AssetManifest.json');
+
+    for (String folderPath in Persist.folderPaths) {
+      final files = json
+          .decode(manifestJson)
+          .keys
+          .where((String key) => key.startsWith(folderPath));
+
+      // final persist = Provider.of<Persist>(context, listen: false);
+      for (String file in files) {
+        final name = file
+            .replaceAll('%20', ' ')
+            .replaceAll(folderPath, '')
+            .replaceAll(Persist.extension, '');
+
+        // songNames.add(name);
+        // _pages.add(SongPage(name: name));
+
+        await persist.loadSong(folderPath, name);
+      }
+    }
   }
 
   void _addEvents() {
-    for (int i= 0; i< _notes.list.length;++i) {
+    for (int i = 0; i < _notes.list.length; ++i) {
       _scheduler.add(
         Event(
           startTime: Duration(milliseconds: i * 200),
