@@ -34,8 +34,8 @@ const letters = [
   // 'gb'
 ];
 
-const octaves = [1, 2, 3];
-// const octaves = [1, 2, 3, 4, 5, 6];
+// const octaves = [1, 2, 3];
+const octaves = [1, 2, 3, 4, 5, 6];
 // TODO octave 0 & 7 is missing some letters
 // const octaves = [0, 1, 2, 3, 4, 5, 6, 7];
 
