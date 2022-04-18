@@ -51,7 +51,7 @@ class _HomePageState extends State<HomePage>
 
   void _init() async {
     await _loadSongs();
-    // await _notes.preLoad();
+    await _notes.preLoad();
     // _addEvents();
 
     await _loadBible();
@@ -112,19 +112,33 @@ class _HomePageState extends State<HomePage>
     if (song != null) {
       final key = song.key;
 
+      int b = 0;
       for (final bar in song.bars) {
         final vocal = bar.vocal;
 
         if (vocal != null) {
+          int q = 0;
+
           for (final quaver in vocal) {
             if (quaver.pitch != null) {
               final semitone = _quaverToSemitone(quaver, key);
               // out("${quaver.pitch}:$semitone");
 
+              final int t = b * 4 + q;
+              final int i = semitone + 12;
 
+              _scheduler.add(
+                Event(
+                  startTime: Duration(milliseconds: t * 200),
+                  audioPlayer: _notes.list[i].audioPlayer,
+                ),
+              );
             }
+            q += 1;
           }
         }
+
+        b += 1;
       }
     }
   }
