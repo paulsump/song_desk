@@ -30,8 +30,8 @@ const letters = [
   'eb',
   'e',
   'f',
+  'gb'
   // 'g',
-  // 'gb'
 ];
 
 const octaves = [1, 2, 3];
