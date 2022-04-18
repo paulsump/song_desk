@@ -61,12 +61,12 @@ class _HomePageState extends State<HomePage>
   }
 
   void _init() async {
-    // await _loadSongs();
+    await _loadSongs();
     await _notes.preLoad();
 
-    // await _loadBible();
-    // _addNotes();
-    _addEvents();
+    await _loadBible();
+    _addNotes();
+    // _addEvents();
   }
 
   Future<void> _loadBible() async {
@@ -77,11 +77,12 @@ class _HomePageState extends State<HomePage>
   }
 
   int _quaverToSemitone(Quaver quaver, String key) {
-    final pitch = quaver.pitch;
+    final pitch = quaver.pitch!;
 
     final semitoneOffset = _getSemitoneOffset(quaver, key);
+    final octave = 12 * ((pitch - 1) ~/ 7);
 
-    final octave = 12 * ((pitch! - 1) ~/ 7);
+    out('$pitch: $semitoneOffset,$octave');
     return semitoneOffset + octave;
   }
 
