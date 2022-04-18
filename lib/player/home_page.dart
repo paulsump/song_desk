@@ -2,9 +2,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
-import 'package:song_desk/note.dart';
+import 'package:song_desk/player/note.dart';
 import 'package:song_desk/out.dart';
-import 'package:song_desk/scheduler.dart';
+import 'package:song_desk/player/scheduler.dart';
 
 const noWarn = out;
 

@@ -1,7 +1,7 @@
 // © 2022, Paul Sumpner <sumpner@hotmail.com>
 
 import 'package:flutter/material.dart';
-import 'package:song_desk/home_page.dart';
+import 'package:song_desk/player/home_page.dart';
 
 void main() => runApp(const MyApp());
 

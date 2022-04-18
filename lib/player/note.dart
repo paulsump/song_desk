@@ -59,7 +59,7 @@ class Notes {
     for (final octave in octaves) {
       for (final letter in letters) {
         final url = await audioCache.load('piano.mf.$letter$octave.wav');
-out(letter);
+
         // LOW_LATENCY seems to be needed to replay
         final audioPlayer = AudioPlayer(mode: PlayerMode.LOW_LATENCY);
 
