@@ -22,26 +22,37 @@ class Bar {
   final String? chord;
 
   final List<String>? phrases;
-  final List<Quaver>? vocal;
+  final List<Quaver>? vocal,backing;
 
-  Bar({this.chord, this.phrases, this.vocal});
+  Bar({this.chord, this.phrases, this.vocal,this.backing});
 
   factory Bar.fromJson(Map<String, dynamic> json) {
     try {
-      List<Quaver>? quavers;
+      List<Quaver>? vocal;
+
       if (json.containsKey('vocal')) {
         var q = json['vocal'];
-        quavers = List<Quaver>.from(q.map((source) => Quaver.fromJson(source)));
+        vocal = List<Quaver>.from(q.map((source) => Quaver.fromJson(source)));
+      }
+
+      List<Quaver>? backing;
+
+      if (json.containsKey('backing')) {
+        var q = json['backing'];
+        backing = List<Quaver>.from(q.map((source) => Quaver.fromJson(source)));
       }
 
       List<String>? phrases;
       if (json.containsKey('verses')) {
         phrases = <String>[];
+
         var verses = json['verses'][0];
         for (int i = 0; i < 4; ++i) {
           final key = 'verse $i';
+
           if (verses.containsKey(key)) {
             final phrase = shorten(verses[key]);
+
             if (phrase.isNotEmpty) {
               phrases.add(phrase);
             }
@@ -61,7 +72,8 @@ class Bar {
       return Bar(
         chord: json['chord'],
         phrases: phrases,
-        vocal: quavers,
+        vocal: vocal,
+        backing: backing,
       );
     } catch (e) {
       return Bar(chord: "667");
