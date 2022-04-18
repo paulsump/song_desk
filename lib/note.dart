@@ -29,7 +29,7 @@ const letters = [
   'd',
   'eb',
   'e',
-  // 'f',
+  'f',
   // 'g',
   // 'gb'
 ];
