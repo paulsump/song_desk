@@ -136,14 +136,16 @@ class Bar {
 class Quaver {
   final int? pitch;
   final String? accidental;
+  final bool triplet;
 
-  Quaver({this.pitch, this.accidental});
+  Quaver({this.pitch, this.accidental, this.triplet=false});
 
   factory Quaver.fromJson(Map<String, dynamic> json) {
     try {
       return Quaver(
         pitch: json['pitch'],
         accidental: json['accidental'],
+        triplet: json.containsKey('triplet'),
       );
     } catch (e) {
       return Quaver(pitch: 668);

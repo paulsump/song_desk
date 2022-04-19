@@ -78,7 +78,7 @@ class _HomePageState extends State<HomePage>
     // final song = persist.songs['Enjoy the Silence'];
     // final song = persist.songs['Another Star'];
     // final song = persist.songs['Silly Games'];
-    // TODO preferHarmony, triplets
+    // TODO triplets
     final song = persist.songs['Declaration Of Rights'];
 
     if (song != null) {
@@ -93,16 +93,19 @@ class _HomePageState extends State<HomePage>
         if (backing != null) {
           int q = 0;
 
+          final triplet = backing[3].triplet;
           for (final quaver in backing) {
             if (quaver.pitch != null) {
               final semitone = convert.quaverToSemitone(quaver, key);
 
-              final int t = b * 4 + q;
+              const tempo = 200;
+              final int t =
+                  tempo * b * 4 + q * (triplet ? (tempo * 4) ~/ 3 : tempo);
               final int i = semitone + 12 * 4;
 
               _scheduler.add(
                 Event(
-                  startTime: Duration(milliseconds: t * 200),
+                  startTime: Duration(milliseconds: t),
                   audioPlayer: _notes.list[i].audioPlayer,
                 ),
               );
