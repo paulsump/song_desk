@@ -1,5 +1,7 @@
 // © 2022, Paul Sumpner <sumpner@hotmail.com>
 
+import 'package:song_desk/out.dart';
+
 class Song {
   final List<Bar> bars;
 
@@ -26,9 +28,19 @@ class Bar {
   final String? chord;
 
   final List<String>? phrases;
-  final List<Quaver>? vocal, backing, snare;
+  final List<Quaver>? vocal, backing, harmony, snare;
 
-  Bar({this.chord, this.phrases, this.vocal, this.backing, this.snare});
+  final bool preferHarmony;
+
+  Bar({
+    this.chord,
+    this.phrases,
+    this.vocal,
+    this.backing,
+    this.harmony,
+    this.snare,
+    this.preferHarmony = false,
+  });
 
   factory Bar.fromJson(Map<String, dynamic> json) {
     try {
@@ -46,6 +58,13 @@ class Bar {
         backing = List<Quaver>.from(q.map((source) => Quaver.fromJson(source)));
       }
 
+      List<Quaver>? harmony;
+
+      if (json.containsKey('harmony')) {
+        var q = json['harmony'];
+        harmony = List<Quaver>.from(q.map((source) => Quaver.fromJson(source)));
+      }
+
       List<Quaver>? snare;
 
       if (json.containsKey('snare')) {
@@ -53,11 +72,18 @@ class Bar {
         snare = List<Quaver>.from(q.map((source) => Quaver.fromJson(source)));
       }
 
+      bool preferHarmony = false;
+
+      if (json.containsKey('preferHarmony')) {
+        preferHarmony = json['preferHarmony'];
+      }
+
       List<String>? phrases;
       if (json.containsKey('verses')) {
         phrases = <String>[];
 
         var verses = json['verses'][0];
+
         for (int i = 0; i < 4; ++i) {
           final key = 'verse $i';
 
@@ -85,7 +111,9 @@ class Bar {
         phrases: phrases,
         vocal: vocal,
         backing: backing,
+        harmony: harmony,
         snare: snare,
+        preferHarmony: preferHarmony,
       );
     } catch (e) {
       return Bar(chord: "667");

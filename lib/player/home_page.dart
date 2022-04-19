@@ -70,20 +70,25 @@ class _HomePageState extends State<HomePage>
 
   void _addNotes() {
     // final song = persist.songs['Age Aint Nothing But a Number'];
-    //TODO Swing, harmony
+    //TODO Swing, preferHarmony
     // final song = persist.songs['Pure Sorrow'];
     //TODO key changes, drum
     // final song = persist.songs['Golden Lady'];
     // TODO BAss
     // final song = persist.songs['Enjoy the Silence'];
-    final song = persist.songs['Another Star'];
+    // final song = persist.songs['Another Star'];
+    // final song = persist.songs['Silly Games'];
+    // TODO preferHarmony, triplets
+    final song = persist.songs['Declaration Of Rights'];
 
     if (song != null) {
       final key = song.key;
 
       int b = 0;
       for (final bar in song.bars) {
-        final backing = bar.backing;
+        final backing = (bar.preferHarmony || bar.backing == null)
+            ? bar.harmony
+            : bar.backing;
 
         if (backing != null) {
           int q = 0;
@@ -112,7 +117,6 @@ class _HomePageState extends State<HomePage>
 
           for (final quaver in snare) {
             if (quaver.pitch != null) {
-
               final int t = b * 4 + q;
 
               _scheduler.add(
