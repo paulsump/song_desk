@@ -7,6 +7,8 @@
 
 ## TODO
 
+- repitch in audacity for cleaner code, less work in the future.
+  5.946% =  1 semitone
 - pitch bend (or use soft bass samples - no 'cause there's even less of them)
 - Stop button play next pause
 - store last played song
