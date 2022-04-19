@@ -6,11 +6,13 @@ class Song {
   final List<Bar> bars;
 
   final String key, genre;
+  final int swing;
 
   Song({
     required this.bars,
     required this.key,
     required this.genre,
+    required this.swing,
   });
 
   factory Song.fromJson(Map<String, dynamic> json) {
@@ -20,6 +22,7 @@ class Song {
       bars: List<Bar>.from(bars.map((source) => Bar.fromJson(source))),
       key: json['key'],
       genre: json['genre'],
+      swing: json.containsKey('swing') ? json['swing'] : 0,
     );
   }
 }
@@ -138,7 +141,7 @@ class Quaver {
   final String? accidental;
   final bool triplet;
 
-  Quaver({this.pitch, this.accidental, this.triplet=false});
+  Quaver({this.pitch, this.accidental, this.triplet = false});
 
   factory Quaver.fromJson(Map<String, dynamic> json) {
     try {

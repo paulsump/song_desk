@@ -7,6 +7,7 @@ import 'package:flutter/scheduler.dart';
 import 'package:flutter/services.dart';
 import 'package:song_desk/loader/convert.dart';
 import 'package:song_desk/loader/persist.dart';
+import 'package:song_desk/loader/song.dart';
 import 'package:song_desk/out.dart';
 import 'package:song_desk/player/note.dart';
 import 'package:song_desk/player/scheduler.dart';
@@ -70,16 +71,16 @@ class _HomePageState extends State<HomePage>
 
   void _addNotes() {
     // final song = persist.songs['Age Aint Nothing But a Number'];
-    //TODO Swing, preferHarmony
-    // final song = persist.songs['Pure Sorrow'];
+    // swing, preferHarmony
+    final song = persist.songs['Pure Sorrow'];
     //TODO key changes, drum
     // final song = persist.songs['Golden Lady'];
     // TODO BAss
     // final song = persist.songs['Enjoy the Silence'];
     // final song = persist.songs['Another Star'];
     // final song = persist.songs['Silly Games'];
-    // TODO triplets
-    final song = persist.songs['Declaration Of Rights'];
+    // triplets
+    // final song = persist.songs['Declaration Of Rights'];
 
     if (song != null) {
       final key = song.key;
@@ -99,8 +100,12 @@ class _HomePageState extends State<HomePage>
               final semitone = convert.quaverToSemitone(quaver, key);
 
               const tempo = 200;
-              final int t =
-                  tempo * b * 4 + q * (triplet ? (tempo * 4) ~/ 3 : tempo);
+              int t = tempo * b * 4 + q * (triplet ? (tempo * 4) ~/ 3 : tempo);
+
+              if (q == 1 || q == 3) {
+                t += tempo * song.swing ~/ 600;
+              }
+
               final int i = semitone + 12 * 4;
 
               _scheduler.add(
