@@ -39,6 +39,7 @@ const octaves = [1, 2, 3, 4, 5, 6];
 // const octaves = [0, 1, 2, 3, 4, 5, 6, 7];
 
 /// loads and plays notes.
+/// TODO extract PianoNotes from Player
 class Notes {
   final list = <Note>[];
 

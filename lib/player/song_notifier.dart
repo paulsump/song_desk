@@ -1,9 +1,6 @@
 // © 2022, Paul Sumpner <sumpner@hotmail.com>
 
-import 'dart:convert';
-
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import 'package:song_desk/loader/convert.dart';
 import 'package:song_desk/loader/persist.dart';
@@ -102,18 +99,6 @@ class SongNotifier with ChangeNotifier {
   }
 
   void _scheduleNotes(song, scheduler) {
-    //TODO key changes
-    //TODO Repeats
-    // final song = persist.songs['Golden Lady'];
-    // TODO BAss
-    // final song = persist.songs['Enjoy the Silence'];
-    // final song = persist.songs['Another Star'];
-    // final song = persist.songs['Silly Games'];
-    // triplets
-    // final song = persist.songs['Declaration Of Rights'];
-    // key changes, pads
-    // final song = _persist.songs['Fantasy'];
-
     int b = 0;
     int pads = 0;
 

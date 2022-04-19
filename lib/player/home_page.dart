@@ -21,6 +21,8 @@ class _HomePageState extends State<HomePage>
   Duration _time = Duration.zero;
   Duration _playTime = Duration.zero;
 
+  bool playing = false;
+
   @override
   void initState() {
     super.initState();
@@ -33,7 +35,9 @@ class _HomePageState extends State<HomePage>
       _ticker = createTicker((elapsed) {
         _time = elapsed;
 
-        songNotifier.update(_time - _playTime);
+        if (playing) {
+          songNotifier.update(_time - _playTime);
+        }
       });
 
       _ticker.start();
@@ -49,8 +53,14 @@ class _HomePageState extends State<HomePage>
   void _playNext() {
     _playTime = _time;
 
+    playing = true;
+
     final songNotifier = getSongNotifier(context, listen: false);
     songNotifier.playNext();
+  }
+
+  void _pause() {
+    playing = false;
   }
 
   @override
@@ -64,14 +74,23 @@ class _HomePageState extends State<HomePage>
           children: <Widget>[
             Text(
               songNotifier.currentSongTitle,
-              style: Theme.of(context).textTheme.headline4,
+              style: Theme.of(context).textTheme.headline5,
             ),
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _playNext,
-        child: const Icon(Icons.play_arrow_rounded),
+      floatingActionButton: Row(
+        mainAxisAlignment: MainAxisAlignment.end,
+        children: [
+          FloatingActionButton(
+            onPressed: _playNext,
+            child: const Icon(Icons.play_arrow_rounded),
+          ),
+          FloatingActionButton(
+            onPressed: _pause,
+            child: const Icon(Icons.pause),
+          ),
+        ],
       ),
     );
   }
