@@ -1,7 +1,5 @@
 // © 2022, Paul Sumpner <sumpner@hotmail.com>
 
-import 'dart:convert';
-
 import 'package:flutter_test/flutter_test.dart';
 import 'package:song_desk/loader/convert.dart';
 import 'package:song_desk/loader/song.dart';
@@ -19,7 +17,7 @@ void main() {
       for (int i = 0; i < 12; ++i){
       final quaver = Quaver(pitch: i, accidental: null);
 
-      final semitone = convert.quaverToSemitone(quaver, 'C');
+      // final semitone = convert.quaverToSemitone(quaver, 'C');
       }
       // expect(semitone, equals(1));
     });

@@ -7,7 +7,6 @@ import 'package:flutter/scheduler.dart';
 import 'package:flutter/services.dart';
 import 'package:song_desk/loader/convert.dart';
 import 'package:song_desk/loader/persist.dart';
-import 'package:song_desk/loader/song.dart';
 import 'package:song_desk/out.dart';
 import 'package:song_desk/player/note.dart';
 import 'package:song_desk/player/scheduler.dart';
@@ -49,17 +48,6 @@ class _HomePageState extends State<HomePage>
     _ticker.start();
   }
 
-  void _addEvents() {
-    for (int i = 0; i < _notes.list.length; ++i) {
-      _scheduler.add(
-        Event(
-          startTime: Duration(milliseconds: i * 500),
-          audioPlayer: _notes.list[i].audioPlayer,
-        ),
-      );
-    }
-  }
-
   void _init() async {
     await _loadSongs();
     await _notes.preLoad();
@@ -72,8 +60,9 @@ class _HomePageState extends State<HomePage>
   void _addNotes() {
     // final song = persist.songs['Age Aint Nothing But a Number'];
     // swing, preferHarmony
-    final song = persist.songs['Pure Sorrow'];
+    // final song = persist.songs['Pure Sorrow'];
     //TODO key changes, drum
+    //TODO Repeats
     // final song = persist.songs['Golden Lady'];
     // TODO BAss
     // final song = persist.songs['Enjoy the Silence'];
@@ -81,6 +70,7 @@ class _HomePageState extends State<HomePage>
     // final song = persist.songs['Silly Games'];
     // triplets
     // final song = persist.songs['Declaration Of Rights'];
+    final song = persist.songs['Fantasy'];
 
     if (song != null) {
       final key = song.key;
