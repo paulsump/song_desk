@@ -50,6 +50,15 @@ class _HomePageState extends State<HomePage>
     super.dispose();
   }
 
+  void _play() {
+    _playTime = _time;
+
+    playing = true;
+
+    final songNotifier = getSongNotifier(context, listen: false);
+    songNotifier.play();
+  }
+
   void _playNext() {
     _playTime = _time;
 
@@ -83,8 +92,12 @@ class _HomePageState extends State<HomePage>
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
           FloatingActionButton(
-            onPressed: _playNext,
+            onPressed: _play,
             child: const Icon(Icons.play_arrow_rounded),
+          ),
+          FloatingActionButton(
+            onPressed: _playNext,
+            child: const Icon(Icons.skip_next),
           ),
           FloatingActionButton(
             onPressed: _pause,

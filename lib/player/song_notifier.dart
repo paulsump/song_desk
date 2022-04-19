@@ -80,9 +80,13 @@ class SongNotifier with ChangeNotifier {
     ++currentIndex;
 
     currentIndex %= _schedulers.entries.length;
-    currentScheduler.play();
+    play();
 
     notifyListeners();
+  }
+
+  void play() {
+    currentScheduler.play();
   }
 
   void init() async {
@@ -183,7 +187,7 @@ void _scheduleAllNotes(Scheduler scheduler, List<Note> list) {
   for (int i = 0; i < list.length; ++i) {
     scheduler.add(
       Event(
-        startTime: Duration(milliseconds: i * 200),
+        startTime: Duration(milliseconds: i * 700),
         audioPlayer: list[i].audioPlayer,
       ),
     );
