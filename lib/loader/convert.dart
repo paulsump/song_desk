@@ -18,9 +18,8 @@ class Convert {
     final pitch = quaver.pitch!;
 
     final semitoneOffset = _getSemitoneOffset(quaver, key);
-    final octave = 12 * ((pitch - 1) ~/ 7);
+    final octave = 12 * ((pitch - 1) / 7).floor();
 
-    out('$pitch: $semitoneOffset,$octave');
     return semitoneOffset + octave;
   }
 
@@ -53,7 +52,7 @@ class Convert {
   }
 
   bool _isPitchInAnyOctaveOf(int pitch, pitchOffset) {
-    final octaves = {-35, -28, -21, -14, -7, 0, 7, 14, 21, 28, 35};
+    const octaves = {-35, -28, -21, -14, -7, 0, 7, 14, 21, 28, 35};
 
     for (final octave in octaves) {
       if (pitchOffset == pitch + octave) {
