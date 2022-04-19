@@ -30,7 +30,7 @@ class Kick {
   }
 }
 
-/// plays preloaded notes.
+/// plays preloaded piano samples.
 class Piano {
   final list = <Note>[];
 
@@ -55,6 +55,43 @@ class Piano {
     for (final octave in octaves) {
       for (final letter in letters) {
         final fileName = 'piano.mf.$letter$octave.wav';
+
+        list.add(Note(
+          letter: letter,
+          octave: octave,
+          audioPlayer: await _createAudioPlayer(fileName),
+        ));
+      }
+    }
+  }
+}
+
+
+/// plays preloaded double bass samples.
+class Bass {
+  final list = <Note>[];
+
+  Future<void> preLoad() async {
+    const letters = [
+      'C',
+      'Db',
+      'D',
+      'Eb',
+      'E',
+      'F',
+      'Gb',
+      'G',
+      'Ab',
+      'A',
+      'Bb',
+      'B',
+    ];
+
+    const octaves = [1, 2];
+
+    for (final octave in octaves) {
+      for (final letter in letters) {
+        final fileName = 'Upright Bass Hard $letter$octave.wav';
 
         list.add(Note(
           letter: letter,

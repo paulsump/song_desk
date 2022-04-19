@@ -23,12 +23,15 @@ class SongNotifier with ChangeNotifier {
 
   final _schedulers = <String, Scheduler>{};
   final _piano = Piano();
+
   final _kick = Kick();
+  final _bass = Bass();
 
   final _persist = Persist();
   final _convert = Convert();
 
   final titles = [
+    // 'All Bass',
     'Addicted',
     'Age Aint Nothing But a Number',
     'Back to Black',
@@ -85,9 +88,11 @@ class SongNotifier with ChangeNotifier {
 
   void init() async {
     await _persist.loadSongs();
-    await _piano.preLoad();
 
+    await _piano.preLoad();
     await _kick.preLoad();
+
+    await _bass.preLoad();
     await _convert.init();
 
     for (final entry in _persist.songs.entries) {
@@ -163,6 +168,18 @@ class SongNotifier with ChangeNotifier {
       } else {
         ++b;
       }
+    }
+  }
+
+  /// for initial testing schedule all the instrument's notes.
+  void _scheduleAllNotes(Scheduler scheduler, List<Note> list) {
+    for (int i= 0; i< list.length;++i) {
+      scheduler.add(
+        Event(
+          startTime: Duration(milliseconds: i * 200),
+          audioPlayer: list[i].audioPlayer,
+        ),
+      );
     }
   }
 }

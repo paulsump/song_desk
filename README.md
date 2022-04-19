@@ -21,3 +21,4 @@
 
 - song tempo - would want save? - perhaps do in separate file.
 - piano octave 0 & 7 is missing some letters
+- bass octave 3 is missing some letters
