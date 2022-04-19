@@ -33,7 +33,7 @@ class _HomePageState extends State<HomePage>
       _ticker = createTicker((elapsed) {
         _time = elapsed;
 
-        songNotifier.scheduler.update(_time - _playTime);
+        songNotifier.update(_time - _playTime);
       });
 
       _ticker.start();
@@ -50,7 +50,7 @@ class _HomePageState extends State<HomePage>
     _playTime = _time;
 
     final songNotifier = getSongNotifier(context, listen: false);
-    songNotifier.scheduler.play();
+    songNotifier.currentScheduler.play();
   }
 
   @override
