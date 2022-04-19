@@ -123,6 +123,12 @@ class SongNotifier with ChangeNotifier {
     int pads = 0;
 
     for (final bar in song.bars) {
+
+      _addQuavers(bar.bass, song, b, pads, tempo, scheduler, (semitone) {
+        final int i = semitone + 12 * 2;
+        return _bass.list[i].audioPlayer;
+      });
+
       final backing = (bar.preferHarmony || bar.backing == null)
           ? bar.harmony
           : bar.backing;
