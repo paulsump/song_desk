@@ -17,6 +17,7 @@ class Note {
   final String letter;
   final int octave;
 
+  ///TODO CALL audioPlayer.dispose()
   final AudioPlayer audioPlayer;
 }
 

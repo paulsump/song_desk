@@ -40,11 +40,12 @@ class Event {
   bool isPlaying = false;
 
   //TODO Move to Note
-  void play() {
+  void play()async {
     if (isPlaying) {
       unawaited(audioPlayer.seek(Duration.zero));
     } else {
-      unawaited(audioPlayer.resume());
+      await audioPlayer.resume();
+      await audioPlayer.setPlaybackRate(2);
       isPlaying = true;
     }
   }
