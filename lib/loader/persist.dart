@@ -2,12 +2,10 @@
 
 import 'dart:convert';
 
-import 'package:flutter/services.dart'; // rootBundle
+import 'package:flutter/services.dart';
 import 'package:song_desk/loader/song.dart';
 
-// final persist = Provider.of<Persist>(context, listen: false);
-
-class Persist{// with ChangeNotifier {
+class Persist {
   final songs = <String, Song?>{};
 
   static const folderPaths = ['pop/', 'reggae/', 'soul/'];

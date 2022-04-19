@@ -1,7 +1,5 @@
 // © 2022, Paul Sumpner <sumpner@hotmail.com>
 
-import 'package:song_desk/out.dart';
-
 class Song {
   final List<Bar> bars;
 
@@ -53,7 +51,6 @@ class Song {
           }
         }
       }
-      out(keyChangesAtBigStaveIndices);
     }
   }
 
@@ -170,7 +167,7 @@ class Bar {
         harmony: harmony,
         snare: snare,
         preferHarmony: preferHarmony,
-        pad:pad,
+        pad: pad,
       );
     } catch (e) {
       return Bar(chord: "667");
