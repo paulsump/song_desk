@@ -39,15 +39,11 @@ class Event {
 
   bool isPlaying = false;
 
-  //TODO Move Event.play() to Playable because then you'll know how much to repitch
-  //TODO remove async if not setplaybackrate()
-  void play() async {
+  void play() {
     if (isPlaying) {
       unawaited(audioPlayer.seek(Duration.zero));
     } else {
-      await audioPlayer.resume();
-
-      // await audioPlayer.setPlaybackRate(2);
+      unawaited(audioPlayer.resume());
       isPlaying = true;
     }
   }
