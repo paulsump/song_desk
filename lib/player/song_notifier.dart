@@ -21,14 +21,14 @@ class SongNotifier with ChangeNotifier {
   final scheduler = Scheduler();
   final _notes = Notes();
 
-  final persist = Persist();
-  final convert = Convert();
+  final _persist = Persist();
+  final _convert = Convert();
 
   void init() async {
-    await _loadSongs();
+    await _persist.loadSongs();
     await _notes.preLoad();
 
-    await convert.init();
+    await _convert.init();
     _addNotes();
   }
 
@@ -46,7 +46,7 @@ class SongNotifier with ChangeNotifier {
     // triplets
     // final song = persist.songs['Declaration Of Rights'];
     // key changes, pads
-    final song = persist.songs['Fantasy'];
+    final song = _persist.songs['Fantasy'];
 
     if (song != null) {
       int b = 0;
@@ -66,7 +66,7 @@ class SongNotifier with ChangeNotifier {
           for (final quaver in backing) {
             if (quaver.pitch != null) {
               final semitone =
-                  convert.quaverToSemitone(quaver, song.getKey(b + pads));
+                  _convert.quaverToSemitone(quaver, song.getKey(b + pads));
 
               const tempo = 200;
               int t = tempo * b * 4 + q * (triplet ? (tempo * 4) ~/ 3 : tempo);
@@ -116,23 +116,4 @@ class SongNotifier with ChangeNotifier {
     }
   }
 
-  Future<void> _loadSongs() async {
-    final manifestJson = await rootBundle.loadString('AssetManifest.json');
-
-    for (String folderPath in Persist.folderPaths) {
-      final files = json
-          .decode(manifestJson)
-          .keys
-          .where((String key) => key.startsWith(folderPath));
-
-      for (String file in files) {
-        final name = file
-            .replaceAll('%20', ' ')
-            .replaceAll(folderPath, '')
-            .replaceAll(Persist.extension, '');
-
-        await persist.loadSong(folderPath, name);
-      }
-    }
-  }
 }
