@@ -1,10 +1,14 @@
 // © 2022, Paul Sumpner <sumpner@hotmail.com>
 
+import 'package:song_desk/out.dart';
+
 class Song {
   final List<Bar> bars;
 
   final String key, genre;
   final int swing;
+
+  late Map<int, String> keyChangesAtBigStaveIndices;
 
   Song({
     required this.bars,
@@ -16,14 +20,58 @@ class Song {
   factory Song.fromJson(Map<String, dynamic> json) {
     final bars = json["bars"];
 
-    return Song(
+    final song = Song(
       bars: List<Bar>.from(bars.map((source) => Bar.fromJson(source))),
       key: json['key'],
       genre: json['genre'],
       swing: json.containsKey('swing') ? json['swing'] : 0,
     );
+
+    song.calcKeyChangesAtBigStaveIndices(json);
+    return song;
+  }
+
+  void calcKeyChangesAtBigStaveIndices(Map<String, dynamic> json) {
+    keyChangesAtBigStaveIndices = {0: key};
+
+    if (json.containsKey('keyChanges')) {
+      final keyChanges = json['keyChanges'];
+
+      final staveLabels = json['staveLabels'];
+      final staveCount = _calcStaveCount(bars.length);
+
+      for (int page = 0; page < 2; ++page) {
+        for (int stave = 0; stave < staveCount; ++stave) {
+          int staveIndex = page * staveCount + stave;
+
+          if (staveIndex < staveLabels.length) {
+            final staveLabel = staveLabels[staveIndex];
+
+            if (keyChanges.containsKey(staveLabel)) {
+              keyChangesAtBigStaveIndices[staveIndex] = keyChanges[staveLabel];
+            }
+          }
+        }
+      }
+      out(keyChangesAtBigStaveIndices);
+    }
+  }
+
+  String getKey(int barIndex) {
+    String key = keyChangesAtBigStaveIndices[0]!;
+
+    for (int i = 0; i < _calcStaveIndex(barIndex) + 1; ++i) {
+      if (keyChangesAtBigStaveIndices.containsKey(i)) {
+        key = keyChangesAtBigStaveIndices[i]!;
+      }
+    }
+    return key;
   }
 }
+
+int _calcStaveCount(int barCount) => ((barCount / 8).ceil() / 2).ceil();
+
+int _calcStaveIndex(int barIndex) => barIndex ~/ 8;
 
 class Bar {
   final String? chord;

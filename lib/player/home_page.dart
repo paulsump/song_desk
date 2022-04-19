@@ -70,13 +70,12 @@ class _HomePageState extends State<HomePage>
     // final song = persist.songs['Silly Games'];
     // triplets
     // final song = persist.songs['Declaration Of Rights'];
-    //TODO key changes
+    //TODO key changes, pads
     final song = persist.songs['Fantasy'];
 
     if (song != null) {
-      final key = song.key;
-
       int b = 0;
+
       for (final bar in song.bars) {
         final backing = (bar.preferHarmony || bar.backing == null)
             ? bar.harmony
@@ -89,7 +88,7 @@ class _HomePageState extends State<HomePage>
 
           for (final quaver in backing) {
             if (quaver.pitch != null) {
-              final semitone = convert.quaverToSemitone(quaver, key);
+              final semitone = convert.quaverToSemitone(quaver, song.getKey(b));
 
               const tempo = 200;
               int t = tempo * b * 4 + q * (triplet ? (tempo * 4) ~/ 3 : tempo);
