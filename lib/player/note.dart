@@ -42,38 +42,38 @@ const octaves = [1, 2, 3, 4, 5, 6];
 class Notes {
   final list = <Note>[];
 
+  late AudioPlayer kickAudioPlayer;
   final audioCache = AudioCache();
 
-  // TODO optimize into two loops - or just remove this function?
-  // Note? getNote(String letter, int octave) {
-  //   for (final note in list) {
-  //     if (letter == note.letter && octave == note.octave) {
-  //       return note;
-  //     }
-  //   }
-  //   return null;
-  // }
-
   Future<void> preLoad() async {
+    kickAudioPlayer = await _createAudioPlayer('kick.wav');
+    kickAudioPlayer.setVolume(0.3);
+
     for (final octave in octaves) {
       for (final letter in letters) {
-        final url = await audioCache.load('piano.mf.$letter$octave.wav');
-
-        // LOW_LATENCY seems to be needed to replay
-        final audioPlayer = AudioPlayer(mode: PlayerMode.LOW_LATENCY);
+        final fileName = 'piano.mf.$letter$octave.wav';
 
         list.add(Note(
           letter: letter,
           octave: octave,
-          audioPlayer: audioPlayer,
+          audioPlayer: await _createAudioPlayer(fileName),
         ));
 
-        // prepare the player with this audio but do not start playing
-        unawaited(audioPlayer.setUrl(url.path));
-
-        // set release mode so that it never releases (I can't hear effect though currently)
-        unawaited(audioPlayer.setReleaseMode(ReleaseMode.STOP));
       }
     }
+  }
+
+  Future<AudioPlayer> _createAudioPlayer(String fileName) async {
+    final url = await audioCache.load(fileName);
+
+    // LOW_LATENCY seems to be needed to replay
+    final audioPlayer = AudioPlayer(mode: PlayerMode.LOW_LATENCY);
+
+    // prepare the player with this audio but do not start playing
+    unawaited(audioPlayer.setUrl(url.path));
+
+    // set release mode so that it never releases (I can't hear effect though currently)
+    unawaited(audioPlayer.setReleaseMode(ReleaseMode.STOP));
+    return audioPlayer;
   }
 }

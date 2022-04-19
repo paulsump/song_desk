@@ -64,12 +64,19 @@ class _HomePageState extends State<HomePage>
     await _notes.preLoad();
 
     await convert.init();
-    // _addNotes();
-    _addEvents();
+    _addNotes();
+    // _addEvents();
   }
 
   void _addNotes() {
-    final song = persist.songs['Age Aint Nothing But a Number'];
+    // final song = persist.songs['Age Aint Nothing But a Number'];
+    //TODO Swing, harmony
+    // final song = persist.songs['Pure Sorrow'];
+    //TODO key changes, drum
+    // final song = persist.songs['Golden Lady'];
+    // TODO BAss
+    // final song = persist.songs['Enjoy the Silence'];
+    final song = persist.songs['Another Star'];
 
     if (song != null) {
       final key = song.key;
@@ -86,12 +93,32 @@ class _HomePageState extends State<HomePage>
               final semitone = convert.quaverToSemitone(quaver, key);
 
               final int t = b * 4 + q;
-              final int i = semitone + 12 * 2;
+              final int i = semitone + 12 * 4;
 
               _scheduler.add(
                 Event(
                   startTime: Duration(milliseconds: t * 200),
                   audioPlayer: _notes.list[i].audioPlayer,
+                ),
+              );
+            }
+            q += 1;
+          }
+        }
+
+        final snare = bar.snare;
+        if (snare != null) {
+          int q = 0;
+
+          for (final quaver in snare) {
+            if (quaver.pitch != null) {
+
+              final int t = b * 4 + q;
+
+              _scheduler.add(
+                Event(
+                  startTime: Duration(milliseconds: t * 200),
+                  audioPlayer: _notes.kickAudioPlayer,
                 ),
               );
             }
