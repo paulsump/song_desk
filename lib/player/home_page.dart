@@ -61,7 +61,7 @@ class _HomePageState extends State<HomePage>
     // final song = persist.songs['Age Aint Nothing But a Number'];
     // swing, preferHarmony
     // final song = persist.songs['Pure Sorrow'];
-    //TODO key changes, drum
+    //TODO key changes
     //TODO Repeats
     // final song = persist.songs['Golden Lady'];
     // TODO BAss
@@ -70,6 +70,7 @@ class _HomePageState extends State<HomePage>
     // final song = persist.songs['Silly Games'];
     // triplets
     // final song = persist.songs['Declaration Of Rights'];
+    //TODO key changes
     final song = persist.songs['Fantasy'];
 
     if (song != null) {
@@ -85,6 +86,7 @@ class _HomePageState extends State<HomePage>
           int q = 0;
 
           final triplet = backing[3].triplet;
+
           for (final quaver in backing) {
             if (quaver.pitch != null) {
               final semitone = convert.quaverToSemitone(quaver, key);
