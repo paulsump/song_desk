@@ -1,9 +1,12 @@
 # song_desk
 
-Sequences sampled notes.
-Preview backing and bassline with a simple beat.
+Plays backing and beat for some songs.
+Sequences sampled notes rather than MIDI.
+
 Ultimately to create, arrange, transpose songs.
 
 ## TODO
 
-key changes.
+bassline?
+
+song tempo - would want save? - perhaps do in separate file.

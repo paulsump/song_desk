@@ -81,6 +81,8 @@ class SongNotifier with ChangeNotifier {
 
     currentIndex %= _schedulers.entries.length;
     currentScheduler.play();
+
+    notifyListeners();
   }
 
   void init() async {

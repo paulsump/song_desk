@@ -46,7 +46,7 @@ class _HomePageState extends State<HomePage>
     super.dispose();
   }
 
-  void _play() {
+  void _playNext() {
     _playTime = _time;
 
     final songNotifier = getSongNotifier(context, listen: false);
@@ -55,20 +55,22 @@ class _HomePageState extends State<HomePage>
 
   @override
   Widget build(BuildContext context) {
+    final songNotifier = getSongNotifier(context, listen: true);
+
     return Scaffold(
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              '$_time',
+              songNotifier.currentSongTitle,
               style: Theme.of(context).textTheme.headline4,
             ),
           ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: _play,
+        onPressed: _playNext,
         child: const Icon(Icons.play_arrow_rounded),
       ),
     );
