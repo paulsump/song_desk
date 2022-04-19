@@ -127,48 +127,41 @@ class SongNotifier with ChangeNotifier {
           ? bar.harmony
           : bar.backing;
 
-      if (backing != null) {
-        int q = 0;
-
-        final triplet = backing[3].triplet;
-
-        for (final quaver in backing) {
-          if (quaver.pitch != null) {
-            final semitone =
-                _convert.quaverToSemitone(quaver, song.getKey(b + pads));
-
-            int t = tempo * b * 4 + q * (triplet ? (tempo * 4) ~/ 3 : tempo);
-
-            if (q == 1 || q == 3) {
-              t += tempo * song.swing ~/ 600;
-            }
-
-            final int i = semitone + 12 * 4;
-
-            _addNote(scheduler, t, _piano.list[i].audioPlayer);
-          }
-          q += 1;
-        }
-      }
-
-      final snare = bar.snare;
-      if (snare != null) {
-        int q = 0;
-
-        for (final quaver in snare) {
-          if (quaver.pitch != null) {
-            final int t = b * 4 + q;
-
-            _addNote(scheduler, t * tempo, _kick.audioPlayer);
-          }
-          ++q;
-        }
-      }
+      _addQuavers(backing, song, b, pads, tempo, scheduler, (semitone) {
+        final int i = semitone + 12 * 4;
+        return _piano.list[i].audioPlayer;
+      });
+      _addQuavers(bar.snare, song, b, pads, tempo, scheduler,
+          (semitone) => _kick.audioPlayer);
 
       if (bar.pad) {
         ++pads;
       } else {
         ++b;
+      }
+    }
+  }
+
+  void _addQuavers(quavers, song, int b, int pads, int tempo, scheduler, fun) {
+    if (quavers != null) {
+      int q = 0;
+
+      final triplet = quavers[3].triplet;
+
+      for (final quaver in quavers) {
+        if (quaver.pitch != null) {
+          final semitone =
+              _convert.quaverToSemitone(quaver, song.getKey(b + pads));
+
+          int t = tempo * b * 4 + q * (triplet ? (tempo * 4) ~/ 3 : tempo);
+
+          if (q == 1 || q == 3) {
+            t += tempo * song.swing ~/ 600;
+          }
+
+          _addNote(scheduler, t, fun(semitone));
+        }
+        q += 1;
       }
     }
   }
