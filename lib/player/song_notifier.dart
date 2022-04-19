@@ -30,7 +30,7 @@ class SongNotifier with ChangeNotifier {
   final _convert = Convert();
 
   final titles = [
-    // 'All Bass',
+    'All Bass',
     'Addicted',
     'Age Aint Nothing But a Number',
     'Back to Black',
@@ -90,10 +90,10 @@ class SongNotifier with ChangeNotifier {
   }
 
   void init() async {
-    await _persist.loadSongs();
-
-    await _piano.preLoad();
-    await _kick.preLoad();
+    // await _persist.loadSongs();
+    //
+    // await _piano.preLoad();
+    // await _kick.preLoad();
 
     await _bass.preLoad();
     await _convert.init();

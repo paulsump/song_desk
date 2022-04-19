@@ -104,7 +104,7 @@ class Bass {
       'B',
     ];
 
-    const octaves = [1, 2];
+    const octaves = [1, 2, 3];
 
     final working = [];
     final notWorking = [];
@@ -128,6 +128,7 @@ class Bass {
         }
       }
     }
+    out('paul');
     out(working);
     out(notWorking);
   }
