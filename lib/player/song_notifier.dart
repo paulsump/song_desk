@@ -22,7 +22,8 @@ class SongNotifier with ChangeNotifier {
   int currentIndex = 0;
 
   final _schedulers = <String, Scheduler>{};
-  final _notes = Notes();
+  final _piano = Piano();
+  final _kick = Kick();
 
   final _persist = Persist();
   final _convert = Convert();
@@ -84,8 +85,9 @@ class SongNotifier with ChangeNotifier {
 
   void init() async {
     await _persist.loadSongs();
-    await _notes.preLoad();
+    await _piano.preLoad();
 
+    await _kick.preLoad();
     await _convert.init();
 
     for (final entry in _persist.songs.entries) {
@@ -129,7 +131,7 @@ class SongNotifier with ChangeNotifier {
             scheduler.add(
               Event(
                 startTime: Duration(milliseconds: t),
-                audioPlayer: _notes.list[i].audioPlayer,
+                audioPlayer: _piano.list[i].audioPlayer,
               ),
             );
           }
@@ -148,7 +150,7 @@ class SongNotifier with ChangeNotifier {
             scheduler.add(
               Event(
                 startTime: Duration(milliseconds: t * 200),
-                audioPlayer: _notes.kickAudioPlayer,
+                audioPlayer: _kick.audioPlayer,
               ),
             );
           }

@@ -20,17 +20,21 @@ class Note {
   final AudioPlayer audioPlayer;
 }
 
-/// loads and plays notes.
-/// TODO extract PianoNotes from Player
-class Notes {
-  final list = <Note>[];
-
-  late AudioPlayer kickAudioPlayer;
+/// plays preloaded sample.
+class Kick {
+  late AudioPlayer audioPlayer;
 
   Future<void> preLoad() async {
-    kickAudioPlayer = await _createAudioPlayer('kick.wav');
-    kickAudioPlayer.setVolume(0.3);
+    audioPlayer = await _createAudioPlayer('kick.wav');
+    audioPlayer.setVolume(0.3);
+  }
+}
 
+/// plays preloaded notes.
+class Piano {
+  final list = <Note>[];
+
+  Future<void> preLoad() async {
     const letters = [
       'c',
       'db',
