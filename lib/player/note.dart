@@ -106,13 +106,13 @@ class Bass {
 
     const octaves = [1, 2, 3];
 
-    final working = [];
-    final notWorking = [];
-
     for (final octave in octaves) {
       for (final letter in letters) {
         final fileName = 'bass_$letter$octave.wav';
 
+        if (fileName == 'bass_Ab3.wav') {
+          break;
+        }
         try {
           list.add(Note(
             letter: letter,
@@ -120,17 +120,12 @@ class Bass {
             audioPlayer: await _createAudioPlayer(fileName),
             //TODO Set           playbackRate:
             playbackRate: 1,
-
           ));
-          working.add(fileName);
         } catch (e) {
-          notWorking.add(fileName);
+          logError('Failed to load $fileName');
         }
       }
     }
-    out('paul');
-    out(working);
-    out(notWorking);
   }
 }
 
