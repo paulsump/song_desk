@@ -50,7 +50,7 @@ class _HomePageState extends State<HomePage>
     _playTime = _time;
 
     final songNotifier = getSongNotifier(context, listen: false);
-    songNotifier.currentScheduler.play();
+    songNotifier.playNext();
   }
 
   @override

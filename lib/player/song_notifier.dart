@@ -21,18 +21,66 @@ class SongNotifier with ChangeNotifier {
   //TODO MAke nullable ?
   Scheduler get currentScheduler => _schedulers[currentSongTitle]!;
 
-  String get currentSongTitle => 'Pure Sorrow';
+  String get currentSongTitle => titles[currentIndex];
+  int currentIndex = 0;
+
   final _schedulers = <String, Scheduler>{};
-
   final _notes = Notes();
-  final _persist = Persist();
 
+  final _persist = Persist();
   final _convert = Convert();
+
+  final titles = [
+    'Addicted',
+    'Age Aint Nothing But a Number',
+    'Back to Black',
+    'Enjoy the Silence',
+    'Flowers',
+    'It Must Be Love',
+    'Lay All Your Love On Me',
+    'Suddenly',
+    'After All',
+    'Breaking Up Is Hard To Do',
+    'Declaration Of Rights',
+    'Everything I Own',
+    'Front Door',
+    'I and I',
+    'Joy In The Morning',
+    'Life In The Ghetto',
+    'Love Me Forever',
+    'Man Next Door',
+    'My Conversation',
+    'Never Leave Me Lonely',
+    'Pure Sorrow',
+    'Silly Games',
+    'Sitting And Watching',
+    'The Tide Is High',
+    'Am I the Same Girl',
+    'Another Star',
+    'At Last I am Free',
+    "Don't Make Me Over",
+    'Fantasy',
+    'Free',
+    'Golden Lady',
+    'How Can You Mend A Broken Heart',
+    'Look What You Done For Me',
+    'Love & Happiness',
+    'My Cherie Amour',
+    'People Make The World Go Round',
+    'These Arms Of Mine',
+  ];
 
   void update(Duration time) {
     if (_schedulers.containsKey(currentSongTitle)) {
       currentScheduler.update(time);
     }
+  }
+
+  void playNext() {
+    ++currentIndex;
+
+    currentIndex %= _schedulers.entries.length;
+    currentScheduler.play();
   }
 
   void init() async {
