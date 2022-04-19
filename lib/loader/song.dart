@@ -79,7 +79,7 @@ class Bar {
   final List<String>? phrases;
   final List<Quaver>? vocal, backing, harmony, snare;
 
-  final bool preferHarmony;
+  final bool preferHarmony, pad;
 
   Bar({
     this.chord,
@@ -89,6 +89,7 @@ class Bar {
     this.harmony,
     this.snare,
     this.preferHarmony = false,
+    this.pad = false,
   });
 
   factory Bar.fromJson(Map<String, dynamic> json) {
@@ -127,6 +128,12 @@ class Bar {
         preferHarmony = json['preferHarmony'];
       }
 
+      bool pad = false;
+
+      if (json.containsKey('pad')) {
+        pad = json['pad'];
+      }
+
       List<String>? phrases;
       if (json.containsKey('verses')) {
         phrases = <String>[];
@@ -163,6 +170,7 @@ class Bar {
         harmony: harmony,
         snare: snare,
         preferHarmony: preferHarmony,
+        pad:pad,
       );
     } catch (e) {
       return Bar(chord: "667");

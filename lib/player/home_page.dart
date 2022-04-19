@@ -70,7 +70,7 @@ class _HomePageState extends State<HomePage>
     // final song = persist.songs['Silly Games'];
     // triplets
     // final song = persist.songs['Declaration Of Rights'];
-    //TODO key changes, pads
+    // key changes, pads
     final song = persist.songs['Fantasy'];
 
     if (song != null) {
@@ -129,7 +129,9 @@ class _HomePageState extends State<HomePage>
           }
         }
 
-        b += 1;
+        if (!bar.pad) {
+          b += 1;
+        }
       }
     }
   }
