@@ -1,5 +1,6 @@
 // © 2022, Paul Sumpner <sumpner@hotmail.com>
 
+import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:song_desk/loader/convert.dart';
@@ -30,7 +31,7 @@ class SongNotifier with ChangeNotifier {
   final _convert = Convert();
 
   final titles = [
-    'All Bass',
+    // 'All Bass',
     'Addicted',
     'Age Aint Nothing But a Number',
     'Back to Black',
@@ -90,10 +91,10 @@ class SongNotifier with ChangeNotifier {
   }
 
   void init() async {
-    // await _persist.loadSongs();
-    //
-    // await _piano.preLoad();
-    // await _kick.preLoad();
+    await _persist.loadSongs();
+
+    await _piano.preLoad();
+    await _kick.preLoad();
 
     await _bass.preLoad();
     await _convert.init();
@@ -116,6 +117,8 @@ class SongNotifier with ChangeNotifier {
   }
 
   void _scheduleNotes(scheduler, song) {
+    const tempo = 200;
+
     int b = 0;
     int pads = 0;
 
@@ -134,7 +137,6 @@ class SongNotifier with ChangeNotifier {
             final semitone =
                 _convert.quaverToSemitone(quaver, song.getKey(b + pads));
 
-            const tempo = 200;
             int t = tempo * b * 4 + q * (triplet ? (tempo * 4) ~/ 3 : tempo);
 
             if (q == 1 || q == 3) {
@@ -143,12 +145,7 @@ class SongNotifier with ChangeNotifier {
 
             final int i = semitone + 12 * 4;
 
-            scheduler.add(
-              Event(
-                startTime: Duration(milliseconds: t),
-                audioPlayer: _piano.list[i].audioPlayer,
-              ),
-            );
+            _addNote(scheduler, t, _piano.list[i].audioPlayer);
           }
           q += 1;
         }
@@ -162,12 +159,7 @@ class SongNotifier with ChangeNotifier {
           if (quaver.pitch != null) {
             final int t = b * 4 + q;
 
-            scheduler.add(
-              Event(
-                startTime: Duration(milliseconds: t * 200),
-                audioPlayer: _kick.audioPlayer,
-              ),
-            );
+            _addNote(scheduler, t * tempo, _kick.audioPlayer);
           }
           ++q;
         }
@@ -179,6 +171,15 @@ class SongNotifier with ChangeNotifier {
         ++b;
       }
     }
+  }
+
+  void _addNote(scheduler, int t, AudioPlayer audioPlayer) {
+    scheduler.add(
+      Event(
+        startTime: Duration(milliseconds: t),
+        audioPlayer: audioPlayer,
+      ),
+    );
   }
 }
 
