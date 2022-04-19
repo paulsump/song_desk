@@ -64,8 +64,8 @@ class _HomePageState extends State<HomePage>
     await _notes.preLoad();
 
     await convert.init();
-    _addNotes();
-    // _addEvents();
+    // _addNotes();
+    _addEvents();
   }
 
   void _addNotes() {

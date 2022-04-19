@@ -4,6 +4,7 @@ class Song {
   final List<Bar> bars;
 
   final String key, genre;
+
   Song({
     required this.bars,
     required this.key,

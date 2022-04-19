@@ -1,7 +1,5 @@
 // © 2022, Paul Sumpner <sumpner@hotmail.com>
 
-import 'dart:math';
-
 class Bible {
   final keys = <String, _Key>{};
 
@@ -14,6 +12,7 @@ class Bible {
   @override
   String toString() {
     String s = '';
+
     for (final key in keys.values) {
       s += key.toString() + '\n';
     }
@@ -33,6 +32,7 @@ class _Key {
   @override
   String toString() {
     String s = '';
+
     for (final note in notes) {
       s += note.toString();
     }
@@ -50,10 +50,9 @@ class _Note {
 
   final String? accidental, fakeAccidental;
   final String chord;
+
   final int pitch;
 
   @override
-  String toString() {
-    return '$pitch, $chord, $accidental, $fakeAccidental';
-  }
+  String toString() => '$pitch, $chord, $accidental, $fakeAccidental';
 }
