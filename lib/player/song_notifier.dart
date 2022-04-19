@@ -123,11 +123,10 @@ class SongNotifier with ChangeNotifier {
     int pads = 0;
 
     for (final bar in song.bars) {
-
       _addQuavers(bar.bass, song, b, pads, tempo, scheduler, (semitone) {
         final int i = semitone + 12 * 2;
         return _bass.list[i].audioPlayer;
-      });
+      }, () => _bass.stopAll());
 
       final backing = (bar.preferHarmony || bar.backing == null)
           ? bar.harmony
@@ -136,9 +135,10 @@ class SongNotifier with ChangeNotifier {
       _addQuavers(backing, song, b, pads, tempo, scheduler, (semitone) {
         final int i = semitone + 12 * 4;
         return _piano.list[i].audioPlayer;
-      });
+      }, null);
+
       _addQuavers(bar.snare, song, b, pads, tempo, scheduler,
-          (semitone) => _kick.audioPlayer);
+          (semitone) => _kick.audioPlayer, null);
 
       if (bar.pad) {
         ++pads;
@@ -148,7 +148,8 @@ class SongNotifier with ChangeNotifier {
     }
   }
 
-  void _addQuavers(quavers, song, int b, int pads, int tempo, scheduler, fun) {
+  void _addQuavers(
+      quavers, song, int b, int pads, int tempo, scheduler, fun, fun2) {
     if (quavers != null) {
       int q = 0;
 
@@ -165,19 +166,19 @@ class SongNotifier with ChangeNotifier {
             t += tempo * song.swing ~/ 600;
           }
 
-          _addNote(scheduler, t, fun(semitone));
+          _addNote(scheduler, t, fun(semitone), fun2);
         }
         q += 1;
       }
     }
   }
 
-  void _addNote(scheduler, int t, AudioPlayer audioPlayer) {
+  void _addNote(scheduler, int t, AudioPlayer audioPlayer, VoidCallback? fun) {
     scheduler.add(
       Event(
-        startTime: Duration(milliseconds: t),
-        audioPlayer: audioPlayer,
-      ),
+          startTime: Duration(milliseconds: t),
+          audioPlayer: audioPlayer,
+          fun: fun),
     );
   }
 }

@@ -6,14 +6,13 @@ import 'package:song_desk/out.dart';
 const noWarn = out;
 final _audioCache = AudioCache();
 
-
 /// play a note
 class Note {
   Note({
     required this.letter,
     required this.octave,
-    required this. audioPlayer,
-  }) ;
+    required this.audioPlayer,
+  });
 
   final String letter;
   final int octave;
@@ -108,6 +107,12 @@ class Bass {
           logError('Failed to load $fileName');
         }
       }
+    }
+  }
+
+  void stopAll() {
+    for (final note in list) {
+      note.audioPlayer.stop();
     }
   }
 }

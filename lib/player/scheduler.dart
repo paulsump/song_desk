@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:audioplayers/audioplayers.dart';
+import 'package:flutter/cupertino.dart';
 
 class Scheduler {
   Scheduler();
@@ -32,14 +33,18 @@ class Event {
   Event({
     required this.startTime,
     required this.audioPlayer,
+    this.fun,
   });
 
   final Duration startTime;
   final AudioPlayer audioPlayer;
+  final VoidCallback? fun;
 
   bool isPlaying = false;
 
   void play() {
+    fun?.call();
+
     if (isPlaying) {
       unawaited(audioPlayer.seek(Duration.zero));
     } else {
