@@ -6,23 +6,39 @@ import 'package:song_desk/out.dart';
 const noWarn = out;
 final _audioCache = AudioCache();
 
+abstract class Playable {
+  Playable({
+    required this.audioPlayer,
+    required this.playbackRate,
+  });
+
+  // TODO CALL audioPlayer.dispose()
+  final AudioPlayer audioPlayer;
+  final double playbackRate;
+
+//TODO Move Event.play() to Playable because then you'll know how much to repitch
+
+}
+
 /// play a note
-class Note {
+class Note extends Playable {
   Note({
     required this.letter,
     required this.octave,
-    required this.audioPlayer,
-  });
+    required AudioPlayer audioPlayer,
+    required double playbackRate,
+  }) : super(
+          audioPlayer: audioPlayer,
+          playbackRate: playbackRate,
+        );
 
   final String letter;
   final int octave;
-
-  ///TODO CALL audioPlayer.dispose()
-  final AudioPlayer audioPlayer;
 }
 
 /// plays preloaded sample.
 class Kick {
+  //TODO replace with Playable
   late AudioPlayer audioPlayer;
 
   Future<void> preLoad() async {
@@ -61,6 +77,7 @@ class Piano {
           letter: letter,
           octave: octave,
           audioPlayer: await _createAudioPlayer(fileName),
+          playbackRate: 1,
         ));
       }
     }
@@ -101,6 +118,9 @@ class Bass {
             letter: letter,
             octave: octave,
             audioPlayer: await _createAudioPlayer(fileName),
+            //TODO Set           playbackRate:
+            playbackRate: 1,
+
           ));
           working.add(fileName);
         } catch (e) {

@@ -39,7 +39,7 @@ class Event {
 
   bool isPlaying = false;
 
-  //TODO Move to Note because then you'll know how much to repitch
+  //TODO Move Event.play() to Playable because then you'll know how much to repitch
   void play() async {
     if (isPlaying) {
       unawaited(audioPlayer.seek(Duration.zero));
