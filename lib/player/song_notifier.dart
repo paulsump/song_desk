@@ -15,7 +15,6 @@ SongNotifier getSongNotifier(BuildContext context, {required bool listen}) =>
 
 /// Access to prepared songs
 class SongNotifier with ChangeNotifier {
-  //TODO MAke nullable ?
   Scheduler get currentScheduler => _schedulers[currentSongTitle]!;
 
   String get currentSongTitle => titles[currentIndex];
@@ -31,7 +30,7 @@ class SongNotifier with ChangeNotifier {
   final _convert = Convert();
 
   final titles = [
-    // 'All Bass',
+    'All Bass',
     'Addicted',
     'Age Aint Nothing But a Number',
     'Back to Black',
@@ -101,11 +100,15 @@ class SongNotifier with ChangeNotifier {
       final name = entry.key;
       _schedulers[name] = scheduler;
 
-      _scheduleNotes(entry.value!, scheduler);
+      if (name.startsWith('All ')) {
+        _scheduleAllNotes(scheduler, _bass.list);
+      } else {
+        _scheduleNotes(scheduler, entry.value!);
+      }
     }
   }
 
-  void _scheduleNotes(song, scheduler) {
+  void _scheduleNotes(scheduler, song) {
     int b = 0;
     int pads = 0;
 
@@ -170,16 +173,16 @@ class SongNotifier with ChangeNotifier {
       }
     }
   }
+}
 
-  /// for initial testing schedule all the instrument's notes.
-  void _scheduleAllNotes(Scheduler scheduler, List<Note> list) {
-    for (int i= 0; i< list.length;++i) {
-      scheduler.add(
-        Event(
-          startTime: Duration(milliseconds: i * 200),
-          audioPlayer: list[i].audioPlayer,
-        ),
-      );
-    }
+/// for initial testing schedule all the instrument's notes.
+void _scheduleAllNotes(Scheduler scheduler, List<Note> list) {
+  for (int i = 0; i < list.length; ++i) {
+    scheduler.add(
+      Event(
+        startTime: Duration(milliseconds: i * 200),
+        audioPlayer: list[i].audioPlayer,
+      ),
+    );
   }
 }

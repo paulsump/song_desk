@@ -66,7 +66,6 @@ class Piano {
   }
 }
 
-
 /// plays preloaded double bass samples.
 class Bass {
   final list = <Note>[];
@@ -93,11 +92,15 @@ class Bass {
       for (final letter in letters) {
         final fileName = 'Upright Bass Hard $letter$octave.wav';
 
-        list.add(Note(
-          letter: letter,
-          octave: octave,
-          audioPlayer: await _createAudioPlayer(fileName),
-        ));
+        try {
+          list.add(Note(
+            letter: letter,
+            octave: octave,
+            audioPlayer: await _createAudioPlayer(fileName),
+          ));
+        } catch (e) {
+          logError(fileName);
+        }
       }
     }
   }
