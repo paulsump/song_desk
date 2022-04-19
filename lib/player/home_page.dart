@@ -76,6 +76,8 @@ class _HomePageState extends State<HomePage>
     if (song != null) {
       int b = 0;
 
+      int pads = 0;
+
       for (final bar in song.bars) {
         final backing = (bar.preferHarmony || bar.backing == null)
             ? bar.harmony
@@ -88,7 +90,8 @@ class _HomePageState extends State<HomePage>
 
           for (final quaver in backing) {
             if (quaver.pitch != null) {
-              final semitone = convert.quaverToSemitone(quaver, song.getKey(b));
+              final semitone =
+                  convert.quaverToSemitone(quaver, song.getKey(b + pads));
 
               const tempo = 200;
               int t = tempo * b * 4 + q * (triplet ? (tempo * 4) ~/ 3 : tempo);
@@ -125,12 +128,14 @@ class _HomePageState extends State<HomePage>
                 ),
               );
             }
-            q += 1;
+            ++q;
           }
         }
 
-        if (!bar.pad) {
-          b += 1;
+        if (bar.pad) {
+          ++pads;
+        } else {
+          ++b;
         }
       }
     }
