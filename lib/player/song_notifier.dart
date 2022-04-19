@@ -86,23 +86,26 @@ class SongNotifier with ChangeNotifier {
   }
 
   void init() async {
-    await _persist.loadSongs();
-
-    await _piano.preLoad();
-    await _kick.preLoad();
+    // await _persist.loadSongs();
+    //
+    // await _piano.preLoad();
+    // await _kick.preLoad();
 
     await _bass.preLoad();
     await _convert.init();
 
-    for (final entry in _persist.songs.entries) {
+    if (currentSongTitle.startsWith('All ')) {
       final scheduler = Scheduler();
 
-      final name = entry.key;
-      _schedulers[name] = scheduler;
+      _schedulers[currentSongTitle] = scheduler;
+      _scheduleAllNotes(scheduler, _bass.list);
+    } else {
+      for (final entry in _persist.songs.entries) {
+        final scheduler = Scheduler();
 
-      if (name.startsWith('All ')) {
-        _scheduleAllNotes(scheduler, _bass.list);
-      } else {
+        final name = entry.key;
+        _schedulers[name] = scheduler;
+
         _scheduleNotes(scheduler, entry.value!);
       }
     }

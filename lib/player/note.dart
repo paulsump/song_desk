@@ -90,7 +90,7 @@ class Bass {
 
     for (final octave in octaves) {
       for (final letter in letters) {
-        final fileName = 'Upright Bass Hard $letter$octave.wav';
+        final fileName = 'bass_$letter$octave.wav';
 
         try {
           list.add(Note(
@@ -98,8 +98,10 @@ class Bass {
             octave: octave,
             audioPlayer: await _createAudioPlayer(fileName),
           ));
+          // out('paul');
+          out(fileName);
         } catch (e) {
-          logError(fileName);
+          // logError(fileName);
         }
       }
     }
