@@ -89,6 +89,9 @@ class Bass {
 
     const octaves = [1, 2];
 
+    final working = [];
+    final notWorking = [];
+
     for (final octave in octaves) {
       for (final letter in letters) {
         final fileName = 'bass_$letter$octave.wav';
@@ -99,13 +102,14 @@ class Bass {
             octave: octave,
             audioPlayer: await _createAudioPlayer(fileName),
           ));
-          // out('paul');
-          out(fileName);
+          working.add(fileName);
         } catch (e) {
-          // logError(fileName);
+          notWorking.add(fileName);
         }
       }
     }
+    out(working);
+    out(notWorking);
   }
 }
 

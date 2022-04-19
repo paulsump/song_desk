@@ -35,17 +35,18 @@ class Event {
   });
 
   final Duration startTime;
-
   final AudioPlayer audioPlayer;
+
   bool isPlaying = false;
 
-  //TODO Move to Note
-  void play()async {
+  //TODO Move to Note because then you'll know how much to repitch
+  void play() async {
     if (isPlaying) {
       unawaited(audioPlayer.seek(Duration.zero));
     } else {
       await audioPlayer.resume();
-      await audioPlayer.setPlaybackRate(2);
+
+      // await audioPlayer.setPlaybackRate(2);
       isPlaying = true;
     }
   }

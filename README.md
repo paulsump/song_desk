@@ -7,6 +7,7 @@
 
 ## TODO
 
+- pitch bend (or use soft bass samples - no 'cause there's even less of them)
 - Stop button play next pause
 - store last played song
 - bassline?
