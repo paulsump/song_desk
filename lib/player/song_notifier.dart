@@ -152,10 +152,10 @@ class SongNotifier with ChangeNotifier {
       _addQuavers(bar.bass, song, b, pads, duration, scheduler, (semitone) {
         final int i = semitone + 12 * 2;
         return _bass.list[i].audioPlayer;
-      }, () => _bass.stopAll());
+      }, () => _bass.stopAll(), '');
 
       _addQuavers(
-          bar.vocal, song, b, pads, duration, scheduler, _pianoPlayer, null);
+          bar.vocal, song, b, pads, duration, scheduler, _pianoPlayer, null, '');
 
       if (false) {
         final backing = (bar.preferHarmony || bar.backing == null)
@@ -163,20 +163,20 @@ class SongNotifier with ChangeNotifier {
             : bar.backing;
 
         _addQuavers(
-            backing, song, b, pads, duration, scheduler, _pianoPlayer, null);
+            backing, song, b, pads, duration, scheduler, _pianoPlayer, null, '');
       } else {
         _addQuavers(bar.backing, song, b, pads, duration, scheduler,
-            _pianoPlayer, null);
+            _pianoPlayer, null, '');
 
         _addQuavers(bar.harmony, song, b, pads, duration, scheduler,
-            _pianoPlayer, null);
+            _pianoPlayer, null, '');
       }
 
       _addQuavers(bar.snare, song, b, pads, duration, scheduler,
-          (semitone) => _kick.audioPlayer, null);
+          (semitone) => _kick.audioPlayer, null, '');
 
       _addQuavers(
-          bar.arp, song, b, pads, duration, scheduler, _pianoPlayer, null);
+          bar.arp, song, b, pads, duration, scheduler, _pianoPlayer, null, 'arp');
 
       if (bar.pad) {
         ++pads;
@@ -187,7 +187,7 @@ class SongNotifier with ChangeNotifier {
   }
 
   void _addQuavers(
-      quavers, song, int b, int pads, int duration, scheduler, fun, fun2) {
+      quavers, song, int b, int pads, int duration, scheduler, fun, fun2, voice) {
     if (quavers != null) {
       int q = 0;
 
@@ -201,7 +201,7 @@ class SongNotifier with ChangeNotifier {
           int t =
               duration * b * 4 + q * (triplet ? (duration * 4) ~/ 3 : duration);
 
-          t += duration * panOffset(q, song, 'arp');
+          t += (duration * panOffset(q, song, voice)).round();
           _addNote(scheduler, t, fun(semitone), fun2);
         }
         q += 1;
@@ -209,22 +209,22 @@ class SongNotifier with ChangeNotifier {
     }
   }
 
-  int panOffset(int q, song, voice) {
+  double panOffset(int q, song, voice) {
     // if(! triplet):
-    if (false){//voice == 'arp') {
-      // final x = 0.06 * q;
+    if (voice == 'arp') {
+      final x = 0.06 * q;
 
-      // if (q == 0) {
-      //   return x + 2;
-      // } else if (q == 1) {
-      //   return x + 1;
-      // } else if (q == 2) {
-      //   return x + 0;
-      // } else if (q == 3) {
-      //   return x + -1;
-      // }
+      if (q == 0) {
+        return x + 2;
+      } else if (q == 1) {
+        return x + 1;
+      } else if (q == 2) {
+        return x + 0;
+      } else if (q == 3) {
+        return x + -1;
+      }
     } else if (q == 1 || q == 3) {
-      return song.swing ~/ 600;
+      return song.swing / 600;
     }
     return 0;
   }
