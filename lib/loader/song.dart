@@ -4,7 +4,7 @@ class Song {
   final List<Bar> bars;
 
   final String key, genre;
-  final int swing;
+  final int swing, tempo;
 
   late Map<int, String> keyChangesAtBigStaveIndices;
 
@@ -13,6 +13,7 @@ class Song {
     required this.key,
     required this.genre,
     required this.swing,
+    required this.tempo,
   });
 
   factory Song.fromJson(Map<String, dynamic> json) {
@@ -23,6 +24,7 @@ class Song {
       key: json['key'],
       genre: json['genre'],
       swing: json.containsKey('swing') ? json['swing'] : 0,
+      tempo: json['tempo'],
     );
 
     song.calcKeyChangesAtBigStaveIndices(json);

@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:song_desk/loader/convert.dart';
 import 'package:song_desk/loader/persist.dart';
+import 'package:song_desk/loader/song.dart';
 import 'package:song_desk/out.dart';
 import 'package:song_desk/player/note.dart';
 import 'package:song_desk/player/scheduler.dart';
@@ -136,8 +137,11 @@ class SongNotifier with ChangeNotifier {
     }
   }
 
-  void _scheduleNotes(scheduler, song) {
-    const tempo = 200;
+  void _scheduleNotes(scheduler, Song song) {
+    final duration = 30000 ~/ song.tempo;
+    out('pal');
+    out(song.tempo);
+    out(duration);
 
     AudioPlayer _pianoPlayer(semitone) {
       final int i = semitone + 12 * 4;
@@ -148,13 +152,13 @@ class SongNotifier with ChangeNotifier {
     int pads = 0;
 
     for (final bar in song.bars) {
-      _addQuavers(bar.bass, song, b, pads, tempo, scheduler, (semitone) {
+      _addQuavers(bar.bass, song, b, pads, duration, scheduler, (semitone) {
         final int i = semitone + 12 * 2;
         return _bass.list[i].audioPlayer;
       }, () => _bass.stopAll());
 
       _addQuavers(
-          bar.vocal, song, b, pads, tempo, scheduler, _pianoPlayer, null);
+          bar.vocal, song, b, pads, duration, scheduler, _pianoPlayer, null);
 
       if (false) {
         final backing = (bar.preferHarmony || bar.backing == null)
@@ -162,16 +166,16 @@ class SongNotifier with ChangeNotifier {
             : bar.backing;
 
         _addQuavers(
-            backing, song, b, pads, tempo, scheduler, _pianoPlayer, null);
+            backing, song, b, pads, duration, scheduler, _pianoPlayer, null);
       } else {
-        _addQuavers(
-            bar.backing, song, b, pads, tempo, scheduler, _pianoPlayer, null);
+        _addQuavers(bar.backing, song, b, pads, duration, scheduler,
+            _pianoPlayer, null);
 
-        _addQuavers(
-            bar.harmony, song, b, pads, tempo, scheduler, _pianoPlayer, null);
+        _addQuavers(bar.harmony, song, b, pads, duration, scheduler,
+            _pianoPlayer, null);
       }
 
-      _addQuavers(bar.snare, song, b, pads, tempo, scheduler,
+      _addQuavers(bar.snare, song, b, pads, duration, scheduler,
           (semitone) => _kick.audioPlayer, null);
 
       if (bar.pad) {
@@ -183,7 +187,7 @@ class SongNotifier with ChangeNotifier {
   }
 
   void _addQuavers(
-      quavers, song, int b, int pads, int tempo, scheduler, fun, fun2) {
+      quavers, song, int b, int pads, int duration, scheduler, fun, fun2) {
     if (quavers != null) {
       int q = 0;
 
@@ -194,10 +198,11 @@ class SongNotifier with ChangeNotifier {
           final semitone =
               _convert.quaverToSemitone(quaver, song.getKey(b + pads));
 
-          int t = tempo * b * 4 + q * (triplet ? (tempo * 4) ~/ 3 : tempo);
+          int t =
+              duration * b * 4 + q * (triplet ? (duration * 4) ~/ 3 : duration);
 
           if (q == 1 || q == 3) {
-            t += tempo * song.swing ~/ 600;
+            t += duration * song.swing ~/ 600;
           }
 
           _addNote(scheduler, t, fun(semitone), fun2);
