@@ -76,7 +76,7 @@ class Bar {
   final String? chord;
 
   final List<String>? phrases;
-  final List<Quaver>? bass, vocal, backing, harmony, snare;
+  final List<Quaver>? bass, vocal, backing, harmony, snare, arp;
 
   final bool preferHarmony, pad;
 
@@ -88,6 +88,7 @@ class Bar {
     this.backing,
     this.harmony,
     this.snare,
+    this.arp,
     this.preferHarmony = false,
     this.pad = false,
   });
@@ -126,6 +127,13 @@ class Bar {
       if (json.containsKey('snare')) {
         var q = json['snare'];
         snare = List<Quaver>.from(q.map((source) => Quaver.fromJson(source)));
+      }
+
+      List<Quaver>? arp;
+
+      if (json.containsKey('arp')) {
+        var q = json['arp'];
+        arp = List<Quaver>.from(q.map((source) => Quaver.fromJson(source)));
       }
 
       bool preferHarmony = false;
@@ -176,6 +184,7 @@ class Bar {
         backing: backing,
         harmony: harmony,
         snare: snare,
+        arp: arp,
         preferHarmony: preferHarmony,
         pad: pad,
       );

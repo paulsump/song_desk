@@ -139,9 +139,6 @@ class SongNotifier with ChangeNotifier {
 
   void _scheduleNotes(scheduler, Song song) {
     final duration = 30000 ~/ song.tempo;
-    out('pal');
-    out(song.tempo);
-    out(duration);
 
     AudioPlayer _pianoPlayer(semitone) {
       final int i = semitone + 12 * 4;
@@ -178,6 +175,9 @@ class SongNotifier with ChangeNotifier {
       _addQuavers(bar.snare, song, b, pads, duration, scheduler,
           (semitone) => _kick.audioPlayer, null);
 
+      _addQuavers(
+          bar.arp, song, b, pads, duration, scheduler, _pianoPlayer, null);
+
       if (bar.pad) {
         ++pads;
       } else {
@@ -201,15 +201,32 @@ class SongNotifier with ChangeNotifier {
           int t =
               duration * b * 4 + q * (triplet ? (duration * 4) ~/ 3 : duration);
 
-          if (q == 1 || q == 3) {
-            t += duration * song.swing ~/ 600;
-          }
-
+          t += duration * panOffset(q, song, 'arp');
           _addNote(scheduler, t, fun(semitone), fun2);
         }
         q += 1;
       }
     }
+  }
+
+  int panOffset(int q, song, voice) {
+    // if(! triplet):
+    if (false){//voice == 'arp') {
+      // final x = 0.06 * q;
+
+      // if (q == 0) {
+      //   return x + 2;
+      // } else if (q == 1) {
+      //   return x + 1;
+      // } else if (q == 2) {
+      //   return x + 0;
+      // } else if (q == 3) {
+      //   return x + -1;
+      // }
+    } else if (q == 1 || q == 3) {
+      return song.swing ~/ 600;
+    }
+    return 0;
   }
 
   void _addNote(scheduler, int t, AudioPlayer audioPlayer, VoidCallback? fun) {

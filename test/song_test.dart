@@ -12,6 +12,7 @@ void main() {
         genre: '',
         key: 'C',
         swing: 0,
+        tempo: 111,
       );
 
       final json = {
