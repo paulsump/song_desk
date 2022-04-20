@@ -32,6 +32,17 @@ class Kick {
   }
 }
 
+class Arp extends Piano {
+  @override
+  Future<void> preLoad() async {
+    await super.preLoad();
+
+    for (final note in list) {
+      note.audioPlayer.setVolume(0.4);
+    }
+  }
+}
+
 /// plays preloaded piano samples.
 class Piano {
   final list = <Note>[];

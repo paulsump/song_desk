@@ -27,6 +27,7 @@ class SongNotifier with ChangeNotifier {
 
   final _kick = Kick();
   final _bass = Bass();
+  final _arp = Arp();
 
   final _persist = Persist();
   final _convert = Convert();
@@ -118,6 +119,8 @@ class SongNotifier with ChangeNotifier {
     await _kick.preLoad();
 
     await _bass.preLoad();
+    await _arp.preLoad();
+
     await _convert.init();
 
     if (currentSongTitle.startsWith('All ')) {
@@ -154,16 +157,16 @@ class SongNotifier with ChangeNotifier {
         return _bass.list[i].audioPlayer;
       }, () => _bass.stopAll(), '');
 
-      _addQuavers(
-          bar.vocal, song, b, pads, duration, scheduler, _pianoPlayer, null, '');
+      _addQuavers(bar.vocal, song, b, pads, duration, scheduler, _pianoPlayer,
+          null, '');
 
       if (false) {
         final backing = (bar.preferHarmony || bar.backing == null)
             ? bar.harmony
             : bar.backing;
 
-        _addQuavers(
-            backing, song, b, pads, duration, scheduler, _pianoPlayer, null, '');
+        _addQuavers(backing, song, b, pads, duration, scheduler, _pianoPlayer,
+            null, '');
       } else {
         _addQuavers(bar.backing, song, b, pads, duration, scheduler,
             _pianoPlayer, null, '');
@@ -175,8 +178,10 @@ class SongNotifier with ChangeNotifier {
       _addQuavers(bar.snare, song, b, pads, duration, scheduler,
           (semitone) => _kick.audioPlayer, null, '');
 
-      _addQuavers(
-          bar.arp, song, b, pads, duration, scheduler, _pianoPlayer, null, 'arp');
+      _addQuavers(bar.arp, song, b, pads, duration, scheduler, (semitone) {
+        final int i = semitone + 12 * 4;
+        return _arp.list[i].audioPlayer;
+      }, null, 'arp');
 
       if (bar.pad) {
         ++pads;
@@ -186,8 +191,8 @@ class SongNotifier with ChangeNotifier {
     }
   }
 
-  void _addQuavers(
-      quavers, song, int b, int pads, int duration, scheduler, fun, fun2, voice) {
+  void _addQuavers(quavers, song, int b, int pads, int duration, scheduler, fun,
+      fun2, voice) {
     if (quavers != null) {
       int q = 0;
 
