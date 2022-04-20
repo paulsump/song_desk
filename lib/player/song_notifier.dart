@@ -139,6 +139,11 @@ class SongNotifier with ChangeNotifier {
   void _scheduleNotes(scheduler, song) {
     const tempo = 200;
 
+    AudioPlayer _pianoPlayer(semitone) {
+      final int i = semitone + 12 * 4;
+      return _piano.list[i].audioPlayer;
+    }
+
     int b = 0;
     int pads = 0;
 
@@ -148,31 +153,24 @@ class SongNotifier with ChangeNotifier {
         return _bass.list[i].audioPlayer;
       }, () => _bass.stopAll());
 
-      _addQuavers(bar.vocal, song, b, pads, tempo, scheduler, (semitone) {
-        final int i = semitone + 12 * 4;
-        return _piano.list[i].audioPlayer;
-      }, null);
+      _addQuavers(
+          bar.vocal, song, b, pads, tempo, scheduler, _pianoPlayer, null);
 
       if (false) {
         final backing = (bar.preferHarmony || bar.backing == null)
             ? bar.harmony
             : bar.backing;
 
-        _addQuavers(backing, song, b, pads, tempo, scheduler, (semitone) {
-          final int i = semitone + 12 * 4;
-          return _piano.list[i].audioPlayer;
-        }, null);
+        _addQuavers(
+            backing, song, b, pads, tempo, scheduler, _pianoPlayer, null);
       } else {
-        _addQuavers(bar.backing, song, b, pads, tempo, scheduler, (semitone) {
-          final int i = semitone + 12 * 4;
-          return _piano.list[i].audioPlayer;
-        }, null);
+        _addQuavers(
+            bar.backing, song, b, pads, tempo, scheduler, _pianoPlayer, null);
 
-        _addQuavers(bar.harmony, song, b, pads, tempo, scheduler, (semitone) {
-          final int i = semitone + 12 * 4;
-          return _piano.list[i].audioPlayer;
-        }, null);
+        _addQuavers(
+            bar.harmony, song, b, pads, tempo, scheduler, _pianoPlayer, null);
       }
+
       _addQuavers(bar.snare, song, b, pads, tempo, scheduler,
           (semitone) => _kick.audioPlayer, null);
 
