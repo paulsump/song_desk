@@ -7,11 +7,10 @@
 
 ## TODO
 
-- note duration
--   for bassline
--   for melody in..
-    Never Leave Me Lonely
-
+- tempo
+  
+- reggae strum 'ching' chords (arp) - already there in pandeiroOffset!
+  
 - Stop button play next pause
 - store last played song
 

@@ -32,43 +32,64 @@ class SongNotifier with ChangeNotifier {
 
   final titles = [
     // 'All Bass',
-    'Addicted',
     'Age Aint Nothing But a Number',
-    'Back to Black',
-    'Enjoy the Silence',
     'Flowers',
-    'It Must Be Love',
     'Lay All Your Love On Me',
-    'Suddenly',
-    'After All',
-    'Breaking Up Is Hard To Do',
-    'Declaration Of Rights',
-    'Everything I Own',
-    'Front Door',
-    'I and I',
-    'Joy In The Morning',
-    'Life In The Ghetto',
-    'Love Me Forever',
-    'Man Next Door',
-    'My Conversation',
-    'Never Leave Me Lonely',
     'Pure Sorrow',
-    'Silly Games',
-    'Sitting And Watching',
-    'The Tide Is High',
-    'Am I the Same Girl',
-    'Another Star',
-    'At Last I am Free',
-    "Don't Make Me Over",
-    'Fantasy',
-    'Free',
     'Golden Lady',
+    'Enjoy the Silence',
+    'Another Star',
+    'Silly Games',
+    'Declaration Of Rights',
+    'Fantasy',
+    'I and I',
+    'Life In The Ghetto',
+    'Free',
     'How Can You Mend A Broken Heart',
-    'Look What You Done For Me',
-    'Love & Happiness',
+    'Addicted',
+    'Never Leave Me Lonely',
+    'After All',
+    'Bonita',
+    'Love Me Forever',
     'My Cherie Amour',
-    'People Make The World Go Round',
+    'Man Next Door',
+    'Front Door',
+    'My Conversation',
+    'Breaking Up Is Hard To Do',
+    'Love & Happiness',
     'These Arms Of Mine',
+    "Don't Make Me Over",
+    'Manha de Carnaval',
+    'Look What You Done For Me',
+    'Am I the Same Girl',
+    'Suddenly',
+    'Entrudo',
+    'Joy In The Morning',
+    'Outra Vez',
+    'At Last I am Free',
+    'Back to Black',
+    'Melancolia',
+    'Estate',
+    'Insensatez',
+    'Por Toda Minha Vida',
+    'The Tide Is High',
+    'Everything I Own',
+    'O Barquinho',
+    'Corcovado',
+    'O Amor Em Paz',
+    'O Sol Nascera',
+    'Sitting And Watching',
+    'Meditacao',
+    'Samba do Aviao',
+    'People Make The World Go Round',
+    'It Must Be Love',
+    'Samba em Preludio',
+    'Estrada do Sol',
+    'Quem Me Ve Sorrindo',
+    'Este Seu Olhar',
+    'O Mundo e um Moinho',
+    'So em Teus Bracos',
+
   ];
 
   void update(Duration time) {
@@ -123,10 +144,10 @@ class SongNotifier with ChangeNotifier {
     int pads = 0;
 
     for (final bar in song.bars) {
-      _addQuavers(bar.bass, song, b, pads, tempo, scheduler, (semitone) {
-        final int i = semitone + 12 * 2;
-        return _bass.list[i].audioPlayer;
-      }, () => _bass.stopAll());
+      // _addQuavers(bar.bass, song, b, pads, tempo, scheduler, (semitone) {
+      //   final int i = semitone + 12 * 2;
+      //   return _bass.list[i].audioPlayer;
+      // }, () => _bass.stopAll());
 
       final backing = (bar.preferHarmony || bar.backing == null)
           ? bar.harmony
