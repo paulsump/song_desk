@@ -89,7 +89,6 @@ class SongNotifier with ChangeNotifier {
     'Este Seu Olhar',
     'O Mundo e um Moinho',
     'So em Teus Bracos',
-
   ];
 
   void update(Duration time) {
@@ -144,20 +143,36 @@ class SongNotifier with ChangeNotifier {
     int pads = 0;
 
     for (final bar in song.bars) {
-      // _addQuavers(bar.bass, song, b, pads, tempo, scheduler, (semitone) {
-      //   final int i = semitone + 12 * 2;
-      //   return _bass.list[i].audioPlayer;
-      // }, () => _bass.stopAll());
+      _addQuavers(bar.bass, song, b, pads, tempo, scheduler, (semitone) {
+        final int i = semitone + 12 * 2;
+        return _bass.list[i].audioPlayer;
+      }, () => _bass.stopAll());
 
-      final backing = (bar.preferHarmony || bar.backing == null)
-          ? bar.harmony
-          : bar.backing;
-
-      _addQuavers(backing, song, b, pads, tempo, scheduler, (semitone) {
+      _addQuavers(bar.vocal, song, b, pads, tempo, scheduler, (semitone) {
         final int i = semitone + 12 * 4;
         return _piano.list[i].audioPlayer;
       }, null);
 
+      if (false) {
+        final backing = (bar.preferHarmony || bar.backing == null)
+            ? bar.harmony
+            : bar.backing;
+
+        _addQuavers(backing, song, b, pads, tempo, scheduler, (semitone) {
+          final int i = semitone + 12 * 4;
+          return _piano.list[i].audioPlayer;
+        }, null);
+      } else {
+        _addQuavers(bar.backing, song, b, pads, tempo, scheduler, (semitone) {
+          final int i = semitone + 12 * 4;
+          return _piano.list[i].audioPlayer;
+        }, null);
+
+        _addQuavers(bar.harmony, song, b, pads, tempo, scheduler, (semitone) {
+          final int i = semitone + 12 * 4;
+          return _piano.list[i].audioPlayer;
+        }, null);
+      }
       _addQuavers(bar.snare, song, b, pads, tempo, scheduler,
           (semitone) => _kick.audioPlayer, null);
 
