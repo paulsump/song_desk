@@ -7,6 +7,8 @@
 
 ## TODO
 
+back button
+
 - note duration for reggae strum
 - fix all bass lines and tempos in mel
   

@@ -11,7 +11,7 @@ class Song {
 
   Song.fromJson(Map<String, dynamic> json)
       : bars =
-            List<Bar>.from(json["bars"].map((source) => Bar.fromJson(source))),
+            List<Bar>.from(json["bars"].map((bar) => Bar.fromJson(bar))),
         key = json['key'],
         genre = json['genre'],
         swing = json.containsKey('swing') ? json['swing'] : 0,

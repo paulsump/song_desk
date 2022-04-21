@@ -160,12 +160,8 @@ class SongNotifier with ChangeNotifier {
       _addQuavers(bar.vocal, song, b, pads, duration, scheduler, _pianoPlayer,
           null, '');
 
-      // final backing = (bar.preferHarmony || bar.backing == null)
-      //     ? bar.harmony
-      //     : bar.backing;
-      //
-      // _addQuavers(backing, song, b, pads, duration, scheduler, _pianoPlayer,
-      //     null, '');
+      // final backing = (bar.preferHarmony || bar.backing == null)? bar.harmony : bar.backing;
+      // _addQuavers(backing, song, b, pads, duration, scheduler, _pianoPlayer,     null, '');
       _addQuavers(bar.backing, song, b, pads, duration, scheduler, _pianoPlayer,
           null, '');
 
@@ -176,7 +172,9 @@ class SongNotifier with ChangeNotifier {
           (semitone) => _kick.audioPlayer, null, '');
 
       _addQuavers(bar.arp, song, b, pads, duration, scheduler, (semitone) {
+        // TODO higher arps REquires top octave
         final int i = semitone + 12 * 4;
+
         return _arp.list[i].audioPlayer;
       }, null, 'arp');
 
@@ -203,7 +201,9 @@ class SongNotifier with ChangeNotifier {
           int t =
               duration * b * 4 + q * (triplet ? (duration * 4) ~/ 3 : duration);
 
-          t += (duration * panOffset(q, song, voice)).round();
+          if (!triplet) {
+            t += (duration * panOffset(q, song, voice)).round();
+          }
           _addNote(scheduler, t, fun(semitone), fun2);
         }
         q += 1;
@@ -212,10 +212,7 @@ class SongNotifier with ChangeNotifier {
   }
 
   double panOffset(int q, Song song, voice) {
-    //TODO Triplet
-    // if(! triplet):
     if (voice == 'arp') {
-      // TODO double OR BOOMclapbboomboom
       final x = 0.06 * q;
 
       if (song.boomClapOrDoubleReggae()) {
@@ -228,8 +225,7 @@ class SongNotifier with ChangeNotifier {
         } else if (q == 3) {
           return x + 1;
         }
-      } else {
-        //TODO if ( data.song['strum'] == 'Reggae':;
+      } else if (song.strum == 'Reggae') {
         if (q == 0) {
           return x + 2;
         } else if (q == 1) {
