@@ -32,12 +32,12 @@ class Scheduler {
 class Event {
   Event({
     required this.startTime,
-    required this.audioPlayer,
+    this.audioPlayer,
     this.fun,
   });
 
   final Duration startTime;
-  final AudioPlayer audioPlayer;
+  final AudioPlayer? audioPlayer;
 
   final VoidCallback? fun;
   bool isPlaying = false;
@@ -45,11 +45,13 @@ class Event {
   void play() {
     fun?.call();
 
-    if (isPlaying) {
-      unawaited(audioPlayer.seek(Duration.zero));
-    } else {
-      unawaited(audioPlayer.resume());
-      isPlaying = true;
+    if (audioPlayer != null) {
+      if (isPlaying) {
+        unawaited(audioPlayer!.seek(Duration.zero));
+      } else {
+        unawaited(audioPlayer!.resume());
+        isPlaying = true;
+      }
     }
   }
 

@@ -158,6 +158,7 @@ class SongNotifier with ChangeNotifier {
 
     AudioPlayer _pianoPlayer(semitone) {
       final int i = semitone + 12 * 4;
+
       return _piano.list[i].audioPlayer;
     }
 
@@ -167,6 +168,7 @@ class SongNotifier with ChangeNotifier {
     for (final bar in song.bars) {
       _addQuavers(bar.bass, song, b, pads, duration, scheduler, (semitone) {
         final int i = semitone + 12 * 2;
+
         return _bass.list[i].audioPlayer;
       }, () => _bass.stopAll(), '');
 
@@ -196,6 +198,8 @@ class SongNotifier with ChangeNotifier {
         ++b;
       }
     }
+
+    _addPlayNextEvent(scheduler, duration * b * 4);
   }
 
   void _addQuavers(quavers, song, int b, int pads, int duration, scheduler, fun,
@@ -277,5 +281,13 @@ class SongNotifier with ChangeNotifier {
     final preferences = await SharedPreferences.getInstance();
 
     unawaited(preferences.setInt('currentSongIndex', _currentSongIndex));
+  }
+
+  ///Auto play next song when finish song.
+  void _addPlayNextEvent(scheduler, int startTime) {
+    scheduler.add(Event(
+      startTime: Duration(milliseconds: startTime),
+      fun: playNext,
+    ));
   }
 }

@@ -5,8 +5,6 @@
 
 ## TODO
 
-Auto play next song when finish.
-
 back button
 
 - note duration for bass
