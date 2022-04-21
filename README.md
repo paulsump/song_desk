@@ -5,7 +5,8 @@
 
 ## TODO
 
-using _createQuavers().
+Auto play at start,
+Auto play next song when finish.
 
 back button
 

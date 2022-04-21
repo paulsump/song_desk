@@ -68,14 +68,14 @@ int _calcStaveCount(int barCount) => ((barCount / 8).ceil() / 2).ceil();
 
 int _calcStaveIndex(int barIndex) => barIndex ~/ 8;
 
-List<Quaver>? _createQuavers(Map<String, dynamic> json) {
-  List<Quaver>? bass;
+List<Quaver>? _createQuavers(Map<String, dynamic> json, String voice) {
+  List<Quaver>? quavers;
 
-  if (json.containsKey('bass')) {
-    var q = json['bass'];
-    bass = List<Quaver>.from(q.map((source) => Quaver.fromJson(source)));
+  if (json.containsKey(voice)) {
+    var q = json[voice];
+    quavers = List<Quaver>.from(q.map((source) => Quaver.fromJson(source)));
   }
-  return bass;
+  return quavers;
 }
 
 class Bar {
@@ -86,79 +86,23 @@ class Bar {
 
   final bool preferHarmony, pad;
 
-  Bar({
-    this.chord,
-    this.phrases,
-    this.bass,
-    this.vocal,
-    this.backing,
-    this.harmony,
-    this.snare,
-    this.arp,
-    this.preferHarmony = false,
-    this.pad = false,
-  });
-
-  factory Bar.fromJson(Map<String, dynamic> json) {
-    List<Quaver>? bass = _createQuavers(json);
-    List<Quaver>? vocal;
-
-    if (json.containsKey('vocal')) {
-      var q = json['vocal'];
-      vocal = List<Quaver>.from(q.map((source) => Quaver.fromJson(source)));
-    }
-
-    List<Quaver>? backing;
-
-    if (json.containsKey('backing')) {
-      var q = json['backing'];
-      backing = List<Quaver>.from(q.map((source) => Quaver.fromJson(source)));
-    }
-
-    List<Quaver>? harmony;
-
-    if (json.containsKey('harmony')) {
-      var q = json['harmony'];
-      harmony = List<Quaver>.from(q.map((source) => Quaver.fromJson(source)));
-    }
-
-    List<Quaver>? snare;
-
-    if (json.containsKey('snare')) {
-      var q = json['snare'];
-      snare = List<Quaver>.from(q.map((source) => Quaver.fromJson(source)));
-    }
-
-    List<Quaver>? arp;
-
-    if (json.containsKey('arp')) {
-      var q = json['arp'];
-      arp = List<Quaver>.from(q.map((source) => Quaver.fromJson(source)));
-    }
-
-    bool preferHarmony = false;
-
-    if (json.containsKey('preferHarmony')) {
-      preferHarmony = json['preferHarmony'];
-    }
-
-    return Bar(
-      chord: json['chord'],
-      phrases: _createPhrases(json),
-      bass: bass,
-      vocal: vocal,
-      backing: backing,
-      harmony: harmony,
-      snare: snare,
-      arp: arp,
-      preferHarmony: json.containsKey('preferHarmony') ? json['preferHarmony'] : false,
-      pad: json.containsKey('pad') ? json['pad'] : false,
-    );
-  }
+  Bar.fromJson(Map<String, dynamic> json)
+      : chord = json['chord'],
+        phrases = _createPhrases(json),
+        bass = _createQuavers(json, 'bass'),
+        vocal = _createQuavers(json, 'vocal'),
+        backing = _createQuavers(json, 'backing'),
+        harmony = _createQuavers(json, 'harmony'),
+        snare = _createQuavers(json, 'snare'),
+        arp = _createQuavers(json, 'arp'),
+        preferHarmony =
+            json.containsKey('preferHarmony') ? json['preferHarmony'] : false,
+        pad = json.containsKey('pad') ? json['pad'] : false;
 }
 
 List<String>? _createPhrases(Map<String, dynamic> json) {
   List<String>? phrases;
+
   if (json.containsKey('verses')) {
     phrases = <String>[];
 
@@ -203,22 +147,14 @@ String shorten(String phrase) {
 
 class Quaver {
   final int? pitch;
+
   final String? accidental;
   final bool triplet;
 
-  Quaver({this.pitch, this.accidental, this.triplet = false});
-
-  factory Quaver.fromJson(Map<String, dynamic> json) {
-    try {
-      return Quaver(
-        pitch: json['pitch'],
-        accidental: json['accidental'],
-        triplet: json.containsKey('triplet'),
-      );
-    } catch (e) {
-      return Quaver(pitch: 668);
-    }
-  }
+  Quaver.fromJson(Map<String, dynamic> json)
+      : pitch = json['pitch'],
+        accidental = json['accidental'],
+        triplet = json.containsKey('triplet');
 
   @override
   String toString() {
