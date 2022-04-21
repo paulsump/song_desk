@@ -3,10 +3,11 @@
 class Song {
   final List<Bar> bars;
 
-  final String key, genre;
+  final String key, genre, strum;
   final int swing, tempo;
 
-  late Map<int, String> keyChangesAtBigStaveIndices;
+  Map<int, String> keyChangesAtBigStaveIndices;
+  bool doubleTime;
 
   Song.fromJson(Map<String, dynamic> json)
       : bars =
@@ -14,13 +15,14 @@ class Song {
         key = json['key'],
         genre = json['genre'],
         swing = json.containsKey('swing') ? json['swing'] : 0,
-        tempo = json['tempo'] {
+        tempo = json['tempo'],
+        doubleTime = json.containsKey('doubleTime'),
+        strum = json['strum'],
+        keyChangesAtBigStaveIndices = {0: json['key']} {
     calcKeyChangesAtBigStaveIndices(json);
   }
 
   void calcKeyChangesAtBigStaveIndices(Map<String, dynamic> json) {
-    keyChangesAtBigStaveIndices = {0: key};
-
     if (json.containsKey('keyChanges')) {
       final keyChanges = json['keyChanges'];
 
@@ -55,12 +57,11 @@ class Song {
   }
 
   bool boomClapOrDoubleReggae() {
-    //TODO strum and doubleTime
-    // if 'BoomClap' in data.song['strum']:
-    // return True
-    //
-    // return 'doubleTime' in data.song and data.song['strum'] == 'Reggae'
-    return true;
+    if (strum.contains('BoomClap')) {
+      return true;
+    }
+
+    return doubleTime && strum == 'Reggae';
   }
 }
 

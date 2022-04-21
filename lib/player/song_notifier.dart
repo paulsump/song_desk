@@ -160,20 +160,17 @@ class SongNotifier with ChangeNotifier {
       _addQuavers(bar.vocal, song, b, pads, duration, scheduler, _pianoPlayer,
           null, '');
 
-      if (false) {
-        final backing = (bar.preferHarmony || bar.backing == null)
-            ? bar.harmony
-            : bar.backing;
+      // final backing = (bar.preferHarmony || bar.backing == null)
+      //     ? bar.harmony
+      //     : bar.backing;
+      //
+      // _addQuavers(backing, song, b, pads, duration, scheduler, _pianoPlayer,
+      //     null, '');
+      _addQuavers(bar.backing, song, b, pads, duration, scheduler, _pianoPlayer,
+          null, '');
 
-        _addQuavers(backing, song, b, pads, duration, scheduler, _pianoPlayer,
-            null, '');
-      } else {
-        _addQuavers(bar.backing, song, b, pads, duration, scheduler,
-            _pianoPlayer, null, '');
-
-        _addQuavers(bar.harmony, song, b, pads, duration, scheduler,
-            _pianoPlayer, null, '');
-      }
+      _addQuavers(bar.harmony, song, b, pads, duration, scheduler, _pianoPlayer,
+          null, '');
 
       _addQuavers(bar.snare, song, b, pads, duration, scheduler,
           (semitone) => _kick.audioPlayer, null, '');
