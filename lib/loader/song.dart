@@ -148,37 +148,9 @@ class Bar {
       pad = json['pad'];
     }
 
-    List<String>? phrases;
-    if (json.containsKey('verses')) {
-      phrases = <String>[];
-
-      var verses = json['verses'][0];
-
-      for (int i = 0; i < 4; ++i) {
-        final key = 'verse $i';
-
-        if (verses.containsKey(key)) {
-          final phrase = shorten(verses[key]);
-
-          if (phrase.isNotEmpty) {
-            phrases.add(phrase);
-          }
-        } else {
-          break;
-        }
-      }
-    } else if (json.containsKey('shareds')) {
-      phrases = <String>[];
-
-      var shared = json['shareds'][0]['shared'];
-      phrases.add(shorten(shared));
-    } else if (json.containsKey('restates')) {
-      // TODO restates
-    }
-
     return Bar(
       chord: json['chord'],
-      phrases: phrases,
+      phrases: _createPhrases(json),
       bass: bass,
       vocal: vocal,
       backing: backing,
@@ -189,19 +161,50 @@ class Bar {
       pad: pad,
     );
   }
+}
 
-  static String shorten(String phrase) {
-    var list = phrase.split('#');
+List<String>? _createPhrases(Map<String, dynamic> json) {
+  List<String>? phrases;
+  if (json.containsKey('verses')) {
+    phrases = <String>[];
 
-    phrase = list[0] == ';' ? '' : list[0];
+    var verses = json['verses'][0];
 
-    for (String deliminator in [' ', '/']) {
-      if (phrase.contains(deliminator)) {
-        phrase = phrase.split(deliminator)[0];
+    for (int i = 0; i < 4; ++i) {
+      final key = 'verse $i';
+
+      if (verses.containsKey(key)) {
+        final phrase = shorten(verses[key]);
+
+        if (phrase.isNotEmpty) {
+          phrases.add(phrase);
+        }
+      } else {
+        break;
       }
     }
-    return phrase;
+  } else if (json.containsKey('shareds')) {
+    phrases = <String>[];
+
+    var shared = json['shareds'][0]['shared'];
+    phrases.add(shorten(shared));
+  } else if (json.containsKey('restates')) {
+    // TODO restates
   }
+  return phrases;
+}
+
+String shorten(String phrase) {
+  var list = phrase.split('#');
+
+  phrase = list[0] == ';' ? '' : list[0];
+
+  for (String deliminator in [' ', '/']) {
+    if (phrase.contains(deliminator)) {
+      phrase = phrase.split(deliminator)[0];
+    }
+  }
+  return phrase;
 }
 
 class Quaver {
