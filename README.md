@@ -5,7 +5,6 @@
 
 ## TODO
 
-- persist last played song title
 Auto play at start,
 Auto play next song when finish.
 

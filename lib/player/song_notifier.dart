@@ -1,8 +1,11 @@
 // © 2022, Paul Sumpner <sumpner@hotmail.com>
 
+import 'dart:async';
+
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:song_desk/loader/convert.dart';
 import 'package:song_desk/loader/persist.dart';
 import 'package:song_desk/loader/song.dart';
@@ -19,8 +22,8 @@ SongNotifier getSongNotifier(BuildContext context, {required bool listen}) =>
 class SongNotifier with ChangeNotifier {
   Scheduler get currentScheduler => _schedulers[currentSongTitle]!;
 
-  String get currentSongTitle => titles[currentIndex];
-  int currentIndex = 0;
+  String get currentSongTitle => titles[_currentSongIndex];
+  int _currentSongIndex = 0;
 
   final _schedulers = <String, Scheduler>{};
   final _piano = Piano();
@@ -106,12 +109,13 @@ class SongNotifier with ChangeNotifier {
   }
 
   void playNext() {
-    ++currentIndex;
+    ++_currentSongIndex;
 
-    currentIndex %= _schedulers.entries.length;
+    _currentSongIndex %= _schedulers.entries.length;
     play();
 
     notifyListeners();
+    unawaited(_savePreferences());
   }
 
   void play() {
@@ -138,6 +142,7 @@ class SongNotifier with ChangeNotifier {
       _scheduleNotes(scheduler, entry.value!);
     }
 
+    await _loadPreferences();
     notifyListeners();
   }
 
@@ -250,5 +255,20 @@ class SongNotifier with ChangeNotifier {
           fun: fun),
     );
   }
-}
 
+  Future<void> _loadPreferences() async {
+    final preferences = await SharedPreferences.getInstance();
+
+    final int? currentSongIndex_ = preferences.getInt('currentSongIndex');
+
+    if (currentSongIndex_ != null) {
+      _currentSongIndex = currentSongIndex_;
+    }
+  }
+
+  Future<void> _savePreferences() async {
+    final preferences = await SharedPreferences.getInstance();
+
+    unawaited(preferences.setInt('currentSongIndex', _currentSongIndex));
+  }
+}
