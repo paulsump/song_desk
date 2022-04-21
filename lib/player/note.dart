@@ -63,7 +63,7 @@ class Piano {
       'b',
     ];
 
-    const octaves = [1, 2, 3, 4, 5, 6];
+    const octaves = [1, 2, 3, 4, 5, 6, 7];
 
     for (final octave in octaves) {
       for (final letter in letters) {

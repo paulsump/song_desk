@@ -172,8 +172,7 @@ class SongNotifier with ChangeNotifier {
           (semitone) => _kick.audioPlayer, null, '');
 
       _addQuavers(bar.arp, song, b, pads, duration, scheduler, (semitone) {
-        // TODO higher arps REquires top octave
-        final int i = semitone + 12 * 4;
+        final int i = semitone + 12 * 5;
 
         return _arp.list[i].audioPlayer;
       }, null, 'arp');
