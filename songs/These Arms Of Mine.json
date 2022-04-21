@@ -1,0 +1,4554 @@
+{
+    "bars": [
+        {
+            "arp": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "pad": true
+        },
+        {
+            "arp": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "pad": true
+        },
+        {
+            "arp": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "pad": true
+        },
+        {
+            "arp": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "pad": true
+        },
+        {
+            "arp": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "gaps": [
+                "backing"
+            ],
+            "shareds": [
+                {
+                    "pitch": 0,
+                    "shared": "These arms of"
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "gaps": [
+                "backing"
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "gaps": [
+                "backing"
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "blockEnd": true,
+            "gaps": [
+                "backing"
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -1
+                },
+                {
+                    "pitch": 1
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": -1
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "chord": "A",
+            "chordShape": "^^",
+            "repeat": "Left",
+            "verses": [
+                {
+                    "pitch": 0,
+                    "verse 0": "mine,",
+                    "verse 1": "mine,"
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": 6
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "pitch": 1
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": -1
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -1
+                },
+                {
+                    "pitch": 1
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": -4
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": 6
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "pitch": 1
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": -4
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "gaps": [
+                "backing"
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "verses": [
+                {
+                    "pitch": 0,
+                    "verse 0": "they are",
+                    "verse 1": "they are"
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -4
+                },
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": 0
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": -2
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -11
+                },
+                {},
+                {},
+                {}
+            ],
+            "chord": "E7/E",
+            "chordShape": "^^",
+            "verses": [
+                {
+                    "pitch": 0,
+                    "verse 0": "lonely",
+                    "verse 1": "burning"
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": 0
+                },
+                {
+                    "pitch": -2
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": -2
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -4
+                },
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": 0
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": 0
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -4
+                },
+                {},
+                {},
+                {}
+            ],
+            "chord": "E7",
+            "chordShape": "^^",
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "accidental": "sharp",
+                    "pitch": -5
+                },
+                {
+                    "accidental": "natural",
+                    "pitch": -2
+                },
+                {
+                    "accidental": "flat",
+                    "pitch": 0
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "accidental": "flat",
+                    "pitch": 0
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "bass": [
+                {
+                    "accidental": "sharp",
+                    "pitch": -5
+                },
+                {},
+                {},
+                {}
+            ],
+            "chord": "D#",
+            "chordShape": "^^",
+            "gaps": [
+                "backing"
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -5
+                },
+                {
+                    "pitch": -3
+                },
+                {
+                    "pitch": -1
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": 2
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -5
+                },
+                {},
+                {},
+                {}
+            ],
+            "chord": "D",
+            "chordShape": "^^",
+            "verses": [
+                {
+                    "pitch": 0,
+                    "verse 0": "Lonely and",
+                    "verse 1": "Burning from"
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": -1
+                },
+                {
+                    "pitch": -3
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": 2
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -5
+                },
+                {
+                    "pitch": -3
+                },
+                {
+                    "pitch": -1
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": 2
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -5
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": -1
+                },
+                {
+                    "pitch": -3
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": 2
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "gaps": [
+                "backing"
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "verses": [
+                {
+                    "pitch": 0,
+                    "verse 0": "feeling",
+                    "verse 1": "wanting"
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -1
+                },
+                {
+                    "pitch": 1
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": 3
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "chord": "A",
+            "chordShape": "^^",
+            "verses": [
+                {
+                    "pitch": 0,
+                    "verse 0": "blue.  These arms of",
+                    "verse 1": "you.  These arms of"
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": 6
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "pitch": 1
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": 3
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -1
+                },
+                {
+                    "pitch": 1
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": -4
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": 6
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "pitch": 1
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": -4
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "gaps": [
+                "backing"
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -1
+                },
+                {
+                    "pitch": 1
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": -1
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "chord": "A",
+            "chordShape": "^^",
+            "verses": [
+                {
+                    "pitch": 0,
+                    "verse 0": "mine,",
+                    "verse 1": "mine,"
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": 6
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "pitch": 1
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": -1
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -1
+                },
+                {
+                    "pitch": 1
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": -1
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": 6
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "pitch": 1
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": -1
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "gaps": [
+                "backing"
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "verses": [
+                {
+                    "pitch": 0,
+                    "verse 0": "they are",
+                    "verse 1": "they are"
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -4
+                },
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": 0
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": -2
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -11
+                },
+                {},
+                {},
+                {}
+            ],
+            "chord": "E7/E",
+            "chordShape": "^^",
+            "verses": [
+                {
+                    "pitch": 0,
+                    "verse 0": "yearning",
+                    "verse 1": "wanting"
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": 0
+                },
+                {
+                    "pitch": -2
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": -2
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -4
+                },
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": 0
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": 0
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -4
+                },
+                {},
+                {},
+                {}
+            ],
+            "chord": "E7",
+            "chordShape": "^^",
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "accidental": "sharp",
+                    "pitch": -5
+                },
+                {
+                    "accidental": "natural",
+                    "pitch": -2
+                },
+                {
+                    "accidental": "flat",
+                    "pitch": 0
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": -4
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -11
+                },
+                {},
+                {},
+                {}
+            ],
+            "chord": "D#",
+            "chordShape": "^^",
+            "gaps": [
+                "backing"
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -5
+                },
+                {
+                    "pitch": -3
+                },
+                {
+                    "pitch": -1
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": -3
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -5
+                },
+                {},
+                {},
+                {}
+            ],
+            "chord": "D",
+            "chordShape": "^^",
+            "verses": [
+                {
+                    "pitch": 0,
+                    "verse 0": "Yearning,  from",
+                    "verse 1": "Wanting"
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": -1
+                },
+                {
+                    "pitch": -3
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": -3
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -5
+                },
+                {
+                    "pitch": -3
+                },
+                {
+                    "pitch": -1
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": -3
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -5
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": -1
+                },
+                {
+                    "pitch": -3
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": -3
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "gaps": [
+                "backing"
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "verses": [
+                {
+                    "pitch": 0,
+                    "verse 0": "wanting",
+                    "verse 1": "to hold#to hold"
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -1
+                },
+                {
+                    "pitch": 1
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": -4
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "chord": "A",
+            "chordShape": "^^",
+            "verses": [
+                {
+                    "pitch": 0,
+                    "verse 0": "you.",
+                    "verse 1": "you."
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": 6
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "pitch": 1
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": -4
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -1
+                },
+                {
+                    "pitch": 1
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": -4
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": 6
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "pitch": 1
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": -4
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "blockEnd": true,
+            "gaps": [
+                "backing"
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "verses": [
+                {
+                    "pitch": 0,
+                    "verse 0": "And if you",
+                    "verse 1": "And if you"
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -1
+                },
+                {
+                    "pitch": 1
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "chord": "A",
+            "chordShape": "^^",
+            "harmony": [
+                {
+                    "pitch": 3
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "shareds": [
+                {
+                    "pitch": 0,
+                    "shared": "/Ah,"
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": 6
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "pitch": 1
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "harmony": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -1
+                },
+                {
+                    "pitch": 1
+                },
+                {
+                    "accidental": "natural",
+                    "pitch": 4
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "chord": "A+",
+            "chordShape": "^^",
+            "harmony": [
+                {
+                    "accidental": "natural",
+                    "pitch": 4
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "shareds": [
+                {
+                    "pitch": 0,
+                    "shared": "/ah,"
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": 6
+                },
+                {
+                    "accidental": "natural",
+                    "pitch": 4
+                },
+                {
+                    "pitch": 1
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "gaps": [
+                "backing"
+            ],
+            "harmony": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "shareds": [
+                {
+                    "pitch": 0,
+                    "shared": "Would"
+                },
+                {},
+                {},
+                {}
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -1
+                },
+                {
+                    "pitch": 1
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "chord": "A6",
+            "chordShape": "^^",
+            "harmony": [
+                {
+                    "pitch": 4
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "shareds": [
+                {
+                    "pitch": 0,
+                    "shared": "let them /ah,"
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": 4
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "pitch": 1
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "harmony": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -1
+                },
+                {
+                    "pitch": 1
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "chord": "A7",
+            "chordShape": "^^",
+            "harmony": [
+                {
+                    "accidental": "natural",
+                    "pitch": 5
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "shareds": [
+                {
+                    "pitch": 0,
+                    "shared": "hold you/ah."
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "accidental": "natural",
+                    "pitch": 5
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "pitch": 1
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "gaps": [
+                "backing"
+            ],
+            "harmony": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -5
+                },
+                {
+                    "pitch": -3
+                },
+                {
+                    "pitch": -1
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": 4
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -5
+                },
+                {},
+                {},
+                {}
+            ],
+            "chord": "D",
+            "chordShape": "^^",
+            "ending": "1",
+            "shareds": [
+                {
+                    "pitch": 0,
+                    "shared": "Oh"
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": -1
+                },
+                {
+                    "pitch": -3
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": 4
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "shareds": [
+                {
+                    "pitch": 0,
+                    "shared": "how"
+                },
+                {},
+                {},
+                {}
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -4
+                },
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": 0
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": 5
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -11
+                },
+                {},
+                {},
+                {}
+            ],
+            "chord": "E7/E",
+            "chordShape": "^^",
+            "shareds": [
+                {
+                    "pitch": 0,
+                    "shared": "grateful"
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": 0
+                },
+                {
+                    "pitch": -2
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": 5
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "gaps": [
+                "backing"
+            ],
+            "shareds": [
+                {
+                    "pitch": 0,
+                    "shared": "I will"
+                },
+                {},
+                {},
+                {}
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -1
+                },
+                {
+                    "pitch": 1
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": 3
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "chord": "A",
+            "chordShape": "^^",
+            "shareds": [
+                {
+                    "pitch": 0,
+                    "shared": "be."
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": 6
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "pitch": 1
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": 3
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -1
+                },
+                {
+                    "pitch": 1
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": 3
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "shareds": [
+                {
+                    "pitch": 0,
+                    "shared": "These arms of"
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": 6
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "pitch": 1
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": 3
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "blockEnd": true,
+            "gaps": [
+                "backing"
+            ],
+            "repeat": "Right",
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -5
+                },
+                {
+                    "pitch": -3
+                },
+                {
+                    "pitch": -1
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": 4
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -5
+                },
+                {},
+                {},
+                {}
+            ],
+            "chord": "D",
+            "chordShape": "^^",
+            "ending": "2",
+            "shareds": [
+                {
+                    "pitch": 0,
+                    "shared": "Oh"
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": -1
+                },
+                {
+                    "pitch": -3
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": 4
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "shareds": [
+                {
+                    "pitch": 0,
+                    "shared": "how"
+                },
+                {},
+                {},
+                {}
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -4
+                },
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": 0
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": 5
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -11
+                },
+                {},
+                {},
+                {}
+            ],
+            "chord": "E7/E",
+            "chordShape": "_ ",
+            "shareds": [
+                {
+                    "pitch": 0,
+                    "shared": "grateful"
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": 0
+                },
+                {
+                    "pitch": -2
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": 5
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "gaps": [
+                "backing"
+            ],
+            "shareds": [
+                {
+                    "pitch": 0,
+                    "shared": "I will"
+                },
+                {},
+                {},
+                {}
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -1
+                },
+                {
+                    "pitch": 1
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": 3
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "chord": "A",
+            "chordShape": "^^",
+            "shareds": [
+                {
+                    "pitch": 0,
+                    "shared": "be."
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": 6
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "pitch": 1
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": 3
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -1
+                },
+                {
+                    "pitch": 1
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": 3
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "chord": "A7",
+            "chordShape": "__",
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "accidental": "natural",
+                    "pitch": 5
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "pitch": 1
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": 3
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "blockEnd": true,
+            "gaps": [
+                "backing"
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -5
+                },
+                {
+                    "pitch": -3
+                },
+                {
+                    "pitch": -1
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": -1
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -5
+                },
+                {},
+                {},
+                {}
+            ],
+            "chord": "D",
+            "chordShape": " _",
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": -1
+                },
+                {
+                    "pitch": -3
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": -1
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -4
+                },
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": 0
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": 0
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -11
+                },
+                {},
+                {},
+                {}
+            ],
+            "chord": "E7/E",
+            "chordShape": "_ ",
+            "shareds": [
+                {
+                    "pitch": 0,
+                    "shared": "Come on,"
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": 0
+                },
+                {
+                    "pitch": -2
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": 0
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "gaps": [
+                "backing"
+            ],
+            "shareds": [
+                {
+                    "pitch": 0,
+                    "shared": "come on"
+                },
+                {},
+                {},
+                {}
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -1
+                },
+                {
+                    "pitch": 1
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": -1
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "chord": "A",
+            "chordShape": "__",
+            "shareds": [
+                {
+                    "pitch": 0,
+                    "shared": "baby"
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": 6
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "pitch": 1
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": -1
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -1
+                },
+                {
+                    "pitch": 1
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "accidental": "natural",
+                    "pitch": -2
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "chord": "A7",
+            "chordShape": "__",
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "accidental": "natural",
+                    "pitch": 5
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "pitch": 1
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "accidental": "natural",
+                    "fakeAccidental": "natural",
+                    "pitch": -2
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "gaps": [
+                "backing"
+            ],
+            "shareds": [
+                {
+                    "pitch": 0,
+                    "shared": "Just be my #Just be my"
+                },
+                {},
+                {},
+                {}
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -5
+                },
+                {
+                    "pitch": -3
+                },
+                {
+                    "pitch": -1
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": -1
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -5
+                },
+                {},
+                {},
+                {}
+            ],
+            "chord": "D",
+            "chordShape": " _",
+            "shareds": [
+                {
+                    "pitch": 0,
+                    "shared": "woman,"
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": -1
+                },
+                {
+                    "pitch": -3
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": -1
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -4
+                },
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": 0
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": 0
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -11
+                },
+                {},
+                {},
+                {}
+            ],
+            "chord": "E7/E",
+            "chordShape": "_ ",
+            "shareds": [
+                {
+                    "pitch": 0,
+                    "shared": "Just be my"
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": 0
+                },
+                {
+                    "pitch": -2
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": 0
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "gaps": [
+                "backing"
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -1
+                },
+                {
+                    "pitch": 1
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": -1
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "chord": "A",
+            "chordShape": "__",
+            "shareds": [
+                {
+                    "pitch": 0,
+                    "shared": "lover."
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": 6
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "pitch": 1
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": -1
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -1
+                },
+                {
+                    "pitch": 1
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "accidental": "natural",
+                    "pitch": -2
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "chord": "A7",
+            "chordShape": "__",
+            "shareds": [
+                {
+                    "pitch": 0,
+                    "shared": "Oh,"
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "accidental": "natural",
+                    "pitch": 5
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "pitch": 1
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "accidental": "natural",
+                    "fakeAccidental": "natural",
+                    "pitch": -2
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "gaps": [
+                "backing"
+            ],
+            "shareds": [
+                {
+                    "pitch": 0,
+                    "shared": "I need some-#I need some-"
+                },
+                {},
+                {},
+                {}
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -5
+                },
+                {
+                    "pitch": -3
+                },
+                {
+                    "pitch": -1
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": -1
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -5
+                },
+                {},
+                {},
+                {}
+            ],
+            "chord": "D",
+            "chordShape": " _",
+            "shareds": [
+                {
+                    "pitch": 0,
+                    "shared": "-body,"
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": -1
+                },
+                {
+                    "pitch": -3
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": -1
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -4
+                },
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": 0
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": 0
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -11
+                },
+                {},
+                {},
+                {}
+            ],
+            "chord": "E7/E",
+            "chordShape": "_ ",
+            "shareds": [
+                {
+                    "pitch": 0,
+                    "shared": "Someone! to"
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": 0
+                },
+                {
+                    "pitch": -2
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": 0
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "gaps": [
+                "backing"
+            ],
+            "shareds": [
+                {
+                    "pitch": 0,
+                    "shared": "treat me"
+                },
+                {},
+                {},
+                {}
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -1
+                },
+                {
+                    "pitch": 1
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": -1
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "chord": "A",
+            "chordShape": "__",
+            "shareds": [
+                {
+                    "pitch": 0,
+                    "shared": "right."
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": 6
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "pitch": 1
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": -1
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -1
+                },
+                {
+                    "pitch": 1
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "accidental": "natural",
+                    "pitch": -2
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "chord": "A7",
+            "chordShape": "__",
+            "shareds": [
+                {
+                    "pitch": 0,
+                    "shared": "Wo,"
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "accidental": "natural",
+                    "pitch": 5
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "pitch": 1
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "accidental": "natural",
+                    "fakeAccidental": "natural",
+                    "pitch": -2
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "gaps": [
+                "backing"
+            ],
+            "shareds": [
+                {
+                    "pitch": 0,
+                    "shared": "I need your"
+                },
+                {},
+                {},
+                {}
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -5
+                },
+                {
+                    "pitch": -3
+                },
+                {
+                    "pitch": -1
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": -1
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -5
+                },
+                {},
+                {},
+                {}
+            ],
+            "chord": "D",
+            "chordShape": " _",
+            "shareds": [
+                {
+                    "pitch": 0,
+                    "shared": "warm"
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": -1
+                },
+                {
+                    "pitch": -3
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": -1
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -4
+                },
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": 0
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": 0
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -11
+                },
+                {},
+                {},
+                {}
+            ],
+            "chord": "E7/E",
+            "chordShape": "_ ",
+            "shareds": [
+                {
+                    "pitch": 0,
+                    "shared": "loving arms to hold me tight.#loving arms to hold me tight."
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": 0
+                },
+                {
+                    "pitch": -2
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": 0
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "gaps": [
+                "backing"
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -1
+                },
+                {
+                    "pitch": 1
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": -1
+                },
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "chord": "A",
+            "chordShape": "__",
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": 6
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "pitch": 1
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -1
+                },
+                {
+                    "pitch": 1
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": 6
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "pitch": 1
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "backing": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ],
+            "gaps": [
+                "backing"
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "songEnd": true,
+            "vocal": [
+                {},
+                {},
+                {},
+                {
+                    "triplet": true
+                }
+            ]
+        }
+    ],
+    "borb": "backing",
+    "camden": false,
+    "composer": "Otis Redding",
+    "genre": "EarlySoul",
+    "key": "A",
+    "majorKey": true,
+    "mum": true,
+    "origKey": "Bb",
+    "singKey": "A",
+    "source1": "https://tabs.ultimate-guitar.com/tab/otis-redding/these-arms-of-mine-chords-81839",
+    "source2": "",
+    "source3": "",
+    "stars": 3,
+    "staveLabels": [
+        "Acapella",
+        "Verse",
+        "",
+        "",
+        "",
+        "Chorus",
+        "",
+        "",
+        "Bridge",
+        "",
+        "",
+        ""
+    ],
+    "strum": "Triplet",
+    "tempo": 110,
+    "words": 1,
+    "youtube": "https://www.youtube.com/watch?v=aUaO50nWnvg&list=PLcYIUjYxFNR6pwiy_OaAo0Xz0GuJ69nYg&index=1&ab_channel=PeterJohnson"
+}

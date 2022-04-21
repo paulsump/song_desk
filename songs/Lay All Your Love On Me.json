@@ -1,0 +1,4367 @@
+{
+    "bars": [
+        {
+            "arp": [
+                {
+                    "pitch": -4
+                },
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": 0
+                },
+                {
+                    "pitch": 2
+                }
+            ],
+            "chord": "E-7/E",
+            "chordShape": "^^",
+            "gaps": [
+                "backing"
+            ],
+            "vocal": [
+                {
+                    "lyric": "",
+                    "pitch": -2
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": 0
+                },
+                {
+                    "accidental": "sharp",
+                    "pitch": 2
+                },
+                {
+                    "pitch": 4
+                },
+                {
+                    "pitch": 7
+                }
+            ],
+            "chord": "B",
+            "chordShape": "^^",
+            "gaps": [
+                "backing"
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {
+                    "lyric": "",
+                    "pitch": -3
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -4
+                },
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": 4
+                }
+            ],
+            "chord": "E-9",
+            "chordShape": "^^",
+            "gaps": [
+                "backing"
+            ],
+            "vocal": [
+                {
+                    "lyric": "",
+                    "pitch": -4
+                },
+                {},
+                {
+                    "lyric": "",
+                    "pitch": -3
+                },
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": 0
+                },
+                {
+                    "accidental": "sharp",
+                    "pitch": 2
+                },
+                {
+                    "pitch": 4
+                },
+                {
+                    "pitch": 6
+                }
+            ],
+            "chord": "B7",
+            "chordShape": "^^",
+            "gaps": [
+                "backing"
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {
+                    "lyric": "",
+                    "pitch": -2
+                },
+                {},
+                {
+                    "lyric": "",
+                    "pitch": -1
+                },
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": 1
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "pitch": 5
+                },
+                {
+                    "pitch": 8
+                }
+            ],
+            "chord": "C",
+            "chordShape": "^^",
+            "gaps": [
+                "backing"
+            ],
+            "vocal": [
+                {
+                    "lyric": "",
+                    "pitch": -2
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {},
+                {
+                    "pitch": 5
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "pitch": 1
+                }
+            ],
+            "gaps": [
+                "backing"
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": 0
+                },
+                {
+                    "accidental": "sharp",
+                    "pitch": 2
+                },
+                {
+                    "pitch": 4
+                },
+                {
+                    "pitch": 7
+                }
+            ],
+            "chord": "B",
+            "chordShape": "^^",
+            "gaps": [
+                "backing"
+            ],
+            "vocal": [
+                {
+                    "lyric": "",
+                    "pitch": -3
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {},
+                {
+                    "pitch": 4
+                },
+                {
+                    "accidental": "sharp",
+                    "pitch": 2
+                },
+                {
+                    "pitch": 0
+                }
+            ],
+            "blockEnd": true,
+            "gaps": [
+                "backing"
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -4
+                },
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": 0
+                },
+                {
+                    "pitch": 2
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": -2
+                },
+                {},
+                {},
+                {}
+            ],
+            "bass": [
+                {
+                    "pitch": -4
+                },
+                {},
+                {},
+                {}
+            ],
+            "chord": "E-7",
+            "chordShape": "^^"
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -5
+                },
+                {
+                    "pitch": 0
+                },
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": 4
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": -1
+                },
+                {},
+                {
+                    "pitch": 0
+                },
+                {}
+            ],
+            "bass": [
+                {
+                    "pitch": -3
+                },
+                {},
+                {
+                    "pitch": -2
+                },
+                {}
+            ],
+            "chord": "GM7/D",
+            "chordShape": " ^",
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": 1
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "pitch": 5
+                },
+                {
+                    "pitch": 6
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": -1
+                },
+                {},
+                {},
+                {}
+            ],
+            "bass": [
+                {
+                    "pitch": -6
+                },
+                {},
+                {},
+                {}
+            ],
+            "chord": "C6",
+            "chordShape": " ^"
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -5
+                },
+                {
+                    "pitch": -3
+                },
+                {
+                    "pitch": -1
+                },
+                {
+                    "pitch": 2
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": -1
+                },
+                {},
+                {},
+                {}
+            ],
+            "bass": [
+                {
+                    "pitch": -5
+                },
+                {},
+                {},
+                {}
+            ],
+            "chord": "D",
+            "chordShape": "^^",
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": 0
+                },
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": 4
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": -2
+                },
+                {},
+                {},
+                {}
+            ],
+            "bass": [
+                {
+                    "pitch": -2
+                },
+                {},
+                {},
+                {}
+            ],
+            "chord": "GM7",
+            "chordShape": " ^"
+        },
+        {
+            "arp": [
+                {},
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": 0
+                },
+                {
+                    "pitch": -2
+                }
+            ],
+            "gaps": [
+                "backing"
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": 0
+                },
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": 4
+                }
+            ],
+            "gaps": [
+                "backing"
+            ]
+        },
+        {
+            "arp": [
+                {},
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": 0
+                },
+                {
+                    "pitch": -2
+                }
+            ],
+            "blockEnd": true,
+            "gaps": [
+                "backing"
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -4
+                },
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": 4
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": 3
+                },
+                {},
+                {},
+                {}
+            ],
+            "bass": [
+                {
+                    "pitch": -11
+                },
+                {},
+                {},
+                {}
+            ],
+            "chord": "E-9/E",
+            "chordShape": "^^",
+            "guitar": [
+                {
+                    "lyric": "",
+                    "pitch": -4
+                },
+                {},
+                {},
+                {}
+            ],
+            "repeat": "Left"
+        },
+        {
+            "arp": [
+                {
+                    "pitch": 0
+                },
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": 4
+                }
+            ],
+            "bass": [
+                {},
+                {},
+                {
+                    "pitch": -11
+                },
+                {}
+            ],
+            "chord": "E-9/B",
+            "chordShape": "^^",
+            "gaps": [
+                "backing"
+            ],
+            "guitar": [
+                {
+                    "lyric": "",
+                    "pitch": 0
+                },
+                {},
+                {},
+                {}
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -4
+                },
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": 4
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": 0
+                },
+                {},
+                {
+                    "accidental": "flat",
+                    "pitch": 0
+                },
+                {}
+            ],
+            "bass": [
+                {
+                    "pitch": -4
+                },
+                {
+                    "pitch": -5
+                },
+                {
+                    "pitch": -4
+                },
+                {}
+            ],
+            "chord": "E-9",
+            "chordShape": "^^",
+            "guitar": [
+                {
+                    "lyric": "",
+                    "pitch": 3
+                },
+                {
+                    "lyric": "",
+                    "pitch": 2
+                },
+                {
+                    "lyric": "",
+                    "pitch": 3
+                },
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": 0
+                },
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": 4
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": 2
+                },
+                {},
+                {
+                    "pitch": 3
+                },
+                {}
+            ],
+            "bass": [
+                {
+                    "pitch": -7
+                },
+                {},
+                {
+                    "pitch": -7
+                },
+                {}
+            ],
+            "chord": "E-9/B",
+            "chordShape": "^^",
+            "guitar": [
+                {
+                    "lyric": "",
+                    "pitch": 0
+                },
+                {},
+                {
+                    "lyric": "",
+                    "pitch": 0
+                },
+                {}
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -4
+                },
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": 4
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": 0
+                },
+                {
+                    "pitch": -1
+                },
+                {
+                    "pitch": 0
+                },
+                {}
+            ],
+            "bass": [
+                {
+                    "pitch": -11
+                },
+                {},
+                {},
+                {}
+            ],
+            "chord": "E-9/E",
+            "chordShape": "^^"
+        },
+        {
+            "arp": [
+                {},
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": -4
+                }
+            ],
+            "bass": [
+                {},
+                {},
+                {
+                    "pitch": -11
+                },
+                {}
+            ],
+            "chordShape": "^^",
+            "gaps": [
+                "backing"
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -4
+                },
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": 4
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": 0
+                },
+                {},
+                {
+                    "accidental": "flat",
+                    "pitch": 0
+                },
+                {}
+            ],
+            "bass": [
+                {
+                    "pitch": -4
+                },
+                {
+                    "pitch": -5
+                },
+                {
+                    "pitch": -4
+                },
+                {}
+            ],
+            "chordShape": "^^"
+        },
+        {
+            "arp": [
+                {},
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": -4
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": -1
+                },
+                {},
+                {
+                    "pitch": -2
+                },
+                {}
+            ],
+            "bass": [
+                {
+                    "pitch": -7
+                },
+                {},
+                {
+                    "pitch": -7
+                },
+                {}
+            ],
+            "blockEnd": true,
+            "chordShape": "^^",
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -4
+                },
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": 4
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": 3
+                },
+                {},
+                {},
+                {}
+            ],
+            "bass": [
+                {},
+                {
+                    "pitch": -4
+                },
+                {
+                    "pitch": -4
+                },
+                {
+                    "pitch": -2
+                }
+            ],
+            "chord": "E-9/E",
+            "chordShape": "^^",
+            "verses": [
+                {
+                    "pitch": 0,
+                    "verse 0": "It was like",
+                    "verse 1": "I've had a",
+                    "verse 2": ""
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {
+                    "lyric": "",
+                    "pitch": 0
+                },
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {},
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": -4
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": -7
+                },
+                {
+                    "pitch": -7
+                },
+                {}
+            ],
+            "gaps": [
+                "backing"
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "verses": [
+                {
+                    "pitch": 0,
+                    "verse 0": "shooting a sitting duck.",
+                    "verse 1": "few little love affairs.",
+                    "verse 2": ""
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -4
+                },
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": 4
+                }
+            ],
+            "bass": [
+                {},
+                {
+                    "pitch": -4
+                },
+                {
+                    "pitch": -4
+                },
+                {
+                    "pitch": -2
+                }
+            ],
+            "chordShape": "^^",
+            "gaps": [
+                "backing"
+            ]
+        },
+        {
+            "arp": [
+                {},
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": -4
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": 2
+                },
+                {},
+                {
+                    "pitch": 3
+                },
+                {}
+            ],
+            "bass": [
+                {
+                    "pitch": -2
+                },
+                {
+                    "accidental": "flat",
+                    "pitch": 0
+                },
+                {
+                    "fakeAccidental": "natural",
+                    "pitch": 0
+                },
+                {}
+            ],
+            "chordShape": "^^",
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -4
+                },
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": 4
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": 0
+                },
+                {
+                    "pitch": -1
+                },
+                {
+                    "pitch": 0
+                },
+                {}
+            ],
+            "bass": [
+                {},
+                {
+                    "pitch": -4
+                },
+                {
+                    "pitch": -4
+                },
+                {
+                    "pitch": -2
+                }
+            ],
+            "chord": "E-9/E",
+            "chordShape": "^^",
+            "verses": [
+                {
+                    "pitch": 0,
+                    "verse 0": "A little small talk, a smile, and, baby,",
+                    "verse 1": "They didn't last very long and they've been",
+                    "verse 2": ""
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {
+                    "lyric": "",
+                    "pitch": 0
+                },
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {},
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": -4
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": -7
+                },
+                {
+                    "pitch": -7
+                },
+                {}
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -4
+                },
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": 4
+                }
+            ],
+            "bass": [
+                {},
+                {
+                    "pitch": -4
+                },
+                {
+                    "pitch": -4
+                },
+                {
+                    "pitch": -2
+                }
+            ],
+            "chordShape": "^^",
+            "gaps": [
+                "backing"
+            ],
+            "vocal": [
+                {
+                    "lyric": "",
+                    "pitch": 2
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {},
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": -4
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": -1
+                },
+                {},
+                {
+                    "pitch": -2
+                },
+                {}
+            ],
+            "bass": [
+                {
+                    "pitch": -2
+                },
+                {
+                    "accidental": "flat",
+                    "pitch": 0
+                },
+                {
+                    "fakeAccidental": "natural",
+                    "pitch": 0
+                },
+                {}
+            ],
+            "chordShape": "^^",
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -5
+                },
+                {
+                    "pitch": -3
+                },
+                {
+                    "pitch": -1
+                },
+                {
+                    "pitch": 2
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": 2
+                },
+                {},
+                {},
+                {}
+            ],
+            "bass": [
+                {},
+                {
+                    "pitch": -5
+                },
+                {
+                    "pitch": -5
+                },
+                {
+                    "pitch": -3
+                }
+            ],
+            "chord": "D",
+            "chordShape": "^^",
+            "guitar": [
+                {
+                    "lyric": "",
+                    "pitch": 2
+                },
+                {},
+                {},
+                {}
+            ],
+            "verses": [
+                {
+                    "pitch": 0,
+                    "verse 0": "I was stuck.",
+                    "verse 1": "pretty scarce.",
+                    "verse 2": ""
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -1
+                },
+                {
+                    "pitch": -3
+                },
+                {
+                    "pitch": -1
+                },
+                {
+                    "pitch": 2
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -3
+                },
+                {
+                    "pitch": -8
+                },
+                {
+                    "pitch": -8
+                },
+                {}
+            ],
+            "chord": "D/A",
+            "chordShape": "^^",
+            "guitar": [
+                {
+                    "lyric": "",
+                    "pitch": 6
+                },
+                {},
+                {},
+                {}
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -5
+                },
+                {
+                    "pitch": -3
+                },
+                {
+                    "pitch": -1
+                },
+                {
+                    "pitch": 2
+                }
+            ],
+            "bass": [
+                {},
+                {
+                    "pitch": -5
+                },
+                {
+                    "pitch": -5
+                },
+                {
+                    "pitch": -3
+                }
+            ],
+            "chord": "D",
+            "chordShape": "^^",
+            "gaps": [
+                "backing"
+            ],
+            "guitar": [
+                {
+                    "lyric": "",
+                    "pitch": 2
+                },
+                {
+                    "lyric": "",
+                    "pitch": 2
+                },
+                {
+                    "lyric": "",
+                    "pitch": 2
+                },
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -1
+                },
+                {
+                    "pitch": -3
+                },
+                {
+                    "pitch": -1
+                },
+                {
+                    "pitch": 2
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "pitch": 4
+                },
+                {
+                    "pitch": 5
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -3
+                },
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": -1
+                },
+                {}
+            ],
+            "blockEnd": true,
+            "chord": "D/A",
+            "chordShape": "^^",
+            "guitar": [
+                {
+                    "lyric": "",
+                    "pitch": -1
+                },
+                {},
+                {},
+                {}
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -4
+                },
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": 0
+                },
+                {
+                    "pitch": 2
+                }
+            ],
+            "bass": [
+                {},
+                {
+                    "pitch": -4
+                },
+                {
+                    "pitch": -4
+                },
+                {
+                    "pitch": -2
+                }
+            ],
+            "chord": "E-7/E",
+            "chordShape": "^^",
+            "pad": true
+        },
+        {
+            "bass": [
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": -7
+                },
+                {
+                    "pitch": -7
+                },
+                {}
+            ],
+            "pad": true
+        },
+        {
+            "bass": [
+                {},
+                {
+                    "pitch": -4
+                },
+                {
+                    "pitch": -4
+                },
+                {
+                    "pitch": -2
+                }
+            ],
+            "pad": true
+        },
+        {
+            "bass": [
+                {
+                    "pitch": -2
+                },
+                {
+                    "accidental": "flat",
+                    "pitch": 0
+                },
+                {
+                    "fakeAccidental": "natural",
+                    "pitch": 0
+                },
+                {}
+            ],
+            "pad": true
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -4
+                },
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": 4
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": 3
+                },
+                {},
+                {},
+                {}
+            ],
+            "bass": [
+                {},
+                {
+                    "pitch": -4
+                },
+                {
+                    "pitch": -4
+                },
+                {
+                    "pitch": -2
+                }
+            ],
+            "chord": "E-9/E",
+            "chordShape": "^^",
+            "verses": [
+                {
+                    "pitch": 0,
+                    "verse 0": "I still#I still don't",
+                    "verse 1": "I used to",
+                    "verse 2": ""
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {},
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": -4
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": -7
+                },
+                {
+                    "pitch": -7
+                },
+                {}
+            ],
+            "chordShape": "^^",
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "verses": [
+                {
+                    "pitch": 0,
+                    "verse 0": "know what you've",
+                    "verse 1": "think that was",
+                    "verse 2": ""
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -4
+                },
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": 4
+                }
+            ],
+            "bass": [
+                {},
+                {
+                    "pitch": -4
+                },
+                {
+                    "pitch": -4
+                },
+                {
+                    "pitch": -2
+                }
+            ],
+            "chordShape": "^^",
+            "gaps": [
+                "backing"
+            ],
+            "verses": [
+                {
+                    "pitch": 0,
+                    "verse 0": "done with#done with me",
+                    "verse 1": "sensible.",
+                    "verse 2": ""
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {},
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": -4
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": 2
+                },
+                {},
+                {
+                    "pitch": 3
+                },
+                {}
+            ],
+            "bass": [
+                {
+                    "pitch": -2
+                },
+                {
+                    "accidental": "flat",
+                    "pitch": 0
+                },
+                {
+                    "fakeAccidental": "natural",
+                    "pitch": 0
+                },
+                {}
+            ],
+            "chordShape": "^^",
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -4
+                },
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": 4
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": 0
+                },
+                {
+                    "pitch": -1
+                },
+                {
+                    "pitch": 0
+                },
+                {}
+            ],
+            "bass": [
+                {},
+                {
+                    "pitch": -4
+                },
+                {
+                    "pitch": -4
+                },
+                {
+                    "pitch": -2
+                }
+            ],
+            "chord": "E-9/E",
+            "chordShape": "^^",
+            "verses": [
+                {
+                    "pitch": 0,
+                    "verse 0": "A grown up",
+                    "verse 1": "It makes#It makes the",
+                    "verse 2": ""
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {},
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": -4
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": -7
+                },
+                {
+                    "pitch": -7
+                },
+                {}
+            ],
+            "chordShape": "^^",
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "verses": [
+                {
+                    "pitch": 0,
+                    "verse 0": "man shouldn't",
+                    "verse 1": "truth ev.#truth even",
+                    "verse 2": ""
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -4
+                },
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": 4
+                }
+            ],
+            "bass": [
+                {},
+                {
+                    "pitch": -4
+                },
+                {
+                    "pitch": -4
+                },
+                {
+                    "pitch": -2
+                }
+            ],
+            "chordShape": "^^",
+            "gaps": [
+                "backing"
+            ],
+            "verses": [
+                {
+                    "pitch": 0,
+                    "verse 0": "ever fall so",
+                    "verse 1": "more incompre-",
+                    "verse 2": ""
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {},
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": -4
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": 6
+                },
+                {},
+                {
+                    "pitch": 5
+                },
+                {}
+            ],
+            "bass": [
+                {
+                    "pitch": -2
+                },
+                {
+                    "accidental": "flat",
+                    "pitch": 0
+                },
+                {
+                    "fakeAccidental": "natural",
+                    "pitch": 0
+                },
+                {}
+            ],
+            "chordShape": "^^",
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -5
+                },
+                {
+                    "pitch": -3
+                },
+                {
+                    "pitch": -1
+                },
+                {
+                    "pitch": 2
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": 2
+                },
+                {},
+                {},
+                {}
+            ],
+            "bass": [
+                {},
+                {
+                    "pitch": -5
+                },
+                {
+                    "pitch": -5
+                },
+                {
+                    "pitch": -3
+                }
+            ],
+            "chord": "D",
+            "chordShape": "^^",
+            "verses": [
+                {
+                    "pitch": 0,
+                    "verse 0": "easily.",
+                    "verse 1": "-hensible.",
+                    "verse 2": ""
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {},
+                {
+                    "pitch": -1
+                },
+                {
+                    "pitch": -3
+                },
+                {
+                    "pitch": -5
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -3
+                },
+                {
+                    "pitch": -8
+                },
+                {
+                    "pitch": -8
+                },
+                {}
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -5
+                },
+                {
+                    "pitch": -3
+                },
+                {
+                    "pitch": -1
+                },
+                {
+                    "pitch": 2
+                }
+            ],
+            "bass": [
+                {},
+                {
+                    "pitch": -5
+                },
+                {
+                    "pitch": -5
+                },
+                {
+                    "pitch": -3
+                }
+            ],
+            "gaps": [
+                "backing"
+            ]
+        },
+        {
+            "arp": [
+                {},
+                {
+                    "pitch": -1
+                },
+                {
+                    "pitch": -3
+                },
+                {
+                    "pitch": -5
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "pitch": 4
+                },
+                {
+                    "pitch": 5
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -3
+                },
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": -1
+                },
+                {}
+            ],
+            "blockEnd": true,
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "verses": [
+                {
+                    "pitch": 0,
+                    "verse 0": "I",
+                    "verse 1": "'Cause",
+                    "verse 2": ""
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "pad": true
+        },
+        {
+            "pad": true
+        },
+        {
+            "pad": true
+        },
+        {
+            "pad": true
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -4
+                },
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": 4
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": 3
+                },
+                {},
+                {},
+                {}
+            ],
+            "bass": [
+                {
+                    "pitch": -4
+                },
+                {},
+                {
+                    "pitch": -4
+                },
+                {}
+            ],
+            "chord": "E-9/E",
+            "chordShape": "^^",
+            "verses": [
+                {
+                    "pitch": 0,
+                    "verse 0": "feel a kind of",
+                    "verse 1": "everyth.#everything is",
+                    "verse 2": ""
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {},
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": -4
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -4
+                },
+                {},
+                {
+                    "pitch": -4
+                },
+                {}
+            ],
+            "gaps": [
+                "backing"
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "verses": [
+                {
+                    "pitch": 0,
+                    "verse 0": "fear,",
+                    "verse 1": "new,",
+                    "verse 2": ""
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -4
+                },
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": 4
+                }
+            ],
+            "backing": [
+                {},
+                {},
+                {
+                    "pitch": 3
+                },
+                {
+                    "pitch": 4
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -4
+                },
+                {},
+                {
+                    "pitch": -4
+                },
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {},
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": -4
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": 5
+                },
+                {
+                    "pitch": 4
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -4
+                },
+                {},
+                {
+                    "pitch": -4
+                },
+                {}
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "verses": [
+                {
+                    "pitch": 0,
+                    "verse 0": "when",
+                    "verse 1": "And",
+                    "verse 2": ""
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "accidental": "sharp",
+                    "pitch": -5
+                },
+                {
+                    "accidental": "sharp",
+                    "pitch": 2
+                },
+                {
+                    "pitch": 4
+                },
+                {
+                    "pitch": 6
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": 4
+                },
+                {},
+                {},
+                {}
+            ],
+            "bass": [
+                {
+                    "accidental": "sharp",
+                    "pitch": -5
+                },
+                {},
+                {
+                    "accidental": "sharp",
+                    "fakeAccidental": "sharp",
+                    "pitch": -5
+                },
+                {}
+            ],
+            "chord": "B7/D#",
+            "chordShape": "__",
+            "verses": [
+                {
+                    "pitch": 0,
+                    "verse 0": "I don't have you near#I don't have you near",
+                    "verse 1": "everything is you.#everything is you,",
+                    "verse 2": ""
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {
+                    "accidental": "sharp",
+                    "lyric": "",
+                    "pitch": 2
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": 0
+                },
+                {
+                    "accidental": "sharp",
+                    "pitch": 2
+                },
+                {
+                    "pitch": 4
+                },
+                {
+                    "pitch": 6
+                }
+            ],
+            "bass": [
+                {
+                    "accidental": "sharp",
+                    "fakeAccidental": "sharp",
+                    "pitch": -5
+                },
+                {},
+                {
+                    "accidental": "sharp",
+                    "fakeAccidental": "sharp",
+                    "pitch": -5
+                },
+                {}
+            ],
+            "chord": "B7",
+            "chordShape": "__",
+            "gaps": [
+                "backing"
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {
+                    "lyric": "",
+                    "pitch": 0
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "accidental": "sharp",
+                    "pitch": -5
+                },
+                {
+                    "accidental": "sharp",
+                    "pitch": 2
+                },
+                {
+                    "pitch": 4
+                },
+                {
+                    "pitch": 6
+                }
+            ],
+            "backing": [
+                {},
+                {},
+                {
+                    "pitch": 4
+                },
+                {
+                    "pitch": 5
+                }
+            ],
+            "bass": [
+                {
+                    "accidental": "sharp",
+                    "pitch": -5
+                },
+                {},
+                {
+                    "accidental": "sharp",
+                    "fakeAccidental": "sharp",
+                    "pitch": -5
+                },
+                {}
+            ],
+            "chord": "B7/D#",
+            "chordShape": "__",
+            "vocal": [
+                {
+                    "accidental": "sharp",
+                    "lyric": "",
+                    "pitch": 2
+                },
+                {
+                    "accidental": "sharp",
+                    "fakeAccidental": "sharp",
+                    "lyric": "",
+                    "pitch": 2
+                },
+                {
+                    "accidental": "sharp",
+                    "fakeAccidental": "sharp",
+                    "lyric": "",
+                    "pitch": 2
+                },
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": 0
+                },
+                {
+                    "accidental": "sharp",
+                    "pitch": 2
+                },
+                {
+                    "pitch": 4
+                },
+                {
+                    "pitch": 6
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": 6
+                },
+                {
+                    "pitch": 5
+                },
+                {
+                    "pitch": 4
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "bass": [
+                {
+                    "accidental": "sharp",
+                    "fakeAccidental": "sharp",
+                    "pitch": -5
+                },
+                {},
+                {
+                    "accidental": "sharp",
+                    "fakeAccidental": "sharp",
+                    "pitch": -5
+                },
+                {}
+            ],
+            "chord": "B7",
+            "chordShape": "__",
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {
+                    "lyric": "",
+                    "pitch": 0
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -4
+                },
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": 0
+                },
+                {
+                    "pitch": 3
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": 5
+                },
+                {},
+                {},
+                {}
+            ],
+            "bass": [
+                {
+                    "pitch": -4
+                },
+                {},
+                {
+                    "pitch": -4
+                },
+                {}
+            ],
+            "chord": "E-",
+            "chordShape": "^^",
+            "verses": [
+                {
+                    "pitch": 0,
+                    "verse 0": "Unsatisfied, I",
+                    "verse 1": "And all I've learned has",
+                    "verse 2": ""
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {},
+                {
+                    "pitch": 0
+                },
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": -4
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -4
+                },
+                {},
+                {
+                    "pitch": -4
+                },
+                {}
+            ],
+            "gaps": [
+                "backing"
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -3
+                },
+                {
+                    "accidental": "sharp",
+                    "pitch": 2
+                },
+                {
+                    "pitch": 6
+                },
+                {
+                    "pitch": 8
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": 6
+                },
+                {},
+                {},
+                {}
+            ],
+            "bass": [
+                {
+                    "pitch": -3
+                },
+                {},
+                {
+                    "pitch": -3
+                },
+                {}
+            ],
+            "chord": "B7b9/F#",
+            "chordShape": "^^",
+            "verses": [
+                {
+                    "pitch": 0,
+                    "verse 0": "skip my pride, I",
+                    "verse 1": "overturned. What",
+                    "verse 2": ""
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {},
+                {
+                    "pitch": 6
+                },
+                {
+                    "accidental": "sharp",
+                    "pitch": 2
+                },
+                {
+                    "pitch": -3
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -3
+                },
+                {},
+                {
+                    "pitch": -3
+                },
+                {}
+            ],
+            "gaps": [
+                "backing"
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": 0
+                },
+                {
+                    "pitch": 2
+                }
+            ],
+            "backing": [
+                {
+                    "pitch": 7
+                },
+                {},
+                {},
+                {}
+            ],
+            "bass": [
+                {
+                    "pitch": -2
+                },
+                {},
+                {
+                    "pitch": -2
+                },
+                {}
+            ],
+            "chord": "E-7/G",
+            "chordShape": " ^",
+            "verses": [
+                {
+                    "pitch": 0,
+                    "verse 0": "beg you,",
+                    "verse 1": "can I",
+                    "verse 2": ""
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {},
+                {
+                    "lyric": "",
+                    "pitch": 0
+                },
+                {
+                    "lyric": "",
+                    "pitch": 5
+                },
+                {
+                    "lyric": "",
+                    "pitch": 3
+                }
+            ]
+        },
+        {
+            "arp": [
+                {},
+                {
+                    "pitch": 0
+                },
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": -2
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -2
+                },
+                {},
+                {
+                    "pitch": -2
+                },
+                {}
+            ],
+            "gaps": [
+                "backing"
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "verses": [
+                {
+                    "pitch": 0,
+                    "verse 0": "dear.",
+                    "verse 1": "do?",
+                    "verse 2": ""
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -1
+                },
+                {
+                    "accidental": "sharp",
+                    "pitch": 1
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "pitch": 6
+                }
+            ],
+            "backing": [
+                {
+                    "accidental": "sharp",
+                    "pitch": 8
+                },
+                {},
+                {},
+                {}
+            ],
+            "bass": [
+                {
+                    "pitch": -1
+                },
+                {
+                    "pitch": -1
+                },
+                {
+                    "pitch": -1
+                },
+                {
+                    "pitch": -1
+                }
+            ],
+            "chord": "A",
+            "chordShape": "^^"
+        },
+        {
+            "arp": [
+                {},
+                {
+                    "pitch": 3
+                },
+                {
+                    "accidental": "sharp",
+                    "pitch": 1
+                },
+                {
+                    "pitch": -1
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -1
+                },
+                {
+                    "pitch": -1
+                },
+                {
+                    "pitch": -1
+                },
+                {
+                    "pitch": -1
+                }
+            ],
+            "gaps": [
+                "backing"
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -1
+                },
+                {
+                    "accidental": "sharp",
+                    "pitch": 1
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "pitch": 6
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "chordShape": "^^",
+            "harmony": [
+                {
+                    "pitch": 3
+                },
+                {},
+                {},
+                {}
+            ],
+            "shareds": [
+                {
+                    "pitch": 0,
+                    "shared": "Ooo/Ooo"
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {},
+                {
+                    "pitch": 3
+                },
+                {
+                    "accidental": "sharp",
+                    "pitch": 1
+                },
+                {
+                    "pitch": -1
+                }
+            ],
+            "blockEnd": true,
+            "gaps": [
+                "backing"
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "pad": true
+        },
+        {
+            "pad": true
+        },
+        {
+            "pad": true
+        },
+        {
+            "pad": true
+        },
+        {
+            "pad": true
+        },
+        {
+            "pad": true
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -4
+                },
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": 0
+                },
+                {
+                    "pitch": 2
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -4
+                },
+                {},
+                {
+                    "pitch": -4
+                },
+                {}
+            ],
+            "chord": "E-7/E",
+            "chordShape": "^^",
+            "harmony": [
+                {
+                    "pitch": 0
+                },
+                {},
+                {
+                    "pitch": 0
+                },
+                {}
+            ],
+            "shareds": [
+                {
+                    "pitch": 0,
+                    "shared": "Don't go/Don't go"
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {
+                    "lyric": "",
+                    "pitch": -2
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": 0
+                },
+                {
+                    "accidental": "sharp",
+                    "pitch": 2
+                },
+                {
+                    "pitch": 4
+                },
+                {
+                    "pitch": 7
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -4
+                },
+                {},
+                {
+                    "pitch": -4
+                },
+                {}
+            ],
+            "chord": "B",
+            "chordShape": "^^",
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -4
+                },
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": 4
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -4
+                },
+                {},
+                {
+                    "pitch": -4
+                },
+                {}
+            ],
+            "chord": "E-9",
+            "chordShape": "^^",
+            "harmony": [
+                {
+                    "pitch": 0
+                },
+                {},
+                {
+                    "pitch": 0
+                },
+                {}
+            ],
+            "shareds": [
+                {
+                    "pitch": 0,
+                    "shared": "wasting/Don't go wasting your emotion."
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": 0
+                },
+                {
+                    "accidental": "sharp",
+                    "pitch": 2
+                },
+                {
+                    "pitch": 4
+                },
+                {
+                    "pitch": 6
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -4
+                },
+                {},
+                {
+                    "pitch": -4
+                },
+                {}
+            ],
+            "chord": "B7",
+            "chordShape": "^^",
+            "harmony": [
+                {
+                    "pitch": 0
+                },
+                {
+                    "pitch": 0
+                },
+                {
+                    "pitch": 0
+                },
+                {
+                    "pitch": 0
+                }
+            ],
+            "shareds": [
+                {
+                    "pitch": 0,
+                    "shared": "your/"
+                },
+                {},
+                {},
+                {}
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": 1
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "pitch": 5
+                },
+                {
+                    "pitch": 8
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -6
+                },
+                {},
+                {
+                    "pitch": -6
+                },
+                {}
+            ],
+            "chord": "C",
+            "chordShape": "^^",
+            "harmony": [
+                {
+                    "pitch": 1
+                },
+                {},
+                {
+                    "pitch": 1
+                },
+                {}
+            ],
+            "shareds": [
+                {
+                    "pitch": 0,
+                    "shared": "emotion./"
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {},
+                {
+                    "pitch": 5
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "pitch": 1
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -6
+                },
+                {},
+                {
+                    "pitch": -6
+                },
+                {}
+            ],
+            "gaps": [
+                "backing"
+            ],
+            "harmony": [
+                {},
+                {},
+                {},
+                {
+                    "pitch": 1
+                }
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": 0
+                },
+                {
+                    "accidental": "sharp",
+                    "pitch": 2
+                },
+                {
+                    "pitch": 4
+                },
+                {
+                    "pitch": 7
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -7
+                },
+                {},
+                {
+                    "pitch": -7
+                },
+                {}
+            ],
+            "chord": "B",
+            "chordShape": "^^",
+            "gaps": [],
+            "harmony": [
+                {
+                    "pitch": 0
+                },
+                {},
+                {
+                    "pitch": 0
+                },
+                {}
+            ],
+            "shareds": [
+                {
+                    "pitch": 0,
+                    "shared": "/emotion."
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {},
+                {
+                    "pitch": 4
+                },
+                {
+                    "accidental": "sharp",
+                    "pitch": 2
+                },
+                {
+                    "pitch": 0
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -7
+                },
+                {},
+                {
+                    "pitch": -7
+                },
+                {}
+            ],
+            "gaps": [
+                "backing"
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -4
+                },
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": 0
+                },
+                {
+                    "pitch": 2
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -4
+                },
+                {},
+                {},
+                {}
+            ],
+            "chord": "E-7",
+            "chordShape": "^^",
+            "shareds": [
+                {
+                    "pitch": 0,
+                    "shared": "Lay"
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -5
+                },
+                {
+                    "pitch": 0
+                },
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": 4
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -3
+                },
+                {},
+                {
+                    "pitch": -2
+                },
+                {}
+            ],
+            "chord": "GM7/D",
+            "chordShape": " ^",
+            "harmony": [
+                {
+                    "pitch": 0
+                },
+                {
+                    "pitch": 1
+                },
+                {
+                    "pitch": 2
+                },
+                {
+                    "triplet": true
+                }
+            ],
+            "shareds": [
+                {
+                    "pitch": 0,
+                    "shared": "/Lay all your"
+                },
+                {},
+                {},
+                {}
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {
+                    "lyric": "",
+                    "pitch": -1
+                },
+                {},
+                {
+                    "lyric": "",
+                    "pitch": 0
+                },
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": 1
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "pitch": 5
+                },
+                {
+                    "pitch": 6
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -6
+                },
+                {},
+                {},
+                {}
+            ],
+            "chord": "C6",
+            "chordShape": " ^",
+            "harmony": [
+                {
+                    "pitch": 1
+                },
+                {},
+                {},
+                {}
+            ],
+            "shareds": [
+                {
+                    "pitch": 0,
+                    "shared": "/love"
+                },
+                {},
+                {},
+                {}
+            ],
+            "vocal": [
+                {
+                    "lyric": "",
+                    "pitch": -1
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -5
+                },
+                {
+                    "pitch": -3
+                },
+                {
+                    "pitch": -1
+                },
+                {
+                    "pitch": 2
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -5
+                },
+                {},
+                {},
+                {}
+            ],
+            "chord": "D",
+            "chordShape": "^^",
+            "harmony": [
+                {
+                    "pitch": 1
+                },
+                {},
+                {},
+                {}
+            ],
+            "shareds": [
+                {
+                    "pitch": 0,
+                    "shared": "/on"
+                },
+                {},
+                {},
+                {}
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": 0
+                },
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": 4
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -2
+                },
+                {},
+                {},
+                {}
+            ],
+            "chord": "GM7",
+            "chordShape": " ^",
+            "harmony": [
+                {
+                    "pitch": 0
+                },
+                {},
+                {},
+                {}
+            ],
+            "shareds": [
+                {
+                    "pitch": 0,
+                    "shared": "/me."
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {},
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": 0
+                },
+                {
+                    "pitch": -2
+                }
+            ],
+            "gaps": [
+                "backing"
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": 0
+                },
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": 4
+                }
+            ],
+            "gaps": [
+                "backing"
+            ]
+        },
+        {
+            "arp": [
+                {},
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": 0
+                },
+                {
+                    "pitch": -2
+                }
+            ],
+            "gaps": [
+                "backing"
+            ],
+            "repeat": "Right",
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -4
+                },
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": 0
+                },
+                {
+                    "pitch": 2
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -4
+                },
+                {},
+                {
+                    "pitch": -4
+                },
+                {}
+            ],
+            "chord": "E-7/E",
+            "chordShape": "^^",
+            "harmony": [
+                {
+                    "pitch": 0
+                },
+                {},
+                {},
+                {}
+            ],
+            "shareds": [
+                {
+                    "pitch": 0,
+                    "shared": "Don't go/Don't go"
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": 0
+                },
+                {
+                    "accidental": "sharp",
+                    "pitch": 2
+                },
+                {
+                    "pitch": 4
+                },
+                {
+                    "pitch": 7
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -4
+                },
+                {},
+                {
+                    "pitch": -4
+                },
+                {}
+            ],
+            "chord": "B",
+            "chordShape": "^^",
+            "harmony": [
+                {
+                    "pitch": 0
+                },
+                {},
+                {},
+                {}
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -4
+                },
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": 4
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -4
+                },
+                {},
+                {
+                    "pitch": -4
+                },
+                {}
+            ],
+            "chord": "E-9",
+            "chordShape": "^^",
+            "harmony": [
+                {
+                    "pitch": 0
+                },
+                {},
+                {
+                    "pitch": 0
+                },
+                {}
+            ],
+            "shareds": [
+                {
+                    "pitch": 0,
+                    "shared": "sharing your de-/sharing your de-"
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": 0
+                },
+                {
+                    "accidental": "sharp",
+                    "pitch": 2
+                },
+                {
+                    "pitch": 4
+                },
+                {
+                    "pitch": 6
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -4
+                },
+                {},
+                {
+                    "pitch": -4
+                },
+                {}
+            ],
+            "chord": "B7",
+            "chordShape": "^^",
+            "harmony": [
+                {
+                    "pitch": 0
+                },
+                {},
+                {
+                    "pitch": 0
+                },
+                {}
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": 1
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "pitch": 5
+                },
+                {
+                    "pitch": 8
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -6
+                },
+                {},
+                {
+                    "pitch": -6
+                },
+                {}
+            ],
+            "chord": "C",
+            "chordShape": "^^",
+            "harmony": [
+                {
+                    "pitch": 1
+                },
+                {},
+                {},
+                {}
+            ],
+            "shareds": [
+                {
+                    "pitch": 0,
+                    "shared": "-vo-/-vo-"
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {},
+                {
+                    "pitch": 5
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "pitch": 1
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -6
+                },
+                {},
+                {
+                    "pitch": -6
+                },
+                {}
+            ],
+            "gaps": [
+                "backing"
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": 0
+                },
+                {
+                    "accidental": "sharp",
+                    "pitch": 2
+                },
+                {
+                    "pitch": 4
+                },
+                {
+                    "pitch": 7
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -7
+                },
+                {},
+                {
+                    "pitch": -7
+                },
+                {}
+            ],
+            "chord": "B",
+            "chordShape": "^^",
+            "harmony": [
+                {
+                    "pitch": 0
+                },
+                {},
+                {},
+                {}
+            ],
+            "shareds": [
+                {
+                    "pitch": 0,
+                    "shared": "-tion./-tion."
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {},
+                {
+                    "pitch": 4
+                },
+                {
+                    "accidental": "sharp",
+                    "pitch": 2
+                },
+                {
+                    "pitch": 0
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -7
+                },
+                {},
+                {
+                    "pitch": -7
+                },
+                {}
+            ],
+            "gaps": [
+                "backing"
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -4
+                },
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": 0
+                },
+                {
+                    "pitch": 2
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -4
+                },
+                {},
+                {},
+                {}
+            ],
+            "chord": "E-7",
+            "chordShape": "^^",
+            "harmony": [
+                {
+                    "pitch": 0
+                },
+                {},
+                {},
+                {}
+            ],
+            "shareds": [
+                {
+                    "pitch": 0,
+                    "shared": "Save/Save"
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -5
+                },
+                {
+                    "pitch": 0
+                },
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": 4
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -3
+                },
+                {},
+                {
+                    "pitch": -2
+                },
+                {}
+            ],
+            "blind": true,
+            "chord": "GM7/D",
+            "chordShape": " ^",
+            "harmony": [
+                {
+                    "pitch": 1
+                },
+                {},
+                {
+                    "pitch": 2
+                },
+                {}
+            ],
+            "shareds": [
+                {
+                    "pitch": 0,
+                    "shared": "all your/ all your"
+                },
+                {},
+                {},
+                {}
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "accidental": "sharp",
+                    "pitch": 1
+                },
+                {
+                    "accidental": "sharp",
+                    "pitch": 1
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "pitch": 6
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -6
+                },
+                {},
+                {},
+                {}
+            ],
+            "blind": true,
+            "chord": "A/C#",
+            "chordShape": "^^",
+            "harmony": [
+                {
+                    "pitch": 1
+                },
+                {},
+                {},
+                {}
+            ],
+            "shareds": [
+                {
+                    "pitch": 0,
+                    "shared": "love/ love"
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": 1
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "pitch": 5
+                },
+                {
+                    "pitch": 6
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -5
+                },
+                {},
+                {},
+                {}
+            ],
+            "chord": "C6",
+            "chordShape": " ^",
+            "harmony": [
+                {
+                    "pitch": 1
+                },
+                {},
+                {},
+                {}
+            ],
+            "shareds": [
+                {
+                    "pitch": 0,
+                    "shared": "for /for"
+                },
+                {},
+                {},
+                {}
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": 0
+                },
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": 4
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -2
+                },
+                {},
+                {},
+                {}
+            ],
+            "blind": true,
+            "chord": "GM7",
+            "chordShape": "^ ",
+            "harmony": [
+                {
+                    "pitch": 0
+                },
+                {},
+                {},
+                {}
+            ],
+            "shareds": [
+                {
+                    "pitch": 0,
+                    "shared": "me./ me."
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {},
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": 0
+                },
+                {
+                    "pitch": -2
+                }
+            ],
+            "gaps": [
+                "backing"
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": 0
+                },
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": 4
+                }
+            ],
+            "gaps": [
+                "backing"
+            ]
+        },
+        {
+            "arp": [
+                {},
+                {
+                    "pitch": 2
+                },
+                {
+                    "pitch": 0
+                },
+                {
+                    "pitch": -2
+                }
+            ],
+            "gaps": [
+                "backing"
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "songEnd": true
+        }
+    ],
+    "borb": "backing",
+    "camden": true,
+    "composer": "ABBA",
+    "cool": true,
+    "genre": "Pop",
+    "key": "G",
+    "majorKey": false,
+    "me": true,
+    "mum": true,
+    "notesOn": [
+        "verses"
+    ],
+    "origKey": "F",
+    "singKey": "G",
+    "source1": "pdfcoffee.com_abba-songbook-1pdf-pdf-free.pdf",
+    "source2": "",
+    "source3": "",
+    "stars": 6,
+    "staveLabels": [
+        "Guitar",
+        "Intro",
+        "Break",
+        "Verse",
+        "",
+        "",
+        "",
+        "Pre",
+        "",
+        "",
+        "Chorus",
+        "",
+        "",
+        ""
+    ],
+    "strum": "Reggae",
+    "swing": 60,
+    "tempo": 110,
+    "words": 1,
+    "youtube": "https://www.youtube.com/watch?v=gxg__4wiYlQ&list=PLcYIUjYxFNR496x1NsYEP2lJIXx5IZlnV&ab_channel=clubkid"
+}
