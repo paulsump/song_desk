@@ -1,5 +1,7 @@
 // © 2022, Paul Sumpner <sumpner@hotmail.com>
 
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:song_desk/out.dart';
@@ -30,7 +32,7 @@ class _HomePageState extends State<HomePage>
     WidgetsBinding.instance!.addPostFrameCallback((_) {
       final songNotifier = getSongNotifier(context, listen: false);
 
-      songNotifier.init();
+      unawaited(songNotifier.init());
 
       _ticker = createTicker((elapsed) {
         _time = elapsed;
@@ -88,23 +90,25 @@ class _HomePageState extends State<HomePage>
           ],
         ),
       ),
-      floatingActionButton: Row(
-        mainAxisAlignment: MainAxisAlignment.end,
-        children: [
-          FloatingActionButton(
-            onPressed: _play,
-            child: const Icon(Icons.play_arrow_rounded),
-          ),
-          FloatingActionButton(
-            onPressed: _playNext,
-            child: const Icon(Icons.skip_next),
-          ),
-          FloatingActionButton(
-            onPressed: _pause,
-            child: const Icon(Icons.pause),
-          ),
-        ],
-      ),
+      floatingActionButton: !songNotifier.isReady
+          ? Container()
+          : Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                FloatingActionButton(
+                  onPressed: _play,
+                  child: const Icon(Icons.play_arrow_rounded),
+                ),
+                FloatingActionButton(
+                  onPressed: _playNext,
+                  child: const Icon(Icons.skip_next),
+                ),
+                FloatingActionButton(
+                  onPressed: _pause,
+                  child: const Icon(Icons.pause),
+                ),
+              ],
+            ),
     );
   }
 }

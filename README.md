@@ -5,7 +5,8 @@
 
 ## TODO
 
-_createQuavers
+using _createQuavers().
+
 back button
 
 - note duration for bass
