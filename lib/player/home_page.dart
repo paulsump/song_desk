@@ -32,7 +32,11 @@ class _HomePageState extends State<HomePage>
     WidgetsBinding.instance!.addPostFrameCallback((_) {
       final songNotifier = getSongNotifier(context, listen: false);
 
-      unawaited(songNotifier.init());
+      unawaited(songNotifier.init(() {
+        _playTime = _time;
+
+        playing = true;
+      }));
 
       _ticker = createTicker((elapsed) {
         _time = elapsed;
@@ -50,24 +54,6 @@ class _HomePageState extends State<HomePage>
   void dispose() {
     _ticker.dispose();
     super.dispose();
-  }
-
-  void _play() {
-    _playTime = _time;
-
-    playing = true;
-
-    final songNotifier = getSongNotifier(context, listen: false);
-    songNotifier.play();
-  }
-
-  void _playNext() {
-    _playTime = _time;
-
-    playing = true;
-
-    final songNotifier = getSongNotifier(context, listen: false);
-    songNotifier.playNext();
   }
 
   void _pause() {
@@ -96,11 +82,11 @@ class _HomePageState extends State<HomePage>
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 FloatingActionButton(
-                  onPressed: _play,
+                  onPressed: songNotifier.play,
                   child: const Icon(Icons.play_arrow_rounded),
                 ),
                 FloatingActionButton(
-                  onPressed: _playNext,
+                  onPressed: songNotifier.playNext,
                   child: const Icon(Icons.skip_next),
                 ),
                 FloatingActionButton(

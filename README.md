@@ -5,7 +5,6 @@
 
 ## TODO
 
-Auto play at start,
 Auto play next song when finish.
 
 back button

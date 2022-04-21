@@ -37,6 +37,8 @@ class SongNotifier with ChangeNotifier {
   final _convert = Convert();
   bool get isReady => _schedulers.isNotEmpty;
 
+  late VoidCallback _playFun;
+
   final titles = [
     'Age Aint Nothing But a Number',
     'Flowers',
@@ -119,10 +121,12 @@ class SongNotifier with ChangeNotifier {
   }
 
   void play() {
+    _playFun();
+
     currentScheduler.play();
   }
 
-  Future<void> init() async {
+  Future<void> init(VoidCallback playFun) async {
     await _persist.loadSongs();
 
     await _piano.preLoad();
@@ -143,6 +147,9 @@ class SongNotifier with ChangeNotifier {
     }
 
     await _loadPreferences();
+    _playFun = playFun;
+
+    play();
     notifyListeners();
   }
 
