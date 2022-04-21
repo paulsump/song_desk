@@ -27,15 +27,14 @@ class SongNotifier with ChangeNotifier {
 
   final _kick = Kick();
   final _bass = Bass();
+
   final _arp = Arp();
-
   final _persist = Persist();
-  final _convert = Convert();
 
+  final _convert = Convert();
   bool get isReady => _schedulers.isNotEmpty;
 
   final titles = [
-    // 'All Bass',
     'Age Aint Nothing But a Number',
     'Flowers',
     'Lay All Your Love On Me',
@@ -130,20 +129,13 @@ class SongNotifier with ChangeNotifier {
 
     await _convert.init();
 
-    if (currentSongTitle.startsWith('All ')) {
+    for (final entry in _persist.songs.entries) {
       final scheduler = Scheduler();
 
-      _schedulers[currentSongTitle] = scheduler;
-      _scheduleAllNotes(scheduler, _bass.list);
-    } else {
-      for (final entry in _persist.songs.entries) {
-        final scheduler = Scheduler();
+      final name = entry.key;
+      _schedulers[name] = scheduler;
 
-        final name = entry.key;
-        _schedulers[name] = scheduler;
-
-        _scheduleNotes(scheduler, entry.value!);
-      }
+      _scheduleNotes(scheduler, entry.value!);
     }
 
     notifyListeners();
@@ -260,14 +252,3 @@ class SongNotifier with ChangeNotifier {
   }
 }
 
-/// for initial testing schedule all the instrument's notes.
-void _scheduleAllNotes(Scheduler scheduler, List<Note> list) {
-  for (int i = 0; i < list.length; ++i) {
-    scheduler.add(
-      Event(
-        startTime: Duration(milliseconds: i * 700),
-        audioPlayer: list[i].audioPlayer,
-      ),
-    );
-  }
-}

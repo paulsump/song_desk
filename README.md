@@ -5,6 +5,7 @@
 
 ## TODO
 
+- persist last played song title
 Auto play at start,
 Auto play next song when finish.
 
@@ -17,7 +18,6 @@ back button
 - mute voice
   
 - button pause
-- persist last played song title
 
 - Repeats, key changes
 -   Golden Lady
