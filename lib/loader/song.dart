@@ -69,6 +69,16 @@ int _calcStaveCount(int barCount) => ((barCount / 8).ceil() / 2).ceil();
 
 int _calcStaveIndex(int barIndex) => barIndex ~/ 8;
 
+List<Quaver>? _createQuavers(Map<String, dynamic> json) {
+  List<Quaver>? bass;
+
+  if (json.containsKey('bass')) {
+    var q = json['bass'];
+    bass = List<Quaver>.from(q.map((source) => Quaver.fromJson(source)));
+  }
+  return bass;
+}
+
 class Bar {
   final String? chord;
 
@@ -92,12 +102,7 @@ class Bar {
 
   factory Bar.fromJson(Map<String, dynamic> json) {
     try {
-      List<Quaver>? bass;
-
-      if (json.containsKey('bass')) {
-        var q = json['bass'];
-        bass = List<Quaver>.from(q.map((source) => Quaver.fromJson(source)));
-      }
+      List<Quaver>? bass = _createQuavers(json);
       List<Quaver>? vocal;
 
       if (json.containsKey('vocal')) {
@@ -189,6 +194,8 @@ class Bar {
       return Bar(chord: "667");
     }
   }
+
+
 
   static String shorten(String phrase) {
     var list = phrase.split('#');
