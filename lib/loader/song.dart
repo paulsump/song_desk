@@ -10,8 +10,7 @@ class Song {
   bool doubleTime;
 
   Song.fromJson(Map<String, dynamic> json)
-      : bars =
-            List<Bar>.from(json["bars"].map((bar) => Bar.fromJson(bar))),
+      : bars = List<Bar>.from(json["bars"].map((bar) => Bar.fromJson(bar))),
         key = json['key'],
         genre = json['genre'],
         swing = json.containsKey('swing') ? json['swing'] : 0,
@@ -101,104 +100,99 @@ class Bar {
   });
 
   factory Bar.fromJson(Map<String, dynamic> json) {
-    try {
-      List<Quaver>? bass = _createQuavers(json);
-      List<Quaver>? vocal;
+    List<Quaver>? bass = _createQuavers(json);
+    List<Quaver>? vocal;
 
-      if (json.containsKey('vocal')) {
-        var q = json['vocal'];
-        vocal = List<Quaver>.from(q.map((source) => Quaver.fromJson(source)));
-      }
-
-      List<Quaver>? backing;
-
-      if (json.containsKey('backing')) {
-        var q = json['backing'];
-        backing = List<Quaver>.from(q.map((source) => Quaver.fromJson(source)));
-      }
-
-      List<Quaver>? harmony;
-
-      if (json.containsKey('harmony')) {
-        var q = json['harmony'];
-        harmony = List<Quaver>.from(q.map((source) => Quaver.fromJson(source)));
-      }
-
-      List<Quaver>? snare;
-
-      if (json.containsKey('snare')) {
-        var q = json['snare'];
-        snare = List<Quaver>.from(q.map((source) => Quaver.fromJson(source)));
-      }
-
-      List<Quaver>? arp;
-
-      if (json.containsKey('arp')) {
-        var q = json['arp'];
-        arp = List<Quaver>.from(q.map((source) => Quaver.fromJson(source)));
-      }
-
-      bool preferHarmony = false;
-
-      if (json.containsKey('preferHarmony')) {
-        preferHarmony = json['preferHarmony'];
-      }
-
-      bool pad = false;
-
-      if (json.containsKey('pad')) {
-        pad = json['pad'];
-      }
-
-      List<String>? phrases;
-      if (json.containsKey('verses')) {
-        phrases = <String>[];
-
-        var verses = json['verses'][0];
-
-        for (int i = 0; i < 4; ++i) {
-          final key = 'verse $i';
-
-          if (verses.containsKey(key)) {
-            final phrase = shorten(verses[key]);
-
-            if (phrase.isNotEmpty) {
-              phrases.add(phrase);
-            }
-          } else {
-            break;
-          }
-        }
-      } else if (json.containsKey('shareds')) {
-        phrases = <String>[];
-
-        var shared = json['shareds'][0]['shared'];
-        phrases.add(shorten(shared));
-      } else if (json.containsKey('restates')) {
-        // TODO restates
-      }
-
-      return Bar(
-        chord: json['chord'],
-        phrases: phrases,
-        bass: bass,
-        vocal: vocal,
-        backing: backing,
-        harmony: harmony,
-        snare: snare,
-        arp: arp,
-        preferHarmony: preferHarmony,
-        pad: pad,
-      );
-    } catch (e) {
-      return Bar(chord: "667");
+    if (json.containsKey('vocal')) {
+      var q = json['vocal'];
+      vocal = List<Quaver>.from(q.map((source) => Quaver.fromJson(source)));
     }
+
+    List<Quaver>? backing;
+
+    if (json.containsKey('backing')) {
+      var q = json['backing'];
+      backing = List<Quaver>.from(q.map((source) => Quaver.fromJson(source)));
+    }
+
+    List<Quaver>? harmony;
+
+    if (json.containsKey('harmony')) {
+      var q = json['harmony'];
+      harmony = List<Quaver>.from(q.map((source) => Quaver.fromJson(source)));
+    }
+
+    List<Quaver>? snare;
+
+    if (json.containsKey('snare')) {
+      var q = json['snare'];
+      snare = List<Quaver>.from(q.map((source) => Quaver.fromJson(source)));
+    }
+
+    List<Quaver>? arp;
+
+    if (json.containsKey('arp')) {
+      var q = json['arp'];
+      arp = List<Quaver>.from(q.map((source) => Quaver.fromJson(source)));
+    }
+
+    bool preferHarmony = false;
+
+    if (json.containsKey('preferHarmony')) {
+      preferHarmony = json['preferHarmony'];
+    }
+
+    bool pad = false;
+
+    if (json.containsKey('pad')) {
+      pad = json['pad'];
+    }
+
+    List<String>? phrases;
+    if (json.containsKey('verses')) {
+      phrases = <String>[];
+
+      var verses = json['verses'][0];
+
+      for (int i = 0; i < 4; ++i) {
+        final key = 'verse $i';
+
+        if (verses.containsKey(key)) {
+          final phrase = shorten(verses[key]);
+
+          if (phrase.isNotEmpty) {
+            phrases.add(phrase);
+          }
+        } else {
+          break;
+        }
+      }
+    } else if (json.containsKey('shareds')) {
+      phrases = <String>[];
+
+      var shared = json['shareds'][0]['shared'];
+      phrases.add(shorten(shared));
+    } else if (json.containsKey('restates')) {
+      // TODO restates
+    }
+
+    return Bar(
+      chord: json['chord'],
+      phrases: phrases,
+      bass: bass,
+      vocal: vocal,
+      backing: backing,
+      harmony: harmony,
+      snare: snare,
+      arp: arp,
+      preferHarmony: preferHarmony,
+      pad: pad,
+    );
   }
-
-
 
   static String shorten(String phrase) {
     var list = phrase.split('#');
+
     phrase = list[0] == ';' ? '' : list[0];
 
     for (String deliminator in [' ', '/']) {
