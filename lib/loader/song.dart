@@ -8,27 +8,14 @@ class Song {
 
   late Map<int, String> keyChangesAtBigStaveIndices;
 
-  Song({
-    required this.bars,
-    required this.key,
-    required this.genre,
-    required this.swing,
-    required this.tempo,
-  });
-
-  factory Song.fromJson(Map<String, dynamic> json) {
-    final bars = json["bars"];
-
-    final song = Song(
-      bars: List<Bar>.from(bars.map((source) => Bar.fromJson(source))),
-      key: json['key'],
-      genre: json['genre'],
-      swing: json.containsKey('swing') ? json['swing'] : 0,
-      tempo: json['tempo'],
-    );
-
-    song.calcKeyChangesAtBigStaveIndices(json);
-    return song;
+  Song.fromJson(Map<String, dynamic> json)
+      : bars =
+            List<Bar>.from(json["bars"].map((source) => Bar.fromJson(source))),
+        key = json['key'],
+        genre = json['genre'],
+        swing = json.containsKey('swing') ? json['swing'] : 0,
+        tempo = json['tempo'] {
+    calcKeyChangesAtBigStaveIndices(json);
   }
 
   void calcKeyChangesAtBigStaveIndices(Map<String, dynamic> json) {
@@ -65,6 +52,15 @@ class Song {
       }
     }
     return key;
+  }
+
+  bool boomClapOrDoubleReggae() {
+    //TODO strum and doubleTime
+    // if 'BoomClap' in data.song['strum']:
+    // return True
+    //
+    // return 'doubleTime' in data.song and data.song['strum'] == 'Reggae'
+    return true;
   }
 }
 

@@ -214,19 +214,34 @@ class SongNotifier with ChangeNotifier {
     }
   }
 
-  double panOffset(int q, song, voice) {
+  double panOffset(int q, Song song, voice) {
+    //TODO Triplet
     // if(! triplet):
     if (voice == 'arp') {
+      // TODO double OR BOOMclapbboomboom
       final x = 0.06 * q;
 
-      if (q == 0) {
-        return x + 2;
-      } else if (q == 1) {
-        return x + 1;
-      } else if (q == 2) {
-        return x + 0;
-      } else if (q == 3) {
-        return x + -1;
+      if (song.boomClapOrDoubleReggae()) {
+        if (q == 0) {
+          return x + 4;
+        } else if (q == 1) {
+          return x + 3;
+        } else if (q == 2) {
+          return x + 2;
+        } else if (q == 3) {
+          return x + 1;
+        }
+      } else {
+        //TODO if ( data.song['strum'] == 'Reggae':;
+        if (q == 0) {
+          return x + 2;
+        } else if (q == 1) {
+          return x + 1;
+        } else if (q == 2) {
+          return x + 0;
+        } else if (q == 3) {
+          return x + -1;
+        }
       }
     } else if (q == 1 || q == 3) {
       return song.swing / 600;

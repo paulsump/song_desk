@@ -7,9 +7,10 @@
 
 ## TODO
 
-- tempo
+- note duration for reggae strum
+- fix all bass lines in mel
   
-- reggae strum 'ching' chords (arp) - already there in pandeiroOffset!
+  Another Star
   
 - Stop button play next pause
 - store last played song
