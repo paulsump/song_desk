@@ -1,25 +1,25 @@
 # song_desk
 
-- Plays backing and beat for some songs.
+- Plays backing and beat for some reggae, pop, soul and bossa nova songs.
 - Sequences sampled notes rather than MIDI.
-
-- Ultimately to create, arrange, transpose songs.
 
 ## TODO
 
 back button
 
-- note duration for reggae strum
+- note duration for bass
+  Life In The Ghetto
+  Mr Benn Festive Road
+  
 - fix all bass lines and tempos in mel
   
   Another Star
   
-- Stop button play next pause
-- store last played song
+- button pause
+- persist last played song title
 
 - Repeats, key changes
 -   Golden Lady
 
 
-- song tempo - would want save? - perhaps do in separate file.
-- piano octave 0 & 7 is missing some letters
+- Ultimately to create, arrange, transpose songs.

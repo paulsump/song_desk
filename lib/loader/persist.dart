@@ -8,7 +8,7 @@ import 'package:song_desk/loader/song.dart';
 class Persist {
   final songs = <String, Song?>{};
 
-  static const folderPaths = ['bossa/', 'pop/', 'reggae/', 'soul/'];
+  static const folderPaths = ['songs/'];
   static const extension = '.json';
 
   Future<void> loadSongs() async {
