@@ -142,12 +142,6 @@ class Bar {
       preferHarmony = json['preferHarmony'];
     }
 
-    bool pad = false;
-
-    if (json.containsKey('pad')) {
-      pad = json['pad'];
-    }
-
     return Bar(
       chord: json['chord'],
       phrases: _createPhrases(json),
@@ -158,7 +152,7 @@ class Bar {
       snare: snare,
       arp: arp,
       preferHarmony: preferHarmony,
-      pad: pad,
+      pad: json.containsKey('pad') ? json['pad'] : false,
     );
   }
 }

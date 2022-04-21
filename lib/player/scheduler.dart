@@ -38,8 +38,8 @@ class Event {
 
   final Duration startTime;
   final AudioPlayer audioPlayer;
-  final VoidCallback? fun;
 
+  final VoidCallback? fun;
   bool isPlaying = false;
 
   void play() {
