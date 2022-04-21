@@ -151,7 +151,7 @@ class Bar {
       harmony: harmony,
       snare: snare,
       arp: arp,
-      preferHarmony: preferHarmony,
+      preferHarmony: json.containsKey('preferHarmony') ? json['preferHarmony'] : false,
       pad: json.containsKey('pad') ? json['pad'] : false,
     );
   }
