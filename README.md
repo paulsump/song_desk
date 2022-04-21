@@ -10,16 +10,15 @@ back button
 - note duration for bass
   Life In The Ghetto
   Mr Benn Festive Road
-  
-- fix all bass lines and tempos in mel
-  
-  Another Star
+
+- mute voice
   
 - button pause
 - persist last played song title
 
 - Repeats, key changes
 -   Golden Lady
-
+    O Mundo e um Moinho
+    
 
 - Ultimately to create, arrange, transpose songs.
