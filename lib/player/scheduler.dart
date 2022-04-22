@@ -13,10 +13,9 @@ class Scheduler {
     _events.add(event);
   }
 
-  //TODO Switch this around , it's back to front
   void play() {
     for (final event in _events) {
-      event.setWantPlay();
+      event.setWantStartPlay();
     }
   }
 
@@ -25,7 +24,7 @@ class Scheduler {
       if (event.duration != null) {
         final Duration endTime = event.startTime + event.duration!;
 
-        if (!event.wantPlay) {
+        if (!event.wantStartPlay) {
           if (endTime < currentTime) {
             //TODO fade out using setVolume
             event.stop();
@@ -36,7 +35,7 @@ class Scheduler {
           }
         }
       } else {
-        if (event.wantPlay && event.startTime < currentTime) {
+        if (event.wantStartPlay && event.startTime < currentTime) {
           event.play();
         }
       }
@@ -57,8 +56,9 @@ class Event {
   final AudioPlayer? audioPlayer;
 
   final VoidCallback? function;
-//TODO     audioPlayer!.state == PlayerState.PLAYING;
-  bool wantPlay = true;
+  bool get isPlaying =>
+      audioPlayer != null ? audioPlayer!.state == PlayerState.PLAYING : false;
+  bool wantStartPlay = true;
 
   final Duration? duration;
 
@@ -66,21 +66,21 @@ class Event {
     function?.call();
 
     if (audioPlayer != null) {
-      if (!wantPlay) {
+      if (!wantStartPlay) {
         unawaited(audioPlayer!.seek(Duration.zero));
       } else {
         unawaited(audioPlayer!.resume());
-        wantPlay = false;
+        wantStartPlay = false;
       }
     }
   }
 
-  void setWantPlay() {
-    wantPlay = true;
+  void setWantStartPlay() {
+    wantStartPlay = true;
   }
 
   void stop() {
-    wantPlay = true;
+    wantStartPlay = true;
     audioPlayer?.stop();
   }
 }
