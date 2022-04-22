@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:song_desk/out.dart';
 
 class Scheduler {
   Scheduler();
@@ -56,6 +57,7 @@ class Event {
   final AudioPlayer? audioPlayer;
 
   final VoidCallback? function;
+//TODO     audioPlayer!.state == PlayerState.PLAYING;
   bool isPlaying = false;
 
   final Duration? duration;

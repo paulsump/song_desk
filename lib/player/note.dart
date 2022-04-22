@@ -124,7 +124,8 @@ class Bass {
 
   void stopAll() {
     for (final note in notes) {
-      note.audioPlayer.stop();
+      //TODO remove stopAll() completely
+      // note.audioPlayer.stop();
     }
   }
 }

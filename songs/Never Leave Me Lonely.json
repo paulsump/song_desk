@@ -27,18 +27,6 @@
                 },
                 {}
             ],
-            "bat": [
-                {
-                    "duration": 2,
-                    "pitch": 1
-                },
-                {},
-                {
-                    "duration": 2,
-                    "pitch": -2
-                },
-                {}
-            ],
             "chord": "Bb",
             "chordShape": "^^",
             "gaps": [
@@ -83,15 +71,6 @@
                     "pitch": -3
                 }
             ],
-            "bat": [
-                {},
-                {},
-                {},
-                {
-                    "duration": 1,
-                    "pitch": -2
-                }
-            ],
             "chord": "Bb/F",
             "chordShape": "^^",
             "gaps": [
@@ -134,7 +113,7 @@
             "bass": [
                 {
                     "duration": 1,
-                    "pitch": -3
+                    "pitch": 0
                 },
                 {
                     "duration": 1,
@@ -142,29 +121,11 @@
                 },
                 {
                     "duration": 1,
-                    "pitch": -3
+                    "pitch": 0
                 },
                 {
                     "duration": 3,
                     "pitch": -3
-                }
-            ],
-            "bat": [
-                {
-                    "duration": 1,
-                    "pitch": 1
-                },
-                {
-                    "duration": 1,
-                    "pitch": -2
-                },
-                {
-                    "duration": 1,
-                    "pitch": 1
-                },
-                {
-                    "duration": 3,
-                    "pitch": -2
                 }
             ],
             "gaps": [
@@ -234,18 +195,6 @@
                 }
             ],
             "bass": [
-                {
-                    "duration": 2,
-                    "pitch": 1
-                },
-                {},
-                {
-                    "duration": 2,
-                    "pitch": -2
-                },
-                {}
-            ],
-            "bat": [
                 {
                     "duration": 2,
                     "pitch": 1
@@ -293,15 +242,6 @@
                 }
             ],
             "bass": [
-                {},
-                {},
-                {},
-                {
-                    "duration": 1,
-                    "pitch": -2
-                }
-            ],
-            "bat": [
                 {},
                 {},
                 {},
@@ -352,24 +292,6 @@
             "bass": [
                 {
                     "duration": 1,
-                    "pitch": -2
-                },
-                {
-                    "duration": 1,
-                    "pitch": -2
-                },
-                {
-                    "duration": 1,
-                    "pitch": -2
-                },
-                {
-                    "duration": 3,
-                    "pitch": -2
-                }
-            ],
-            "bat": [
-                {
-                    "duration": 1,
                     "pitch": 1
                 },
                 {
@@ -463,18 +385,6 @@
                 },
                 {}
             ],
-            "bat": [
-                {
-                    "duration": 2,
-                    "pitch": 1
-                },
-                {},
-                {
-                    "duration": 2,
-                    "pitch": -2
-                },
-                {}
-            ],
             "chord": "D-7",
             "chordShape": "^^",
             "gaps": [
@@ -519,15 +429,6 @@
                     "pitch": -1
                 }
             ],
-            "bat": [
-                {},
-                {},
-                {},
-                {
-                    "duration": 1,
-                    "pitch": -2
-                }
-            ],
             "chord": "D-7/A",
             "chordShape": "^^",
             "gaps": [
@@ -570,7 +471,7 @@
             "bass": [
                 {
                     "duration": 1,
-                    "pitch": -1
+                    "pitch": 2
                 },
                 {
                     "duration": 1,
@@ -578,29 +479,11 @@
                 },
                 {
                     "duration": 1,
-                    "pitch": -1
+                    "pitch": 2
                 },
                 {
                     "duration": 3,
                     "pitch": -1
-                }
-            ],
-            "bat": [
-                {
-                    "duration": 1,
-                    "pitch": 1
-                },
-                {
-                    "duration": 1,
-                    "pitch": -2
-                },
-                {
-                    "duration": 1,
-                    "pitch": 1
-                },
-                {
-                    "duration": 3,
-                    "pitch": -2
                 }
             ],
             "gaps": [
@@ -670,18 +553,6 @@
                 }
             ],
             "bass": [
-                {
-                    "duration": 2,
-                    "pitch": 1
-                },
-                {},
-                {
-                    "duration": 2,
-                    "pitch": -2
-                },
-                {}
-            ],
-            "bat": [
                 {
                     "duration": 2,
                     "pitch": 1
@@ -735,15 +606,6 @@
                     "pitch": -2
                 }
             ],
-            "bat": [
-                {},
-                {},
-                {},
-                {
-                    "duration": 1,
-                    "pitch": -2
-                }
-            ],
             "gaps": [
                 "backing"
             ],
@@ -782,24 +644,6 @@
                 }
             ],
             "bass": [
-                {
-                    "duration": 1,
-                    "pitch": 1
-                },
-                {
-                    "duration": 1,
-                    "pitch": -2
-                },
-                {
-                    "duration": 1,
-                    "pitch": 1
-                },
-                {
-                    "duration": 3,
-                    "pitch": -2
-                }
-            ],
-            "bat": [
                 {
                     "duration": 1,
                     "pitch": 1
