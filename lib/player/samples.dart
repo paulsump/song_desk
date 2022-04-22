@@ -123,10 +123,10 @@ class Bass {
   }
 
   void stopAll() {
-    for (final sample in samples) {
+    // for (final sample in samples) {
       //TODO remove stopAll() completely
       // sample.audioPlayer.stop();
-    }
+    // }
   }
 }
 

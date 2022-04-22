@@ -20,12 +20,14 @@
 
 # TODO logic
 
-- note duration - fade out note with audioPlayer.setVolume(0.5)
 - fix over plays note duration for bass
   Life In The Ghetto
   Love Me Forever
-  Lumi2021 (lumiguest)
 
+- fade out (for piano) with audioPlayer.setVolume(0.5)
+  Silly Games
+  Declaration Of Rights
+  
 - Repeats
 -   Golden Lady
     O Mundo e um Moinho
