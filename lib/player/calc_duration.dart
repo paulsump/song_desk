@@ -17,15 +17,14 @@ int calcDuration(fromBarIndex, fromQuaverIndex, voice, bars) {
   int previousBigQuaverIndex = -1;
 
   final notes = _NoteIterable(voice, fromBarIndex, fromQuaverIndex, bars);
+
   for (final note in notes) {
-    //TODO TRiplets
-// final bool triplet = isTriplet(note.bar, voice);
     final int bigQuaverIndex = note.barIndex * 4 + note.quaverIndex;
-// final int bigQuaverIndex = note.barIndex * 4 + note.quaverIndex * (triplet?4/3 : 1);
 
     if (previousQuaver != null) {
       return min(12, bigQuaverIndex - previousBigQuaverIndex);
     }
+
     previousQuaver = note.quaver;
     previousBigQuaverIndex = bigQuaverIndex;
   }
@@ -33,9 +32,12 @@ int calcDuration(fromBarIndex, fromQuaverIndex, voice, bars) {
   return 7;
 }
 
-bool isTriplet(bar, voice) {
-  return false;
-}
+//TODO TRiplets
+// final bool triplet = isTriplet(note.bar, voice);
+// final int bigQuaverIndex = note.barIndex * 4 + note.quaverIndex * (triplet?4/3 : 1);
+// bool isTriplet(bar, voice) {
+//   return false;
+// }
 
 class _NoteIterable extends Iterable<_Note> {
   _NoteIterable(this.voice, this.fromBarIndex, this.fromQuaverIndex, this.bars);
@@ -87,6 +89,7 @@ class _NoteIterator implements Iterator<_Note> {
             return true;
           }
         }
+
         _note.quaver = _getQuaver(_note.barIndex, _note.bar, _note.quaverIndex);
 
         if (_note.quaver != null) {
@@ -94,6 +97,7 @@ class _NoteIterator implements Iterator<_Note> {
         }
       }
     }
+
     return false;
   }
 

@@ -10,6 +10,7 @@ import 'package:song_desk/loader/convert.dart';
 import 'package:song_desk/loader/persist.dart';
 import 'package:song_desk/loader/song.dart';
 import 'package:song_desk/out.dart';
+import 'package:song_desk/player/calc_duration.dart';
 import 'package:song_desk/player/samples.dart';
 import 'package:song_desk/player/scheduler.dart';
 
@@ -120,21 +121,19 @@ class SongNotifier with ChangeNotifier {
         final int i = semitone + 12 * 2;
 
         return _bass.samples[i].audioPlayer;
-      }, () => _bass.stopAll(), '');
+      }, () => _bass.stopAll(), 'bass');
 
       _addQuavers(bar.vocal, song, b, pads, quaverDuration, scheduler,
-          _pianoPlayer, null, '');
+          _pianoPlayer, null, 'vocal');
 
-      // final backing = (bar.preferHarmony || bar.backing == null)? bar.harmony : bar.backing;
-      // _addQuavers(backing, song, b, pads, quaverDuration, scheduler, _pianoPlayer,     null, '');
       _addQuavers(bar.backing, song, b, pads, quaverDuration, scheduler,
-          _pianoPlayer, null, '');
+          _pianoPlayer, null, 'backing');
 
       _addQuavers(bar.harmony, song, b, pads, quaverDuration, scheduler,
-          _pianoPlayer, null, '');
+          _pianoPlayer, null, 'harmony');
 
       _addQuavers(bar.snare, song, b, pads, quaverDuration, scheduler,
-          (semitone) => _kick.audioPlayer, null, '');
+          (semitone) => _kick.audioPlayer, null, 'snare');
 
       _addQuavers(bar.arp, song, b, pads, quaverDuration, scheduler,
           (semitone) {
@@ -179,6 +178,8 @@ class SongNotifier with ChangeNotifier {
               quaver.duration != null
                   ? quaverDuration * quaver.duration!
                   : null);
+          //TODO Using calcDuration()
+          // : calcDuration(b, q, voice, song.bars));
         }
         q += 1;
       }

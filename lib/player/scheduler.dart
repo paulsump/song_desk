@@ -56,8 +56,6 @@ class Event {
   final AudioPlayer? audioPlayer;
 
   final VoidCallback? function;
-  bool get isPlaying =>
-      audioPlayer != null ? audioPlayer!.state == PlayerState.PLAYING : false;
   bool wantStartPlay = true;
 
   final Duration? duration;
