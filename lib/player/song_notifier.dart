@@ -89,7 +89,7 @@ class SongNotifier with ChangeNotifier {
   }
 
   void _scheduleNotes(scheduler, Song song) {
-    final duration = 30000 ~/ song.tempo;
+    final quaverDuration = 30000 ~/ song.tempo;
 
     AudioPlayer _pianoPlayer(semitone) {
       final int i = semitone + 12 * 4;
@@ -101,27 +101,27 @@ class SongNotifier with ChangeNotifier {
     int pads = 0;
 
     for (final bar in song.bars) {
-      _addQuavers(bar.bass, song, b, pads, duration, scheduler, (semitone) {
+      _addQuavers(bar.bass, song, b, pads, quaverDuration, scheduler, (semitone) {
         final int i = semitone + 12 * 2;
 
         return _bass.notes[i].audioPlayer;
       }, () => _bass.stopAll(), '');
 
-      _addQuavers(bar.vocal, song, b, pads, duration, scheduler, _pianoPlayer,
-          null, '');
+      _addQuavers(bar.vocal, song, b, pads, quaverDuration, scheduler,
+          _pianoPlayer, null, '');
 
       // final backing = (bar.preferHarmony || bar.backing == null)? bar.harmony : bar.backing;
-      // _addQuavers(backing, song, b, pads, duration, scheduler, _pianoPlayer,     null, '');
-      _addQuavers(bar.backing, song, b, pads, duration, scheduler, _pianoPlayer,
-          null, '');
+      // _addQuavers(backing, song, b, pads, quaverDuration, scheduler, _pianoPlayer,     null, '');
+      _addQuavers(bar.backing, song, b, pads, quaverDuration, scheduler,
+          _pianoPlayer, null, '');
 
-      _addQuavers(bar.harmony, song, b, pads, duration, scheduler, _pianoPlayer,
-          null, '');
+      _addQuavers(bar.harmony, song, b, pads, quaverDuration, scheduler,
+          _pianoPlayer, null, '');
 
-      _addQuavers(bar.snare, song, b, pads, duration, scheduler,
+      _addQuavers(bar.snare, song, b, pads, quaverDuration, scheduler,
           (semitone) => _kick.audioPlayer, null, '');
 
-      _addQuavers(bar.arp, song, b, pads, duration, scheduler, (semitone) {
+      _addQuavers(bar.arp, song, b, pads, quaverDuration, scheduler, (semitone) {
         final int i = semitone + 12 * 5;
 
         return _arp.notes[i].audioPlayer;
@@ -134,10 +134,10 @@ class SongNotifier with ChangeNotifier {
       }
     }
 
-    _addPlayNextEvent(scheduler, duration * b * 4);
+    _addPlayNextEvent(scheduler, quaverDuration * b * 4);
   }
 
-  void _addQuavers(quavers, song, int b, int pads, int duration, scheduler,
+  void _addQuavers(quavers, song, int b, int pads, int quaverDuration, scheduler,
       getPlayer, function, voice) {
     if (quavers != null) {
       int q = 0;
@@ -149,11 +149,11 @@ class SongNotifier with ChangeNotifier {
           final semitone =
               _convert.quaverToSemitone(quaver, song.getKey(b + pads));
 
-          int t =
-              duration * b * 4 + q * (triplet ? (duration * 4) ~/ 3 : duration);
+          int t = quaverDuration * b * 4 +
+              q * (triplet ? (quaverDuration * 4) ~/ 3 : quaverDuration);
 
           if (!triplet) {
-            t += (duration * panOffset(q, song, voice)).round();
+            t += (quaverDuration * panOffset(q, song, voice)).round();
           }
           _addNote(scheduler, t, getPlayer(semitone), function);
         }
