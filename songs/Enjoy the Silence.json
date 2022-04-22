@@ -39,448 +39,14 @@
             "chordShapeForD#": "__",
             "gaps": [
                 "backing"
-            ]
-        },
-        {
-            "gaps": [
-                "backing"
-            ],
-            "vocal": [
-                {
-                    "lyric": "",
-                    "pitch": -2
-                },
-                {},
-                {
-                    "lyric": "",
-                    "pitch": 3
-                },
-                {}
-            ]
-        },
-        {
-            "arp": [
-                {
-                    "pitch": -4
-                },
-                {
-                    "pitch": -2
-                },
-                {
-                    "pitch": 2
-                },
-                {
-                    "pitch": 4
-                }
-            ],
-            "chord": "E-9",
-            "chordShape": " ^",
-            "gaps": [
-                "backing"
-            ],
-            "snare": [
-                {
-                    "pitch": -8
-                },
-                {},
-                {},
-                {}
-            ],
-            "vocal": [
-                {},
-                {},
-                {
-                    "lyric": "",
-                    "pitch": -2
-                },
-                {}
-            ]
-        },
-        {
-            "gaps": [
-                "backing"
-            ],
-            "vocal": [
-                {
-                    "lyric": "",
-                    "pitch": 4
-                },
-                {},
-                {},
-                {}
-            ]
-        },
-        {
-            "arp": [
-                {
-                    "pitch": -2
-                },
-                {
-                    "pitch": 0
-                },
-                {
-                    "pitch": 2
-                },
-                {
-                    "pitch": 4
-                }
-            ],
-            "bass": [
-                {
-                    "pitch": -9
-                },
-                {},
-                {},
-                {}
-            ],
-            "bat": [
-                {
-                    "pitch": -6
-                },
-                {},
-                {},
-                {}
-            ],
-            "chord": "GM7",
-            "chordForA": "AM7",
-            "chordForD#": "D#M7",
-            "chordShape": "__",
-            "chordShapeForA": "^^",
-            "chordShapeForD#": " ^",
-            "gaps": [
-                "backing"
-            ]
-        },
-        {
-            "gaps": [
-                "backing"
-            ],
-            "vocal": [
-                {
-                    "lyric": "",
-                    "pitch": -2
-                },
-                {},
-                {
-                    "lyric": "",
-                    "pitch": 5
-                },
-                {}
-            ]
-        },
-        {
-            "arp": [
-                {
-                    "pitch": -2
-                },
-                {
-                    "pitch": 0
-                },
-                {
-                    "pitch": 2
-                },
-                {
-                    "pitch": 4
-                }
-            ],
-            "gaps": [
-                "backing"
-            ],
-            "snare": [
-                {
-                    "pitch": -8
-                },
-                {},
-                {},
-                {}
-            ],
-            "vocal": [
-                {},
-                {},
-                {
-                    "lyric": "",
-                    "pitch": -2
-                },
-                {}
-            ]
-        },
-        {
-            "blockEnd": true,
-            "gaps": [
-                "backing"
-            ],
-            "vocal": [
-                {
-                    "lyric": "",
-                    "pitch": 2
-                },
-                {},
-                {},
-                {}
-            ]
-        },
-        {
-            "arp": [
-                {
-                    "pitch": -4
-                },
-                {
-                    "pitch": -2
-                },
-                {
-                    "pitch": 0
-                },
-                {
-                    "pitch": 2
-                }
-            ],
-            "bass": [
-                {
-                    "pitch": -11
-                },
-                {},
-                {},
-                {}
-            ],
-            "bat": [
-                {
-                    "pitch": -6
-                },
-                {},
-                {},
-                {}
-            ],
-            "chord": "E-7",
-            "chordForA": "F#-9",
-            "chordForD#": "C-9",
-            "chordShape": " _",
-            "chordShapeForA": " ^",
-            "chordShapeForD#": "__",
-            "gaps": [
-                "backing"
-            ]
-        },
-        {
-            "gaps": [
-                "backing"
-            ],
-            "vocal": [
-                {
-                    "lyric": "",
-                    "pitch": -2
-                },
-                {},
-                {
-                    "lyric": "",
-                    "pitch": 2
-                },
-                {}
-            ]
-        },
-        {
-            "arp": [
-                {
-                    "pitch": -4
-                },
-                {
-                    "pitch": -2
-                },
-                {
-                    "pitch": 0
-                },
-                {
-                    "pitch": 2
-                }
-            ],
-            "chordShape": " ^",
-            "gaps": [
-                "backing"
-            ],
-            "snare": [
-                {
-                    "pitch": -8
-                },
-                {},
-                {},
-                {}
-            ],
-            "vocal": [
-                {},
-                {},
-                {
-                    "lyric": "",
-                    "pitch": -2
-                },
-                {}
-            ]
-        },
-        {
-            "gaps": [
-                "backing"
-            ],
-            "vocal": [
-                {
-                    "lyric": "",
-                    "pitch": 0
-                },
-                {},
-                {},
-                {}
-            ]
-        },
-        {
-            "arp": [
-                {
-                    "pitch": -2
-                },
-                {
-                    "pitch": 0
-                },
-                {
-                    "pitch": 2
-                },
-                {
-                    "pitch": 4
-                }
-            ],
-            "bass": [
-                {
-                    "pitch": -9
-                },
-                {},
-                {},
-                {}
-            ],
-            "bat": [
-                {
-                    "pitch": -6
-                },
-                {},
-                {},
-                {}
-            ],
-            "chord": "GM7",
-            "chordForA": "AM7",
-            "chordForD#": "D#M7",
-            "chordShape": "__",
-            "chordShapeForA": "^^",
-            "chordShapeForD#": " ^",
-            "gaps": [
-                "backing"
-            ]
-        },
-        {
-            "gaps": [
-                "backing"
-            ],
-            "vocal": [
-                {
-                    "lyric": "",
-                    "pitch": -2
-                },
-                {},
-                {
-                    "lyric": "",
-                    "pitch": 2
-                },
-                {}
-            ]
-        },
-        {
-            "arp": [
-                {
-                    "pitch": -2
-                },
-                {
-                    "pitch": 0
-                },
-                {
-                    "pitch": 2
-                },
-                {
-                    "pitch": 4
-                }
-            ],
-            "gaps": [
-                "backing"
-            ],
-            "snare": [
-                {
-                    "pitch": -8
-                },
-                {},
-                {},
-                {}
-            ],
-            "vocal": [
-                {},
-                {},
-                {
-                    "lyric": "",
-                    "pitch": -2
-                },
-                {}
-            ]
-        },
-        {
-            "blockEnd": true,
-            "gaps": [
-                "backing"
-            ],
-            "vocal": [
-                {
-                    "lyric": "",
-                    "pitch": 0
-                },
-                {},
-                {},
-                {}
-            ]
-        },
-        {
-            "arp": [
-                {
-                    "pitch": -4
-                },
-                {
-                    "pitch": -2
-                },
-                {
-                    "pitch": 0
-                },
-                {
-                    "pitch": 3
-                }
-            ],
-            "bass": [
-                {
-                    "pitch": -11
-                },
-                {},
-                {},
-                {}
-            ],
-            "bat": [
-                {
-                    "pitch": -6
-                },
-                {},
-                {},
-                {}
-            ],
-            "chord": "E-",
-            "chordForA": "F#-9",
-            "chordForD#": "C-9",
-            "chordShape": "^^",
-            "chordShapeForA": " ^",
-            "chordShapeForD#": "__",
-            "gaps": [
-                "backing"
             ],
             "repeat": "Left"
         },
         {
-            "backing": [
+            "gaps": [
+                "backing"
+            ],
+            "vocal": [
                 {
                     "lyric": "",
                     "pitch": -2
@@ -508,17 +74,11 @@
                     "pitch": 4
                 }
             ],
-            "backing": [
-                {},
-                {},
-                {
-                    "lyric": "",
-                    "pitch": -2
-                },
-                {}
-            ],
             "chord": "E-9",
             "chordShape": " ^",
+            "gaps": [
+                "backing"
+            ],
             "snare": [
                 {
                     "pitch": -8
@@ -526,10 +86,22 @@
                 {},
                 {},
                 {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {
+                    "lyric": "",
+                    "pitch": -2
+                },
+                {}
             ]
         },
         {
-            "backing": [
+            "gaps": [
+                "backing"
+            ],
+            "vocal": [
                 {
                     "lyric": "",
                     "pitch": 4
@@ -581,7 +153,10 @@
             ]
         },
         {
-            "backing": [
+            "gaps": [
+                "backing"
+            ],
+            "vocal": [
                 {
                     "lyric": "",
                     "pitch": -2
@@ -609,14 +184,8 @@
                     "pitch": 4
                 }
             ],
-            "backing": [
-                {},
-                {},
-                {
-                    "lyric": "",
-                    "pitch": -2
-                },
-                {}
+            "gaps": [
+                "backing"
             ],
             "snare": [
                 {
@@ -625,10 +194,22 @@
                 {},
                 {},
                 {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {
+                    "lyric": "",
+                    "pitch": -2
+                },
+                {}
             ]
         },
         {
-            "backing": [
+            "gaps": [
+                "backing"
+            ],
+            "vocal": [
                 {
                     "lyric": "",
                     "pitch": 2
@@ -680,7 +261,10 @@
             ]
         },
         {
-            "backing": [
+            "gaps": [
+                "backing"
+            ],
+            "vocal": [
                 {
                     "lyric": "",
                     "pitch": -2
@@ -708,16 +292,10 @@
                     "pitch": 2
                 }
             ],
-            "backing": [
-                {},
-                {},
-                {
-                    "lyric": "",
-                    "pitch": -2
-                },
-                {}
-            ],
             "chordShape": " ^",
+            "gaps": [
+                "backing"
+            ],
             "snare": [
                 {
                     "pitch": -8
@@ -725,10 +303,22 @@
                 {},
                 {},
                 {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {
+                    "lyric": "",
+                    "pitch": -2
+                },
+                {}
             ]
         },
         {
-            "backing": [
+            "gaps": [
+                "backing"
+            ],
+            "vocal": [
                 {
                     "lyric": "",
                     "pitch": 0
@@ -780,7 +370,10 @@
             ]
         },
         {
-            "backing": [
+            "gaps": [
+                "backing"
+            ],
+            "vocal": [
                 {
                     "lyric": "",
                     "pitch": -2
@@ -808,14 +401,8 @@
                     "pitch": 4
                 }
             ],
-            "backing": [
-                {},
-                {},
-                {
-                    "lyric": "",
-                    "pitch": -2
-                },
-                {}
+            "gaps": [
+                "backing"
             ],
             "snare": [
                 {
@@ -824,10 +411,22 @@
                 {},
                 {},
                 {}
+            ],
+            "vocal": [
+                {},
+                {},
+                {
+                    "lyric": "",
+                    "pitch": -2
+                },
+                {}
             ]
         },
         {
-            "backing": [
+            "gaps": [
+                "backing"
+            ],
+            "vocal": [
                 {
                     "lyric": "",
                     "pitch": 0
@@ -874,9 +473,7 @@
             "chordShape": "^^",
             "chordShapeForA": " ^",
             "chordShapeForD#": "__",
-            "gaps": [
-                "backing"
-            ],
+            "gaps": [],
             "harmony": [
                 {
                     "pitch": 3
@@ -885,7 +482,7 @@
                 {},
                 {}
             ],
-            "preferHarmony": false
+            "preferHarmony": true
         },
         {
             "backing": [
@@ -900,7 +497,7 @@
                 },
                 {}
             ],
-            "preferHarmony": false
+            "preferHarmony": true
         },
         {
             "arp": [
@@ -928,7 +525,10 @@
             ],
             "chord": "E-9",
             "chordShape": " ^",
-            "preferHarmony": false,
+            "gaps": [
+                "backing"
+            ],
+            "preferHarmony": true,
             "snare": [
                 {
                     "pitch": -8
@@ -948,7 +548,10 @@
                 {},
                 {}
             ],
-            "preferHarmony": false
+            "gaps": [
+                "backing"
+            ],
+            "preferHarmony": true
         },
         {
             "arp": [
@@ -987,9 +590,7 @@
             "chordShape": "__",
             "chordShapeForA": "^^",
             "chordShapeForD#": " ^",
-            "gaps": [
-                "backing"
-            ],
+            "gaps": [],
             "harmony": [
                 {
                     "pitch": 2
@@ -998,7 +599,7 @@
                 {},
                 {}
             ],
-            "preferHarmony": false
+            "preferHarmony": true
         },
         {
             "backing": [
@@ -1013,7 +614,7 @@
                 },
                 {}
             ],
-            "preferHarmony": false
+            "preferHarmony": true
         },
         {
             "arp": [
@@ -1039,7 +640,10 @@
                 },
                 {}
             ],
-            "preferHarmony": false,
+            "gaps": [
+                "backing"
+            ],
+            "preferHarmony": true,
             "snare": [
                 {
                     "pitch": -8
@@ -1059,7 +663,10 @@
                 {},
                 {}
             ],
-            "preferHarmony": false
+            "gaps": [
+                "backing"
+            ],
+            "preferHarmony": true
         },
         {
             "arp": [
@@ -1098,9 +705,7 @@
             "chordShape": " _",
             "chordShapeForA": " ^",
             "chordShapeForD#": "__",
-            "gaps": [
-                "backing"
-            ],
+            "gaps": [],
             "harmony": [
                 {
                     "pitch": 7
@@ -1109,7 +714,7 @@
                 {},
                 {}
             ],
-            "preferHarmony": false
+            "preferHarmony": true
         },
         {
             "backing": [
@@ -1124,7 +729,7 @@
                 },
                 {}
             ],
-            "preferHarmony": false
+            "preferHarmony": true
         },
         {
             "arp": [
@@ -1151,7 +756,10 @@
                 {}
             ],
             "chordShape": " ^",
-            "preferHarmony": false,
+            "gaps": [
+                "backing"
+            ],
+            "preferHarmony": true,
             "snare": [
                 {
                     "pitch": -8
@@ -1171,7 +779,10 @@
                 {},
                 {}
             ],
-            "preferHarmony": false
+            "gaps": [
+                "backing"
+            ],
+            "preferHarmony": true
         },
         {
             "arp": [
@@ -1210,9 +821,7 @@
             "chordShape": "__",
             "chordShapeForA": "^^",
             "chordShapeForD#": " ^",
-            "gaps": [
-                "backing"
-            ],
+            "gaps": [],
             "harmony": [
                 {
                     "pitch": 6
@@ -1221,7 +830,7 @@
                 {},
                 {}
             ],
-            "preferHarmony": false
+            "preferHarmony": true
         },
         {
             "backing": [
@@ -1236,7 +845,7 @@
                 },
                 {}
             ],
-            "preferHarmony": false
+            "preferHarmony": true
         },
         {
             "arp": [
@@ -1262,7 +871,10 @@
                 },
                 {}
             ],
-            "preferHarmony": false,
+            "gaps": [
+                "backing"
+            ],
+            "preferHarmony": true,
             "snare": [
                 {
                     "pitch": -8
@@ -1283,7 +895,10 @@
                 {}
             ],
             "blockEnd": true,
-            "preferHarmony": false
+            "gaps": [
+                "backing"
+            ],
+            "preferHarmony": true
         },
         {
             "arp": [
@@ -3228,8 +2843,6 @@
         "Guitar",
         "",
         "Bridge",
-        "",
-        "",
         "",
         "Verse",
         "",

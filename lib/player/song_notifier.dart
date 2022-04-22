@@ -118,9 +118,9 @@ class SongNotifier with ChangeNotifier {
       return _piano.samples[i].audioPlayer;
     }
 
-    AudioPlayer _piano2(semitone) => _pianoPlayer(semitone, 2);
-    AudioPlayer _piano3(semitone) => _pianoPlayer(semitone, 3);
+    // AudioPlayer _piano3(semitone) => _pianoPlayer(semitone, 3);
     AudioPlayer _piano4(semitone) => _pianoPlayer(semitone, 4);
+    AudioPlayer _piano5(semitone) => _pianoPlayer(semitone, 5);
 
     int b = 0;
     int pads = 0;
@@ -133,14 +133,14 @@ class SongNotifier with ChangeNotifier {
         return _bass.samples[i].audioPlayer;
       }, 'bass');
 
-      _addQuavers(bar.vocal, song, b, pads, quaverDuration, scheduler, _piano2,
+      _addQuavers(bar.vocal, song, b, pads, quaverDuration, scheduler, _piano5,
           'vocal');
 
       _addQuavers(bar.backing, song, b, pads, quaverDuration, scheduler,
-          _piano3, 'backing');
+          _piano4, 'backing');
 
       _addQuavers(bar.harmony, song, b, pads, quaverDuration, scheduler,
-          _piano4, 'harmony');
+          _piano5, 'harmony');
 
       _addQuavers(bar.snare, song, b, pads, quaverDuration, scheduler,
           (semitone) => _kick.audioPlayer, 'snare');

@@ -15,7 +15,6 @@
 ## TODO songs
 
 - My Conversation more swingy
-- better bass line for Bonita verse.
 
 # TODO logic
 
