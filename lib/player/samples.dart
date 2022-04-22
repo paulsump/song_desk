@@ -110,10 +110,14 @@ class Bass {
           break;
         }
         try {
+          final audioPlayer = await _createAudioPlayer(fileName);
+
+          audioPlayer.setVolume(0.8);
+
           samples.add(Sample(
             letter: letter,
             octave: octave,
-            audioPlayer: await _createAudioPlayer(fileName),
+            audioPlayer: audioPlayer,
           ));
         } catch (e) {
           logError('Failed to load $fileName');
