@@ -101,7 +101,8 @@ class SongNotifier with ChangeNotifier {
     int pads = 0;
 
     for (final bar in song.bars) {
-      _addQuavers(bar.bass, song, b, pads, quaverDuration, scheduler, (semitone) {
+      _addQuavers(bar.bass, song, b, pads, quaverDuration, scheduler,
+          (semitone) {
         final int i = semitone + 12 * 2;
 
         return _bass.notes[i].audioPlayer;
@@ -121,7 +122,8 @@ class SongNotifier with ChangeNotifier {
       _addQuavers(bar.snare, song, b, pads, quaverDuration, scheduler,
           (semitone) => _kick.audioPlayer, null, '');
 
-      _addQuavers(bar.arp, song, b, pads, quaverDuration, scheduler, (semitone) {
+      _addQuavers(bar.arp, song, b, pads, quaverDuration, scheduler,
+          (semitone) {
         final int i = semitone + 12 * 5;
 
         return _arp.notes[i].audioPlayer;
@@ -137,14 +139,14 @@ class SongNotifier with ChangeNotifier {
     _addPlayNextEvent(scheduler, quaverDuration * b * 4);
   }
 
-  void _addQuavers(quavers, song, int b, int pads, int quaverDuration, scheduler,
-      getPlayer, function, voice) {
+  void _addQuavers(quavers, song, int b, int pads, int quaverDuration,
+      scheduler, getPlayer, function, voice) {
     if (quavers != null) {
       int q = 0;
 
       final triplet = quavers[3].triplet;
 
-      for (final quaver in quavers) {
+      for (final Quaver quaver in quavers) {
         if (quaver.pitch != null) {
           final semitone =
               _convert.quaverToSemitone(quaver, song.getKey(b + pads));
@@ -155,7 +157,8 @@ class SongNotifier with ChangeNotifier {
           if (!triplet) {
             t += (quaverDuration * panOffset(q, song, voice)).round();
           }
-          _addNote(scheduler, t, getPlayer(semitone), function);
+          _addNote(scheduler, t, getPlayer(semitone), function,
+              quaver.duration != null ? quaverDuration * quaver.duration! : 0);
         }
         q += 1;
       }
@@ -193,13 +196,14 @@ class SongNotifier with ChangeNotifier {
     return 0;
   }
 
-  void _addNote(
-      scheduler, int t, AudioPlayer audioPlayer, VoidCallback? function) {
+  void _addNote(scheduler, int t, AudioPlayer audioPlayer,
+      VoidCallback? function, int duration) {
     scheduler.add(
       Event(
           startTime: Duration(milliseconds: t),
           audioPlayer: audioPlayer,
-          function: function),
+          function: function,
+          duration: Duration(milliseconds: duration)),
     );
   }
 

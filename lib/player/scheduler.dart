@@ -34,6 +34,7 @@ class Event {
     required this.startTime,
     this.audioPlayer,
     this.function,
+    this.duration,
   });
 
   final Duration startTime;
@@ -41,6 +42,8 @@ class Event {
 
   final VoidCallback? function;
   bool isPlaying = false;
+
+  final Duration? duration;
 
   void play() {
     function?.call();
