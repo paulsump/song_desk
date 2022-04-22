@@ -5,8 +5,9 @@
 
 ## TODO UI
 
-- back button
+
 - copy calcDurations() over from mel.  
+- go to bar (need full ui?)  
 - pick song from list
 - dark mode
 - mute voice

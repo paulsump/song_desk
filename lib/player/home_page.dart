@@ -56,7 +56,7 @@ class _HomePageState extends State<HomePage>
     super.dispose();
   }
 
-  void _pause() {
+  void _stop() {
     playing = false;
   }
 
@@ -94,8 +94,8 @@ class _HomePageState extends State<HomePage>
                   child: const Icon(Icons.skip_next),
                 ),
                 FloatingActionButton(
-                  onPressed: _pause,
-                  child: const Icon(Icons.pause),
+                  onPressed: _stop,
+                  child: const Icon(Icons.stop),
                 ),
               ],
             ),

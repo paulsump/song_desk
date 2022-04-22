@@ -51,6 +51,7 @@ class SongNotifier with ChangeNotifier {
     if (_currentSongIndex < 0) {
       _currentSongIndex = 0;
     }
+
     _playAndSavePreferences();
   }
 
