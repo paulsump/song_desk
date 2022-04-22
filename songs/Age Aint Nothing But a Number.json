@@ -15,8 +15,16 @@
                     "pitch": 4
                 }
             ],
-            "chord": "E-9/E",
-            "chordShape": "^^",
+            "bass": [
+                {
+                    "pitch": -4
+                },
+                {},
+                {},
+                {}
+            ],
+            "chord": "E-9",
+            "chordShape": " ^",
             "gaps": [
                 "backing"
             ],
@@ -134,6 +142,14 @@
                 {
                     "pitch": 7
                 }
+            ],
+            "bass": [
+                {
+                    "pitch": -6
+                },
+                {},
+                {},
+                {}
             ],
             "chord": "CM7",
             "chordShape": "^ ",
@@ -278,6 +294,14 @@
                 },
                 {}
             ],
+            "bass": [
+                {
+                    "pitch": -6
+                },
+                {},
+                {},
+                {}
+            ],
             "chord": "CM7",
             "chordShape": "^ "
         },
@@ -308,6 +332,14 @@
                 },
                 {}
             ],
+            "bass": [
+                {
+                    "pitch": -7
+                },
+                {},
+                {},
+                {}
+            ],
             "chord": "CM7/B",
             "chordShape": "^ ",
             "snare": [
@@ -328,10 +360,10 @@
                     "pitch": 1
                 },
                 {
-                    "pitch": 5
+                    "pitch": 3
                 },
                 {
-                    "pitch": 7
+                    "pitch": 5
                 }
             ],
             "backing": [
@@ -346,13 +378,21 @@
                 },
                 {}
             ],
-            "chord": "A-9",
+            "bass": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "chord": "A-7",
             "chordShape": " ^"
         },
         {
             "arp": [
                 {
-                    "pitch": 0
+                    "pitch": -3
                 },
                 {
                     "accidental": "sharp",
@@ -374,8 +414,16 @@
                 {},
                 {}
             ],
-            "chord": "B7b9",
-            "chordShape": " ^",
+            "bass": [
+                {
+                    "pitch": -10
+                },
+                {},
+                {},
+                {}
+            ],
+            "chord": "B7b9/F#",
+            "chordShape": "^^",
             "snare": [
                 {
                     "pitch": -8
@@ -388,7 +436,7 @@
         {
             "arp": [
                 {
-                    "pitch": 0
+                    "pitch": -3
                 },
                 {
                     "accidental": "sharp",
@@ -416,7 +464,7 @@
                     "pitch": 2
                 },
                 {
-                    "pitch": 0
+                    "pitch": -3
                 }
             ],
             "gaps": [
@@ -434,7 +482,7 @@
         {
             "arp": [
                 {
-                    "pitch": 0
+                    "pitch": -3
                 },
                 {
                     "accidental": "sharp",
@@ -462,7 +510,7 @@
                     "pitch": 2
                 },
                 {
-                    "pitch": 0
+                    "pitch": -3
                 }
             ],
             "blockEnd": true,

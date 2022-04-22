@@ -5,11 +5,12 @@
 
 ## TODO
 
-My Conversation more swingy
-don't stoop when phone goes black
-dark mode
-better bass line for Bonita verse.
+- My Conversation more swingy
+- don't stoop when phone goes black
+- dark mode
+- better bass line for Bonita verse.
 
+- note duration - fade out note with audioPlayer.setVolume(0.5)
 - note duration for bass
   Life In The Ghetto
   Mr Benn Festive Road
