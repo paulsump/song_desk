@@ -104,7 +104,7 @@ class SongNotifier with ChangeNotifier {
       _addQuavers(bar.bass, song, b, pads, duration, scheduler, (semitone) {
         final int i = semitone + 12 * 2;
 
-        return _bass.list[i].audioPlayer;
+        return _bass.notes[i].audioPlayer;
       }, () => _bass.stopAll(), '');
 
       _addQuavers(bar.vocal, song, b, pads, duration, scheduler, _pianoPlayer,

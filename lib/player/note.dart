@@ -82,7 +82,7 @@ class Piano {
 
 /// plays preloaded double bass samples.
 class Bass {
-  final list = <Note>[];
+  final notes = <Note>[];
 
   Future<void> preLoad() async {
     const letters = [
@@ -110,7 +110,7 @@ class Bass {
           break;
         }
         try {
-          list.add(Note(
+          notes.add(Note(
             letter: letter,
             octave: octave,
             audioPlayer: await _createAudioPlayer(fileName),
@@ -123,7 +123,7 @@ class Bass {
   }
 
   void stopAll() {
-    for (final note in list) {
+    for (final note in notes) {
       note.audioPlayer.stop();
     }
   }
