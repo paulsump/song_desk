@@ -10,7 +10,7 @@ import 'package:song_desk/loader/convert.dart';
 import 'package:song_desk/loader/persist.dart';
 import 'package:song_desk/loader/song.dart';
 import 'package:song_desk/out.dart';
-import 'package:song_desk/player/note.dart';
+import 'package:song_desk/player/samples.dart';
 import 'package:song_desk/player/scheduler.dart';
 
 const noWarn = out;

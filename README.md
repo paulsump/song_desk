@@ -1,32 +1,40 @@
 # song_desk
 
 - Plays backing and beat for some reggae, pop, soul and bossa nova songs.
-- Sequences sampled notes rather than MIDI.
+- Uses sampled piano and double bass rather than MIDI.
 
 ## TODO UI
 
-
-- copy calcDurations() over from mel.  
+- copy calcDurations() over from mel.
+- fix Love Me Forever
 - go to bar (need full ui?)  
 - pick song from list
 - dark mode
 - mute voice
 - button pause
 
-## TODO
+## TODO songs
+
 - My Conversation more swingy
-- don't stoop when phone goes black
 - better bass line for Bonita verse.
 
-- note duration - fade out note with audioPlayer.setVolume(0.5)
-- note duration for bass
-  Life In The Ghetto
-  Mr Benn Festive Road
+# TODO logic
 
+- note duration - fade out note with audioPlayer.setVolume(0.5)
+- fix over plays note duration for bass
+  Life In The Ghetto
+  Love Me Forever
+  Lumi2021 (lumiguest)
 
 - Repeats
 -   Golden Lady
     O Mundo e um Moinho
-    
+
+# TODO Tricky
+
+- don't stop when phone goes black. - find out what this is called eg. lock.
+  audioplayer play "stayAwake"
+
+# TODO Later
 
 - Ultimately to create, arrange, transpose songs.
