@@ -5,8 +5,6 @@
 
 ## TODO UI
 
-- copy calcDurations() over from mel.
-- fix Love Me Forever
 - go to bar (need full ui?)  
 - pick song from list
 - dark mode
@@ -20,9 +18,13 @@
 
 # TODO logic
 
+- fix Love Me Forever
 - fix over plays note duration for bass
   Life In The Ghetto
   Love Me Forever
+  Melancolia
+  The Tide Is High
+  People Make The World Go Round
 
 - fade out (for piano) with audioPlayer.setVolume(0.5)
   Silly Games
