@@ -6,9 +6,9 @@ import 'package:song_desk/out.dart';
 const noWarn = out;
 final _audioCache = AudioCache();
 
-/// play a note
-class Note {
-  Note({
+/// Access to a sample of a particular note
+class Sample {
+  Sample({
     required this.letter,
     required this.octave,
     required this.audioPlayer,
@@ -38,15 +38,15 @@ class Arp extends Piano {
   Future<void> preLoad() async {
     await super.preLoad();
 
-    for (final note in notes) {
-      note.audioPlayer.setVolume(0.4);
+    for (final sample in samples) {
+      sample.audioPlayer.setVolume(0.4);
     }
   }
 }
 
 /// plays preloaded piano samples.
 class Piano {
-  final notes = <Note>[];
+  final samples = <Sample>[];
 
   Future<void> preLoad() async {
     const letters = [
@@ -70,7 +70,7 @@ class Piano {
       for (final letter in letters) {
         final fileName = 'piano.mf.$letter$octave.wav';
 
-        notes.add(Note(
+        samples.add(Sample(
           letter: letter,
           octave: octave,
           audioPlayer: await _createAudioPlayer(fileName),
@@ -82,7 +82,7 @@ class Piano {
 
 /// plays preloaded double bass samples.
 class Bass {
-  final notes = <Note>[];
+  final samples = <Sample>[];
 
   Future<void> preLoad() async {
     const letters = [
@@ -110,7 +110,7 @@ class Bass {
           break;
         }
         try {
-          notes.add(Note(
+          samples.add(Sample(
             letter: letter,
             octave: octave,
             audioPlayer: await _createAudioPlayer(fileName),
@@ -123,9 +123,9 @@ class Bass {
   }
 
   void stopAll() {
-    for (final note in notes) {
+    for (final sample in samples) {
       //TODO remove stopAll() completely
-      // note.audioPlayer.stop();
+      // sample.audioPlayer.stop();
     }
   }
 }
