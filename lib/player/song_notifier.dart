@@ -112,11 +112,14 @@ class SongNotifier with ChangeNotifier {
   void _scheduleNotes(scheduler, Song song) {
     final quaverDuration = 30000 ~/ song.tempo;
 
-    AudioPlayer _pianoPlayer(semitone) {
-      final int i = semitone + 12 * 4;
+    AudioPlayer _pianoPlayer(semitone, octave) {
+      final int i = semitone + 12 * octave;
 
       return _piano.samples[i].audioPlayer;
     }
+    AudioPlayer _piano2(semitone)=>_pianoPlayer(semitone, 2);
+    AudioPlayer _piano3(semitone)=>_pianoPlayer(semitone, 3);
+    AudioPlayer _piano4(semitone)=>_pianoPlayer(semitone, 4);
 
     int b = 0;
     int pads = 0;
@@ -130,13 +133,13 @@ class SongNotifier with ChangeNotifier {
       }, () => _bass.stopAll(), 'bass');
 
       _addQuavers(bar.vocal, song, b, pads, quaverDuration, scheduler,
-          _pianoPlayer, null, 'vocal');
+          _piano2, null, 'vocal');
 
       _addQuavers(bar.backing, song, b, pads, quaverDuration, scheduler,
-          _pianoPlayer, null, 'backing');
+          _piano3, null, 'backing');
 
       _addQuavers(bar.harmony, song, b, pads, quaverDuration, scheduler,
-          _pianoPlayer, null, 'harmony');
+          _piano4, null, 'harmony');
 
       _addQuavers(bar.snare, song, b, pads, quaverDuration, scheduler,
           (semitone) => _kick.audioPlayer, null, 'snare');

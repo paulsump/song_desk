@@ -19,7 +19,7 @@
 
 # TODO logic
 
-- fix Love Me Forever
+- fix Don't Make Me Over at the end of verse weirdnes
 - fix over plays note duration for bass
   Life In The Ghetto
   Love Me Forever
