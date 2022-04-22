@@ -24,14 +24,14 @@ class Scheduler {
       if (event.duration != null) {
         final Duration endTime = event.startTime + event.duration!;
 
-        if (!event.wantStartPlay) {
-          if (endTime < currentTime) {
-            //TODO fade out using setVolume
-            event.stop();
+        if (event.startTime < currentTime && currentTime < endTime) {
+          if (event.wantStartPlay) {
+            event.play();
           }
         } else {
-          if (event.startTime < currentTime && currentTime < endTime) {
-            event.play();
+          if (!event.wantStartPlay) {
+            //TODO fade out using setVolume
+            event.stop();
           }
         }
       } else {
