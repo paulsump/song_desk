@@ -157,8 +157,14 @@ class SongNotifier with ChangeNotifier {
           if (!triplet) {
             t += (quaverDuration * panOffset(q, song, voice)).round();
           }
-          _addNote(scheduler, t, getPlayer(semitone), function,
-              quaver.duration != null ? quaverDuration * quaver.duration! : 0);
+          _addNote(
+              scheduler,
+              t,
+              getPlayer(semitone),
+              function,
+              quaver.duration != null
+                  ? quaverDuration * quaver.duration!
+                  : null);
         }
         q += 1;
       }
@@ -197,13 +203,13 @@ class SongNotifier with ChangeNotifier {
   }
 
   void _addNote(scheduler, int t, AudioPlayer audioPlayer,
-      VoidCallback? function, int duration) {
+      VoidCallback? function, int? duration) {
     scheduler.add(
       Event(
           startTime: Duration(milliseconds: t),
           audioPlayer: audioPlayer,
           function: function,
-          duration: Duration(milliseconds: duration)),
+          duration: duration != null ? Duration(milliseconds: duration) : null),
     );
   }
 

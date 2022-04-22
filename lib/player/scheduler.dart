@@ -21,8 +21,23 @@ class Scheduler {
 
   void update(Duration currentTime) {
     for (final event in _events) {
-      if (!event.isPlaying && event.startTime < currentTime) {
-        event.play();
+      if (event.duration != null) {
+        final Duration endTime = event.startTime + event.duration!;
+
+        if (event.isPlaying) {
+          if (endTime < currentTime) {
+            //TODO fade out using setVolume
+            event.stop();
+          }
+        } else {
+          if (event.startTime < currentTime && currentTime < endTime) {
+            event.play();
+          }
+        }
+      } else {
+        if (!event.isPlaying && event.startTime < currentTime) {
+          event.play();
+        }
       }
     }
   }
@@ -60,5 +75,10 @@ class Event {
 
   void reset() {
     isPlaying = false;
+  }
+
+  void stop() {
+    isPlaying = false;
+    audioPlayer?.stop();
   }
 }
