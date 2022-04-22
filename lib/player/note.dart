@@ -32,6 +32,7 @@ class Kick {
   }
 }
 
+/// plays preloaded piano samples quietly.
 class Arp extends Piano {
   @override
   Future<void> preLoad() async {
