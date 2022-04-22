@@ -5,7 +5,10 @@
 
 ## TODO
 
-back button
+My Conversation more swingy
+don't stoop when phone goes black
+dark mode
+better bass line for Bonita verse.
 
 - note duration for bass
   Life In The Ghetto
@@ -15,7 +18,7 @@ back button
   
 - button pause
 
-- Repeats, key changes
+- Repeats
 -   Golden Lady
     O Mundo e um Moinho
     
