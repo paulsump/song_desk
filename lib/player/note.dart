@@ -38,7 +38,7 @@ class Arp extends Piano {
   Future<void> preLoad() async {
     await super.preLoad();
 
-    for (final note in list) {
+    for (final note in notes) {
       note.audioPlayer.setVolume(0.4);
     }
   }
@@ -46,7 +46,7 @@ class Arp extends Piano {
 
 /// plays preloaded piano samples.
 class Piano {
-  final list = <Note>[];
+  final notes = <Note>[];
 
   Future<void> preLoad() async {
     const letters = [
@@ -70,7 +70,7 @@ class Piano {
       for (final letter in letters) {
         final fileName = 'piano.mf.$letter$octave.wav';
 
-        list.add(Note(
+        notes.add(Note(
           letter: letter,
           octave: octave,
           audioPlayer: await _createAudioPlayer(fileName),

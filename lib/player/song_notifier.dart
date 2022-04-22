@@ -94,7 +94,7 @@ class SongNotifier with ChangeNotifier {
     AudioPlayer _pianoPlayer(semitone) {
       final int i = semitone + 12 * 4;
 
-      return _piano.list[i].audioPlayer;
+      return _piano.notes[i].audioPlayer;
     }
 
     int b = 0;
@@ -124,7 +124,7 @@ class SongNotifier with ChangeNotifier {
       _addQuavers(bar.arp, song, b, pads, duration, scheduler, (semitone) {
         final int i = semitone + 12 * 5;
 
-        return _arp.list[i].audioPlayer;
+        return _arp.notes[i].audioPlayer;
       }, null, 'arp');
 
       if (bar.pad) {
