@@ -66,15 +66,16 @@ class _HomePageState extends State<HomePage>
 
     return Scaffold(
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
+        //TODO PICK from SongNotifier.titles
+        child: ListView(children: [
+          for (final title in SongNotifier.titles)
             Text(
-              songNotifier.currentSongTitle,
-              style: Theme.of(context).textTheme.headline5,
+              title,
+              style: songNotifier.currentSongTitle == title?
+              Theme.of(context).textTheme.headline4
+:              Theme.of(context).textTheme.headline6,
             ),
-          ],
-        ),
+        ]),
       ),
       floatingActionButton: !songNotifier.isReady
           ? Container()

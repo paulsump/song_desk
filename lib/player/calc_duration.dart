@@ -1,3 +1,5 @@
+// © 2022, Paul Sumpner <sumpner@hotmail.com>
+
 import 'dart:math';
 
 import 'package:song_desk/loader/song.dart';

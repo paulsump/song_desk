@@ -7,7 +7,8 @@
 
 - go to bar (need full ui?)  
 - pick song from list
-- dark mode
+  //TODO PICK from SongNotifier.titles
+- dark mode (save battery)
 - mute voice
 - button pause
 
