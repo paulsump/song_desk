@@ -82,12 +82,15 @@ class _HomePageState extends State<HomePage>
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 FloatingActionButton(
+                  onPressed: songNotifier.back,
+                  child: const Icon(Icons.skip_previous),
+                ),
+                FloatingActionButton(
                   onPressed: songNotifier.play,
                   child: const Icon(Icons.play_arrow_rounded),
                 ),
-                //TODO back button
                 FloatingActionButton(
-                  onPressed: songNotifier.playNext,
+                  onPressed: songNotifier.forward,
                   child: const Icon(Icons.skip_next),
                 ),
                 FloatingActionButton(

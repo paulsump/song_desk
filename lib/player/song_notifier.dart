@@ -45,10 +45,23 @@ class SongNotifier with ChangeNotifier {
     }
   }
 
-  void playNext() {
+  void back() {
+    --_currentSongIndex;
+
+    if (_currentSongIndex < 0) {
+      _currentSongIndex = 0;
+    }
+    _playAndSavePreferences();
+  }
+
+  void forward() {
     ++_currentSongIndex;
 
     _currentSongIndex %= _schedulers.entries.length;
+    _playAndSavePreferences();
+  }
+
+  void _playAndSavePreferences() {
     play();
 
     notifyListeners();
@@ -233,7 +246,7 @@ class SongNotifier with ChangeNotifier {
   void _addPlayNextEvent(scheduler, int startTime) {
     scheduler.add(Event(
       startTime: Duration(milliseconds: startTime),
-      function: playNext,
+      function: forward,
     ));
   }
 }
