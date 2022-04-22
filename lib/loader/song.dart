@@ -99,6 +99,18 @@ class Bar {
         preferHarmony =
             json.containsKey('preferHarmony') ? json['preferHarmony'] : false,
         pad = json.containsKey('pad') ? json['pad'] : false;
+
+  List<Quaver>? getQuavers(String voice) {
+    switch (voice) {
+      case 'bass':return bass;
+      case 'vocal':return vocal;
+      case 'backing':return backing;
+      case 'harmony':return harmony;
+      case 'snare':return snare;
+      case 'arp':return arp;
+    }
+    return null;
+  }
 }
 
 List<String>? _createPhrases(Map<String, dynamic> json) {

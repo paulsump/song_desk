@@ -175,11 +175,10 @@ class SongNotifier with ChangeNotifier {
               t,
               getPlayer(semitone),
               function,
-              quaver.duration != null
-                  ? quaverDuration * quaver.duration!
-                  : null);
-          //TODO Using calcDuration()
-          // : calcDuration(b, q, voice, song.bars));
+              quaverDuration *
+                  (quaver.duration != null
+                      ? quaver.duration!
+                      : calcDuration(b, q, voice, song.bars)));
         }
         q += 1;
       }

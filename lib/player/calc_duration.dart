@@ -1,5 +1,7 @@
 import 'dart:math';
 
+import 'package:song_desk/loader/song.dart';
+
 /// Quaver Info
 class _Note {
   _Note(this.barIndex, this.quaverIndex);
@@ -7,8 +9,8 @@ class _Note {
   int barIndex;
   int quaverIndex;
 
-  dynamic bar;
-  dynamic quaver;
+  Bar? bar;
+  Quaver? quaver;
 }
 
 /// Calculate the duration of the note from the gap to the next note
@@ -45,7 +47,7 @@ class _NoteIterable extends Iterable<_Note> {
   final String voice;
   final int fromBarIndex, fromQuaverIndex;
 
-  final dynamic bars;
+  final List<Bar> bars;
 
   @override
   Iterator<_Note> get iterator =>
@@ -65,14 +67,14 @@ class _NoteIterator implements Iterator<_Note> {
   final String voice;
 
   final _Note _note;
-  final dynamic bars;
+  final List<Bar> bars;
 
   @override
   _Note get current => _note;
 
   @override
   bool moveNext() {
-    if (_note.barIndex < bars.length()) {
+    if (_note.barIndex < bars.length) {
       _note.bar = bars[_note.barIndex];
 
       if (_note.quaverIndex < 4) {
@@ -83,14 +85,14 @@ class _NoteIterator implements Iterator<_Note> {
 
           _note.quaverIndex = 0;
           _note.quaver =
-              _getQuaver(_note.barIndex, _note.bar, _note.quaverIndex);
+              _getQuaver(_note.barIndex, _note.bar!, _note.quaverIndex);
 
           if (_note.quaver != null) {
             return true;
           }
         }
 
-        _note.quaver = _getQuaver(_note.barIndex, _note.bar, _note.quaverIndex);
+        _note.quaver = _getQuaver(_note.barIndex, _note.bar!, _note.quaverIndex);
 
         if (_note.quaver != null) {
           return true;
@@ -101,13 +103,17 @@ class _NoteIterator implements Iterator<_Note> {
     return false;
   }
 
-  _getQuaver(barIndex, bar, quaverIndex) {
-    if (bar.containsKey(voice)) {
-      dynamic quaver = bar[voice][quaverIndex];
+  Quaver? _getQuaver(int barIndex,Bar bar,int quaverIndex) {
+    final List<Quaver>? quavers = bar.getQuavers(voice);
 
-      if (quaver.containsKey('pitch')) {
+    if (quavers!=null) {
+      final Quaver quaver = quavers[quaverIndex];
+
+      if (quaver.pitch != null) {
         return quaver;
       }
     }
+
+    return null;
   }
 }
