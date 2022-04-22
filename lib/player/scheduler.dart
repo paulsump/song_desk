@@ -44,6 +44,7 @@ class Scheduler {
 }
 
 /// Note events
+/// TODO SPlit this into two classes FunctionEvent and AudioEvent
 class Event {
   Event({
     required this.startTime,

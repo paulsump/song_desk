@@ -121,13 +121,6 @@ class Bass {
       }
     }
   }
-
-  void stopAll() {
-    // for (final sample in samples) {
-      //TODO remove stopAll() completely
-      // sample.audioPlayer.stop();
-    // }
-  }
 }
 
 Future<AudioPlayer> _createAudioPlayer(String fileName) async {

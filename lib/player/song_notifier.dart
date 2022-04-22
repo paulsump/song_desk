@@ -117,9 +117,10 @@ class SongNotifier with ChangeNotifier {
 
       return _piano.samples[i].audioPlayer;
     }
-    AudioPlayer _piano2(semitone)=>_pianoPlayer(semitone, 2);
-    AudioPlayer _piano3(semitone)=>_pianoPlayer(semitone, 3);
-    AudioPlayer _piano4(semitone)=>_pianoPlayer(semitone, 4);
+
+    AudioPlayer _piano2(semitone) => _pianoPlayer(semitone, 2);
+    AudioPlayer _piano3(semitone) => _pianoPlayer(semitone, 3);
+    AudioPlayer _piano4(semitone) => _pianoPlayer(semitone, 4);
 
     int b = 0;
     int pads = 0;
@@ -130,26 +131,26 @@ class SongNotifier with ChangeNotifier {
         final int i = semitone + 12 * 2;
 
         return _bass.samples[i].audioPlayer;
-      }, () => _bass.stopAll(), 'bass');
+      }, 'bass');
 
-      _addQuavers(bar.vocal, song, b, pads, quaverDuration, scheduler,
-          _piano2, null, 'vocal');
+      _addQuavers(bar.vocal, song, b, pads, quaverDuration, scheduler, _piano2,
+          'vocal');
 
       _addQuavers(bar.backing, song, b, pads, quaverDuration, scheduler,
-          _piano3, null, 'backing');
+          _piano3, 'backing');
 
       _addQuavers(bar.harmony, song, b, pads, quaverDuration, scheduler,
-          _piano4, null, 'harmony');
+          _piano4, 'harmony');
 
       _addQuavers(bar.snare, song, b, pads, quaverDuration, scheduler,
-          (semitone) => _kick.audioPlayer, null, 'snare');
+          (semitone) => _kick.audioPlayer, 'snare');
 
       _addQuavers(bar.arp, song, b, pads, quaverDuration, scheduler,
           (semitone) {
         final int i = semitone + 12 * 5;
 
         return _arp.samples[i].audioPlayer;
-      }, null, 'arp');
+      }, 'arp');
 
       if (bar.pad) {
         ++pads;
@@ -162,7 +163,7 @@ class SongNotifier with ChangeNotifier {
   }
 
   void _addQuavers(quavers, song, int b, int pads, int quaverDuration,
-      scheduler, getPlayer, function, voice) {
+      scheduler, getPlayer, voice) {
     if (quavers != null) {
       int q = 0;
 
@@ -183,7 +184,6 @@ class SongNotifier with ChangeNotifier {
               scheduler,
               t,
               getPlayer(semitone),
-              function,
               quaver.duration != null
                   ? quaverDuration * quaver.duration!
                   : voice == 'bass'
@@ -226,13 +226,11 @@ class SongNotifier with ChangeNotifier {
     return 0;
   }
 
-  void _addNote(scheduler, int t, AudioPlayer audioPlayer,
-      VoidCallback? function, int? duration) {
+  void _addNote(scheduler, int t, AudioPlayer audioPlayer, int? duration) {
     scheduler.add(
       Event(
           startTime: Duration(milliseconds: t),
           audioPlayer: audioPlayer,
-          function: function,
           duration: duration != null ? Duration(milliseconds: duration) : null),
     );
   }
