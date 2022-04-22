@@ -137,8 +137,8 @@ class SongNotifier with ChangeNotifier {
     _addPlayNextEvent(scheduler, duration * b * 4);
   }
 
-  void _addQuavers(quavers, song, int b, int pads, int duration, scheduler, function,
-      fun2, voice) {
+  void _addQuavers(quavers, song, int b, int pads, int duration, scheduler, getPlayer,
+      function, voice) {
     if (quavers != null) {
       int q = 0;
 
@@ -155,7 +155,7 @@ class SongNotifier with ChangeNotifier {
           if (!triplet) {
             t += (duration * panOffset(q, song, voice)).round();
           }
-          _addNote(scheduler, t, function(semitone), fun2);
+          _addNote(scheduler, t, getPlayer(semitone), function);
         }
         q += 1;
       }
