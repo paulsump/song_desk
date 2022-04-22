@@ -45,14 +45,6 @@
             "gaps": [
                 "backing"
             ],
-            "snare": [
-                {
-                    "pitch": -8
-                },
-                {},
-                {},
-                {}
-            ],
             "vocal": [
                 {
                     "lyric": "",
@@ -86,6 +78,14 @@
             "gaps": [
                 "backing"
             ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
             "vocal": [
                 {},
                 {},
@@ -99,14 +99,6 @@
         {
             "gaps": [
                 "backing"
-            ],
-            "snare": [
-                {
-                    "pitch": -8
-                },
-                {},
-                {},
-                {}
             ],
             "vocal": [
                 {
@@ -163,14 +155,6 @@
             "gaps": [
                 "backing"
             ],
-            "snare": [
-                {
-                    "pitch": -8
-                },
-                {},
-                {},
-                {}
-            ],
             "vocal": [
                 {
                     "lyric": "",
@@ -202,6 +186,14 @@
             "gaps": [
                 "backing"
             ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
             "vocal": [
                 {},
                 {},
@@ -216,14 +208,6 @@
             "blockEnd": true,
             "gaps": [
                 "backing"
-            ],
-            "snare": [
-                {
-                    "pitch": -8
-                },
-                {},
-                {},
-                {}
             ],
             "vocal": [
                 {
@@ -280,14 +264,6 @@
             "gaps": [
                 "backing"
             ],
-            "snare": [
-                {
-                    "pitch": -8
-                },
-                {},
-                {},
-                {}
-            ],
             "vocal": [
                 {
                     "lyric": "",
@@ -320,6 +296,14 @@
             "gaps": [
                 "backing"
             ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
             "vocal": [
                 {},
                 {},
@@ -333,14 +317,6 @@
         {
             "gaps": [
                 "backing"
-            ],
-            "snare": [
-                {
-                    "pitch": -8
-                },
-                {},
-                {},
-                {}
             ],
             "vocal": [
                 {
@@ -397,14 +373,6 @@
             "gaps": [
                 "backing"
             ],
-            "snare": [
-                {
-                    "pitch": -8
-                },
-                {},
-                {},
-                {}
-            ],
             "vocal": [
                 {
                     "lyric": "",
@@ -436,6 +404,14 @@
             "gaps": [
                 "backing"
             ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
             "vocal": [
                 {},
                 {},
@@ -450,14 +426,6 @@
             "blockEnd": true,
             "gaps": [
                 "backing"
-            ],
-            "snare": [
-                {
-                    "pitch": -8
-                },
-                {},
-                {},
-                {}
             ],
             "vocal": [
                 {
@@ -523,14 +491,6 @@
                     "pitch": 3
                 },
                 {}
-            ],
-            "snare": [
-                {
-                    "pitch": -8
-                },
-                {},
-                {},
-                {}
             ]
         },
         {
@@ -558,21 +518,21 @@
                 {}
             ],
             "chord": "E-9",
-            "chordShape": " ^"
+            "chordShape": " ^",
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ]
         },
         {
             "backing": [
                 {
                     "lyric": "",
                     "pitch": 4
-                },
-                {},
-                {},
-                {}
-            ],
-            "snare": [
-                {
-                    "pitch": -8
                 },
                 {},
                 {},
@@ -632,14 +592,6 @@
                     "pitch": 5
                 },
                 {}
-            ],
-            "snare": [
-                {
-                    "pitch": -8
-                },
-                {},
-                {},
-                {}
             ]
         },
         {
@@ -665,6 +617,14 @@
                     "pitch": -2
                 },
                 {}
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
             ]
         },
         {
@@ -672,14 +632,6 @@
                 {
                     "lyric": "",
                     "pitch": 2
-                },
-                {},
-                {},
-                {}
-            ],
-            "snare": [
-                {
-                    "pitch": -8
                 },
                 {},
                 {},
@@ -739,14 +691,6 @@
                     "pitch": 2
                 },
                 {}
-            ],
-            "snare": [
-                {
-                    "pitch": -8
-                },
-                {},
-                {},
-                {}
             ]
         },
         {
@@ -773,21 +717,21 @@
                 },
                 {}
             ],
-            "chordShape": " ^"
+            "chordShape": " ^",
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ]
         },
         {
             "backing": [
                 {
                     "lyric": "",
                     "pitch": 0
-                },
-                {},
-                {},
-                {}
-            ],
-            "snare": [
-                {
-                    "pitch": -8
                 },
                 {},
                 {},
@@ -847,14 +791,6 @@
                     "pitch": 2
                 },
                 {}
-            ],
-            "snare": [
-                {
-                    "pitch": -8
-                },
-                {},
-                {},
-                {}
             ]
         },
         {
@@ -880,6 +816,14 @@
                     "pitch": -2
                 },
                 {}
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
             ]
         },
         {
@@ -887,14 +831,6 @@
                 {
                     "lyric": "",
                     "pitch": 0
-                },
-                {},
-                {},
-                {}
-            ],
-            "snare": [
-                {
-                    "pitch": -8
                 },
                 {},
                 {},
@@ -964,15 +900,7 @@
                 },
                 {}
             ],
-            "preferHarmony": false,
-            "snare": [
-                {
-                    "pitch": -8
-                },
-                {},
-                {},
-                {}
-            ]
+            "preferHarmony": false
         },
         {
             "arp": [
@@ -1000,7 +928,15 @@
             ],
             "chord": "E-9",
             "chordShape": " ^",
-            "preferHarmony": false
+            "preferHarmony": false,
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ]
         },
         {
             "backing": [
@@ -1012,15 +948,7 @@
                 {},
                 {}
             ],
-            "preferHarmony": false,
-            "snare": [
-                {
-                    "pitch": -8
-                },
-                {},
-                {},
-                {}
-            ]
+            "preferHarmony": false
         },
         {
             "arp": [
@@ -1085,15 +1013,7 @@
                 },
                 {}
             ],
-            "preferHarmony": false,
-            "snare": [
-                {
-                    "pitch": -8
-                },
-                {},
-                {},
-                {}
-            ]
+            "preferHarmony": false
         },
         {
             "arp": [
@@ -1119,7 +1039,15 @@
                 },
                 {}
             ],
-            "preferHarmony": false
+            "preferHarmony": false,
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ]
         },
         {
             "backing": [
@@ -1131,15 +1059,7 @@
                 {},
                 {}
             ],
-            "preferHarmony": false,
-            "snare": [
-                {
-                    "pitch": -8
-                },
-                {},
-                {},
-                {}
-            ]
+            "preferHarmony": false
         },
         {
             "arp": [
@@ -1204,15 +1124,7 @@
                 },
                 {}
             ],
-            "preferHarmony": false,
-            "snare": [
-                {
-                    "pitch": -8
-                },
-                {},
-                {},
-                {}
-            ]
+            "preferHarmony": false
         },
         {
             "arp": [
@@ -1239,7 +1151,15 @@
                 {}
             ],
             "chordShape": " ^",
-            "preferHarmony": false
+            "preferHarmony": false,
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ]
         },
         {
             "backing": [
@@ -1251,15 +1171,7 @@
                 {},
                 {}
             ],
-            "preferHarmony": false,
-            "snare": [
-                {
-                    "pitch": -8
-                },
-                {},
-                {},
-                {}
-            ]
+            "preferHarmony": false
         },
         {
             "arp": [
@@ -1324,15 +1236,7 @@
                 },
                 {}
             ],
-            "preferHarmony": false,
-            "snare": [
-                {
-                    "pitch": -8
-                },
-                {},
-                {},
-                {}
-            ]
+            "preferHarmony": false
         },
         {
             "arp": [
@@ -1358,7 +1262,15 @@
                 },
                 {}
             ],
-            "preferHarmony": false
+            "preferHarmony": false,
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ]
         },
         {
             "backing": [
@@ -1371,15 +1283,7 @@
                 {}
             ],
             "blockEnd": true,
-            "preferHarmony": false,
-            "snare": [
-                {
-                    "pitch": -8
-                },
-                {},
-                {},
-                {}
-            ]
+            "preferHarmony": false
         },
         {
             "arp": [
@@ -1437,14 +1341,6 @@
             ]
         },
         {
-            "snare": [
-                {
-                    "pitch": -8
-                },
-                {},
-                {},
-                {}
-            ],
             "verses": [
                 {
                     "pitch": 0,
@@ -1483,6 +1379,14 @@
             "gaps": [
                 "backing"
             ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
             "verses": [
                 {
                     "pitch": 0,
@@ -1506,14 +1410,6 @@
         {
             "gaps": [
                 "backing"
-            ],
-            "snare": [
-                {
-                    "pitch": -8
-                },
-                {},
-                {},
-                {}
             ]
         },
         {
@@ -1565,14 +1461,6 @@
             "chordShapeForD#": " ^"
         },
         {
-            "snare": [
-                {
-                    "pitch": -8
-                },
-                {},
-                {},
-                {}
-            ],
             "verses": [
                 {
                     "pitch": 0,
@@ -1603,11 +1491,6 @@
             ],
             "gaps": [
                 "backing"
-            ]
-        },
-        {
-            "gaps": [
-                "backing"
             ],
             "snare": [
                 {
@@ -1616,6 +1499,11 @@
                 {},
                 {},
                 {}
+            ]
+        },
+        {
+            "gaps": [
+                "backing"
             ]
         },
         {
@@ -1665,14 +1553,6 @@
             "chordShapeForD#": "^ "
         },
         {
-            "snare": [
-                {
-                    "pitch": -8
-                },
-                {},
-                {},
-                {}
-            ],
             "verses": [
                 {
                     "pitch": 0,
@@ -1701,11 +1581,6 @@
             ],
             "gaps": [
                 "backing"
-            ]
-        },
-        {
-            "gaps": [
-                "backing"
             ],
             "snare": [
                 {
@@ -1714,6 +1589,11 @@
                 {},
                 {},
                 {}
+            ]
+        },
+        {
+            "gaps": [
+                "backing"
             ],
             "verses": [
                 {
@@ -1767,14 +1647,6 @@
             ]
         },
         {
-            "snare": [
-                {
-                    "pitch": -8
-                },
-                {},
-                {},
-                {}
-            ],
             "verses": [
                 {
                     "pitch": 0,
@@ -1804,6 +1676,14 @@
             "gaps": [
                 "backing"
             ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
             "verses": [
                 {
                     "pitch": 0,
@@ -1818,14 +1698,6 @@
         {
             "gaps": [
                 "backing"
-            ],
-            "snare": [
-                {
-                    "pitch": -8
-                },
-                {},
-                {},
-                {}
             ]
         },
         {
@@ -1875,14 +1747,6 @@
             "chordShapeForD#": " _"
         },
         {
-            "snare": [
-                {
-                    "pitch": -8
-                },
-                {},
-                {},
-                {}
-            ],
             "verses": [
                 {
                     "pitch": 0,
@@ -1911,11 +1775,6 @@
             ],
             "gaps": [
                 "backing"
-            ]
-        },
-        {
-            "gaps": [
-                "backing"
             ],
             "snare": [
                 {
@@ -1924,6 +1783,11 @@
                 {},
                 {},
                 {}
+            ]
+        },
+        {
+            "gaps": [
+                "backing"
             ]
         },
         {
@@ -1975,14 +1839,6 @@
             "chordShapeForD#": " ^"
         },
         {
-            "snare": [
-                {
-                    "pitch": -8
-                },
-                {},
-                {},
-                {}
-            ],
             "verses": [
                 {
                     "pitch": 0,
@@ -2013,11 +1869,6 @@
             ],
             "gaps": [
                 "backing"
-            ]
-        },
-        {
-            "gaps": [
-                "backing"
             ],
             "snare": [
                 {
@@ -2026,6 +1877,11 @@
                 {},
                 {},
                 {}
+            ]
+        },
+        {
+            "gaps": [
+                "backing"
             ]
         },
         {
@@ -2075,14 +1931,6 @@
             "chordShapeForD#": "^ "
         },
         {
-            "snare": [
-                {
-                    "pitch": -8
-                },
-                {},
-                {},
-                {}
-            ],
             "verses": [
                 {
                     "pitch": 0,
@@ -2112,6 +1960,14 @@
             "gaps": [
                 "backing"
             ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
             "verses": [
                 {
                     "pitch": 0,
@@ -2126,14 +1982,6 @@
         {
             "gaps": [
                 "backing"
-            ],
-            "snare": [
-                {
-                    "pitch": -8
-                },
-                {},
-                {},
-                {}
             ]
         },
         {
@@ -2177,14 +2025,6 @@
             ]
         },
         {
-            "snare": [
-                {
-                    "pitch": -8
-                },
-                {},
-                {},
-                {}
-            ],
             "verses": [
                 {
                     "pitch": 0,
@@ -2214,6 +2054,14 @@
             "gaps": [
                 "backing"
             ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
             "verses": [
                 {
                     "pitch": 0,
@@ -2229,14 +2077,6 @@
             "blockEnd": true,
             "gaps": [
                 "backing"
-            ],
-            "snare": [
-                {
-                    "pitch": -8
-                },
-                {},
-                {},
-                {}
             ]
         },
         {
@@ -2295,14 +2135,6 @@
                 {},
                 {}
             ],
-            "snare": [
-                {
-                    "pitch": -8
-                },
-                {},
-                {},
-                {}
-            ],
             "vocal": [
                 {
                     "lyric": "",
@@ -2331,6 +2163,14 @@
             "gaps": [
                 "backing"
             ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
             "vocal": [
                 {
                     "lyric": "",
@@ -2348,14 +2188,6 @@
                 {
                     "pitch": 0
                 },
-                {}
-            ],
-            "snare": [
-                {
-                    "pitch": -8
-                },
-                {},
-                {},
                 {}
             ]
         },
@@ -2422,14 +2254,6 @@
                 {},
                 {},
                 {}
-            ],
-            "snare": [
-                {
-                    "pitch": -8
-                },
-                {},
-                {},
-                {}
             ]
         },
         {
@@ -2449,6 +2273,14 @@
             ],
             "gaps": [
                 "backing"
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
             ]
         },
         {
@@ -2459,14 +2291,6 @@
                     "accidental": "sharp",
                     "pitch": 2
                 },
-                {}
-            ],
-            "snare": [
-                {
-                    "pitch": -8
-                },
-                {},
-                {},
                 {}
             ]
         },
@@ -2525,14 +2349,6 @@
                 {},
                 {},
                 {}
-            ],
-            "snare": [
-                {
-                    "pitch": -8
-                },
-                {},
-                {},
-                {}
             ]
         },
         {
@@ -2552,11 +2368,6 @@
             ],
             "gaps": [
                 "backing"
-            ]
-        },
-        {
-            "gaps": [
-                "backing"
             ],
             "snare": [
                 {
@@ -2565,6 +2376,11 @@
                 {},
                 {},
                 {}
+            ]
+        },
+        {
+            "gaps": [
+                "backing"
             ]
         },
         {
@@ -2625,14 +2441,6 @@
                 {},
                 {},
                 {}
-            ],
-            "snare": [
-                {
-                    "pitch": -8
-                },
-                {},
-                {},
-                {}
             ]
         },
         {
@@ -2659,6 +2467,14 @@
                     "pitch": 5
                 },
                 {}
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
             ]
         },
         {
@@ -2670,14 +2486,6 @@
                 {
                     "pitch": 3
                 },
-                {}
-            ],
-            "snare": [
-                {
-                    "pitch": -8
-                },
-                {},
-                {},
                 {}
             ]
         },
@@ -2763,14 +2571,6 @@
                 {},
                 {},
                 {}
-            ],
-            "snare": [
-                {
-                    "pitch": -8
-                },
-                {},
-                {},
-                {}
             ]
         },
         {
@@ -2810,6 +2610,14 @@
                 {},
                 {},
                 {}
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
             ]
         },
         {
@@ -2826,14 +2634,6 @@
                 {
                     "pitch": 0,
                     "shared": ";# -ry /  -ry"
-                },
-                {},
-                {},
-                {}
-            ],
-            "snare": [
-                {
-                    "pitch": -8
                 },
                 {},
                 {},
@@ -2932,14 +2732,6 @@
                 {},
                 {},
                 {}
-            ],
-            "snare": [
-                {
-                    "pitch": -8
-                },
-                {},
-                {},
-                {}
             ]
         },
         {
@@ -2980,6 +2772,14 @@
                 {},
                 {},
                 {}
+            ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
             ]
         },
         {
@@ -2998,14 +2798,6 @@
                 {
                     "pitch": 0,
                     "shared": ";#-ry/-ry"
-                },
-                {},
-                {},
-                {}
-            ],
-            "snare": [
-                {
-                    "pitch": -8
                 },
                 {},
                 {},
@@ -3106,14 +2898,6 @@
                 {},
                 {}
             ],
-            "snare": [
-                {
-                    "pitch": -8
-                },
-                {},
-                {},
-                {}
-            ],
             "vocal": [
                 {},
                 {},
@@ -3163,6 +2947,14 @@
                 {},
                 {}
             ],
+            "snare": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
             "vocal": [
                 {},
                 {},
@@ -3191,14 +2983,6 @@
                 {
                     "pitch": 0,
                     "shared": ";# do/ do"
-                },
-                {},
-                {},
-                {}
-            ],
-            "snare": [
-                {
-                    "pitch": -8
                 },
                 {},
                 {},
@@ -3305,14 +3089,6 @@
                 {},
                 {},
                 {}
-            ],
-            "snare": [
-                {
-                    "pitch": -8
-                },
-                {},
-                {},
-                {}
             ]
         },
         {
@@ -3335,12 +3111,6 @@
             "gaps": [
                 "backing"
             ],
-            "preferHarmony": true
-        },
-        {
-            "gaps": [
-                "backing"
-            ],
             "preferHarmony": true,
             "snare": [
                 {
@@ -3349,7 +3119,13 @@
                 {},
                 {},
                 {}
+            ]
+        },
+        {
+            "gaps": [
+                "backing"
             ],
+            "preferHarmony": true,
             "songEnd": true
         },
         {
@@ -3396,16 +3172,7 @@
                 {}
             ]
         },
-        {
-            "snare": [
-                {
-                    "pitch": -8
-                },
-                {},
-                {},
-                {}
-            ]
-        },
+        {},
         {
             "arp": [
                 {
@@ -3425,13 +3192,7 @@
             ],
             "gaps": [
                 "backing"
-            ]
-        },
-        {
-            "gaps": [
-                "backing"
             ],
-            "repeat": "Right",
             "snare": [
                 {
                     "pitch": -8
@@ -3440,6 +3201,12 @@
                 {},
                 {}
             ]
+        },
+        {
+            "gaps": [
+                "backing"
+            ],
+            "repeat": "Right"
         }
     ],
     "borb": "backing",

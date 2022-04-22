@@ -31,4 +31,4 @@ void out(Object object) {
 /// At the moment there aren't any hidden log errors that make the
 /// extra dependency worthwhile.
 /// So I'll just output it for now...
-void logError(String message) => out(message);
+void logError(String message) => out('Error: $message');

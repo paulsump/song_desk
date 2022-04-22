@@ -1,5 +1,7 @@
 // © 2022, Paul Sumpner <sumpner@hotmail.com>
 
+import 'package:song_desk/out.dart';
+
 class Song {
   final List<Bar> bars;
 
@@ -72,8 +74,7 @@ List<Quaver>? _createQuavers(Map<String, dynamic> json, String voice) {
   List<Quaver>? quavers;
 
   if (json.containsKey(voice)) {
-    var q = json[voice];
-    quavers = List<Quaver>.from(q.map((source) => Quaver.fromJson(source)));
+    quavers = List<Quaver>.from(json[voice].map((q) => Quaver.fromJson(q)));
   }
   return quavers;
 }
@@ -151,10 +152,13 @@ class Quaver {
   final String? accidental;
   final bool triplet;
 
+  final int? duration;
+
   Quaver.fromJson(Map<String, dynamic> json)
       : pitch = json['pitch'],
         accidental = json['accidental'],
-        triplet = json.containsKey('triplet');
+        triplet = json.containsKey('triplet'),
+        duration = json['duration'];
 
   @override
   String toString() {

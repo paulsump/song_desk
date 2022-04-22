@@ -137,8 +137,8 @@ class SongNotifier with ChangeNotifier {
     _addPlayNextEvent(scheduler, duration * b * 4);
   }
 
-  void _addQuavers(quavers, song, int b, int pads, int duration, scheduler, getPlayer,
-      function, voice) {
+  void _addQuavers(quavers, song, int b, int pads, int duration, scheduler,
+      getPlayer, function, voice) {
     if (quavers != null) {
       int q = 0;
 
@@ -193,7 +193,8 @@ class SongNotifier with ChangeNotifier {
     return 0;
   }
 
-  void _addNote(scheduler, int t, AudioPlayer audioPlayer, VoidCallback? function) {
+  void _addNote(
+      scheduler, int t, AudioPlayer audioPlayer, VoidCallback? function) {
     scheduler.add(
       Event(
           startTime: Duration(milliseconds: t),

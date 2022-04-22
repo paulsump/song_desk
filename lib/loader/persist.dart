@@ -4,6 +4,7 @@ import 'dart:convert';
 
 import 'package:flutter/services.dart';
 import 'package:song_desk/loader/song.dart';
+import 'package:song_desk/out.dart';
 
 class Persist {
   final songs = <String, Song?>{};
@@ -36,6 +37,11 @@ class Persist {
         await rootBundle.loadString('$folderPath$name$extension');
 
     final map = await json.decode(response);
-    songs[name] = Song.fromJson(map);
+
+    try {
+      songs[name] = Song.fromJson(map);
+    } catch (e) {
+      logError('Loading $name');
+    }
   }
 }
