@@ -46,6 +46,12 @@ class SongNotifier with ChangeNotifier {
     }
   }
 
+  void playIndex(int index) {
+    _currentSongIndex = index;
+
+    _playAndSavePreferences();
+  }
+
   void back() {
     --_currentSongIndex;
 

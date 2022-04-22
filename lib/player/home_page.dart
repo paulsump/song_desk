@@ -66,16 +66,22 @@ class _HomePageState extends State<HomePage>
 
     return Scaffold(
       body: Center(
-        //TODO PICK from SongNotifier.titles
-        child: ListView(children: [
-          for (final title in SongNotifier.titles)
-            Text(
-              title,
-              style: songNotifier.currentSongTitle == title?
-              Theme.of(context).textTheme.headline4
-:              Theme.of(context).textTheme.headline6,
-            ),
-        ]),
+        child: ListView.builder(
+            itemCount: SongNotifier.titles.length,
+            itemBuilder: (context, index) {
+              final String title = SongNotifier.titles[index];
+              return ListTile(
+                onTap: () {
+                  songNotifier.playIndex(index);
+                },
+                title: Text(
+                  title,
+                  style: songNotifier.currentSongTitle == title
+                      ? Theme.of(context).textTheme.headline4
+                      : Theme.of(context).textTheme.headline6,
+                ),
+              );
+            }),
       ),
       floatingActionButton: !songNotifier.isReady
           ? Container()
