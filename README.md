@@ -36,6 +36,7 @@
 
 # TODO Tricky
 
+- or at least stop the timer!...
 - don't stop when phone goes black. - find out what this is called eg. lock.
   audioplayer play "stayAwake"
 

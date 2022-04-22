@@ -228,10 +228,11 @@ class SongNotifier with ChangeNotifier {
 
   void _addNote(scheduler, int t, AudioPlayer audioPlayer, int? duration) {
     scheduler.add(
-      Event(
-          startTime: Duration(milliseconds: t),
-          audioPlayer: audioPlayer,
-          duration: duration != null ? Duration(milliseconds: duration) : null),
+      AudioEvent(
+        startTime: Duration(milliseconds: t),
+        duration: duration != null ? Duration(milliseconds: duration) : null,
+        audioPlayer: audioPlayer,
+      ),
     );
   }
 
@@ -252,8 +253,8 @@ class SongNotifier with ChangeNotifier {
   }
 
   ///Auto play next song when finish song.
-  void _addPlayNextEvent(scheduler, int startTime) {
-    scheduler.add(Event(
+  void _addPlayNextEvent(Scheduler scheduler, int startTime) {
+    scheduler.add(FunctionEvent(
       startTime: Duration(milliseconds: startTime),
       function: forward,
     ));

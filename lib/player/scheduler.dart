@@ -44,26 +44,55 @@ class Scheduler {
 }
 
 /// Note events
-/// TODO SPlit this into two classes FunctionEvent and AudioEvent
-class Event {
+abstract class Event {
   Event({
     required this.startTime,
-    this.audioPlayer,
-    this.function,
     this.duration,
   });
 
   final Duration startTime;
-  final AudioPlayer? audioPlayer;
-
-  final VoidCallback? function;
   bool wantStartPlay = true;
 
   final Duration? duration;
 
-  void play() {
-    function?.call();
+  void play();
 
+  void setWantStartPlay() {
+    wantStartPlay = true;
+  }
+
+  void stop() {
+    wantStartPlay = true;
+  }
+}
+
+/// e.g. a call back to go to the next track
+class FunctionEvent extends Event {
+  FunctionEvent({
+    required Duration startTime,
+    required this.function,
+  }) : super(startTime: startTime);
+
+  final VoidCallback function;
+
+  @override
+  void play() {
+    function();
+  }
+}
+
+/// Play a sample for an optional duration
+class AudioEvent extends Event {
+  AudioEvent({
+    required Duration startTime,
+    Duration? duration,
+    this.audioPlayer,
+  }) : super(startTime: startTime, duration: duration);
+
+  final AudioPlayer? audioPlayer;
+
+  @override
+  void play() {
     if (audioPlayer != null) {
       if (!wantStartPlay) {
         unawaited(audioPlayer!.seek(Duration.zero));
@@ -74,12 +103,9 @@ class Event {
     }
   }
 
-  void setWantStartPlay() {
-    wantStartPlay = true;
-  }
-
+  @override
   void stop() {
-    wantStartPlay = true;
+    super.stop();
     audioPlayer?.stop();
   }
 }
