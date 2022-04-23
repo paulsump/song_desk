@@ -3,17 +3,7 @@
 import 'dart:math';
 
 import 'package:song_desk/loader/song.dart';
-
-/// Quaver Info
-class _Note {
-  _Note(this.barIndex, this.quaverIndex);
-
-  int barIndex;
-  int quaverIndex;
-
-  Bar? bar;
-  Quaver? quaver;
-}
+import 'package:song_desk/out.dart';
 
 /// Calculate the duration of the note from the gap to the next note
 int calcDuration(fromBarIndex, fromQuaverIndex, voice, bars) {
@@ -22,8 +12,12 @@ int calcDuration(fromBarIndex, fromQuaverIndex, voice, bars) {
   int previousBigQuaverIndex = -1;
   final notes = _NoteIterable(voice, fromBarIndex, fromQuaverIndex, bars);
 
-  for (final note in notes) {
+  // out('s c $fromBarIndex, $fromQuaverIndex');
+
+  for (final _Note note in notes) {
     final int bigQuaverIndex = note.barIndex * 4 + note.quaverIndex;
+
+    // out('p c: $note');
 
     if (previousQuaver != null) {
       return min(12, bigQuaverIndex - previousBigQuaverIndex);
@@ -64,58 +58,80 @@ class _NoteIterator implements Iterator<_Note> {
     int barIndex,
     int quaverIndex,
     this.bars,
-  ) : _note = _Note(barIndex, quaverIndex);
+  )   : _currentNote = _Note(barIndex, quaverIndex),
+        _nextNote = _Note(barIndex, quaverIndex);
 
   final String voice;
-
-  final _Note _note;
   final List<Bar> bars;
 
+  /// for iteration
+  final _Note _nextNote;
+
+  /// FOR external use
+  final _Note _currentNote;
+
   @override
-  _Note get current => _note;
+  _Note get current => _currentNote;
 
   @override
   bool moveNext() {
-    if (_note.barIndex < bars.length) {
-      _note.bar = bars[_note.barIndex];
+    while (_nextNote.barIndex < bars.length) {
+      final Bar? bar = bars[_nextNote.barIndex];
 
-      if (_note.quaverIndex < 4) {
-        _note.quaverIndex += 1;
+      while (_nextNote.quaverIndex < 4) {
+        _currentNote.quaverIndex = _nextNote.quaverIndex;
 
-        if (_note.quaverIndex == 4) {
-          _note.barIndex += 1;
+        _nextNote.quaverIndex += 1;
+        _currentNote.barIndex = _nextNote.barIndex;
 
-          _note.quaverIndex = 0;
-          _note.quaver =
-              _getQuaver(_note.barIndex, _note.bar!, _note.quaverIndex);
+        if (_nextNote.quaverIndex == 4) {
+          _nextNote.barIndex += 1;
 
-          if (_note.quaver != null) {
+          _nextNote.quaverIndex = 0;
+          _currentNote.setQuaverIfHasPitch(bar!.getQuavers(voice));
+
+          // out('4a c: $_currentNote');
+          if (_currentNote.quaver != null) {
+            // out('4b c: $_currentNote');
             return true;
           }
         }
 
-        _note.quaver = _getQuaver(_note.barIndex, _note.bar!, _note.quaverIndex);
+        _currentNote.setQuaverIfHasPitch(bar!.getQuavers(voice));
 
-        if (_note.quaver != null) {
+        if (_currentNote.quaver != null) {
+          // out('ok c: $_currentNote');
           return true;
         }
       }
     }
 
+    // out('done c: $_currentNote');
     return false;
   }
+}
 
-  Quaver? _getQuaver(int barIndex,Bar bar,int quaverIndex) {
-    final List<Quaver>? quavers = bar.getQuavers(voice);
+/// Quaver Info
+class _Note {
+  _Note(this.barIndex, this.quaverIndex);
 
-    if (quavers!=null) {
-      final Quaver quaver = quavers[quaverIndex];
+  int barIndex;
+  int quaverIndex;
 
-      if (quaver.pitch != null) {
-        return quaver;
+  Quaver? quaver;
+
+  void setQuaverIfHasPitch(List<Quaver>? quavers) {
+    quaver = null;
+
+    if (quavers != null) {
+      final Quaver quaver_ = quavers[quaverIndex];
+
+      if (quaver_.pitch != null) {
+        quaver = quaver_;
       }
     }
-
-    return null;
   }
+
+  @override
+  String toString() => '$barIndex, $quaverIndex';
 }

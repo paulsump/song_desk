@@ -9,6 +9,7 @@ import 'package:song_desk/player/calc_duration.dart';
 
 /// Test [Song] functions.
 void main() {
+  //TODO LOAD bespoke test files instead
   TestWidgetsFlutterBinding.ensureInitialized();
 
   group('keyChange', () {
@@ -24,7 +25,19 @@ void main() {
   });
 
   group('calcDuration', () {
-    test('1', () async {
+    test('bass bar 8, q 0 = 4', () async {
+      final persist = Persist();
+
+      const title = 'After All';
+      await persist.loadSong(title);
+
+      final song = persist.songs[title]!;
+      final int duration = calcDuration(8,0, 'bass', song.bars);
+
+      expect(duration, equals(4));
+    });
+
+    test('bass bar 16, q 1 = 1', () async {
       final persist = Persist();
 
       const title = 'After All';

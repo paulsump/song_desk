@@ -41,6 +41,8 @@
 # TODO easy
 
 - check all todos e.g.
+  //TODO LOAD bespoke test files instead
+  //TODO TRiplets
   // TODO CALL audioPlayer.dispose()
 
 # TODO Tricky
