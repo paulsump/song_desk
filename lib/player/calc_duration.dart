@@ -17,7 +17,7 @@ class _Note {
 
 /// Calculate the duration of the note from the gap to the next note
 int calcDuration(fromBarIndex, fromQuaverIndex, voice, bars) {
-  dynamic previousQuaver;
+  Quaver? previousQuaver;
 
   int previousBigQuaverIndex = -1;
   final notes = _NoteIterable(voice, fromBarIndex, fromQuaverIndex, bars);
