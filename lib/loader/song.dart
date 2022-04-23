@@ -1,7 +1,5 @@
 // © 2022, Paul Sumpner <sumpner@hotmail.com>
 
-import 'package:song_desk/out.dart';
-
 class Song {
   final List<Bar> bars;
 
@@ -102,12 +100,18 @@ class Bar {
 
   List<Quaver>? getQuavers(String voice) {
     switch (voice) {
-      case 'bass':return bass;
-      case 'vocal':return vocal;
-      case 'backing':return backing;
-      case 'harmony':return harmony;
-      case 'snare':return snare;
-      case 'arp':return arp;
+      case 'bass':
+        return bass;
+      case 'vocal':
+        return vocal;
+      case 'backing':
+        return backing;
+      case 'harmony':
+        return harmony;
+      case 'snare':
+        return snare;
+      case 'arp':
+        return arp;
     }
     return null;
   }

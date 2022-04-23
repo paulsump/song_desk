@@ -4,6 +4,8 @@ import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:song_desk/out.dart';
 
+const noWarn = out;
+
 class Scheduler {
   Scheduler();
 

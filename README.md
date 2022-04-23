@@ -14,7 +14,6 @@
 
 # TODO logic
 
-Using Instrument map for all. .
 
 - check all todos e.g.
 // TODO CALL audioPlayer.dispose()

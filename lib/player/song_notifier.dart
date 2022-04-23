@@ -34,15 +34,10 @@ class SongNotifier with ChangeNotifier {
     'Arp': Arp(),
   };
 
-  final _kick = Kick();
-  final _bass = Bass();
-
-  final _arp = Arp();
   final _persist = Persist();
-
   final _convert = Convert();
-  bool get isReady => _schedulers.isNotEmpty;
 
+  bool get isReady => _schedulers.isNotEmpty;
   late VoidCallback _playFun;
 
   void update(Duration time) {
@@ -95,11 +90,6 @@ class SongNotifier with ChangeNotifier {
         instrument.preLoad()
     ]);
 
-    await _kick.preLoad();
-
-    await _bass.preLoad();
-    await _arp.preLoad();
-
     await _convert.init();
 
     for (final entry in _persist.songs.entries) {
@@ -121,23 +111,17 @@ class SongNotifier with ChangeNotifier {
   void _scheduleNotes(scheduler, Song song) {
     final quaverDuration = 30000 ~/ song.tempo;
 
-    AudioPlayer _getPlayer(Instrument instrument, semitone, octave) {
-      final int i = semitone + 12 * octave;
-
-      return instrument.getPlayer(i);
-    }
-
     AudioPlayer _piano4(semitone) =>
-        _getPlayer(_instruments['Piano']!, semitone, 4);
+        _instruments['Piano']!.getPlayer(semitone, 4);
     AudioPlayer _piano5(semitone) =>
-        _getPlayer(_instruments['Piano']!, semitone, 5);
+        _instruments['Piano']!.getPlayer(semitone, 5);
 
     int b = 0;
     int pads = 0;
 
     for (final bar in song.bars) {
       _addQuavers(bar.bass, song, b, pads, quaverDuration, scheduler,
-          (semitone) => _getPlayer(_bass, semitone, 2), 'bass');
+          (semitone) => _instruments['Bass']!.getPlayer(semitone, 2), 'bass');
 
       _addQuavers(bar.vocal, song, b, pads, quaverDuration, scheduler, _piano5,
           'vocal');
@@ -149,10 +133,10 @@ class SongNotifier with ChangeNotifier {
           _piano5, 'harmony');
 
       _addQuavers(bar.snare, song, b, pads, quaverDuration, scheduler,
-          (semitone) => _kick.audioPlayer, 'snare');
+          (semitone) => _instruments['Kick']!.getPlayer(semitone,0), 'snare');
 
       _addQuavers(bar.arp, song, b, pads, quaverDuration, scheduler,
-          (semitone) => _getPlayer(_arp, semitone, 5), 'arp');
+          (semitone) => _instruments['Arp']!.getPlayer(semitone, 5), 'arp');
 
       if (bar.pad) {
         ++pads;

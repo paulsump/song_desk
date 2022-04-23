@@ -22,7 +22,7 @@ class Sample {
 }
 
 abstract class Instrument {
-  AudioPlayer getPlayer(int i);
+  AudioPlayer getPlayer(int semitone, int octave);
 
   Future<void> preLoad() async {}
 // TODO CALL audioPlayer.dispose()
@@ -34,7 +34,7 @@ class Kick implements Instrument {
   late AudioPlayer audioPlayer;
 
   @override
-  AudioPlayer getPlayer(int i) => audioPlayer;
+  AudioPlayer getPlayer(int semitone, int octave) => audioPlayer;
 
   @override
   Future<void> preLoad() async {
@@ -60,7 +60,8 @@ class Piano implements Instrument {
   final _samples = <Sample>[];
 
   @override
-  AudioPlayer getPlayer(int i) => _samples[i].audioPlayer;
+  AudioPlayer getPlayer(int semitone, int octave) =>
+      _samples[semitone + 12 * octave].audioPlayer;
 
   @override
   Future<void> preLoad() async {
@@ -93,9 +94,6 @@ class Piano implements Instrument {
       }
     }
   }
-
-  @override
-  List<Sample> get samples => _samples;
 }
 
 /// plays preloaded double bass samples.
@@ -103,7 +101,8 @@ class Bass implements Instrument {
   final _samples = <Sample>[];
 
   @override
-  AudioPlayer getPlayer(int i) => _samples[i].audioPlayer;
+  AudioPlayer getPlayer(int semitone, int octave) =>
+      _samples[semitone + 12 * octave].audioPlayer;
 
   @override
   Future<void> preLoad() async {
@@ -147,9 +146,6 @@ class Bass implements Instrument {
       }
     }
   }
-
-  @override
-  List<Sample> get samples => _samples;
 }
 
 Future<AudioPlayer> _createAudioPlayer(String fileName) async {
