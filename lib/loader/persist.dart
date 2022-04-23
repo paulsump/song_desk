@@ -9,39 +9,37 @@ import 'package:song_desk/out.dart';
 class Persist {
   final songs = <String, Song?>{};
 
-  static const folderPaths = ['songs/'];
+  static const folderPath = 'songs/';
   static const extension = '.json';
 
   Future<void> loadSongs() async {
     final manifestJson = await rootBundle.loadString('AssetManifest.json');
 
-    for (String folderPath in Persist.folderPaths) {
-      final files = json
-          .decode(manifestJson)
-          .keys
-          .where((String key) => key.startsWith(folderPath));
+    final files = json
+        .decode(manifestJson)
+        .keys
+        .where((String key) => key.startsWith(folderPath));
 
-      for (String file in files) {
-        final name = file
-            .replaceAll('%20', ' ')
-            .replaceAll(folderPath, '')
-            .replaceAll(Persist.extension, '');
+    for (String file in files) {
+      final title = file
+          .replaceAll('%20', ' ')
+          .replaceAll(folderPath, '')
+          .replaceAll(Persist.extension, '');
 
-        await _loadSong(folderPath, name);
-      }
+      await _loadSong(title);
     }
   }
 
-  Future<void> _loadSong(String folderPath, String name) async {
+  Future<void> _loadSong(String title) async {
     final String response =
-        await rootBundle.loadString('$folderPath$name$extension');
+        await rootBundle.loadString('$folderPath$title$extension');
 
     final map = await json.decode(response);
 
     try {
-      songs[name] = Song.fromJson(map);
+      songs[title] = Song.fromJson(map);
     } catch (e) {
-      logError('Loading $name');
+      logError('Loading $title');
     }
   }
 }
