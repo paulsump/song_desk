@@ -26,11 +26,12 @@ class Persist {
           .replaceAll(folderPath, '')
           .replaceAll(Persist.extension, '');
 
-      await _loadSong(title);
+      await loadSong(title);
     }
   }
 
-  Future<void> _loadSong(String title) async {
+  /// public for tests only
+  Future<void> loadSong(String title) async {
     final String response =
         await rootBundle.loadString('$folderPath$title$extension');
 

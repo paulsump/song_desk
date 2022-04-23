@@ -3,18 +3,31 @@
 import 'dart:convert';
 
 import 'package:flutter_test/flutter_test.dart';
+import 'package:song_desk/loader/persist.dart';
 import 'package:song_desk/loader/song.dart';
 
 /// Test [Song] functions.
 void main() {
-  group('Song keyChanges()', () {
-    test('C', () {
+  TestWidgetsFlutterBinding.ensureInitialized();
 
-      //TODO load song json
-      const songJson = "TODO";
-      final song = Song.fromJson(json.decode(songJson));
+  group('keyChange', () {
+    test('C', () async {
+      final persist = Persist();
+      const title = 'Fantasy';
 
-      expect(song.getKey(8 * 8), equals('Bb'));
+      await persist.loadSong(title);
+      final song = persist.songs[title]!;
+      expect(song.getKey(18 * 8), equals('C'));
+    });
+  });
+
+  group('f', () {
+    test('C', () async {
+      final persist = Persist();
+      const title = 'After All';
+
+      await persist.loadSong(title);
+      final song = persist.songs[title]!;
     });
   });
 }
