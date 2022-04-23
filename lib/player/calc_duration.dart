@@ -58,48 +58,48 @@ class _NoteIterator implements Iterator<_Note> {
     int barIndex,
     int quaverIndex,
     this.bars,
-  )   : _currentNote = _Note(barIndex, quaverIndex),
-        _nextNote = _Note(barIndex, quaverIndex);
+  )   : _current = _Note(barIndex, quaverIndex),
+        _next = _Note(barIndex, quaverIndex);
 
   final String voice;
   final List<Bar> bars;
 
   /// for iteration
-  final _Note _nextNote;
+  final _Note _next;
 
   /// FOR external use
-  final _Note _currentNote;
+  final _Note _current;
 
   @override
-  _Note get current => _currentNote;
+  _Note get current => _current;
 
   @override
   bool moveNext() {
-    while (_nextNote.barIndex < bars.length) {
-      final Bar? bar = bars[_nextNote.barIndex];
+    while (_next.barIndex < bars.length) {
+      final Bar? bar = bars[_next.barIndex];
 
-      while (_nextNote.quaverIndex < 4) {
-        _currentNote.quaverIndex = _nextNote.quaverIndex;
+      while (_next.quaverIndex < 4) {
+        _current.quaverIndex = _next.quaverIndex;
 
-        _nextNote.quaverIndex += 1;
-        _currentNote.barIndex = _nextNote.barIndex;
+        _next.quaverIndex += 1;
+        _current.barIndex = _next.barIndex;
 
-        if (_nextNote.quaverIndex == 4) {
-          _nextNote.barIndex += 1;
+        if (_next.quaverIndex == 4) {
+          _next.barIndex += 1;
 
-          _nextNote.quaverIndex = 0;
-          _currentNote.setQuaverIfHasPitch(bar!.getQuavers(voice));
+          _next.quaverIndex = 0;
+          _current.setQuaverIfHasPitch(bar!.getQuavers(voice));
 
           // out('4a c: $_currentNote');
-          if (_currentNote.quaver != null) {
+          if (_current.quaver != null) {
             // out('4b c: $_currentNote');
             return true;
           }
         }
 
-        _currentNote.setQuaverIfHasPitch(bar!.getQuavers(voice));
+        _current.setQuaverIfHasPitch(bar!.getQuavers(voice));
 
-        if (_currentNote.quaver != null) {
+        if (_current.quaver != null) {
           // out('ok c: $_currentNote');
           return true;
         }
