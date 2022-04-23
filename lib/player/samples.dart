@@ -38,16 +38,24 @@ class Arp extends Piano {
   Future<void> preLoad() async {
     await super.preLoad();
 
-    for (final sample in samples) {
+    for (final sample in _samples) {
       sample.audioPlayer.setVolume(0.4);
     }
   }
 }
 
-/// plays preloaded piano samples.
-class Piano {
-  final samples = <Sample>[];
+abstract class Instrument{
+  List<Sample> get samples;
 
+  Future<void> preLoad() async {}
+}
+
+
+/// plays preloaded piano samples.
+class Piano implements Instrument{
+  final _samples = <Sample>[];
+
+  @override
   Future<void> preLoad() async {
     const letters = [
       'c',
@@ -70,7 +78,7 @@ class Piano {
       for (final letter in letters) {
         final fileName = 'piano.mf.$letter$octave.wav';
 
-        samples.add(Sample(
+        _samples.add(Sample(
           letter: letter,
           octave: octave,
           audioPlayer: await _createAudioPlayer(fileName),
@@ -78,12 +86,16 @@ class Piano {
       }
     }
   }
+
+  @override
+  List<Sample> get samples => _samples;
 }
 
 /// plays preloaded double bass samples.
-class Bass {
-  final samples = <Sample>[];
+class Bass  implements Instrument{
+  final _samples = <Sample>[];
 
+  @override
   Future<void> preLoad() async {
     const letters = [
       'C',
@@ -114,7 +126,7 @@ class Bass {
 
           audioPlayer.setVolume(0.8);
 
-          samples.add(Sample(
+          _samples.add(Sample(
             letter: letter,
             octave: octave,
             audioPlayer: audioPlayer,
@@ -125,6 +137,9 @@ class Bass {
       }
     }
   }
+
+  @override
+  List<Sample> get samples => _samples;
 }
 
 Future<AudioPlayer> _createAudioPlayer(String fileName) async {

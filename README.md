@@ -12,19 +12,20 @@
 - mute voice
 - button pause
 
-## TODO songs
-
-- My Conversation more swingy
-
 # TODO logic
 
-- fix Don't Make Me Over at the end of verse weirdnes
+- alternate between soft and hard bass iff the same note.
+- use soft for arp, mid for backing, and hard piano for vocal.
+- alternate between soft, mid, and hard piano.
+  
+- fix Don't Make Me Over at the end of verse weirdness.
 - fix over plays note duration for bass
   Life In The Ghetto
   Love Me Forever
   Melancolia
   The Tide Is High
   People Make The World Go Round
+- My Conversation more swingy
 
 - fade out (for piano) with audioPlayer.setVolume(0.5)
   Silly Games

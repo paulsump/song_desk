@@ -43,7 +43,7 @@ class Scheduler {
   }
 }
 
-/// Note events
+/// Note events.
 abstract class Event {
   Event({
     required this.startTime,
@@ -66,7 +66,7 @@ abstract class Event {
   }
 }
 
-/// e.g. a call back to go to the next track
+/// e.g. a call back to go to the next track.
 class FunctionEvent extends Event {
   FunctionEvent({
     required Duration startTime,
@@ -81,7 +81,7 @@ class FunctionEvent extends Event {
   }
 }
 
-/// Play a sample for an optional duration
+/// Play a sample for an optional duration.
 class AudioEvent extends Event {
   AudioEvent({
     required Duration startTime,

@@ -109,8 +109,15 @@ class SongNotifier with ChangeNotifier {
     notifyListeners();
   }
 
+
   void _scheduleNotes(scheduler, Song song) {
     final quaverDuration = 30000 ~/ song.tempo;
+
+    AudioPlayer _getPlayer(Instrument instrument, semitone, octave){
+      final int i = semitone + 12 * octave;
+
+      return instrument.samples[i].audioPlayer;
+    }
 
     AudioPlayer _pianoPlayer(semitone, octave) {
       final int i = semitone + 12 * octave;
