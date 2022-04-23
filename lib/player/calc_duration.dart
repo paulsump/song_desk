@@ -10,9 +10,9 @@ int calcDuration(fromBarIndex, fromQuaverIndex, voice, bars) {
   Quaver? previousQuaver;
 
   int previousBigQuaverIndex = -1;
-  final notes = _NoteIterable(voice, fromBarIndex, fromQuaverIndex, bars);
+  final noteIterable = _NoteIterable(voice, fromBarIndex, fromQuaverIndex, bars);
 
-  for (final _Note note in notes) {
+  for (final _Note note in noteIterable) {
     final int bigQuaverIndex = note.barIndex * 4 + note.quaverIndex;
 
     if (previousQuaver != null) {
