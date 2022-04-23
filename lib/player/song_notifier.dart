@@ -27,7 +27,7 @@ class SongNotifier with ChangeNotifier {
   int _currentSongIndex = 0;
 
   final _schedulers = <String, Scheduler>{};
-  final _piano = Piano();
+  final _instruments = <String, Instrument>{'piano': Piano()};
 
   final _kick = Kick();
   final _bass = Bass();
@@ -85,7 +85,11 @@ class SongNotifier with ChangeNotifier {
   Future<void> init(VoidCallback playFun) async {
     await _persist.loadSongs();
 
-    await _piano.preLoad();
+    await Future.wait([
+      for (final Instrument instrument in _instruments.values)
+        instrument.preLoad()
+    ]);
+
     await _kick.preLoad();
 
     await _bass.preLoad();
@@ -118,8 +122,8 @@ class SongNotifier with ChangeNotifier {
       return instrument.samples[i].audioPlayer;
     }
 
-    AudioPlayer _piano4(semitone) => _getPlayer(_piano, semitone, 4);
-    AudioPlayer _piano5(semitone) => _getPlayer(_piano, semitone, 5);
+    AudioPlayer _piano4(semitone) => _getPlayer(_instruments['piano']!, semitone, 4);
+    AudioPlayer _piano5(semitone) => _getPlayer(_instruments['piano']!, semitone, 5);
 
     int b = 0;
     int pads = 0;
