@@ -12,12 +12,8 @@ int calcDuration(fromBarIndex, fromQuaverIndex, voice, bars) {
   int previousBigQuaverIndex = -1;
   final notes = _NoteIterable(voice, fromBarIndex, fromQuaverIndex, bars);
 
-  // out('s c $fromBarIndex, $fromQuaverIndex');
-
   for (final _Note note in notes) {
     final int bigQuaverIndex = note.barIndex * 4 + note.quaverIndex;
-
-    // out('p c: $note');
 
     if (previousQuaver != null) {
       return min(12, bigQuaverIndex - previousBigQuaverIndex);
@@ -90,9 +86,7 @@ class _NoteIterator implements Iterator<_Note> {
           _next.quaverIndex = 0;
           _current.setQuaverIfHasPitch(bar!.getQuavers(voice));
 
-          // out('4a c: $_currentNote');
           if (_current.quaver != null) {
-            // out('4b c: $_currentNote');
             return true;
           }
         }
@@ -100,13 +94,11 @@ class _NoteIterator implements Iterator<_Note> {
         _current.setQuaverIfHasPitch(bar!.getQuavers(voice));
 
         if (_current.quaver != null) {
-          // out('ok c: $_currentNote');
           return true;
         }
       }
     }
 
-    // out('done c: $_currentNote');
     return false;
   }
 }
