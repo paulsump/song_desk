@@ -14,10 +14,7 @@
 
 # TODO logic
 
-
-- check all todos e.g.
-// TODO CALL audioPlayer.dispose()
-
+- load song json into test, test calcDuration compared with mel output
 - alternate between soft and hard bass iff the same note.
 - use soft for arp, mid for backing, and hard piano for vocal.
 - alternate between soft, mid, and hard piano.
@@ -29,6 +26,7 @@
   Melancolia
   The Tide Is High
   People Make The World Go Round
+  Addicted
 - My Conversation more swingy
 
 - fade out (for piano) with audioPlayer.setVolume(0.5)
@@ -38,6 +36,11 @@
 - Repeats
 -   Golden Lady
     O Mundo e um Moinho
+
+# TODO easy
+
+- check all todos e.g.
+  // TODO CALL audioPlayer.dispose()
 
 # TODO Tricky
 

@@ -56,16 +56,10 @@ abstract class Event {
   bool wantStartPlay = true;
 
   final Duration? duration;
-
   void play();
 
-  void setWantStartPlay() {
-    wantStartPlay = true;
-  }
-
-  void stop() {
-    wantStartPlay = true;
-  }
+  void setWantStartPlay() => wantStartPlay = true;
+  void stop() => wantStartPlay = true;
 }
 
 /// e.g. a call back to go to the next track.
