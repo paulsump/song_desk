@@ -21,22 +21,20 @@ class Sample {
   final AudioPlayer audioPlayer;
 }
 
-abstract class Instrument{
-  // TODO CALL audioPlayer.dispose()
-  List<Sample> get samples;
+abstract class Instrument {
+  AudioPlayer getPlayer(int i);
 
   Future<void> preLoad() async {}
+// TODO CALL audioPlayer.dispose()
 }
 
 /// plays preloaded sample.
-class Kick implements Instrument{
-
-  //TODO Replace samples with getPlayer(i)=>audioPlayer;
-  @override
-  List<Sample> get samples => <Sample>[];
-
+class Kick implements Instrument {
   // TODO CALL audioPlayer.dispose()
   late AudioPlayer audioPlayer;
+
+  @override
+  AudioPlayer getPlayer(int i) => audioPlayer;
 
   @override
   Future<void> preLoad() async {
@@ -57,10 +55,12 @@ class Arp extends Piano {
   }
 }
 
-
 /// plays preloaded piano samples.
-class Piano implements Instrument{
+class Piano implements Instrument {
   final _samples = <Sample>[];
+
+  @override
+  AudioPlayer getPlayer(int i) => _samples[i].audioPlayer;
 
   @override
   Future<void> preLoad() async {
@@ -99,8 +99,11 @@ class Piano implements Instrument{
 }
 
 /// plays preloaded double bass samples.
-class Bass  implements Instrument{
+class Bass implements Instrument {
   final _samples = <Sample>[];
+
+  @override
+  AudioPlayer getPlayer(int i) => _samples[i].audioPlayer;
 
   @override
   Future<void> preLoad() async {

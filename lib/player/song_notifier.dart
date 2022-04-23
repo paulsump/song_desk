@@ -124,7 +124,7 @@ class SongNotifier with ChangeNotifier {
     AudioPlayer _getPlayer(Instrument instrument, semitone, octave) {
       final int i = semitone + 12 * octave;
 
-      return instrument.samples[i].audioPlayer;
+      return instrument.getPlayer(i);
     }
 
     AudioPlayer _piano4(semitone) =>
