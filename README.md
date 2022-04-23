@@ -14,6 +14,11 @@
 
 # TODO logic
 
+Using Instrument map for all. .
+
+- check all todos e.g.
+// TODO CALL audioPlayer.dispose()
+
 - alternate between soft and hard bass iff the same note.
 - use soft for arp, mid for backing, and hard piano for vocal.
 - alternate between soft, mid, and hard piano.

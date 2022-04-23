@@ -21,11 +21,24 @@ class Sample {
   final AudioPlayer audioPlayer;
 }
 
+abstract class Instrument{
+  // TODO CALL audioPlayer.dispose()
+  List<Sample> get samples;
+
+  Future<void> preLoad() async {}
+}
+
 /// plays preloaded sample.
-class Kick {
+class Kick implements Instrument{
+
+  //TODO Replace samples with getPlayer(i)=>audioPlayer;
+  @override
+  List<Sample> get samples => <Sample>[];
+
   // TODO CALL audioPlayer.dispose()
   late AudioPlayer audioPlayer;
 
+  @override
   Future<void> preLoad() async {
     audioPlayer = await _createAudioPlayer('kick.wav');
     audioPlayer.setVolume(0.3);
@@ -42,12 +55,6 @@ class Arp extends Piano {
       sample.audioPlayer.setVolume(0.4);
     }
   }
-}
-
-abstract class Instrument{
-  List<Sample> get samples;
-
-  Future<void> preLoad() async {}
 }
 
 

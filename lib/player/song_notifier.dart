@@ -27,7 +27,12 @@ class SongNotifier with ChangeNotifier {
   int _currentSongIndex = 0;
 
   final _schedulers = <String, Scheduler>{};
-  final _instruments = <String, Instrument>{'piano': Piano()};
+  final _instruments = <String, Instrument>{
+    'Piano': Piano(),
+    'Kick': Kick(),
+    'Bass': Bass(),
+    'Arp': Arp(),
+  };
 
   final _kick = Kick();
   final _bass = Bass();
@@ -122,8 +127,10 @@ class SongNotifier with ChangeNotifier {
       return instrument.samples[i].audioPlayer;
     }
 
-    AudioPlayer _piano4(semitone) => _getPlayer(_instruments['piano']!, semitone, 4);
-    AudioPlayer _piano5(semitone) => _getPlayer(_instruments['piano']!, semitone, 5);
+    AudioPlayer _piano4(semitone) =>
+        _getPlayer(_instruments['Piano']!, semitone, 4);
+    AudioPlayer _piano5(semitone) =>
+        _getPlayer(_instruments['Piano']!, semitone, 5);
 
     int b = 0;
     int pads = 0;
