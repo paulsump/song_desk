@@ -31,6 +31,7 @@
   After All
 - My Conversation more swingy
 
+
 - fix piano missing notes
   After All (all Fs) A C?
   Free (all Fs and Cs)
@@ -40,6 +41,12 @@
 - fix bass missing notes
   Life In The Ghetto
   Love Me Forever
+- fix arp missing notes
+  How Can You Mend A Broken Heart
+    key d so c and g# are missing
+  These Arms Of Mine
+    same
+  Suddenly?
   
 - fade out (for piano) with audioPlayer.setVolume(0.5)
   Silly Games
