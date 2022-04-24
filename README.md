@@ -32,10 +32,14 @@
 - My Conversation more swingy
 
 - fix piano missing notes
-  After All
-  Free
+  After All (all Fs) A C?
+  Free (all Fs and Cs)
+  Silly Games (loads of notes)
+  Love Me Forever
+  Man Next Door
 - fix bass missing notes
   Life In The Ghetto
+  Love Me Forever
   
 - fade out (for piano) with audioPlayer.setVolume(0.5)
   Silly Games
