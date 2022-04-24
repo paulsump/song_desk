@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:audioplayers/audioplayers.dart';
 import 'package:song_desk/out.dart';
+import 'package:song_desk/player/constants.dart';
 
 const noWarn = out;
 final _audioCache = AudioCache();
@@ -39,7 +40,8 @@ class Kick implements Instrument {
   @override
   Future<void> preLoad() async {
     audioPlayer = await _createAudioPlayer('kick.wav');
-    audioPlayer.setVolume(0.3);
+
+    audioPlayer.setVolume(Constants.bassBoostedSpeaker ? 0.1 : 0.3);
   }
 }
 
@@ -133,7 +135,7 @@ class Bass implements Instrument {
         try {
           final audioPlayer = await _createAudioPlayer(fileName);
 
-          audioPlayer.setVolume(0.8);
+          audioPlayer.setVolume(Constants.bassBoostedSpeaker ? 0.2 : 0.8);
 
           _samples.add(Sample(
             letter: letter,

@@ -5,6 +5,7 @@
 
 ## TODO UI
 
+- volume mixer
 - go to bar (need full ui?)  
 - pick song from list
   //TODO PICK from SongNotifier.titles
@@ -30,6 +31,12 @@
   After All
 - My Conversation more swingy
 
+- fix piano missing notes
+  After All
+  Free
+- fix bass missing notes
+  Life In The Ghetto
+  
 - fade out (for piano) with audioPlayer.setVolume(0.5)
   Silly Games
   Declaration Of Rights
