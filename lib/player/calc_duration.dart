@@ -84,21 +84,24 @@ class _NoteIterator implements Iterator<_Note> {
           _next.barIndex += 1;
 
           _next.quaverIndex = 0;
-          _current.setQuaverIfHasPitch(bar!.getQuavers(voice));
+          _current.setQuaverIfHasPitch(bar!.getQuavers(voice), _next);
 
           if (_current.quaver != null) {
+            out('4: $current');
             return true;
           }
         }
 
-        _current.setQuaverIfHasPitch(bar!.getQuavers(voice));
+        _current.setQuaverIfHasPitch(bar!.getQuavers(voice), _next);
 
         if (_current.quaver != null) {
+          out('${_next.quaverIndex}: $current');
           return true;
         }
       }
     }
 
+    out('done: $current');
     return false;
   }
 }
@@ -112,14 +115,17 @@ class _Note {
 
   Quaver? quaver;
 
-  void setQuaverIfHasPitch(List<Quaver>? quavers) {
+  void setQuaverIfHasPitch(List<Quaver>? quavers, _Note next) {
     quaver = null;
 
     if (quavers != null) {
-      final Quaver quaver_ = quavers[quaverIndex];
+      final Quaver quaver_ = quavers[next .quaverIndex];
 
       if (quaver_.pitch != null) {
         quaver = quaver_;
+
+        barIndex = next.barIndex;
+        quaverIndex = next.quaverIndex;
       }
     }
   }

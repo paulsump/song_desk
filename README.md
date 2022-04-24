@@ -39,8 +39,6 @@
     O Mundo e um Moinho
 
 # TODO easy
-
-- auto copy _test to test_songs e.g. duration_test
   
 - check all todos e.g.
   //TODO TRiplets
