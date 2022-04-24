@@ -10,7 +10,8 @@ int calcDuration(fromBarIndex, fromQuaverIndex, voice, bars) {
   Quaver? previousQuaver;
 
   int previousBigQuaverIndex = -1;
-  final noteIterable = _NoteIterable(voice, fromBarIndex, fromQuaverIndex, bars);
+  final noteIterable =
+      _NoteIterable(voice, fromBarIndex, fromQuaverIndex, bars);
 
   for (final _Note note in noteIterable) {
     final int bigQuaverIndex = note.barIndex * 4 + note.quaverIndex;
@@ -72,7 +73,7 @@ class _NoteIterator implements Iterator<_Note> {
   @override
   bool moveNext() {
     while (_next.barIndex < bars.length) {
-      final Bar? bar = bars[_next.barIndex];
+      final List<Quaver>? quavers = bars[_next.barIndex]!.getQuavers(voice);
 
       while (_next.quaverIndex < 4) {
         _current.quaverIndex = _next.quaverIndex;
@@ -84,7 +85,7 @@ class _NoteIterator implements Iterator<_Note> {
           _next.barIndex += 1;
 
           _next.quaverIndex = 0;
-          _current.setQuaverIfHasPitch(bar!.getQuavers(voice), _next);
+          _current.setQuaverIfHasPitch(quavers, _next);
 
           if (_current.quaver != null) {
             out('4: $current');
@@ -92,7 +93,7 @@ class _NoteIterator implements Iterator<_Note> {
           }
         }
 
-        _current.setQuaverIfHasPitch(bar!.getQuavers(voice), _next);
+        _current.setQuaverIfHasPitch(quavers, _next);
 
         if (_current.quaver != null) {
           out('${_next.quaverIndex}: $current');
@@ -119,7 +120,7 @@ class _Note {
     quaver = null;
 
     if (quavers != null) {
-      final Quaver quaver_ = quavers[next .quaverIndex];
+      final Quaver quaver_ = quavers[next.quaverIndex];
 
       if (quaver_.pitch != null) {
         quaver = quaver_;
