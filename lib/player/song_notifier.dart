@@ -85,10 +85,9 @@ class SongNotifier with ChangeNotifier {
   Future<void> init(VoidCallback playFun) async {
     await _persist.loadSongs();
 
-    await Future.wait([
-      for (final Instrument instrument in _instruments.values)
-        instrument.preLoad()
-    ]);
+    for (final Instrument instrument in _instruments.values) {
+      await instrument.preLoad();
+    }
 
     await _convert.init();
 
@@ -133,7 +132,7 @@ class SongNotifier with ChangeNotifier {
           _piano5, 'harmony');
 
       _addQuavers(bar.snare, song, b, pads, quaverDuration, scheduler,
-          (semitone) => _instruments['Kick']!.getPlayer(semitone,0), 'snare');
+          (semitone) => _instruments['Kick']!.getPlayer(semitone, 0), 'snare');
 
       _addQuavers(bar.arp, song, b, pads, quaverDuration, scheduler,
           (semitone) => _instruments['Arp']!.getPlayer(semitone, 5), 'arp');

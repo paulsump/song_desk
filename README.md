@@ -15,7 +15,6 @@
 
 # TODO logic
 
-- load song json into test, test calcDuration compared with mel output
 - alternate between soft and hard bass iff the same note.
 - use soft for arp, mid for backing, and hard piano for vocal.
 - alternate between soft, mid, and hard piano.
@@ -31,22 +30,8 @@
   After All
 - My Conversation more swingy
 
-
-- fix piano missing notes
-  After All (all Fs) A C?
-  Free (all Fs and Cs)
-  Silly Games (loads of notes)
-  Love Me Forever
-  Man Next Door
 - fix bass missing notes
   Life In The Ghetto
-  Love Me Forever
-- fix arp missing notes
-  How Can You Mend A Broken Heart
-    key d so c and g# are missing
-  These Arms Of Mine
-    same
-  Suddenly?
   
 - fade out (for piano) with audioPlayer.setVolume(0.5)
   Silly Games
