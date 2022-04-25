@@ -34,7 +34,6 @@ void main() {
     });
   });
 
-
   group('calcDuration calc_duration_test', () {
     test('bass bar 0, q 0 = 3', () async {
       final song = await getSong('calc_duration_test');
@@ -49,7 +48,6 @@ void main() {
       final int? duration = calcDuration(0, 3, 'bass', song.bars);
       expect(duration, equals(3));
     });
-
 
     test('bass bar 1, q 2 = 2', () async {
       final song = await getSong('calc_duration_test');
@@ -84,23 +82,6 @@ void main() {
 
       final int? duration = calcDuration(3, 2, 'bass', song.bars);
       expect(duration, equals(null));
-    });
-  });
-
-
-  group('calcDuration After All', () {
-    test('bass bar 8, q 0 = 4', () async {
-      final song = await getSong('After All');
-
-      final int? duration = calcDuration(8, 0, 'bass', song.bars);
-      expect(duration, equals(4));
-    });
-
-    test('bass bar 16, q 1 = 1', () async {
-      final song = await getSong('After All');
-
-      final int? duration = calcDuration(16, 1, 'bass', song.bars);
-      expect(duration, equals(1));
     });
   });
 
