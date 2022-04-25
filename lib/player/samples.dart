@@ -41,7 +41,7 @@ class Kick implements Instrument {
   Future<void> preLoad() async {
     audioPlayer = await _createAudioPlayer('kick.wav');
 
-    audioPlayer.setVolume(Constants.bassBoostedSpeaker ? 0.1 : 0.3);
+    unawaited(audioPlayer.setVolume(Constants.bassBoostedSpeaker ? 0.1 : 0.3));
   }
 }
 
@@ -52,7 +52,7 @@ class Arp extends Piano {
     await super.preLoad();
 
     for (final sample in _samples) {
-      sample.audioPlayer.setVolume(0.4);
+      unawaited(sample.audioPlayer.setVolume(0.4));
     }
   }
 }
@@ -135,7 +135,7 @@ class Bass implements Instrument {
         try {
           final audioPlayer = await _createAudioPlayer(fileName);
 
-          audioPlayer.setVolume(Constants.bassBoostedSpeaker ? 0.2 : 0.8);
+          unawaited(audioPlayer.setVolume(Constants.bassBoostedSpeaker ? 0.2 : 0.8));
 
           _samples.add(Sample(
             letter: letter,

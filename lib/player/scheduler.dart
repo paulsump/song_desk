@@ -94,6 +94,7 @@ class AudioEvent extends Event {
         unawaited(audioPlayer!.seek(Duration.zero));
       } else {
         unawaited(audioPlayer!.resume());
+
         wantStartPlay = false;
       }
     }
@@ -102,6 +103,7 @@ class AudioEvent extends Event {
   @override
   void stop() {
     super.stop();
-    audioPlayer?.stop();
+
+    unawaited(audioPlayer?.stop());
   }
 }
