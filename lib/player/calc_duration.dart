@@ -29,12 +29,14 @@ int? calcDuration(
 
     if (toPitch != null) {
       // if (toPitch != fromPitch) {
-      return min(12, toQ - fromQ);
+      final int duration = toQ - fromQ;
+
+      return 12 < duration ? null : duration;
       // }
     }
   }
 
-  return 7;
+  return null;
 }
 
 int? _getPitchAt(int Q, String voice, List<Bar> bars) {

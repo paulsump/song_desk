@@ -83,7 +83,7 @@ void main() {
       final song = await getSong('calc_duration_test');
 
       final int? duration = calcDuration(3, 2, 'bass', song.bars);
-      expect(duration, equals(7));
+      expect(duration, equals(null));
     });
   });
 
