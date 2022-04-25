@@ -21,7 +21,7 @@ SongNotifier getSongNotifier(BuildContext context, {required bool listen}) =>
 
 /// Access to prepared songs
 class SongNotifier with ChangeNotifier {
-  Scheduler get currentScheduler => _schedulers[currentSongTitle]!;
+  Scheduler get _currentScheduler => _schedulers[currentSongTitle]!;
 
   String get currentSongTitle => titles[_currentSongIndex];
   int _currentSongIndex = 0;
@@ -42,7 +42,7 @@ class SongNotifier with ChangeNotifier {
 
   void update(Duration time) {
     if (_schedulers.containsKey(currentSongTitle)) {
-      currentScheduler.update(time);
+      _currentScheduler.update(time);
     }
   }
 
@@ -79,7 +79,7 @@ class SongNotifier with ChangeNotifier {
   void play() {
     _playFun();
 
-    currentScheduler.play();
+    _currentScheduler.play();
   }
 
   Future<void> init(VoidCallback playFun) async {
@@ -224,10 +224,10 @@ class SongNotifier with ChangeNotifier {
   Future<void> _loadPreferences() async {
     final preferences = await SharedPreferences.getInstance();
 
-    final int? currentSongIndex_ = preferences.getInt('currentSongIndex');
+    final int? currentSongIndex = preferences.getInt('currentSongIndex');
 
-    if (currentSongIndex_ != null) {
-      _currentSongIndex = currentSongIndex_;
+    if (currentSongIndex != null) {
+      _currentSongIndex = currentSongIndex;
     }
   }
 
