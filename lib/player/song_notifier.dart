@@ -165,15 +165,18 @@ class SongNotifier with ChangeNotifier {
           if (!triplet) {
             t += (quaverDuration * panOffset(q, song, voice)).round();
           }
-          _addNote(
-              scheduler,
-              t,
-              getPlayer(semitone),
-              quaver.duration != null
-                  ? quaverDuration * quaver.duration!
-                  : voice == 'bass'
-                      ? quaverDuration * calcDuration(b, q, voice, song.bars)
-                      : null);
+
+          int? duration = quaver.duration;
+
+          if (duration == null && voice == 'bass') {
+            duration = calcDuration(b, q, voice, song.bars);
+          }
+
+          if (duration != null) {
+            duration *= quaverDuration;
+          }
+
+          _addNote(scheduler, t, getPlayer(semitone), duration);
         }
         q += 1;
       }

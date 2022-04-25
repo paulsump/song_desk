@@ -5,15 +5,24 @@ import 'dart:math';
 import 'package:song_desk/loader/song.dart';
 import 'package:song_desk/out.dart';
 
+/// Q is the index if all the quavers were stored in a single array.
+/// It's combination of barIndex and quaverIndex.
+/// Also known as bigQuaverIndex in Mel.
+
 /// Calculate the duration of the note from the gap to the next note
-int calcDuration(
+/// If the gap is bigger than 12 then returns null
+int? calcDuration(
   int fromBarIndex,
   int fromQuaverIndex,
   String voice,
   List<Bar> bars,
 ) {
   final int fromQ = fromBarIndex * 4 + fromQuaverIndex;
-  // int fromPitch = _getPitchAt(fromQ, voice, bars)!;
+  int? fromPitch = _getPitchAt(fromQ, voice, bars);
+
+  if (fromPitch == null) {
+    out('fromQ with no pitch?!: $fromQ');
+  }
 
   for (int toQ = 1 + fromQ; toQ < 4 * bars.length; ++toQ) {
     int? toPitch = _getPitchAt(toQ, voice, bars);
