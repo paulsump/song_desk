@@ -5,9 +5,6 @@ import 'dart:math';
 import 'package:song_desk/loader/song.dart';
 import 'package:song_desk/out.dart';
 
-int _calcBigQuaverIndex(int barIndex, int quaverIndex) =>
-    barIndex * 4 + quaverIndex;
-
 /// Calculate the duration of the note from the gap to the next note
 int calcDuration(
   int fromBarIndex,
@@ -15,25 +12,29 @@ int calcDuration(
   String voice,
   List<Bar> bars,
 ) {
-  final int fromBigQuaverIndex =
-      _calcBigQuaverIndex(fromBarIndex, fromQuaverIndex);
+  final int fromQ = fromBarIndex * 4 + fromQuaverIndex;
+  int fromPitch = _getPitchAt(fromQ, voice, bars)!;
 
-  for (int Q = 1 + fromBigQuaverIndex; Q < 4 * bars.length; ++Q) {
-    if (_hasPitchAt(Q, voice, bars)) {
-      return min(12, Q - fromBigQuaverIndex);
+  for (int toQ = 1 + fromQ; toQ < 4 * bars.length; ++toQ) {
+    int? toPitch = _getPitchAt(toQ, voice, bars);
+
+    if (toPitch != null) {
+      // if (toPitch != fromPitch) {
+      return min(12, toQ - fromQ);
+      // }
     }
   }
 
   return 7;
 }
 
-bool _hasPitchAt(int Q, String voice, List<Bar> bars) {
+int? _getPitchAt(int Q, String voice, List<Bar> bars) {
   int barIndex = Q ~/ 4;
 
   int quaverIndex = Q % 4;
   final List<Quaver>? quavers = bars[barIndex].getQuavers(voice);
 
-  return quavers?[quaverIndex].pitch != null;
+  return quavers?[quaverIndex].pitch;
 }
 
 //TODO TRiplets
