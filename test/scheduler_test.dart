@@ -13,9 +13,53 @@ import 'package:song_desk/player/scheduler.dart';
 void main() {
   final scheduler = Scheduler();
 
-  group('calcDuration n = 2', () {
-    test('bass bar 1, q 2 = 2', () async {
-      // expect(duration, equals(2));
+  final events = <_MockEvent>[];
+
+  for (int i = 0; i < 2; ++i) {
+    final event = _MockEvent(
+      startTime: Duration(seconds: i),
+      duration: const Duration(seconds: 1),
+    );
+
+    scheduler.add(event);
+    events.add(event);
+  }
+
+  group('stopWasCalled', () {
+    test('update 0 -> false', () async {
+      scheduler.update(const Duration(milliseconds:0));
+      expect(events[0].stopWasCalled, equals(false));
+    });
+
+    test('update 1001 -> true', () async {
+      scheduler.update(const Duration(milliseconds:1001));
+      expect(events[0].stopWasCalled, equals(false));
     });
   });
+}
+
+/// For testing, lets test know that stop was called.
+class _MockEvent extends Event {
+  _MockEvent({
+    required Duration startTime,
+    Duration? duration,
+  }) : super(startTime: startTime, duration: duration);
+
+  bool stopWasCalled = false;
+
+  @override
+  void play() {
+    if (!wantStartPlay) {
+    } else {
+      wantStartPlay = false;
+    }
+  }
+
+  @override
+  void stop() {
+    super.stop();
+
+    //TODO LEt test know we got here
+    stopWasCalled = true;
+  }
 }
