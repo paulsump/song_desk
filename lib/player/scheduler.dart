@@ -31,6 +31,7 @@ class Scheduler {
             event.play();
           }
         } else {
+          /// TODO removing this wantStartPlay fixes the tests
           if (!event.wantStartPlay) {
             //TODO fade out using setVolume
             event.stop();

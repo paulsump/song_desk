@@ -13,6 +13,11 @@
 - mute voice
 - button pause
 
+# TODO logic bugs
+
+fix duration bug
+          /// TODO removing this wantStartPlay fixes the tests
+
 # TODO logic
 
 - map voice, instrument/volume
