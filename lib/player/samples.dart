@@ -25,7 +25,10 @@ class Sample {
 abstract class Instrument {
   AudioPlayer getPlayer(int semitone, int octave);
 
-  Future<void> preLoad() async {}
+  Future<void> preLoad() async {
+    //TODO MAYBE set volume here
+  }
+
 // TODO CALL audioPlayer.dispose()
 }
 
@@ -135,8 +138,7 @@ class Bass implements Instrument {
         try {
           final audioPlayer = await _createAudioPlayer(fileName);
 
-          unawaited(
-              audioPlayer.setVolume(Constants.bassBoost ? 0.8 : 0.2));
+          unawaited(audioPlayer.setVolume(Constants.bassBoost ? 0.8 : 0.2));
 
           _samples.add(
               Sample(letter: letter, octave: octave, audioPlayer: audioPlayer));

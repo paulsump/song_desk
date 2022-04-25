@@ -34,6 +34,9 @@ class SongNotifier with ChangeNotifier {
     'Arp': Arp(),
   };
 
+  // TODO MAYBE Map voices to player functions
+  // final _playerFuns = <String, dynamic>{};
+
   final _persist = Persist();
   final _convert = Convert();
 
@@ -87,6 +90,9 @@ class SongNotifier with ChangeNotifier {
 
     for (final Instrument instrument in _instruments.values) {
       await instrument.preLoad();
+
+      //TODO MAYBE set volume here
+      // instrument.setVolume(
     }
 
     await _convert.init();
