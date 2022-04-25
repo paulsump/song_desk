@@ -7,7 +7,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:song_desk/loader/song.dart';
 import 'package:song_desk/player/calc_duration.dart';
 
-/// Test [Song] functions.
+/// Test [calcDuration] with various parameters.
 void main() {
   String getFileText(String fileName) =>
       File('test_songs/$fileName.json').readAsStringSync();
@@ -18,7 +18,7 @@ void main() {
     return Song.fromJson(map);
   }
 
-  group('calcDuration n = 2', () {
+  group('duration* (n = 2)', () {
     test('bass bar 1, q 2 = 2', () async {
       final song = await getSong('duration0');
 
@@ -26,7 +26,7 @@ void main() {
       expect(duration, equals(2));
     });
 
-    test('bass bar 0, q 0 = null', () async {
+    test('duration1 (n = 2): bass bar 0, q 0 = null', () async {
       final song = await getSong('duration1');
 
       final int? duration = calcDuration(0, 0, 'bass', song.bars);
@@ -34,7 +34,7 @@ void main() {
     });
   });
 
-  group('calcDuration calc_duration_test', () {
+  group('calc_duration_test', () {
     test('bass bar 0, q 0 = 3', () async {
       final song = await getSong('calc_duration_test');
 
@@ -85,7 +85,7 @@ void main() {
     });
   });
 
-  group('calcDuration After All', () {
+  group('After All', () {
     test('bass bar 8, q 0 = 4', () async {
       final song = await getSong('After All');
 

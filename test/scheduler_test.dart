@@ -6,24 +6,16 @@ import 'dart:io';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:song_desk/loader/song.dart';
 import 'package:song_desk/player/calc_duration.dart';
+import 'package:song_desk/player/scheduler.dart';
 
-/// Test [Song] functions.
+/// Test [Scheduler] update() to see if events are called
+/// specifically, is event.stop() called after duration is up?
 void main() {
-  String getFileText(String fileName) =>
-      File('test_songs/$fileName.json').readAsStringSync();
-
-  Future<Song> getSong(title) async {
-    final map = await json.decode(getFileText(title));
-
-    return Song.fromJson(map);
-  }
+  final scheduler = Scheduler();
 
   group('calcDuration n = 2', () {
     test('bass bar 1, q 2 = 2', () async {
-      final song = await getSong('duration0');
-
-      final int? duration = calcDuration(1, 2, 'bass', song.bars);
-      expect(duration, equals(2));
+      // expect(duration, equals(2));
     });
   });
 }
