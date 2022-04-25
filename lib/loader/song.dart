@@ -55,27 +55,18 @@ class Song {
     return key;
   }
 
-  bool boomClapOrDoubleReggae() {
-    if (strum.contains('BoomClap')) {
-      return true;
-    }
-
-    return doubleTime && strum == 'Reggae';
-  }
+  bool boomClapOrDoubleReggae() =>
+      strum.contains('BoomClap') || (doubleTime && strum == 'Reggae');
 }
 
 int _calcStaveCount(int barCount) => ((barCount / 8).ceil() / 2).ceil();
 
 int _calcStaveIndex(int barIndex) => barIndex ~/ 8;
 
-List<Quaver>? _createQuavers(Map<String, dynamic> json, String voice) {
-  List<Quaver>? quavers;
-
-  if (json.containsKey(voice)) {
-    quavers = List<Quaver>.from(json[voice].map((q) => Quaver.fromJson(q)));
-  }
-  return quavers;
-}
+List<Quaver>? _createQuavers(Map<String, dynamic> json, String voice) =>
+    json.containsKey(voice)
+        ? List<Quaver>.from(json[voice].map((q) => Quaver.fromJson(q)))
+        : null;
 
 class Bar {
   final String? chord;

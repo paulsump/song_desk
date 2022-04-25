@@ -28,11 +28,16 @@ int? calcDuration(
     int? toPitch = _getPitchAt(toQ, voice, bars);
 
     if (toPitch != null) {
-      // if (toPitch != fromPitch) {
+      // TODO remove this null check, shouldn't need it
+      if (fromPitch != null) {
+        if (toPitch == fromPitch) {
+          out('same');
+          return null;
+        }
+      }
       final int duration = toQ - fromQ;
 
       return 12 < duration ? null : duration;
-      // }
     }
   }
 
