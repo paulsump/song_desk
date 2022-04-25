@@ -33,7 +33,24 @@ void main() {
 
     test('update 1001 -> true', () async {
       scheduler.update(const Duration(milliseconds:1001));
+      expect(events[0].stopWasCalled, equals(true));
+    });
+
+    test('update 0, 1001 -> true', () async {
+      scheduler.update(const Duration(milliseconds:0));
       expect(events[0].stopWasCalled, equals(false));
+
+      scheduler.update(const Duration(milliseconds:1001));
+      expect(events[0].stopWasCalled, equals(true));
+    });
+
+    test('play, update 0, 1001 -> true', () async {
+      scheduler.play();
+      scheduler.update(const Duration(milliseconds:0));
+      expect(events[0].stopWasCalled, equals(false));
+
+      scheduler.update(const Duration(milliseconds:1001));
+      expect(events[0].stopWasCalled, equals(true));
     });
   });
 }
