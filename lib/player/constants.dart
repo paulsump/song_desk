@@ -1,4 +1,5 @@
 class Constants {
-  /// my little speaker has too much bass, so,
-  static const bool bassBoostedSpeaker = false;
+  /// my little bassBoostedSpeaker
+  /// has too much bass, so I turn off bassBoost for that.
+  static const bool bassBoost = false;
 }

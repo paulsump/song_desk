@@ -56,9 +56,7 @@ class _HomePageState extends State<HomePage>
     super.dispose();
   }
 
-  void _stop() {
-    playing = false;
-  }
+  void _stop() => playing = false;
 
   @override
   Widget build(BuildContext context) {
@@ -71,9 +69,7 @@ class _HomePageState extends State<HomePage>
             itemBuilder: (context, index) {
               final String title = SongNotifier.titles[index];
               return ListTile(
-                onTap: () {
-                  songNotifier.playIndex(index);
-                },
+                onTap: () => songNotifier.playIndex(index),
                 title: Text(
                   title,
                   style: songNotifier.currentSongTitle == title
