@@ -1,3 +1,4 @@
 class Constants {
-  static const bool bassBoostedSpeaker = true;
+  /// my little speaker has too much bass, so,
+  static const bool bassBoostedSpeaker = false;
 }

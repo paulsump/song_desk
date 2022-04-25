@@ -20,6 +20,7 @@ int? calcDuration(
   final int fromQ = fromBarIndex * 4 + fromQuaverIndex;
   int? fromPitch = _getPitchAt(fromQ, voice, bars);
 
+  // TODO remove this null check, shouldn't need it
   if (fromPitch == null) {
     out('fromQ with no pitch?!: $fromQ');
   }
@@ -35,8 +36,8 @@ int? calcDuration(
           return null;
         }
       }
-      final int duration = toQ - fromQ;
 
+      final int duration = toQ - fromQ;
       return 12 < duration ? null : duration;
     }
   }
