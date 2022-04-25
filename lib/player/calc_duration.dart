@@ -13,7 +13,7 @@ int calcDuration(
   List<Bar> bars,
 ) {
   final int fromQ = fromBarIndex * 4 + fromQuaverIndex;
-  int fromPitch = _getPitchAt(fromQ, voice, bars)!;
+  // int fromPitch = _getPitchAt(fromQ, voice, bars)!;
 
   for (int toQ = 1 + fromQ; toQ < 4 * bars.length; ++toQ) {
     int? toPitch = _getPitchAt(toQ, voice, bars);
