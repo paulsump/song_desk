@@ -18,16 +18,20 @@
 - alternate between soft and hard bass iff the same note.
 - use soft for arp, mid for backing, and hard piano for vocal.
 - alternate between soft, mid, and hard piano.
+
+- fix calcDuration bleed for
+  People Make The World Go Round
+  It Must Be Love (verse)
   
 - fix Don't Make Me Over at the end of verse weirdness.
 - fix over plays note duration for bass
+  Addicted (ok with pitch=pitch and return null)
+  After All (p== p fixes the repeated notes, but breaks for when diff notes).
   Life In The Ghetto
   Love Me Forever
   Melancolia
   The Tide Is High
   People Make The World Go Round
-  Addicted
-  After All
 - My Conversation more swingy
 
 - fix bass missing notes

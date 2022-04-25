@@ -20,11 +20,6 @@ int? calcDuration(
   final int fromQ = fromBarIndex * 4 + fromQuaverIndex;
   int? fromPitch = _getPitchAt(fromQ, voice, bars);
 
-  // TODO remove this null check, shouldn't need it
-  if (fromPitch == null) {
-    out('fromQ with no pitch?!: $fromQ');
-  }
-
   for (int toQ = 1 + fromQ; toQ < 4 * bars.length; ++toQ) {
     int? toPitch = _getPitchAt(toQ, voice, bars);
 
@@ -32,7 +27,6 @@ int? calcDuration(
       // TODO remove this null check, shouldn't need it
       if (fromPitch != null) {
         if (toPitch == fromPitch) {
-          out('same');
           return null;
         }
       }
