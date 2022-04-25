@@ -15,6 +15,8 @@
 
 # TODO logic
 
+- map voice, instrument/volume
+  
 - alternate between soft and hard bass iff the same note.
 - use soft for arp, mid for backing, and hard piano for vocal.
 - alternate between soft, mid, and hard piano.
