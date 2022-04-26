@@ -95,14 +95,11 @@ class AudioEvent extends Event {
   void play() {
     if (audioPlayer != null) {
       if (isPlaying) {
-        // unawaited(audioPlayer!.seek(Duration.zero));
         unawaited(audioPlayer!.stop());
       }
-        // unawaited(audioPlayer!.resume());
-      // } else {
-        unawaited(audioPlayer!.resume());
+      unawaited(audioPlayer!.resume());
 
-        wantStartPlay = false;
+      wantStartPlay = false;
       // }
     }
   }
