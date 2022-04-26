@@ -48,10 +48,7 @@ class Scheduler {
 
 /// Note events.
 abstract class Event {
-  Event({
-    required this.startTime,
-    this.duration,
-  });
+  Event({required this.startTime, this.duration});
 
   final Duration startTime;
   bool wantStartPlay = true;
