@@ -88,19 +88,19 @@ class AudioEvent extends Event {
 
   final AudioPlayer? audioPlayer;
 
-  bool get isPlaying =>
+  bool get _sampleIsAlreadyPlaying =>
       audioPlayer != null ? audioPlayer!.state == PlayerState.PLAYING : false;
 
   @override
   void play() {
     if (audioPlayer != null) {
-      if (isPlaying) {
+      if (_sampleIsAlreadyPlaying) {
+        // Go back to start (instead of seek(0) which isn't allowed with LOW_LATENCY).
         unawaited(audioPlayer!.stop());
       }
-      unawaited(audioPlayer!.resume());
 
+      unawaited(audioPlayer!.resume());
       wantStartPlay = false;
-      // }
     }
   }
 
