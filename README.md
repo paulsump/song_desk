@@ -51,6 +51,9 @@ fix duration bug
     O Mundo e um Moinho
 
 # TODO easy
+
+//TODO REenable auto play at start
+//TODO REenable auto play next
   
 - check all todos e.g.
   //TODO TRiplets

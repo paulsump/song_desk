@@ -32,11 +32,7 @@ class _HomePageState extends State<HomePage>
     WidgetsBinding.instance!.addPostFrameCallback((_) {
       final songNotifier = getSongNotifier(context, listen: false);
 
-      unawaited(songNotifier.init(() {
-        _playTime = _time;
-
-        playing = true;
-      }));
+      unawaited(songNotifier.init());
 
       _ticker = createTicker((elapsed) {
         _time = elapsed;
@@ -69,7 +65,7 @@ class _HomePageState extends State<HomePage>
             itemBuilder: (context, index) {
               final String title = SongNotifier.titles[index];
               return ListTile(
-                onTap: () => songNotifier.playIndex(index),
+                onTap: () => songNotifier.playIndex(index, _time),
                 title: Text(
                   title,
                   style: songNotifier.currentSongTitle == title
@@ -85,15 +81,15 @@ class _HomePageState extends State<HomePage>
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 FloatingActionButton(
-                  onPressed: songNotifier.back,
+                  onPressed: play(songNotifier.back),
                   child: const Icon(Icons.skip_previous),
                 ),
                 FloatingActionButton(
-                  onPressed: songNotifier.play,
+                  onPressed: play(songNotifier.play),
                   child: const Icon(Icons.play_arrow_rounded),
                 ),
                 FloatingActionButton(
-                  onPressed: songNotifier.forward,
+                  onPressed: play(songNotifier.forward),
                   child: const Icon(Icons.skip_next),
                 ),
                 FloatingActionButton(
@@ -104,4 +100,11 @@ class _HomePageState extends State<HomePage>
             ),
     );
   }
+
+  VoidCallback play(void Function(Duration time) fun) => () {
+        fun(_time);
+
+        _playTime = _time;
+        playing = true;
+      };
 }
