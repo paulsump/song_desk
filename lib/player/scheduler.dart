@@ -59,5 +59,8 @@ class Scheduler {
         event.end();
       }
     }
+
+    // stop events that have playCount[eventId] == 0
+    // eventId is inst+pitch
   }
 }

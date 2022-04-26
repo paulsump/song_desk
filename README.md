@@ -20,6 +20,8 @@ fix duration bug
 
 # TODO logic
 
+- no: Create audioPlayer in getPlayer(), but then event would need to dispose()
+
 - alternate between soft and hard bass iff the same note.
 - use soft for arp, mid for backing, and hard piano for vocal.
 - alternate between soft, mid, and hard piano.

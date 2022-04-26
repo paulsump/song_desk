@@ -153,7 +153,7 @@ class Bass implements Instrument {
 Future<AudioPlayer> _createAudioPlayer(String fileName) async {
   final url = await _audioCache.load(fileName);
 
-  // LOW_LATENCY seems to be needed to replay
+  // LOW_LATENCY seems to be needed to replay.  It disables seek and getDuration()
   final audioPlayer = AudioPlayer(mode: PlayerMode.LOW_LATENCY);
 
   // prepare the player with this audio but do not start playing

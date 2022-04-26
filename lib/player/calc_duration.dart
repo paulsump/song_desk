@@ -32,10 +32,12 @@ int? calcDuration(
       }
 
       final int duration = toQ - fromQ;
+      // TODO Always duration, so return 16
       return 12 < duration ? null : duration;
     }
   }
 
+  // TODO Always duration, so return 16
   return null;
 }
 
