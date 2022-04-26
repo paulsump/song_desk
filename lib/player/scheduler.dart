@@ -42,21 +42,21 @@ class Scheduler {
     }
   }
 
-  void scrub(Duration currentTime) {
-    for (final event in _events) {
+  // void scrub(Duration currentTime) {
+  //   for (final event in _events) {
       /// TODO make all notes have a duration (reality of a sample)
-      final Duration endTime = event.startTime + event.duration!;
-
-      if (event.startTime < currentTime && currentTime < endTime) {
-        if (!event.began) {
-          event.begin();
-        }
-      } else {
-        event.end();
-      }
-    }
+      // final Duration endTime = event.startTime + event.duration!;
+      //
+      // if (event.startTime < currentTime && currentTime < endTime) {
+      //   if (!event.began) {
+      //     event.begin();
+      //   }
+      // } else {
+      //   event.end();
+      // }
+    // }
 
     // TODO stop events that have playCount[eventId] == 0
     // eventId is inst+pitch
-  }
+  // }
 }

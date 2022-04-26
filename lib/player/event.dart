@@ -15,10 +15,10 @@ abstract class Event {
   final Duration? duration;
 
   bool wantStartPlay = true;
-  bool began = false;
-
-  void begin(){began = true;}
-  void end(){began = false;}
+  // bool began = false;
+  //
+  // void begin(){began = true;}
+  // void end(){began = false;}
 
   void play();
   void setWantStartPlay() => wantStartPlay = true;
