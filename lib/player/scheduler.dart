@@ -33,7 +33,7 @@ class Scheduler {
         } else {
           // TODO removing this wantStartPlay fixes the tests
           if (!event.wantStartPlay) {
-            //TODO fade out using setVolume
+            // TODO fade out using setVolume
             event.stop();
           }
         }
@@ -58,6 +58,9 @@ abstract class Event {
 
   void setWantStartPlay() => wantStartPlay = true;
   void stop() => wantStartPlay = true;
+
+  @override
+  String toString() =>'$startTime, ${duration!.inMilliseconds}';
 }
 
 /// e.g. a call back to go to the next track.

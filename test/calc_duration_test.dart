@@ -100,4 +100,13 @@ void main() {
       expect(duration, equals(1));
     });
   });
+
+  group('scheduler', () {
+    test('bass bar 0, q 0 = 4', () async {
+      final song = await getSong('scheduler');
+
+      final int? duration = calcDuration(0, 0, 'bass', song.bars);
+      expect(duration, equals(null));
+    });
+  });
 }
