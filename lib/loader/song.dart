@@ -114,7 +114,7 @@ List<String>? _createPhrases(Map<String, dynamic> json) {
   if (json.containsKey('verses')) {
     phrases = <String>[];
 
-    var verses = json['verses'][0];
+    final verses = json['verses'][0];
 
     for (int i = 0; i < 4; ++i) {
       final key = 'verse $i';
@@ -132,7 +132,7 @@ List<String>? _createPhrases(Map<String, dynamic> json) {
   } else if (json.containsKey('shareds')) {
     phrases = <String>[];
 
-    var shared = json['shareds'][0]['shared'];
+    final shared = json['shareds'][0]['shared'];
     phrases.add(shorten(shared));
   } else if (json.containsKey('restates')) {
     // TODO restates
@@ -141,7 +141,7 @@ List<String>? _createPhrases(Map<String, dynamic> json) {
 }
 
 String shorten(String phrase) {
-  var list = phrase.split('#');
+  final list = phrase.split('#');
 
   phrase = list[0] == ';' ? '' : list[0];
 

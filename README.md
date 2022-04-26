@@ -6,11 +6,10 @@
 ## TODO UI
 
 - volume mixer
-- go to bar (need full ui?)  
-- pick song from list
-  //TODO PICK from SongNotifier.titles
-- dark mode (save battery)
 - mute voice
+- go to bar (need full ui?)
+  would be nice to scrub
+- dark mode (save battery)
 - button pause
 
 # TODO logic bugs

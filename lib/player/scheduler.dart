@@ -1,7 +1,3 @@
-import 'dart:async';
-
-import 'package:audioplayers/audioplayers.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:song_desk/out.dart';
 import 'package:song_desk/player/event.dart';
 
@@ -60,7 +56,7 @@ class Scheduler {
       }
     }
 
-    // stop events that have playCount[eventId] == 0
+    // TODO stop events that have playCount[eventId] == 0
     // eventId is inst+pitch
   }
 }

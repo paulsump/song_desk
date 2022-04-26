@@ -1,9 +1,6 @@
 // © 2022, Paul Sumpner <sumpner@hotmail.com>
 
-import 'dart:math';
-
 import 'package:song_desk/loader/song.dart';
-import 'package:song_desk/out.dart';
 
 /// Q is the index if all the quavers were stored in a single array.
 /// It's combination of barIndex and quaverIndex.

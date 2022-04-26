@@ -9,9 +9,7 @@ import 'package:song_desk/loader/song.dart';
 class Convert {
   late final Bible bible;
 
-  Future<void> init() async {
-    await _loadBible();
-  }
+  Future<void> init() async => await _loadBible();
 
   int quaverToSemitone(Quaver quaver, String key) {
     final pitch = quaver.pitch!;
