@@ -26,8 +26,8 @@ abstract class Instrument {
   AudioPlayer getPlayer(int semitone, int octave);
 
   Future<void> preLoad() async {
-    //TODO MAYBE set volume here
   }
+
 
 // TODO CALL audioPlayer.dispose()
 }

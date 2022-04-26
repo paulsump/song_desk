@@ -20,8 +20,6 @@ fix duration bug
 
 # TODO logic
 
-- map voice, instrument/volume
-  
 - alternate between soft and hard bass iff the same note.
 - use soft for arp, mid for backing, and hard piano for vocal.
 - alternate between soft, mid, and hard piano.
@@ -67,3 +65,16 @@ fix duration bug
 # TODO Later
 
 - Ultimately to create, arrange, transpose songs.
+
+# TODO Maybe
+
+- volume mixer vs volume encapsulation?
+  I need to have a factor to take the 
+  perceived sample loudness out of the equation.
+  //TODO initialize from mixer volume here
+  double get volumeFactor // used in setVolume
+
+- map voice, instrument/volume
+  // TODO MAYBE Map voices to player functions
+  // final _playerFuns = <String, dynamic>{};
+
