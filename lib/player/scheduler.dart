@@ -88,16 +88,22 @@ class AudioEvent extends Event {
 
   final AudioPlayer? audioPlayer;
 
+  bool get isPlaying =>
+      audioPlayer != null ? audioPlayer!.state == PlayerState.PLAYING : false;
+
   @override
   void play() {
     if (audioPlayer != null) {
-      if (!wantStartPlay) {
-        unawaited(audioPlayer!.seek(Duration.zero));
-      } else {
+      if (isPlaying) {
+        // unawaited(audioPlayer!.seek(Duration.zero));
+        unawaited(audioPlayer!.stop());
+      }
+        // unawaited(audioPlayer!.resume());
+      // } else {
         unawaited(audioPlayer!.resume());
 
         wantStartPlay = false;
-      }
+      // }
     }
   }
 
