@@ -38,6 +38,7 @@ class SongNotifier with ChangeNotifier {
   final _convert = Convert();
 
   bool get isReady => _schedulers.isNotEmpty;
+  late VoidCallback _playFun;
 
   void update(Duration time) {
     if (_schedulers.containsKey(currentSongTitle)) {
@@ -45,39 +46,43 @@ class SongNotifier with ChangeNotifier {
     }
   }
 
-  void playIndex(int index, Duration time) {
+  void playIndex(int index) {
     _currentSongIndex = index;
 
-    _playAndSavePreferences(time);
+    _playAndSavePreferences();
   }
 
-  void back(Duration time) {
+  void back() {
     --_currentSongIndex;
 
     if (_currentSongIndex < 0) {
       _currentSongIndex = 0;
     }
 
-    _playAndSavePreferences(time);
+    _playAndSavePreferences();
   }
 
-  void forward(Duration time) {
+  void forward() {
     ++_currentSongIndex;
 
     _currentSongIndex %= _schedulers.entries.length;
-    _playAndSavePreferences(time);
+    _playAndSavePreferences();
   }
 
-  void _playAndSavePreferences(Duration time) {
-    play(time);
+  void _playAndSavePreferences() {
+    play();
 
     notifyListeners();
     unawaited(_savePreferences());
   }
 
-  void play(Duration time) => _currentScheduler.play();
+  void play() {
+    _playFun();
 
-  Future<void> init() async {
+    _currentScheduler.play();
+  }
+
+  Future<void> init(VoidCallback playFun) async {
     await _persist.loadSongs();
 
     for (final Instrument instrument in _instruments.values) {
@@ -99,10 +104,9 @@ class SongNotifier with ChangeNotifier {
     }
 
     await _loadPreferences();
+    _playFun = playFun;
 
-    //TODO REenable auto play at start
-    // play();
-
+    play();
     notifyListeners();
   }
 
@@ -241,11 +245,10 @@ class SongNotifier with ChangeNotifier {
 
   ///Auto play next song when finish song.
   void _addPlayNextEvent(Scheduler scheduler, int startTime) {
-    //TODO REenable auto play next
-    // scheduler.add(FunctionEvent(
-    //   startTime: Duration(milliseconds: startTime),
-    //   function: forward,
-    // ));
+    scheduler.add(FunctionEvent(
+      startTime: Duration(milliseconds: startTime),
+      function: forward,
+    ));
   }
 
   static const titles = [

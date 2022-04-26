@@ -31,7 +31,7 @@ class Scheduler {
             event.play();
           }
         } else {
-          /// TODO removing this wantStartPlay fixes the tests
+          // TODO removing this wantStartPlay fixes the tests
           if (!event.wantStartPlay) {
             //TODO fade out using setVolume
             event.stop();
@@ -73,9 +73,7 @@ class FunctionEvent extends Event {
   final VoidCallback function;
 
   @override
-  void play() {
-    function();
-  }
+  void play() => function();
 }
 
 /// Play a sample for an optional duration.
