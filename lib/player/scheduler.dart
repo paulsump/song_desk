@@ -45,4 +45,19 @@ class Scheduler {
       }
     }
   }
+
+  void scrub(Duration currentTime) {
+    for (final event in _events) {
+      /// TODO make all notes have a duration (reality of a sample)
+      final Duration endTime = event.startTime + event.duration!;
+
+      if (event.startTime < currentTime && currentTime < endTime) {
+        if (!event.began) {
+          event.begin();
+        }
+      } else {
+        event.end();
+      }
+    }
+  }
 }

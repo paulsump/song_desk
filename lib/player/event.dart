@@ -12,12 +12,17 @@ abstract class Event {
   Event({required this.startTime, this.duration});
 
   final Duration startTime;
-  bool wantStartPlay = true;
-
   final Duration? duration;
-  void play();
 
+  bool wantStartPlay = true;
+  bool began = false;
+
+  void begin(){began = true;}
+  void end(){began = false;}
+
+  void play();
   void setWantStartPlay() => wantStartPlay = true;
+
   void stop() => wantStartPlay = true;
 
   @override
