@@ -11,6 +11,7 @@ import 'package:song_desk/loader/persist.dart';
 import 'package:song_desk/loader/song.dart';
 import 'package:song_desk/out.dart';
 import 'package:song_desk/player/calc_duration.dart';
+import 'package:song_desk/player/event.dart';
 import 'package:song_desk/player/samples.dart';
 import 'package:song_desk/player/scheduler.dart';
 
