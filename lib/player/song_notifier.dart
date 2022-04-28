@@ -59,7 +59,7 @@ class SongNotifier with ChangeNotifier {
     --_currentSongIndex;
 
     if (_currentSongIndex < 0) {
-      _currentSongIndex = 0;
+      _currentSongIndex = titles.length - 1;
     }
 
     _playAndSavePreferences();
@@ -68,7 +68,9 @@ class SongNotifier with ChangeNotifier {
   void forward() {
     ++_currentSongIndex;
 
-    _currentSongIndex %= _schedulers.entries.length;
+    if (titles.length <= _currentSongIndex ) {
+      _currentSongIndex = 0;
+    }
     _playAndSavePreferences();
   }
 

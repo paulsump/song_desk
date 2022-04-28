@@ -18,6 +18,8 @@ fix duration bug
 
 # TODO logic
 
+- 	need play bass when endChord  
+
 - no: Create audioPlayer in getPlayer(), but then event would need to dispose()  
 
 - alternate between soft and hard bass iff the same note.
@@ -44,7 +46,7 @@ fix duration bug
   
 - fade out (for piano) with audioPlayer.setVolume(0.5)  
   Silly Games  
-  Declaration Of Rights  
+  Golden Lady  
 
 - Repeats  
   want to alter time somehow - simpler and would work for visual too.  
