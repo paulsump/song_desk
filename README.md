@@ -5,7 +5,6 @@
 
 ## TODO UI
 
-- mute preferHarmony (play opposite of m) 
 - volume mixer
 - go to bar (need full ui?)  
   would be nice to scrub

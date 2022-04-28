@@ -116,7 +116,7 @@ class _HomePageState extends State<HomePage>
       endDrawer: Drawer(
           child: ListView(
         children: [
-          for (final voice in allVoices)
+          for (final voice in allMutes)
             CheckboxListTile(
               title: Text(voice.capitalize(),
                   style: const TextStyle(fontSize: 28)),

@@ -1,8 +1,11 @@
 import 'dart:async';
 
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:song_desk/out.dart';
 
-const allVoices = <String>[
+const noWarn = out;
+
+const _allVoices = <String>[
   'bass',
   'backing',
   'vocal',
@@ -11,26 +14,30 @@ const allVoices = <String>[
   'arp',
 ];
 
+// leftover = the harmony or backing that M doesn't play.
+final allMutes = _allVoices + ['leftover'];
+
 class Preferences {
   static late SharedPreferences _instance;
 
   static Future init() async {
     _instance = await SharedPreferences.getInstance();
+    _instance.remove('mutedVoices');
   }
 
   static bool isMuted(String voice) =>
-      _getStringList('mutedVoices').contains(voice);
+      _getStringList('mutes').contains(voice);
 
   static void toggleMute(String voice) async {
-    final List<String> mutedVoices = _getStringList('mutedVoices');
+    final List<String> mutes = _getStringList('mutes');
 
-    if (mutedVoices.contains(voice)) {
-      mutedVoices.remove(voice);
+    if (mutes.contains(voice)) {
+      mutes.remove(voice);
     } else {
-      mutedVoices.add(voice);
+      mutes.add(voice);
     }
 
-    unawaited(_instance.setStringList('mutedVoices', mutedVoices));
+    unawaited(_instance.setStringList('mutes', mutes));
   }
 
   static List<String> _getStringList(String key) =>

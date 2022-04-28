@@ -128,6 +128,13 @@ class SongNotifier with ChangeNotifier {
       _addQuavers(bar.vocal, song, b, pads, quaverDuration, scheduler, _piano5,
           'vocal');
 
+      if (bar.preferHarmony != null) {
+        final opposite = bar.preferHarmony! ? bar.backing : bar.harmony;
+
+        _addQuavers(opposite, song, b, pads, quaverDuration, scheduler, _piano4,
+            'leftover');
+      }
+
       _addQuavers(bar.backing, song, b, pads, quaverDuration, scheduler,
           _piano4, 'backing');
 
