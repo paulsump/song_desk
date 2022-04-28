@@ -10,6 +10,7 @@ class Song {
   final bool _doubleTime;
 
   final _repeatDurations = <int>[];
+  final _endingDurations = <int>[];
 
   Song.fromJson(Map<String, dynamic> json)
       : bars = List<Bar>.from(json["bars"].map((bar) => Bar.fromJson(bar))),
@@ -62,26 +63,42 @@ class Song {
       strum.contains('BoomClap') || (_doubleTime && strum == 'Reggae');
 
   void _calcRepeatDurations() {
-    int? previousLeft;
+    int? previousLeftIndex;
 
     for (int b = 0; b < bars.length; ++b) {
       final Bar bar = bars[b];
 
       if (bar.repeatLeft) {
         // when find a Right, track backwards to first found Left
-        previousLeft = b;
+        previousLeftIndex = b;
       }
 
       if (bar.repeatRight != 0) {
         for (int n = 0; n < bar.repeatRight; ++n) {
-          _repeatDurations.add(b - previousLeft!);
+          _repeatDurations.add(b - previousLeftIndex!);
         }
       }
     }
   }
 
+  // calc extra needed to jump pass ending '1' to get to ending '2,3'
   void _calcEndingDurations() {
-    // TODO calc extra needed to jump pass ending '1' to get to ending '2,3'
+    int? ending1Index;
+
+    for (int b = 0; b < bars.length; ++b) {
+      final Bar bar = bars[b];
+
+      if (bar.ending != null) {
+        final String ending = bar.ending!;
+
+        if (ending == '1') {
+          // when find a ending1, track backwards to first found ending2
+          ending1Index = b;
+        } else {
+          _endingDurations.add(b - ending1Index!);
+        }
+      }
+    }
   }
 }
 
