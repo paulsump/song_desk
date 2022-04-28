@@ -25,6 +25,7 @@ class _HomePageState extends State<HomePage>
   Duration _playTime = Duration.zero;
 
   bool playing = false;
+  final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey();
 
   @override
   void initState() {
@@ -62,7 +63,6 @@ class _HomePageState extends State<HomePage>
   @override
   Widget build(BuildContext context) {
     final songNotifier = getSongNotifier(context, listen: true);
-    final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey(); // Create a key
 
     return Scaffold(
       key: _scaffoldKey,
@@ -83,7 +83,7 @@ class _HomePageState extends State<HomePage>
             }),
       ),
       floatingActionButton: !songNotifier.isReady
-          ? Container()
+          ? _buildMenuButton()
           : Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
@@ -103,10 +103,7 @@ class _HomePageState extends State<HomePage>
                   onPressed: _stop,
                   child: const Icon(Icons.stop),
                 ),
-                FloatingActionButton(
-                  onPressed: () => _scaffoldKey.currentState!.openEndDrawer(),
-                  child: const Icon(Icons.menu),
-                ),
+                _buildMenuButton(),
               ],
             ),
       endDrawer: Drawer(
@@ -128,6 +125,11 @@ class _HomePageState extends State<HomePage>
       )),
     );
   }
+
+  FloatingActionButton _buildMenuButton() => FloatingActionButton(
+        onPressed: () => _scaffoldKey.currentState!.openEndDrawer(),
+        child: const Icon(Icons.menu),
+      );
 }
 
 extension StringExtension on String {
