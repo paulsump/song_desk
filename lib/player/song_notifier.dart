@@ -226,6 +226,7 @@ class SongNotifier with ChangeNotifier {
     );
   }
 
+  //TODO use Prefs
   Future<void> _loadPreferences() async {
     final preferences = await SharedPreferences.getInstance();
 

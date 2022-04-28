@@ -5,8 +5,9 @@
 
 ## TODO UI
 
+
+- scroll to currentIndex at start
 - volume mixer
-- mute voice
 - go to bar (need full ui?)  
   would be nice to scrub
 - dark mode (save battery)

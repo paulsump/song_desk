@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:song_desk/out.dart';
 import 'package:song_desk/player/song_notifier.dart';
+import 'package:song_desk/prefs.dart';
 
 const noWarn = out;
 
@@ -102,6 +103,22 @@ class _HomePageState extends State<HomePage>
                 ),
               ],
             ),
+      endDrawer: Drawer(
+          child: ListView(
+        children: [
+          for (final voice in allVoices)
+            CheckboxListTile(
+              title: Text(voice),
+              value: Prefs.isMuted(voice),
+              onChanged: (bool? value) {
+                setState(() {
+                  //TODO Test
+                  Prefs.toggleMute(voice);
+                });
+              },
+            )
+        ],
+      )),
     );
   }
 }
