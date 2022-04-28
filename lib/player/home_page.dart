@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:song_desk/out.dart';
 import 'package:song_desk/player/song_notifier.dart';
-import 'package:song_desk/prefs.dart';
+import 'package:song_desk/preferences.dart';
 
 const noWarn = out;
 
@@ -62,8 +62,10 @@ class _HomePageState extends State<HomePage>
   @override
   Widget build(BuildContext context) {
     final songNotifier = getSongNotifier(context, listen: true);
+    final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey(); // Create a key
 
     return Scaffold(
+      key: _scaffoldKey,
       body: Center(
         child: ListView.builder(
             itemCount: SongNotifier.titles.length,
@@ -101,6 +103,10 @@ class _HomePageState extends State<HomePage>
                   onPressed: _stop,
                   child: const Icon(Icons.stop),
                 ),
+                FloatingActionButton(
+                  onPressed: () => _scaffoldKey.currentState!.openEndDrawer(),
+                  child: const Icon(Icons.menu),
+                ),
               ],
             ),
       endDrawer: Drawer(
@@ -108,17 +114,24 @@ class _HomePageState extends State<HomePage>
         children: [
           for (final voice in allVoices)
             CheckboxListTile(
-              title: Text(voice),
-              value: Prefs.isMuted(voice),
+              title: Text(voice.capitalize(),
+                  style: const TextStyle(fontSize: 28)),
+              value: Preferences.isMuted(voice),
               onChanged: (bool? value) {
                 setState(() {
-                  //TODO Test
-                  Prefs.toggleMute(voice);
+                  // TODO fix pref seems to get lost
+                  Preferences.toggleMute(voice);
                 });
               },
             )
         ],
       )),
     );
+  }
+}
+
+extension StringExtension on String {
+  String capitalize() {
+    return "${this[0].toUpperCase()}${substring(1).toLowerCase()}";
   }
 }

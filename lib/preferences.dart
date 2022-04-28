@@ -11,7 +11,7 @@ const allVoices = <String>[
   'arp',
 ];
 
-class Prefs {
+class Preferences {
   static late SharedPreferences _instance;
 
   static Future init() async {

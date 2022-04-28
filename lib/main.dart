@@ -4,12 +4,12 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:song_desk/player/home_page.dart';
 import 'package:song_desk/player/song_notifier.dart';
-import 'package:song_desk/prefs.dart';
+import 'package:song_desk/preferences.dart';
 
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
-  
-  await Prefs.init();
+
+  await Preferences.init();
   runApp(const MyApp());
 }
 

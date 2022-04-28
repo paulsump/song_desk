@@ -1,6 +1,6 @@
 import 'package:song_desk/out.dart';
 import 'package:song_desk/player/event.dart';
-import 'package:song_desk/prefs.dart';
+import 'package:song_desk/preferences.dart';
 
 const noWarn = out;
 
@@ -22,7 +22,7 @@ class Scheduler {
     // TODO Endings need currentTime + ending1 extra duration
     for (final event in _events) {
       if (event is AudioEvent) {
-        if (Prefs.isMuted(event.voice)) {
+        if (Preferences.isMuted(event.voice)) {
           continue;
         }
       }
