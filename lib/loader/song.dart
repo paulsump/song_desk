@@ -75,6 +75,8 @@ class Bar {
   final List<Quaver>? bass, vocal, backing, harmony, snare, arp;
 
   final bool preferHarmony, pad;
+  final bool repeatLeft;
+  final int repeatRight;
 
   Bar.fromJson(Map<String, dynamic> json)
       : chord = json['chord'],
@@ -87,7 +89,9 @@ class Bar {
         arp = _createQuavers(json, 'arp'),
         preferHarmony =
             json.containsKey('preferHarmony') ? json['preferHarmony'] : false,
-        pad = json.containsKey('pad') ? json['pad'] : false;
+        pad = json.containsKey('pad') ? json['pad'] : false,
+        repeatLeft = json['repeat'] == 'Left',
+        repeatRight = _parseRepeat(json);
 
   List<Quaver>? getQuavers(String voice) {
     switch (voice) {
@@ -106,6 +110,20 @@ class Bar {
     }
     return null;
   }
+}
+
+int _parseRepeat(Map<String, dynamic> json) {
+  if (!json.containsKey('repeat')) {
+    return 0;
+  }
+
+  final String s = json['repeat'];
+  if (!s.startsWith('Right')) {
+    return 0;
+  }
+
+  final String n = s[s.length - 1];
+  return int.parse(n);
 }
 
 List<String>? _createPhrases(Map<String, dynamic> json) {
