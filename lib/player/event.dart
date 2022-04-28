@@ -6,7 +6,6 @@ import 'package:song_desk/out.dart';
 
 const noWarn = out;
 
-
 /// Note events.
 abstract class Event {
   Event({required this.startTime, this.duration});
@@ -47,31 +46,30 @@ class AudioEvent extends Event {
   AudioEvent({
     required Duration startTime,
     Duration? duration,
-    this.audioPlayer,
+    required this.audioPlayer,
+    required this.voice,
   }) : super(startTime: startTime, duration: duration);
 
-  final AudioPlayer? audioPlayer;
+  final AudioPlayer audioPlayer;
+  final String voice;
 
-  bool get _sampleIsAlreadyPlaying =>
-      audioPlayer != null ? audioPlayer!.state == PlayerState.PLAYING : false;
+  bool get _sampleIsAlreadyPlaying => audioPlayer.state == PlayerState.PLAYING;
 
   @override
   void play() {
-    if (audioPlayer != null) {
-      if (_sampleIsAlreadyPlaying) {
-        // Go back to start (instead of seek(0) which isn't allowed with LOW_LATENCY).
-        unawaited(audioPlayer!.stop());
-      }
-
-      unawaited(audioPlayer!.resume());
-      wantStartPlay = false;
+    if (_sampleIsAlreadyPlaying) {
+      // Go back to start (instead of seek(0) which isn't allowed with LOW_LATENCY).
+      unawaited(audioPlayer.stop());
     }
+
+    unawaited(audioPlayer.resume());
+    wantStartPlay = false;
   }
 
   @override
   void stop() {
     super.stop();
 
-    unawaited(audioPlayer?.stop());
+    unawaited(audioPlayer.stop());
   }
 }

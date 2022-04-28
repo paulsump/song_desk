@@ -53,7 +53,8 @@ fix duration bug
     Golden Lady   
     O Mundo e um Moinho   
   Silly Games  (needs Endings too)  
-  
+
+setVolume is done on instrument's samples, which will be overwritten if i add a voice mixer  
 
 # TODO easy
 

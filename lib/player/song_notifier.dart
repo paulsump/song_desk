@@ -88,9 +88,6 @@ class SongNotifier with ChangeNotifier {
 
     for (final Instrument instrument in _instruments.values) {
       await instrument.preLoad();
-
-      //TODO initialize from mixer volume here
-      // instrument.setVolume(
     }
 
     await _convert.init();
@@ -180,7 +177,7 @@ class SongNotifier with ChangeNotifier {
             duration *= quaverDuration;
           }
 
-          _addNote(scheduler, t, getPlayer(semitone), duration);
+          _addNote(scheduler, t, getPlayer(semitone), duration, voice);
         }
         q += 1;
       }
@@ -218,12 +215,13 @@ class SongNotifier with ChangeNotifier {
     return 0;
   }
 
-  void _addNote(scheduler, int t, AudioPlayer audioPlayer, int? duration) {
+  void _addNote(scheduler, int t, AudioPlayer audioPlayer, int? duration, String voice) {
     scheduler.add(
       AudioEvent(
         startTime: Duration(milliseconds: t),
         duration: duration != null ? Duration(milliseconds: duration) : null,
         audioPlayer: audioPlayer,
+        voice: voice,
       ),
     );
   }
