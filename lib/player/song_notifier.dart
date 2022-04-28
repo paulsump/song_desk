@@ -27,7 +27,9 @@ class SongNotifier with ChangeNotifier {
   String get currentSongTitle => titles[_currentSongIndex];
   int _currentSongIndex = 0;
 
+  double get currentSongPositionFactor => _currentSongIndex / titles.length;
   final _schedulers = <String, Scheduler>{};
+
   final _instruments = <String, Instrument>{
     'Piano': Piano(),
     'Kick': Kick(),
@@ -215,7 +217,8 @@ class SongNotifier with ChangeNotifier {
     return 0;
   }
 
-  void _addNote(scheduler, int t, AudioPlayer audioPlayer, int? duration, String voice) {
+  void _addNote(
+      scheduler, int t, AudioPlayer audioPlayer, int? duration, String voice) {
     scheduler.add(
       AudioEvent(
         startTime: Duration(milliseconds: t),
@@ -226,7 +229,7 @@ class SongNotifier with ChangeNotifier {
     );
   }
 
-  //TODO use Prefs
+  //TODO use Preferences
   Future<void> _loadPreferences() async {
     final preferences = await SharedPreferences.getInstance();
 

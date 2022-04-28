@@ -67,7 +67,8 @@ class _HomePageState extends State<HomePage>
     final songNotifier = getSongNotifier(context, listen: true);
 
     WidgetsBinding.instance?.addPostFrameCallback((_) =>
-        _scrollController.jumpTo(_scrollController.position.maxScrollExtent));
+        _scrollController.jumpTo(_scrollController.position.maxScrollExtent *
+            songNotifier.currentSongPositionFactor));
 
     return Scaffold(
       key: _scaffoldKey,

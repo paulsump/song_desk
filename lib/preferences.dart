@@ -33,6 +33,6 @@ class Preferences {
     unawaited(_instance.setStringList('mutedVoices', mutedVoices));
   }
 
-  static List<String> _getStringList(String label) =>
-      _instance.getStringList(label) ?? <String>[];
+  static List<String> _getStringList(String key) =>
+      _instance.getStringList(key) ?? <String>[];
 }
