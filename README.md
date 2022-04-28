@@ -5,8 +5,8 @@
 
 ## TODO UI
 
+- scroll to currentSongIndex at start
 - mute preferHarmony (play opposite of m) 
-- scroll to currentIndex at start
 - volume mixer
 - go to bar (need full ui?)  
   would be nice to scrub

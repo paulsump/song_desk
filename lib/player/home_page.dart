@@ -27,6 +27,8 @@ class _HomePageState extends State<HomePage>
   bool playing = false;
   final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey();
 
+  final _scrollController = ScrollController();
+
   @override
   void initState() {
     super.initState();
@@ -64,10 +66,14 @@ class _HomePageState extends State<HomePage>
   Widget build(BuildContext context) {
     final songNotifier = getSongNotifier(context, listen: true);
 
+    WidgetsBinding.instance?.addPostFrameCallback((_) =>
+        _scrollController.jumpTo(_scrollController.position.maxScrollExtent));
+
     return Scaffold(
       key: _scaffoldKey,
       body: Center(
         child: ListView.builder(
+            controller: _scrollController,
             itemCount: SongNotifier.titles.length,
             itemBuilder: (context, index) {
               final String title = SongNotifier.titles[index];
