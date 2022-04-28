@@ -3,21 +3,19 @@
 class Song {
   final List<Bar> bars;
 
-  final String key, genre, strum;
+  final String strum;
   final int swing, tempo;
 
   final Map<int, String> _keyChangesAtBigStaveIndices;
-  final bool doubleTime;
+  final bool _doubleTime;
 
-  final repeatDurations = <int>[];
+  final _repeatDurations = <int>[];
 
   Song.fromJson(Map<String, dynamic> json)
       : bars = List<Bar>.from(json["bars"].map((bar) => Bar.fromJson(bar))),
-        key = json['key'],
-        genre = json['genre'],
         swing = json.containsKey('swing') ? json['swing'] : 0,
         tempo = json['tempo'],
-        doubleTime = json.containsKey('doubleTime'),
+        _doubleTime = json.containsKey('doubleTime'),
         strum = json['strum'],
         _keyChangesAtBigStaveIndices = {0: json['key']} {
     _calcKeyChangesAtBigStaveIndices(json);
@@ -61,12 +59,24 @@ class Song {
   }
 
   bool boomClapOrDoubleReggae() =>
-      strum.contains('BoomClap') || (doubleTime && strum == 'Reggae');
+      strum.contains('BoomClap') || (_doubleTime && strum == 'Reggae');
 
-  // TODO go back to find repeatLeft to calc repeatDuration
   void _calcRepeatDurations() {
+    int? previousLeft;
+
     for (int b = 0; b < bars.length; ++b) {
-      // todo when find a Right, track backwards to first found Left
+      final Bar bar = bars[b];
+
+      if (bar.repeatLeft) {
+        // when find a Right, track backwards to first found Left
+        previousLeft = b;
+      }
+
+      if (bar.repeatRight != 0) {
+        for (int n = 0; n < bar.repeatRight; ++n) {
+          _repeatDurations.add(b - previousLeft!);
+        }
+      }
     }
   }
 
