@@ -778,7 +778,8 @@
                     "pitch": 2
                 },
                 {
-                    "pitch": 4
+                    "accidental": "sharp",
+                    "pitch": 5
                 }
             ],
             "backing": [
@@ -807,11 +808,11 @@
                 {},
                 {}
             ],
-            "chord": "G#-7",
+            "chord": "G#-",
             "chordForD#EF": "A-7",
             "chordForDD#E": "G#-7",
             "chordForFF#G": "B-7",
-            "chordShape": "__",
+            "chordShape": "^^",
             "chordShapeForD#EF": "^ ",
             "chordShapeForDD#E": "^ ",
             "chordShapeForFF#G": "^ ",
@@ -1786,7 +1787,8 @@
                     "pitch": 2
                 },
                 {
-                    "pitch": 4
+                    "accidental": "sharp",
+                    "pitch": 5
                 }
             ],
             "backing": [
@@ -1816,11 +1818,11 @@
                 {},
                 {}
             ],
-            "chord": "G#-7",
+            "chord": "G#-",
             "chordForD#EF": "A-7",
             "chordForDD#E": "G#-7",
             "chordForFF#G": "B-7",
-            "chordShape": "^ ",
+            "chordShape": "^^",
             "chordShapeForD#EF": "^ ",
             "chordShapeForDD#E": "^ ",
             "chordShapeForFF#G": "^ ",
@@ -1934,7 +1936,7 @@
             "chordForD#EF": "D47",
             "chordForDD#E": "C#47",
             "chordForFF#G": "E47",
-            "chordShape": "^ ",
+            "chordShape": "^^",
             "chordShapeForD#EF": "^ ",
             "chordShapeForDD#E": "^ ",
             "chordShapeForFF#G": "^ ",
@@ -9595,7 +9597,7 @@
         ""
     ],
     "strum": "BossaBass",
-    "tempo": 180,
+    "tempo": 160,
     "words": 1,
     "youtube": "https://www.youtube.com/watch?v=CXCTjAMR3eA&list=PLcYIUjYxFNR6w-MEwBhwcDzcwC6CqTb1x&index=1&ab_channel=StevieWonder-Topic"
 }

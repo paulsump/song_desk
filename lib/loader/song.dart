@@ -62,7 +62,9 @@ class Song {
   // TODO go back to find repeatLeft to calc repeatDuration
   void calcRepeatDurations() {
     // TODO repeatDuration = ?
-    // TODO MORE than one block?
+    // TODO MORE than one block? - LIST
+
+    // todo when find a Right, track backwards to find Left
   }
 }
 

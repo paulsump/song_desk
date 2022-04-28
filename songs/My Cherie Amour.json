@@ -4221,6 +4221,17 @@
             "chordShapeForC#": "^^",
             "chordShapeForG#": "_ ",
             "chordShapeForGA": "^^",
+            "harmony": [
+                {
+                    "pitch": 4
+                },
+                {},
+                {},
+                {
+                    "pitch": 2
+                }
+            ],
+            "preferHarmony": true,
             "shareds": [
                 {
                     "pitch": 0,
@@ -4284,6 +4295,15 @@
             "chordShapeForC#": " ^",
             "chordShapeForG#": " ^",
             "chordShapeForGA": " ^",
+            "harmony": [
+                {},
+                {},
+                {
+                    "pitch": 2
+                },
+                {}
+            ],
+            "preferHarmony": true,
             "snare": [
                 {
                     "pitch": -8
@@ -4351,6 +4371,15 @@
             "chordShapeForC#": " ^",
             "chordShapeForG#": "^ ",
             "chordShapeForGA": " ^",
+            "harmony": [
+                {
+                    "pitch": 0
+                },
+                {},
+                {},
+                {}
+            ],
+            "preferHarmony": true,
             "vocal": [
                 {
                     "lyric": "la",
@@ -4399,6 +4428,7 @@
             "gaps": [
                 "backing"
             ],
+            "preferHarmony": true,
             "snare": [
                 {
                     "pitch": -8
@@ -4478,6 +4508,17 @@
             "chordShapeForC#": " ^",
             "chordShapeForG#": "_ ",
             "chordShapeForGA": " ^",
+            "harmony": [
+                {
+                    "pitch": 4
+                },
+                {},
+                {},
+                {
+                    "pitch": 2
+                }
+            ],
+            "preferHarmony": true,
             "shareds": [
                 {
                     "pitch": 0,
@@ -4544,6 +4585,15 @@
             "chordShapeForC#": " ^",
             "chordShapeForG#": " ^",
             "chordShapeForGA": " ^",
+            "harmony": [
+                {},
+                {
+                    "pitch": 1
+                },
+                {},
+                {}
+            ],
+            "preferHarmony": true,
             "snare": [
                 {
                     "pitch": -8
@@ -4613,6 +4663,15 @@
             "chordShapeForC#": "^ ",
             "chordShapeForG#": "__",
             "chordShapeForGA": "^ ",
+            "harmony": [
+                {
+                    "pitch": 3
+                },
+                {},
+                {},
+                {}
+            ],
+            "preferHarmony": true,
             "vocal": [
                 {
                     "lyric": "la",
@@ -4663,6 +4722,7 @@
             "gaps": [
                 "backing"
             ],
+            "preferHarmony": true,
             "shareds": [
                 {
                     "pitch": 0,
