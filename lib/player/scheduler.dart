@@ -22,6 +22,12 @@ class Scheduler {
     //TODO Repeat needs currentTime - repeatDuration
     // TODO Endings need currentTime + ending1 extra duration
     for (final event in _events) {
+      if (event is AudioEvent) {
+        if (event.voice == 'vocal') {
+          continue;
+        }
+      }
+
       if (event.duration != null) {
         final Duration endTime = event.startTime + event.duration!;
 
@@ -46,19 +52,19 @@ class Scheduler {
 
   // void scrub(Duration currentTime) {
   //   for (final event in _events) {
-      /// TODO make all notes have a duration (reality of a sample)
-      // final Duration endTime = event.startTime + event.duration!;
-      //
-      // if (event.startTime < currentTime && currentTime < endTime) {
-      //   if (!event.began) {
-      //     event.begin();
-      //   }
-      // } else {
-      //   event.end();
-      // }
-    // }
+  /// TODO make all notes have a duration (reality of a sample)
+  // final Duration endTime = event.startTime + event.duration!;
+  //
+  // if (event.startTime < currentTime && currentTime < endTime) {
+  //   if (!event.began) {
+  //     event.begin();
+  //   }
+  // } else {
+  //   event.end();
+  // }
+  // }
 
-    // TODO stop events that have playCount[eventId] == 0
-    // eventId is inst+pitch
+  // TODO stop events that have playCount[eventId] == 0
+  // eventId is inst+pitch
   // }
 }
