@@ -154,7 +154,7 @@ class SongNotifier with ChangeNotifier {
       }
     }
 
-    _addPlayNextEvent(scheduler, quaverDuration * b * 4);
+    _addPlayNextEvent(scheduler, quaverDuration * ++b * 4);
   }
 
   void _addQuavers(quavers, song, int b, int pads, int quaverDuration,
