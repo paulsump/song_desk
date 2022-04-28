@@ -52,6 +52,8 @@ fix duration bug
   schedular takes off time in update if hit repeat  
     Golden Lady   
     O Mundo e um Moinho   
+  Silly Games  (needs Endings too)  
+  
 
 # TODO easy
 

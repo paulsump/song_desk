@@ -19,7 +19,9 @@ class Song {
         strum = json['strum'],
         keyChangesAtBigStaveIndices = {0: json['key']} {
     _calcKeyChangesAtBigStaveIndices(json);
-    calcRepeatDurations();
+
+    _calcRepeatDurations();
+    _calcEndingDurations();
   }
 
   void _calcKeyChangesAtBigStaveIndices(Map<String, dynamic> json) {
@@ -60,11 +62,15 @@ class Song {
       strum.contains('BoomClap') || (doubleTime && strum == 'Reggae');
 
   // TODO go back to find repeatLeft to calc repeatDuration
-  void calcRepeatDurations() {
+  void _calcRepeatDurations() {
     // TODO repeatDuration = ?
     // TODO MORE than one block? - LIST
 
     // todo when find a Right, track backwards to find Left
+  }
+
+  void _calcEndingDurations() {
+    // TODO calc extra needed to jump pass ending '1' to get to ending '2,3'
   }
 }
 
@@ -85,7 +91,9 @@ class Bar {
 
   final bool preferHarmony, pad;
   final bool repeatLeft;
+
   final int repeatRight;
+  final String? ending;
 
   Bar.fromJson(Map<String, dynamic> json)
       : chord = json['chord'],
@@ -100,7 +108,8 @@ class Bar {
             json.containsKey('preferHarmony') ? json['preferHarmony'] : false,
         pad = json.containsKey('pad') ? json['pad'] : false,
         repeatLeft = json['repeat'] == 'Left',
-        repeatRight = _parseRepeat(json);
+        repeatRight = _parseRepeat(json),
+        ending = json['ending'];
 
   List<Quaver>? getQuavers(String voice) {
     switch (voice) {

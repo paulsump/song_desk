@@ -1705,19 +1705,18 @@
         {
             "arp": [
                 {
-                    "pitch": -3
+                    "pitch": 0
                 },
                 {
-                    "pitch": -1
+                    "pitch": 2
                 },
                 {
-                    "pitch": 3
+                    "pitch": 4
                 },
                 {
-                    "pitch": 5
+                    "pitch": 6
                 }
             ],
-            "chord": "F#-9",
             "chordShape": " ^",
             "guitar": [
                 {
@@ -1734,20 +1733,20 @@
             "arp": [
                 {},
                 {
-                    "pitch": 3
+                    "pitch": 4
                 },
                 {
-                    "pitch": -1
+                    "pitch": 2
                 },
                 {
-                    "pitch": -3
+                    "pitch": 0
                 }
             ],
             "bass": [
                 {},
                 {},
                 {
-                    "pitch": -6
+                    "pitch": -3
                 },
                 {}
             ],

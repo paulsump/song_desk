@@ -20,6 +20,7 @@ class Scheduler {
 
   void update(Duration currentTime) {
     //TODO Repeat needs currentTime - repeatDuration
+    // TODO Endings need currentTime + ending1 extra duration
     for (final event in _events) {
       if (event.duration != null) {
         final Duration endTime = event.startTime + event.duration!;
