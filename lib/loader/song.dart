@@ -6,8 +6,10 @@ class Song {
   final String key, genre, strum;
   final int swing, tempo;
 
-  Map<int, String> keyChangesAtBigStaveIndices;
-  bool doubleTime;
+  final Map<int, String> _keyChangesAtBigStaveIndices;
+  final bool doubleTime;
+
+  final repeatDurations = <int>[];
 
   Song.fromJson(Map<String, dynamic> json)
       : bars = List<Bar>.from(json["bars"].map((bar) => Bar.fromJson(bar))),
@@ -17,7 +19,7 @@ class Song {
         tempo = json['tempo'],
         doubleTime = json.containsKey('doubleTime'),
         strum = json['strum'],
-        keyChangesAtBigStaveIndices = {0: json['key']} {
+        _keyChangesAtBigStaveIndices = {0: json['key']} {
     _calcKeyChangesAtBigStaveIndices(json);
 
     _calcRepeatDurations();
@@ -39,7 +41,7 @@ class Song {
             final staveLabel = staveLabels[staveIndex];
 
             if (keyChanges.containsKey(staveLabel)) {
-              keyChangesAtBigStaveIndices[staveIndex] = keyChanges[staveLabel];
+              _keyChangesAtBigStaveIndices[staveIndex] = keyChanges[staveLabel];
             }
           }
         }
@@ -48,11 +50,11 @@ class Song {
   }
 
   String getKey(int barIndex) {
-    String key = keyChangesAtBigStaveIndices[0]!;
+    String key = _keyChangesAtBigStaveIndices[0]!;
 
     for (int i = 0; i < _calcStaveIndex(barIndex) + 1; ++i) {
-      if (keyChangesAtBigStaveIndices.containsKey(i)) {
-        key = keyChangesAtBigStaveIndices[i]!;
+      if (_keyChangesAtBigStaveIndices.containsKey(i)) {
+        key = _keyChangesAtBigStaveIndices[i]!;
       }
     }
     return key;
@@ -63,10 +65,9 @@ class Song {
 
   // TODO go back to find repeatLeft to calc repeatDuration
   void _calcRepeatDurations() {
-    // TODO repeatDuration = ?
-    // TODO MORE than one block? - LIST
-
-    // todo when find a Right, track backwards to find Left
+    for (int b = 0; b < bars.length; ++b) {
+      // todo when find a Right, track backwards to first found Left
+    }
   }
 
   void _calcEndingDurations() {

@@ -20,12 +20,10 @@ final allMutes = _allVoices + ['leftover'];
 class Preferences {
   static late SharedPreferences _instance;
 
-  static Future init() async {
-    _instance = await SharedPreferences.getInstance();
-  }
+  static Future init() async =>
+      _instance = await SharedPreferences.getInstance();
 
-  static bool isMuted(String voice) =>
-      _getStringList('mutes').contains(voice);
+  static bool isMuted(String voice) => _getStringList('mutes').contains(voice);
 
   static void toggleMute(String voice) async {
     final List<String> mutes = _getStringList('mutes');
