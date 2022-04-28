@@ -40,7 +40,7 @@ class Persist {
     try {
       songs[title] = Song.fromJson(map);
     } catch (e) {
-      logError('Loading $title');
+      logError('Loading $title: $e');
     }
   }
 }

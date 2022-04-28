@@ -18,10 +18,11 @@ class Song {
         doubleTime = json.containsKey('doubleTime'),
         strum = json['strum'],
         keyChangesAtBigStaveIndices = {0: json['key']} {
-    calcKeyChangesAtBigStaveIndices(json);
+    _calcKeyChangesAtBigStaveIndices(json);
+    calcRepeatDurations();
   }
 
-  void calcKeyChangesAtBigStaveIndices(Map<String, dynamic> json) {
+  void _calcKeyChangesAtBigStaveIndices(Map<String, dynamic> json) {
     if (json.containsKey('keyChanges')) {
       final keyChanges = json['keyChanges'];
 
@@ -57,6 +58,12 @@ class Song {
 
   bool boomClapOrDoubleReggae() =>
       strum.contains('BoomClap') || (doubleTime && strum == 'Reggae');
+
+  // TODO go back to find repeatLeft to calc repeatDuration
+  void calcRepeatDurations() {
+    // TODO repeatDuration = ?
+    // TODO MORE than one block?
+  }
 }
 
 int _calcStaveCount(int barCount) => ((barCount / 8).ceil() / 2).ceil();
@@ -118,11 +125,17 @@ int _parseRepeat(Map<String, dynamic> json) {
   }
 
   final String s = json['repeat'];
+  final length = s.length;
+
   if (!s.startsWith('Right')) {
     return 0;
   }
 
-  final String n = s[s.length - 1];
+  if (length == 5) {
+    return 1;
+  }
+
+  final String n = s.split(' ')[1];
   return int.parse(n);
 }
 
