@@ -6146,7 +6146,7 @@
         ""
     ],
     "strum": "Arp",
-    "tempo": 90,
+    "tempo": 100,
     "voiceInstruments": {
         "arp": "Orchestral Harp",
         "backing": "String Ensemble 2",

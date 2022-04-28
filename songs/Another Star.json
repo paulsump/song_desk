@@ -18,13 +18,11 @@
             ],
             "bass": [
                 {
-                    "pitch": 2
+                    "pitch": -12
                 },
                 {},
                 {},
-                {
-                    "pitch": 2
-                }
+                {}
             ],
             "chord": "D-9",
             "chordForBb": "G-9",
@@ -63,14 +61,6 @@
             ]
         },
         {
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -1
-                },
-                {}
-            ],
             "gaps": [
                 "backing"
             ],
@@ -109,12 +99,14 @@
             ],
             "bass": [
                 {
-                    "pitch": 2
+                    "pitch": -8
                 },
                 {},
-                {},
                 {
-                    "pitch": 2
+                    "pitch": -8
+                },
+                {
+                    "triplet": true
                 }
             ],
             "chord": "D-9/A",
@@ -136,14 +128,6 @@
             ]
         },
         {
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -1
-                },
-                {}
-            ],
             "gaps": [
                 "backing"
             ],
@@ -182,13 +166,11 @@
             ],
             "bass": [
                 {
-                    "pitch": 1
+                    "pitch": -13
                 },
                 {},
                 {},
-                {
-                    "pitch": 1
-                }
+                {}
             ],
             "chord": "C13",
             "chordForBb": "F13",
@@ -199,14 +181,6 @@
             ]
         },
         {
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -2
-                },
-                {}
-            ],
             "gaps": [
                 "backing"
             ],
@@ -257,7 +231,7 @@
             ],
             "bass": [
                 {
-                    "pitch": 1
+                    "pitch": -9
                 },
                 {},
                 {},
@@ -323,13 +297,11 @@
             ],
             "bass": [
                 {
-                    "pitch": 0
+                    "pitch": -7
                 },
                 {},
                 {},
-                {
-                    "pitch": 0
-                }
+                {}
             ],
             "blind": true,
             "chord": "BbM7",
@@ -369,14 +341,6 @@
             ]
         },
         {
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -3
-                },
-                {}
-            ],
             "gaps": [
                 "backing"
             ],
@@ -406,12 +370,14 @@
             ],
             "bass": [
                 {
-                    "pitch": 0
+                    "pitch": -10
                 },
                 {},
-                {},
                 {
-                    "pitch": 0
+                    "pitch": -10
+                },
+                {
+                    "triplet": true
                 }
             ],
             "chord": "BbM7/F",
@@ -422,14 +388,6 @@
             ]
         },
         {
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -3
-                },
-                {}
-            ],
             "gaps": [
                 "backing",
                 "vocal"
@@ -460,13 +418,11 @@
             ],
             "bass": [
                 {
-                    "pitch": -1
+                    "pitch": -8
                 },
                 {},
                 {},
-                {
-                    "pitch": -1
-                }
+                {}
             ],
             "chord": "A-7",
             "chordForBb": "D-7",
@@ -478,14 +434,6 @@
             ]
         },
         {
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -4
-                },
-                {}
-            ],
             "gaps": [
                 "backing",
                 "vocal"
@@ -516,7 +464,7 @@
             ],
             "bass": [
                 {
-                    "pitch": -1
+                    "pitch": -11
                 },
                 {},
                 {},
@@ -560,13 +508,11 @@
             ],
             "bass": [
                 {
-                    "pitch": -2
+                    "pitch": -9
                 },
                 {},
                 {},
-                {
-                    "pitch": -2
-                }
+                {}
             ],
             "blind": true,
             "chord": "G-9",
@@ -606,14 +552,6 @@
             ]
         },
         {
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -5
-                },
-                {}
-            ],
             "gaps": [
                 "backing"
             ],
@@ -652,12 +590,14 @@
             ],
             "bass": [
                 {
-                    "pitch": -2
+                    "pitch": -12
                 },
                 {},
-                {},
                 {
-                    "pitch": -2
+                    "pitch": -12
+                },
+                {
+                    "triplet": true
                 }
             ],
             "chord": "G-9/D",
@@ -679,14 +619,6 @@
             ]
         },
         {
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -5
-                },
-                {}
-            ],
             "gaps": [
                 "backing"
             ],
@@ -725,13 +657,11 @@
             ],
             "bass": [
                 {
-                    "pitch": -1
+                    "pitch": -8
                 },
                 {},
                 {},
-                {
-                    "pitch": -1
-                }
+                {}
             ],
             "chord": "A7#9+",
             "chordForBb": "D7#9+",
@@ -742,14 +672,6 @@
             ]
         },
         {
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -4
-                },
-                {}
-            ],
             "gaps": [
                 "backing"
             ],
@@ -800,7 +722,7 @@
             ],
             "bass": [
                 {
-                    "pitch": -1
+                    "pitch": -11
                 },
                 {},
                 {},
@@ -866,13 +788,11 @@
             ],
             "bass": [
                 {
-                    "pitch": 2
+                    "pitch": -12
                 },
                 {},
                 {},
-                {
-                    "pitch": 2
-                }
+                {}
             ],
             "blind": true,
             "chord": "D-9",
@@ -912,14 +832,6 @@
             ]
         },
         {
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -1
-                },
-                {}
-            ],
             "gaps": [
                 "backing"
             ],
@@ -949,11 +861,15 @@
             ],
             "bass": [
                 {
-                    "pitch": 2
+                    "pitch": -8
                 },
                 {},
-                {},
-                {}
+                {
+                    "pitch": -8
+                },
+                {
+                    "triplet": true
+                }
             ],
             "chord": "D-9/A",
             "chordShape": "^^",
@@ -963,14 +879,6 @@
             ]
         },
         {
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -1
-                },
-                {}
-            ],
             "gaps": [
                 "backing",
                 "vocal"
@@ -1001,7 +909,7 @@
             ],
             "bass": [
                 {
-                    "pitch": 2
+                    "pitch": -12
                 },
                 {},
                 {
@@ -1125,13 +1033,11 @@
             ],
             "bass": [
                 {
-                    "pitch": 2
+                    "pitch": -12
                 },
                 {},
                 {},
-                {
-                    "pitch": 2
-                }
+                {}
             ],
             "blind": true,
             "chord": "D-9",
@@ -1169,14 +1075,6 @@
                 {},
                 {}
             ],
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -1
-                },
-                {}
-            ],
             "preferHarmony": false,
             "snare": [
                 {
@@ -1216,12 +1114,14 @@
             ],
             "bass": [
                 {
-                    "pitch": 2
+                    "pitch": -8
                 },
                 {},
-                {},
                 {
-                    "pitch": 2
+                    "pitch": -8
+                },
+                {
+                    "triplet": true
                 }
             ],
             "gaps": [
@@ -1236,14 +1136,6 @@
                 {
                     "lyric": "",
                     "pitch": 6
-                },
-                {}
-            ],
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -1
                 },
                 {}
             ],
@@ -1277,13 +1169,11 @@
             ],
             "bass": [
                 {
-                    "pitch": 1
+                    "pitch": -13
                 },
                 {},
                 {},
-                {
-                    "pitch": 1
-                }
+                {}
             ],
             "chord": "C13",
             "chordForBb": "F13",
@@ -1305,14 +1195,6 @@
                     "lyric": "",
                     "pitch": 4
                 }
-            ],
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -2
-                },
-                {}
             ],
             "preferHarmony": false,
             "shareds": [
@@ -1362,7 +1244,7 @@
             ],
             "bass": [
                 {
-                    "pitch": 1
+                    "pitch": -9
                 },
                 {},
                 {},
@@ -1418,13 +1300,11 @@
             ],
             "bass": [
                 {
-                    "pitch": 0
+                    "pitch": -7
                 },
                 {},
                 {},
-                {
-                    "pitch": 0
-                }
+                {}
             ],
             "chord": "BbM7",
             "chordForBb": "D#M7",
@@ -1443,14 +1323,6 @@
             "preferHarmony": false
         },
         {
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -3
-                },
-                {}
-            ],
             "preferHarmony": false,
             "snare": [
                 {
@@ -1478,12 +1350,14 @@
             ],
             "bass": [
                 {
-                    "pitch": 0
+                    "pitch": -10
                 },
                 {},
-                {},
                 {
-                    "pitch": 0
+                    "pitch": -10
+                },
+                {
+                    "triplet": true
                 }
             ],
             "gaps": [
@@ -1493,14 +1367,6 @@
             "preferHarmony": false
         },
         {
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -3
-                },
-                {}
-            ],
             "gaps": [
                 "backing",
                 "vocal"
@@ -1532,13 +1398,11 @@
             ],
             "bass": [
                 {
-                    "pitch": -1
+                    "pitch": -8
                 },
                 {},
                 {},
-                {
-                    "pitch": -1
-                }
+                {}
             ],
             "chord": "A-7",
             "chordForBb": "D-7",
@@ -1551,14 +1415,6 @@
             "preferHarmony": false
         },
         {
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -4
-                },
-                {}
-            ],
             "gaps": [
                 "backing"
             ],
@@ -1589,7 +1445,7 @@
             ],
             "bass": [
                 {
-                    "pitch": -1
+                    "pitch": -11
                 },
                 {},
                 {},
@@ -1640,13 +1496,11 @@
             ],
             "bass": [
                 {
-                    "pitch": -2
+                    "pitch": -9
                 },
                 {},
                 {},
-                {
-                    "pitch": -2
-                }
+                {}
             ],
             "chord": "G-9",
             "chordForBb": "C-7",
@@ -1683,14 +1537,6 @@
                 {},
                 {}
             ],
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -5
-                },
-                {}
-            ],
             "preferHarmony": false,
             "snare": [
                 {
@@ -1730,12 +1576,14 @@
             ],
             "bass": [
                 {
-                    "pitch": -2
+                    "pitch": -12
                 },
                 {},
-                {},
                 {
-                    "pitch": -2
+                    "pitch": -12
+                },
+                {
+                    "triplet": true
                 }
             ],
             "preferHarmony": false
@@ -1747,14 +1595,6 @@
                 {
                     "lyric": "",
                     "pitch": 6
-                },
-                {}
-            ],
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -5
                 },
                 {}
             ],
@@ -1785,13 +1625,11 @@
             ],
             "bass": [
                 {
-                    "pitch": -1
+                    "pitch": -8
                 },
                 {},
                 {},
-                {
-                    "pitch": -1
-                }
+                {}
             ],
             "chord": "A7#9+",
             "chordForBb": "D7#9+",
@@ -1814,14 +1652,6 @@
                     "lyric": "",
                     "pitch": 4
                 }
-            ],
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -4
-                },
-                {}
             ],
             "blind": true,
             "preferHarmony": false,
@@ -1872,7 +1702,7 @@
             ],
             "bass": [
                 {
-                    "pitch": -1
+                    "pitch": -11
                 },
                 {},
                 {},
@@ -1930,13 +1760,11 @@
             ],
             "bass": [
                 {
-                    "pitch": 2
+                    "pitch": -12
                 },
                 {},
                 {},
-                {
-                    "pitch": 2
-                }
+                {}
             ],
             "chord": "D-9",
             "chordForBb": "G-9",
@@ -1955,14 +1783,6 @@
             "preferHarmony": false
         },
         {
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -1
-                },
-                {}
-            ],
             "preferHarmony": false,
             "snare": [
                 {
@@ -1990,11 +1810,15 @@
             ],
             "bass": [
                 {
-                    "pitch": 2
+                    "pitch": -8
                 },
                 {},
-                {},
-                {}
+                {
+                    "pitch": -8
+                },
+                {
+                    "triplet": true
+                }
             ],
             "gaps": [
                 "backing",
@@ -2003,14 +1827,6 @@
             "preferHarmony": false
         },
         {
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -1
-                },
-                {}
-            ],
             "gaps": [
                 "backing",
                 "vocal"
@@ -2042,7 +1858,7 @@
             ],
             "bass": [
                 {
-                    "pitch": 2
+                    "pitch": -12
                 },
                 {},
                 {
@@ -2188,13 +2004,11 @@
             ],
             "bass": [
                 {
-                    "pitch": 2
+                    "pitch": -12
                 },
                 {},
                 {},
-                {
-                    "pitch": 2
-                }
+                {}
             ],
             "blind": true,
             "chord": "D-9",
@@ -2245,14 +2059,6 @@
                 {},
                 {}
             ],
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -1
-                },
-                {}
-            ],
             "preferHarmony": false,
             "snare": [
                 {
@@ -2292,12 +2098,14 @@
             ],
             "bass": [
                 {
-                    "pitch": 2
+                    "pitch": -8
                 },
                 {},
-                {},
                 {
-                    "pitch": 2
+                    "pitch": -8
+                },
+                {
+                    "triplet": true
                 }
             ],
             "gaps": [
@@ -2312,14 +2120,6 @@
                 {
                     "lyric": "",
                     "pitch": 6
-                },
-                {}
-            ],
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -1
                 },
                 {}
             ],
@@ -2353,13 +2153,11 @@
             ],
             "bass": [
                 {
-                    "pitch": 1
+                    "pitch": -13
                 },
                 {},
                 {},
-                {
-                    "pitch": 1
-                }
+                {}
             ],
             "chord": "C13",
             "chordForBb": "F13",
@@ -2400,14 +2198,6 @@
                     "lyric": "",
                     "pitch": 4
                 }
-            ],
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -2
-                },
-                {}
             ],
             "preferHarmony": false,
             "snare": [
@@ -2471,7 +2261,7 @@
             ],
             "bass": [
                 {
-                    "pitch": 1
+                    "pitch": -9
                 },
                 {},
                 {},
@@ -2563,13 +2353,11 @@
             ],
             "bass": [
                 {
-                    "pitch": 0
+                    "pitch": -7
                 },
                 {},
                 {},
-                {
-                    "pitch": 0
-                }
+                {}
             ],
             "chord": "BbM7",
             "chordForBb": "D#M7",
@@ -2610,14 +2398,6 @@
             ]
         },
         {
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -3
-                },
-                {}
-            ],
             "preferHarmony": false,
             "snare": [
                 {
@@ -2645,12 +2425,14 @@
             ],
             "bass": [
                 {
-                    "pitch": 0
+                    "pitch": -10
                 },
                 {},
-                {},
                 {
-                    "pitch": 0
+                    "pitch": -10
+                },
+                {
+                    "triplet": true
                 }
             ],
             "gaps": [
@@ -2660,14 +2442,6 @@
             "preferHarmony": false
         },
         {
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -3
-                },
-                {}
-            ],
             "gaps": [
                 "backing",
                 "vocal"
@@ -2699,13 +2473,11 @@
             ],
             "bass": [
                 {
-                    "pitch": -1
+                    "pitch": -8
                 },
                 {},
                 {},
-                {
-                    "pitch": -1
-                }
+                {}
             ],
             "chord": "A-7",
             "chordForBb": "D-7",
@@ -2718,14 +2490,6 @@
             "preferHarmony": false
         },
         {
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -4
-                },
-                {}
-            ],
             "gaps": [
                 "backing"
             ],
@@ -2777,7 +2541,7 @@
             ],
             "bass": [
                 {
-                    "pitch": -1
+                    "pitch": -11
                 },
                 {},
                 {},
@@ -2849,13 +2613,11 @@
             ],
             "bass": [
                 {
-                    "pitch": -2
+                    "pitch": -9
                 },
                 {},
                 {},
-                {
-                    "pitch": -2
-                }
+                {}
             ],
             "chord": "G-9",
             "chordForBb": "C-7",
@@ -2893,14 +2655,6 @@
                     "pitch": 3
                 },
                 {},
-                {}
-            ],
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -5
-                },
                 {}
             ],
             "preferHarmony": false,
@@ -2963,12 +2717,14 @@
             ],
             "bass": [
                 {
-                    "pitch": -2
+                    "pitch": -12
                 },
                 {},
-                {},
                 {
-                    "pitch": -2
+                    "pitch": -12
+                },
+                {
+                    "triplet": true
                 }
             ],
             "preferHarmony": false,
@@ -3004,14 +2760,6 @@
                 {
                     "lyric": "",
                     "pitch": 6
-                },
-                {}
-            ],
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -5
                 },
                 {}
             ],
@@ -3051,13 +2799,11 @@
             ],
             "bass": [
                 {
-                    "pitch": -1
+                    "pitch": -8
                 },
                 {},
                 {},
-                {
-                    "pitch": -1
-                }
+                {}
             ],
             "chord": "A7#9+",
             "chordForBb": "D7#9+",
@@ -3092,14 +2838,6 @@
                     "lyric": "",
                     "pitch": 4
                 }
-            ],
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -4
-                },
-                {}
             ],
             "blind": true,
             "preferHarmony": false,
@@ -3162,7 +2900,7 @@
             ],
             "bass": [
                 {
-                    "pitch": -1
+                    "pitch": -11
                 },
                 {},
                 {},
@@ -3253,13 +2991,11 @@
             ],
             "bass": [
                 {
-                    "pitch": 2
+                    "pitch": -12
                 },
                 {},
                 {},
-                {
-                    "pitch": 2
-                }
+                {}
             ],
             "chord": "D-9",
             "chordForBb": "G-9",
@@ -3278,14 +3014,6 @@
             "preferHarmony": false
         },
         {
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -1
-                },
-                {}
-            ],
             "preferHarmony": false,
             "snare": [
                 {
@@ -3313,11 +3041,15 @@
             ],
             "bass": [
                 {
-                    "pitch": 2
+                    "pitch": -8
                 },
                 {},
-                {},
-                {}
+                {
+                    "pitch": -8
+                },
+                {
+                    "triplet": true
+                }
             ],
             "gaps": [
                 "backing",
@@ -3326,14 +3058,6 @@
             "preferHarmony": false
         },
         {
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -1
-                },
-                {}
-            ],
             "gaps": [
                 "backing",
                 "vocal"
@@ -3365,7 +3089,7 @@
             ],
             "bass": [
                 {
-                    "pitch": 2
+                    "pitch": -12
                 },
                 {},
                 {
@@ -3510,13 +3234,11 @@
             ],
             "bass": [
                 {
-                    "pitch": 2
+                    "pitch": -12
                 },
                 {},
                 {},
-                {
-                    "pitch": 2
-                }
+                {}
             ],
             "blind": true,
             "chord": "D-9",
@@ -3576,14 +3298,6 @@
                 {},
                 {}
             ],
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -1
-                },
-                {}
-            ],
             "preferHarmony": false,
             "snare": [
                 {
@@ -3632,12 +3346,14 @@
             ],
             "bass": [
                 {
-                    "pitch": 2
+                    "pitch": -8
                 },
                 {},
-                {},
                 {
-                    "pitch": 2
+                    "pitch": -8
+                },
+                {
+                    "triplet": true
                 }
             ],
             "preferHarmony": false
@@ -3649,14 +3365,6 @@
                 {
                     "lyric": "",
                     "pitch": 6
-                },
-                {}
-            ],
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -1
                 },
                 {}
             ],
@@ -3687,13 +3395,11 @@
             ],
             "bass": [
                 {
-                    "pitch": 1
+                    "pitch": -13
                 },
                 {},
                 {},
-                {
-                    "pitch": 1
-                }
+                {}
             ],
             "chord": "C13",
             "chordForBb": "F13",
@@ -3733,14 +3439,6 @@
                     "lyric": "",
                     "pitch": 4
                 }
-            ],
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -2
-                },
-                {}
             ],
             "preferHarmony": false,
             "snare": [
@@ -3806,7 +3504,7 @@
             ],
             "bass": [
                 {
-                    "pitch": 1
+                    "pitch": -9
                 },
                 {},
                 {},
@@ -3896,13 +3594,11 @@
             ],
             "bass": [
                 {
-                    "pitch": 0
+                    "pitch": -7
                 },
                 {},
                 {},
-                {
-                    "pitch": 0
-                }
+                {}
             ],
             "chord": "BbM7",
             "chordForBb": "D#M7",
@@ -3943,14 +3639,6 @@
             ]
         },
         {
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -3
-                },
-                {}
-            ],
             "preferHarmony": false,
             "snare": [
                 {
@@ -3978,12 +3666,14 @@
             ],
             "bass": [
                 {
-                    "pitch": 0
+                    "pitch": -10
                 },
                 {},
-                {},
                 {
-                    "pitch": 0
+                    "pitch": -10
+                },
+                {
+                    "triplet": true
                 }
             ],
             "gaps": [
@@ -3993,14 +3683,6 @@
             "preferHarmony": false
         },
         {
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -3
-                },
-                {}
-            ],
             "gaps": [
                 "backing",
                 "vocal"
@@ -4032,13 +3714,11 @@
             ],
             "bass": [
                 {
-                    "pitch": -1
+                    "pitch": -8
                 },
                 {},
                 {},
-                {
-                    "pitch": -1
-                }
+                {}
             ],
             "chord": "A-7",
             "chordForBb": "D-7",
@@ -4051,14 +3731,6 @@
             "preferHarmony": false
         },
         {
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -4
-                },
-                {}
-            ],
             "gaps": [
                 "backing"
             ],
@@ -4110,7 +3782,7 @@
             ],
             "bass": [
                 {
-                    "pitch": -1
+                    "pitch": -11
                 },
                 {},
                 {},
@@ -4195,13 +3867,11 @@
             ],
             "bass": [
                 {
-                    "pitch": -2
+                    "pitch": -9
                 },
                 {},
                 {},
-                {
-                    "pitch": -2
-                }
+                {}
             ],
             "chord": "G-9",
             "chordForBb": "C-7",
@@ -4238,14 +3908,6 @@
                     "pitch": 3
                 },
                 {},
-                {}
-            ],
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -5
-                },
                 {}
             ],
             "preferHarmony": false,
@@ -4296,12 +3958,14 @@
             ],
             "bass": [
                 {
-                    "pitch": -2
+                    "pitch": -12
                 },
                 {},
-                {},
                 {
-                    "pitch": -2
+                    "pitch": -12
+                },
+                {
+                    "triplet": true
                 }
             ],
             "preferHarmony": false,
@@ -4336,14 +4000,6 @@
                 {
                     "lyric": "",
                     "pitch": 6
-                },
-                {}
-            ],
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -5
                 },
                 {}
             ],
@@ -4383,13 +4039,11 @@
             ],
             "bass": [
                 {
-                    "pitch": -1
+                    "pitch": -8
                 },
                 {},
                 {},
-                {
-                    "pitch": -1
-                }
+                {}
             ],
             "chord": "A7#9+",
             "chordForBb": "D7#9+",
@@ -4422,14 +4076,6 @@
                     "lyric": "",
                     "pitch": 4
                 }
-            ],
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -4
-                },
-                {}
             ],
             "gaps": [],
             "preferHarmony": false,
@@ -4495,7 +4141,7 @@
             ],
             "bass": [
                 {
-                    "pitch": -1
+                    "pitch": -11
                 },
                 {},
                 {},
@@ -4575,13 +4221,11 @@
             ],
             "bass": [
                 {
-                    "pitch": 2
+                    "pitch": -12
                 },
                 {},
                 {},
-                {
-                    "pitch": 2
-                }
+                {}
             ],
             "chord": "D-9",
             "chordForBb": "G-9",
@@ -4600,14 +4244,6 @@
             ]
         },
         {
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -1
-                },
-                {}
-            ],
             "gaps": [],
             "snare": [
                 {
@@ -4635,11 +4271,15 @@
             ],
             "bass": [
                 {
-                    "pitch": 2
+                    "pitch": -8
                 },
                 {},
-                {},
-                {}
+                {
+                    "pitch": -8
+                },
+                {
+                    "triplet": true
+                }
             ],
             "gaps": [
                 "vocal",
@@ -4647,14 +4287,6 @@
             ]
         },
         {
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -1
-                },
-                {}
-            ],
             "gaps": [
                 "vocal",
                 "backing"
@@ -4685,13 +4317,13 @@
             ],
             "bass": [
                 {
-                    "pitch": 2
+                    "pitch": -12
                 },
                 {},
-                {},
                 {
-                    "pitch": 2
-                }
+                    "pitch": -8
+                },
+                {}
             ],
             "chord": "D-9",
             "chordShape": "__",
@@ -4703,10 +4335,12 @@
         {
             "bass": [
                 {},
-                {},
                 {
-                    "pitch": -1
+                    "accidental": "natural",
+                    "lyric": "",
+                    "pitch": -7
                 },
+                {},
                 {}
             ],
             "gaps": [
@@ -4739,7 +4373,9 @@
             ],
             "bass": [
                 {
-                    "pitch": 2
+                    "accidental": "sharp",
+                    "lyric": "",
+                    "pitch": -6
                 },
                 {},
                 {},
@@ -4759,6 +4395,16 @@
             ]
         },
         {
+            "bass": [
+                {
+                    "accidental": "sharp",
+                    "lyric": "",
+                    "pitch": -13
+                },
+                {},
+                {},
+                {}
+            ],
             "blockEnd": true,
             "gaps": [
                 "backing"
@@ -4818,13 +4464,11 @@
             ],
             "bass": [
                 {
-                    "pitch": 1
+                    "pitch": -6
                 },
                 {},
                 {},
-                {
-                    "pitch": 1
-                }
+                {}
             ],
             "chord": "C-9",
             "chordForBb": "F-9",
@@ -4860,14 +4504,6 @@
             ]
         },
         {
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -2
-                },
-                {}
-            ],
             "snare": [
                 {
                     "pitch": -8
@@ -4905,12 +4541,14 @@
             ],
             "bass": [
                 {
-                    "pitch": 1
+                    "pitch": -9
                 },
                 {},
-                {},
                 {
-                    "pitch": 1
+                    "pitch": -9
+                },
+                {
+                    "triplet": true
                 }
             ],
             "chord": "C-9/G",
@@ -4929,14 +4567,6 @@
             ]
         },
         {
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -2
-                },
-                {}
-            ],
             "gaps": [
                 "backing"
             ],
@@ -4976,13 +4606,11 @@
             ],
             "bass": [
                 {
-                    "pitch": -3
+                    "pitch": -10
                 },
                 {},
                 {},
-                {
-                    "pitch": -3
-                }
+                {}
             ],
             "chord": "F7",
             "chordForBb": "Bb7",
@@ -5014,14 +4642,6 @@
                 },
                 {},
                 {},
-                {}
-            ],
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -6
-                },
                 {}
             ],
             "snare": [
@@ -5068,7 +4688,7 @@
             ],
             "bass": [
                 {
-                    "pitch": -3
+                    "pitch": -13
                 },
                 {},
                 {},
@@ -5142,13 +4762,11 @@
             ],
             "bass": [
                 {
-                    "pitch": 0
+                    "pitch": -7
                 },
                 {},
                 {},
-                {
-                    "pitch": 0
-                }
+                {}
             ],
             "chord": "BbM7",
             "chordForBb": "D#M7",
@@ -5183,14 +4801,6 @@
                 },
                 {}
             ],
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -3
-                },
-                {}
-            ],
             "snare": [
                 {
                     "pitch": -8
@@ -5225,12 +4835,14 @@
             ],
             "bass": [
                 {
-                    "pitch": 0
+                    "pitch": -10
                 },
                 {},
-                {},
                 {
-                    "pitch": 0
+                    "pitch": -10
+                },
+                {
+                    "triplet": true
                 }
             ]
         },
@@ -5243,14 +4855,6 @@
                     "pitch": 1
                 },
                 {},
-                {}
-            ],
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -3
-                },
                 {}
             ],
             "gaps": [
@@ -5292,13 +4896,11 @@
             ],
             "bass": [
                 {
-                    "pitch": 0
+                    "pitch": -7
                 },
                 {},
                 {},
-                {
-                    "pitch": 0
-                }
+                {}
             ],
             "chordShape": "^^",
             "gaps": [
@@ -5316,14 +4918,6 @@
                 {},
                 {}
             ],
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -3
-                },
-                {}
-            ],
             "gaps": [
                 "vocal"
             ],
@@ -5363,7 +4957,7 @@
             ],
             "bass": [
                 {
-                    "pitch": 0
+                    "pitch": -10
                 },
                 {},
                 {},
@@ -5438,13 +5032,11 @@
             ],
             "bass": [
                 {
-                    "pitch": 1
+                    "pitch": -6
                 },
                 {},
                 {},
-                {
-                    "pitch": 1
-                }
+                {}
             ],
             "chord": "C-9",
             "chordForBb": "F-9",
@@ -5480,14 +5072,6 @@
             ]
         },
         {
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -2
-                },
-                {}
-            ],
             "snare": [
                 {
                     "pitch": -8
@@ -5525,12 +5109,14 @@
             ],
             "bass": [
                 {
-                    "pitch": 1
+                    "pitch": -9
                 },
                 {},
-                {},
                 {
-                    "pitch": 1
+                    "pitch": -9
+                },
+                {
+                    "triplet": true
                 }
             ],
             "gaps": [
@@ -5547,14 +5133,6 @@
             ]
         },
         {
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -2
-                },
-                {}
-            ],
             "gaps": [
                 "backing"
             ],
@@ -5594,13 +5172,11 @@
             ],
             "bass": [
                 {
-                    "pitch": -3
+                    "pitch": -10
                 },
                 {},
                 {},
-                {
-                    "pitch": -3
-                }
+                {}
             ],
             "chord": "F7",
             "chordForBb": "Bb7",
@@ -5632,14 +5208,6 @@
                 },
                 {},
                 {},
-                {}
-            ],
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -6
-                },
                 {}
             ],
             "snare": [
@@ -5686,7 +5254,7 @@
             ],
             "bass": [
                 {
-                    "pitch": -3
+                    "pitch": -13
                 },
                 {},
                 {},
@@ -5757,13 +5325,11 @@
             ],
             "bass": [
                 {
-                    "pitch": 0
+                    "pitch": -7
                 },
                 {},
                 {},
-                {
-                    "pitch": 0
-                }
+                {}
             ],
             "chord": "BbM7",
             "chordForBb": "D#M7",
@@ -5807,14 +5373,6 @@
                 },
                 {}
             ],
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -3
-                },
-                {}
-            ],
             "snare": [
                 {
                     "pitch": -8
@@ -5849,12 +5407,14 @@
             ],
             "bass": [
                 {
-                    "pitch": 0
+                    "pitch": -10
                 },
                 {},
-                {},
                 {
-                    "pitch": 0
+                    "pitch": -10
+                },
+                {
+                    "triplet": true
                 }
             ],
             "gaps": [
@@ -5871,14 +5431,6 @@
                 {
                     "pitch": -1
                 }
-            ],
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -3
-                },
-                {}
             ],
             "gaps": [
                 "vocal"
@@ -5917,13 +5469,11 @@
             ],
             "bass": [
                 {
-                    "pitch": 0
+                    "pitch": -7
                 },
                 {},
                 {},
-                {
-                    "pitch": 0
-                }
+                {}
             ],
             "chordShape": "^^",
             "gaps": [
@@ -5941,14 +5491,6 @@
                     "pitch": -5
                 }
             ],
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -3
-                },
-                {}
-            ],
             "gaps": [
                 "vocal"
             ],
@@ -5988,7 +5530,7 @@
             ],
             "bass": [
                 {
-                    "pitch": 0
+                    "pitch": -10
                 },
                 {},
                 {},
@@ -6060,13 +5602,11 @@
             ],
             "bass": [
                 {
-                    "pitch": 2
+                    "pitch": -12
                 },
                 {},
                 {},
-                {
-                    "pitch": 2
-                }
+                {}
             ],
             "chord": "D-9",
             "chordForBb": "G-9",
@@ -6093,14 +5633,6 @@
             ]
         },
         {
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -1
-                },
-                {}
-            ],
             "snare": [
                 {
                     "pitch": -8
@@ -6139,12 +5671,14 @@
             ],
             "bass": [
                 {
-                    "pitch": 2
+                    "pitch": -8
                 },
                 {},
-                {},
                 {
-                    "pitch": 2
+                    "pitch": -8
+                },
+                {
+                    "triplet": true
                 }
             ],
             "vocal": [
@@ -6158,14 +5692,6 @@
             ]
         },
         {
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -1
-                },
-                {}
-            ],
             "gaps": [
                 "backing"
             ],
@@ -6206,13 +5732,11 @@
             ],
             "bass": [
                 {
-                    "pitch": -2
+                    "pitch": -9
                 },
                 {},
                 {},
-                {
-                    "pitch": -2
-                }
+                {}
             ],
             "chord": "G7",
             "chordForBb": "C7",
@@ -6238,14 +5762,6 @@
             ]
         },
         {
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -5
-                },
-                {}
-            ],
             "snare": [
                 {
                     "pitch": -8
@@ -6282,7 +5798,7 @@
             ],
             "bass": [
                 {
-                    "pitch": -2
+                    "pitch": -12
                 },
                 {},
                 {},
@@ -6341,13 +5857,11 @@
             ],
             "bass": [
                 {
-                    "pitch": 1
+                    "pitch": -13
                 },
                 {},
                 {},
-                {
-                    "pitch": 1
-                }
+                {}
             ],
             "chord": "CM7",
             "chordForBb": "FM7",
@@ -6374,14 +5888,6 @@
             ]
         },
         {
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -2
-                },
-                {}
-            ],
             "snare": [
                 {
                     "pitch": -8
@@ -6409,12 +5915,14 @@
             ],
             "bass": [
                 {
-                    "pitch": 1
+                    "pitch": -9
                 },
                 {},
-                {},
                 {
-                    "pitch": 1
+                    "pitch": -9
+                },
+                {
+                    "triplet": true
                 }
             ],
             "chord": "CM7/G",
@@ -6424,14 +5932,6 @@
             ]
         },
         {
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -2
-                },
-                {}
-            ],
             "gaps": [
                 "backing",
                 "vocal"
@@ -6463,13 +5963,11 @@
             ],
             "bass": [
                 {
-                    "pitch": -1
+                    "pitch": -8
                 },
                 {},
                 {},
-                {
-                    "pitch": -1
-                }
+                {}
             ],
             "chord": "A7",
             "chordForBb": "D7",
@@ -6480,14 +5978,6 @@
             ]
         },
         {
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -4
-                },
-                {}
-            ],
             "shareds": [
                 {
                     "pitch": 0,
@@ -6533,7 +6023,7 @@
             ],
             "bass": [
                 {
-                    "pitch": -1
+                    "pitch": -11
                 },
                 {},
                 {},
@@ -6605,13 +6095,11 @@
             ],
             "bass": [
                 {
-                    "pitch": 2
+                    "pitch": -12
                 },
                 {},
                 {},
-                {
-                    "pitch": 2
-                }
+                {}
             ],
             "chord": "D-7",
             "chordForBb": "G-7",
@@ -6629,14 +6117,6 @@
             ]
         },
         {
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -1
-                },
-                {}
-            ],
             "gaps": [
                 "vocal"
             ],
@@ -6666,12 +6146,14 @@
             ],
             "bass": [
                 {
-                    "pitch": 2
+                    "pitch": -8
                 },
                 {},
-                {},
                 {
-                    "pitch": 2
+                    "pitch": -8
+                },
+                {
+                    "triplet": true
                 }
             ],
             "chord": "D-7/A",
@@ -6696,14 +6178,6 @@
             ]
         },
         {
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -1
-                },
-                {}
-            ],
             "gaps": [
                 "backing"
             ],
@@ -6757,13 +6231,11 @@
             ],
             "bass": [
                 {
-                    "pitch": -4
+                    "pitch": -11
                 },
                 {},
                 {},
-                {
-                    "pitch": -4
-                }
+                {}
             ],
             "chord": "E7",
             "chordForBb": "A7",
@@ -6788,15 +6260,6 @@
                 },
                 {},
                 {},
-                {}
-            ],
-            "bass": [
-                {},
-                {},
-                {
-                    "accidental": "natural",
-                    "pitch": -7
-                },
                 {}
             ],
             "snare": [
@@ -6848,7 +6311,8 @@
             ],
             "bass": [
                 {
-                    "pitch": -4
+                    "accidental": "natural",
+                    "pitch": -7
                 },
                 {},
                 {},
@@ -6929,13 +6393,11 @@
             ],
             "bass": [
                 {
-                    "pitch": -1
+                    "pitch": -8
                 },
                 {},
                 {},
-                {
-                    "pitch": -1
-                }
+                {}
             ],
             "chord": "A+",
             "chordForBb": "D7",
@@ -6953,14 +6415,6 @@
             ]
         },
         {
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -4
-                },
-                {}
-            ],
             "gaps": [
                 "vocal"
             ],
@@ -6992,11 +6446,15 @@
             ],
             "bass": [
                 {
-                    "pitch": -1
+                    "pitch": -11
                 },
                 {},
-                {},
-                {}
+                {
+                    "pitch": -11
+                },
+                {
+                    "triplet": true
+                }
             ],
             "chord": "A+/B",
             "chordShape": "^^",
@@ -7006,14 +6464,6 @@
             ]
         },
         {
-            "bass": [
-                {},
-                {},
-                {
-                    "pitch": -4
-                },
-                {}
-            ],
             "gaps": [
                 "backing",
                 "vocal"
@@ -7053,7 +6503,7 @@
             ],
             "bass": [
                 {
-                    "pitch": -1
+                    "pitch": -8
                 },
                 {},
                 {

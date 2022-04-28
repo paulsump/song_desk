@@ -22,7 +22,6 @@ class Preferences {
 
   static Future init() async {
     _instance = await SharedPreferences.getInstance();
-    _instance.remove('mutedVoices');
   }
 
   static bool isMuted(String voice) =>
