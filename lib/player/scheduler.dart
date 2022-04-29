@@ -27,14 +27,20 @@ class Scheduler {
           continue;
         }
       } else if (event is RepeatEvent) {
-        currentTime -= event.duration!;
+        final Duration endTime = currentTime;
+        // currentTime -= event.duration!;
 
-        // todo reset events so that they are audible.
+        // TODO reset events so that they are audible.
+        // for (final event in _events) {
+        //   if (event.startTime <= currentTime && currentTime < endTime) {
+        //     event.setWantStartPlay();
+        //   }
+        // }
 
         //TODO USE repeatCount
         repeatCount = event.count;
       } else if (event is EndingEvent) {
-        currentTime += event.duration!;
+        // currentTime += event.duration!;
       }
 
       if (event.duration != null) {
