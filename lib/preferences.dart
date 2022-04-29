@@ -15,7 +15,7 @@ const _allVoices = <String>[
 ];
 
 // leftover = the harmony or backing that M doesn't play.
-final allMutes = _allVoices + ['leftover'];
+final allMutes = _allVoices + ['leftover', 'countIn'];
 
 class Preferences {
   static late SharedPreferences _instance;

@@ -168,7 +168,12 @@ class SongNotifier with ChangeNotifier {
       }
     }
 
-    _addPlayNextEvent(scheduler, quaverDuration * ++b * 4);
+    //TODO TRIPLET Count in
+    ++b;
+    _addCountInEvents(scheduler, b, quaverDuration, false);
+
+    b += 2;
+    _addPlayNextEvent(scheduler, quaverDuration * b * 4);
   }
 
   void _addQuavers(quavers, song, int b, int pads, int quaverDuration,
@@ -267,7 +272,27 @@ class SongNotifier with ChangeNotifier {
     unawaited(preferences.setInt('currentSongIndex', _currentSongIndex));
   }
 
-  ///Auto play next song when finish song.
+  /// Count in with 5 kicks.
+  void _addCountInEvents(
+    Scheduler scheduler,
+    int b,
+    int quaverDuration,
+    bool triplet,
+  ) {
+    for (final int bi in [0, 1, 2]) {
+      for (final int q in [0, 2]) {
+        _addNote(
+            scheduler,
+            quaverDuration * (b + bi) * 4 +
+                q * (triplet ? (quaverDuration * 4) ~/ 3 : quaverDuration),
+            _instruments['Kick']!.getPlayer(0, 0),
+            null,
+            'countIn');
+      }
+    }
+  }
+
+  /// Auto play next song when finish song.
   void _addPlayNextEvent(Scheduler scheduler, int startTime) {
     scheduler.add(FunctionEvent(
       startTime: Duration(milliseconds: startTime),

@@ -20,7 +20,6 @@ fix duration bug
 
 ### Logic
 
-- count in with 5 kicks
   
 - 	need play bass when endChord  
 
