@@ -19,6 +19,8 @@ class Scheduler {
   void update(Duration currentTime_) {
     Duration currentTime = currentTime_;
 
+    int repeatCount = 0;
+
     for (final event in _events) {
       if (event is AudioEvent) {
         if (Preferences.isMuted(event.voice)) {
@@ -26,6 +28,11 @@ class Scheduler {
         }
       } else if (event is RepeatEvent) {
         currentTime -= event.duration!;
+
+        // todo reset events so that they are audible.
+
+        //TODO USE repeatCount
+        repeatCount = event.count;
       } else if (event is EndingEvent) {
         currentTime += event.duration!;
       }

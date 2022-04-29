@@ -150,14 +150,15 @@ class SongNotifier with ChangeNotifier {
 
       if (bar.repeatRight > 0) {
         scheduler.add(RepeatEvent(
-            startTime: Duration(milliseconds: b * barDuration),
-            duration:
-                Duration(milliseconds: bar.repeatDuration * barDuration)));
+          startTime: Duration(milliseconds: b * barDuration),
+          duration: Duration(milliseconds: bar.repeatDuration * barDuration),
+          count: bar.repeatRight,
+        ));
       } else if (bar.ending != null) {
         scheduler.add(EndingEvent(
-            startTime: Duration(milliseconds: b * barDuration),
-            duration:
-                Duration(milliseconds: bar.endingDuration * barDuration)));
+          startTime: Duration(milliseconds: b * barDuration),
+          duration: Duration(milliseconds: bar.endingDuration * barDuration),
+        ));
       }
 
       if (bar.pad) {

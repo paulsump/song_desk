@@ -85,8 +85,13 @@ class _TimeJumpEvent extends Event {
 
 /// A marker to go back in time.
 class RepeatEvent extends _TimeJumpEvent {
-  RepeatEvent({required Duration startTime, required Duration duration})
-      : super(startTime: startTime, duration: duration);
+  RepeatEvent({
+    required Duration startTime,
+    required Duration duration,
+    required this.count,
+  }) : super(startTime: startTime, duration: duration);
+
+  final int count;
 }
 
 /// A marker to go forwards in time.
