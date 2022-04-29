@@ -28,19 +28,6 @@ abstract class Event {
   String toString() => '$startTime, ${duration!.inMilliseconds}';
 }
 
-/// e.g. a call back to go to the next track.
-class FunctionEvent extends Event {
-  FunctionEvent({
-    required Duration startTime,
-    required this.function,
-  }) : super(startTime: startTime);
-
-  final VoidCallback function;
-
-  @override
-  void play() => function();
-}
-
 /// Play a sample for an optional duration.
 class AudioEvent extends Event {
   AudioEvent({
@@ -72,4 +59,17 @@ class AudioEvent extends Event {
 
     unawaited(audioPlayer.stop());
   }
+}
+
+/// e.g. a call back to go to the next track.
+class FunctionEvent extends Event {
+  FunctionEvent({
+    required Duration startTime,
+    required this.function,
+  }) : super(startTime: startTime);
+
+  final VoidCallback function;
+
+  @override
+  void play() => function();
 }
