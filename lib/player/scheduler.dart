@@ -17,15 +17,17 @@ class Scheduler {
   }
 
   void update(Duration currentTime_) {
-    // TODO Repeat needs currentTime - repeatDuration
-    // TODO Endings need currentTime + ending1 extra duration
-    final Duration currentTime = currentTime_ - Duration.zero;
+    Duration currentTime = currentTime_;
 
     for (final event in _events) {
       if (event is AudioEvent) {
         if (Preferences.isMuted(event.voice)) {
           continue;
         }
+      } else if (event is RepeatEvent) {
+        currentTime -= event.duration!;
+      } else if (event is EndingEvent) {
+        currentTime += event.duration!;
       }
 
       if (event.duration != null) {
