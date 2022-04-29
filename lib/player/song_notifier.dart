@@ -197,6 +197,18 @@ class SongNotifier with ChangeNotifier {
     }
   }
 
+  void _addNote(
+      scheduler, int t, AudioPlayer audioPlayer, int? duration, String voice) {
+    scheduler.add(
+      AudioEvent(
+        startTime: Duration(milliseconds: t),
+        duration: duration != null ? Duration(milliseconds: duration) : null,
+        audioPlayer: audioPlayer,
+        voice: voice,
+      ),
+    );
+  }
+
   double panOffset(int q, Song song, voice) {
     if (voice == 'arp') {
       final x = 0.06 * q;
@@ -226,18 +238,6 @@ class SongNotifier with ChangeNotifier {
       return song.swing / 600;
     }
     return 0;
-  }
-
-  void _addNote(
-      scheduler, int t, AudioPlayer audioPlayer, int? duration, String voice) {
-    scheduler.add(
-      AudioEvent(
-        startTime: Duration(milliseconds: t),
-        duration: duration != null ? Duration(milliseconds: duration) : null,
-        audioPlayer: audioPlayer,
-        voice: voice,
-      ),
-    );
   }
 
   //TODO use Preferences
