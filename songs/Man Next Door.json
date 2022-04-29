@@ -560,13 +560,13 @@
             "bass": [
                 {},
                 {
-                    "pitch": -6
+                    "pitch": -13
                 },
                 {
-                    "pitch": -6
+                    "pitch": -13
                 },
                 {
-                    "pitch": -6
+                    "pitch": -13
                 }
             ],
             "bat": [
@@ -621,16 +621,16 @@
             ],
             "bass": [
                 {
-                    "pitch": -6
+                    "pitch": -13
                 },
                 {
-                    "pitch": -6
+                    "pitch": -13
                 },
                 {
-                    "pitch": -6
+                    "pitch": -13
                 },
                 {
-                    "pitch": -6
+                    "pitch": -13
                 }
             ],
             "bat": [
@@ -1171,16 +1171,16 @@
             ],
             "bass": [
                 {
-                    "pitch": -5
+                    "pitch": -12
                 },
                 {
-                    "pitch": -5
+                    "pitch": -12
                 },
                 {
-                    "pitch": -5
+                    "pitch": -12
                 },
                 {
-                    "pitch": -5
+                    "pitch": -12
                 }
             ],
             "bat": [
@@ -1224,16 +1224,16 @@
             ],
             "bass": [
                 {
-                    "pitch": -5
+                    "pitch": -12
                 },
                 {
-                    "pitch": -5
+                    "pitch": -12
                 },
                 {
-                    "pitch": -5
+                    "pitch": -12
                 },
                 {
-                    "pitch": -5
+                    "pitch": -12
                 }
             ],
             "bat": [
@@ -1540,16 +1540,16 @@
             ],
             "bass": [
                 {
-                    "pitch": -5
+                    "pitch": -12
                 },
                 {
-                    "pitch": -5
+                    "pitch": -12
                 },
                 {
-                    "pitch": -5
+                    "pitch": -12
                 },
                 {
-                    "pitch": -5
+                    "pitch": -12
                 }
             ],
             "bat": [
@@ -1585,16 +1585,16 @@
             ],
             "bass": [
                 {
-                    "pitch": -5
+                    "pitch": -12
                 },
                 {
-                    "pitch": -5
+                    "pitch": -12
                 },
                 {
-                    "pitch": -5
+                    "pitch": -12
                 },
                 {
-                    "pitch": -5
+                    "pitch": -12
                 }
             ],
             "bat": [
@@ -1665,13 +1665,13 @@
             "bass": [
                 {},
                 {
-                    "pitch": -5
+                    "pitch": -12
                 },
                 {
-                    "pitch": -5
+                    "pitch": -12
                 },
                 {
-                    "pitch": -5
+                    "pitch": -12
                 }
             ],
             "bat": [
@@ -1710,16 +1710,16 @@
             ],
             "bass": [
                 {
-                    "pitch": -5
+                    "pitch": -12
                 },
                 {
-                    "pitch": -5
+                    "pitch": -12
                 },
                 {
-                    "pitch": -5
+                    "pitch": -12
                 },
                 {
-                    "pitch": -5
+                    "pitch": -12
                 }
             ],
             "bat": [
@@ -1981,16 +1981,16 @@
             ],
             "bass": [
                 {
-                    "pitch": -5
+                    "pitch": -12
                 },
                 {
-                    "pitch": -5
+                    "pitch": -12
                 },
                 {
-                    "pitch": -5
+                    "pitch": -12
                 },
                 {
-                    "pitch": -5
+                    "pitch": -12
                 }
             ],
             "bat": [
@@ -2025,7 +2025,7 @@
             ],
             "bass": [
                 {
-                    "pitch": -5
+                    "pitch": -12
                 },
                 {},
                 {},
@@ -2083,7 +2083,7 @@
             ],
             "bass": [
                 {
-                    "pitch": -5
+                    "pitch": -12
                 },
                 {
                     "pitch": -4
@@ -2133,7 +2133,7 @@
             ],
             "bass": [
                 {
-                    "pitch": -5
+                    "pitch": -12
                 },
                 {},
                 {},
@@ -2389,16 +2389,16 @@
             ],
             "bass": [
                 {
-                    "pitch": -5
+                    "pitch": -12
                 },
                 {
-                    "pitch": -5
+                    "pitch": -12
                 },
                 {
-                    "pitch": -5
+                    "pitch": -12
                 },
                 {
-                    "pitch": -5
+                    "pitch": -12
                 }
             ],
             "bat": [
@@ -2433,7 +2433,7 @@
             ],
             "bass": [
                 {
-                    "pitch": -5
+                    "pitch": -12
                 },
                 {},
                 {},
@@ -2491,7 +2491,7 @@
             ],
             "bass": [
                 {
-                    "pitch": -5
+                    "pitch": -12
                 },
                 {
                     "pitch": -4
@@ -2541,7 +2541,7 @@
             ],
             "bass": [
                 {
-                    "pitch": -5
+                    "pitch": -12
                 },
                 {},
                 {},
@@ -2905,13 +2905,13 @@
             "bass": [
                 {},
                 {
-                    "pitch": -5
+                    "pitch": -12
                 },
                 {
-                    "pitch": -5
+                    "pitch": -12
                 },
                 {
-                    "pitch": -5
+                    "pitch": -12
                 }
             ],
             "bat": [
@@ -2952,11 +2952,11 @@
             ],
             "bass": [
                 {
-                    "pitch": -5
+                    "pitch": -12
                 },
                 {},
                 {
-                    "pitch": -5
+                    "pitch": -12
                 },
                 {}
             ],
@@ -3004,16 +3004,16 @@
             ],
             "bass": [
                 {
-                    "pitch": -6
+                    "pitch": -13
                 },
                 {
-                    "pitch": -6
+                    "pitch": -13
                 },
                 {
-                    "pitch": -6
+                    "pitch": -13
                 },
                 {
-                    "pitch": -6
+                    "pitch": -13
                 }
             ],
             "bat": [
@@ -3056,11 +3056,11 @@
             ],
             "bass": [
                 {
-                    "pitch": -6
+                    "pitch": -13
                 },
                 {},
                 {
-                    "pitch": -6
+                    "pitch": -13
                 },
                 {}
             ],
@@ -3300,13 +3300,13 @@
             "bass": [
                 {},
                 {
-                    "pitch": -5
+                    "pitch": -12
                 },
                 {
-                    "pitch": -5
+                    "pitch": -12
                 },
                 {
-                    "pitch": -5
+                    "pitch": -12
                 }
             ],
             "bat": [
@@ -3339,11 +3339,11 @@
             ],
             "bass": [
                 {
-                    "pitch": -5
+                    "pitch": -12
                 },
                 {},
                 {
-                    "pitch": -5
+                    "pitch": -12
                 },
                 {}
             ],
@@ -3394,16 +3394,16 @@
             ],
             "bass": [
                 {
-                    "pitch": -6
+                    "pitch": -13
                 },
                 {
-                    "pitch": -6
+                    "pitch": -13
                 },
                 {
-                    "pitch": -6
+                    "pitch": -13
                 },
                 {
-                    "pitch": -6
+                    "pitch": -13
                 }
             ],
             "bat": [
@@ -3438,11 +3438,11 @@
             ],
             "bass": [
                 {
-                    "pitch": -6
+                    "pitch": -13
                 },
                 {},
                 {
-                    "pitch": -6
+                    "pitch": -13
                 },
                 {}
             ],
@@ -3711,13 +3711,13 @@
             "bass": [
                 {},
                 {
-                    "pitch": -6
+                    "pitch": -13
                 },
                 {
-                    "pitch": -6
+                    "pitch": -13
                 },
                 {
-                    "pitch": -6
+                    "pitch": -13
                 }
             ],
             "bat": [
@@ -3771,16 +3771,16 @@
             ],
             "bass": [
                 {
-                    "pitch": -6
+                    "pitch": -13
                 },
                 {
-                    "pitch": -6
+                    "pitch": -13
                 },
                 {
-                    "pitch": -6
+                    "pitch": -13
                 },
                 {
-                    "pitch": -6
+                    "pitch": -13
                 }
             ],
             "bat": [
@@ -4310,16 +4310,16 @@
             ],
             "bass": [
                 {
-                    "pitch": -5
+                    "pitch": -12
                 },
                 {
-                    "pitch": -5
+                    "pitch": -12
                 },
                 {
-                    "pitch": -5
+                    "pitch": -12
                 },
                 {
-                    "pitch": -5
+                    "pitch": -12
                 }
             ],
             "bat": [
@@ -4363,16 +4363,16 @@
             ],
             "bass": [
                 {
-                    "pitch": -5
+                    "pitch": -12
                 },
                 {
-                    "pitch": -5
+                    "pitch": -12
                 },
                 {
-                    "pitch": -5
+                    "pitch": -12
                 },
                 {
-                    "pitch": -5
+                    "pitch": -12
                 }
             ],
             "bat": [

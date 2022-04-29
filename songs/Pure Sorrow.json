@@ -702,7 +702,7 @@
             "bass": [
                 {
                     "duration": 2,
-                    "pitch": -6
+                    "pitch": -13
                 },
                 {},
                 {},
@@ -1657,7 +1657,7 @@
                 {
                     "accidental": "sharp",
                     "duration": 4,
-                    "pitch": -6
+                    "pitch": -13
                 },
                 {},
                 {},
@@ -1861,7 +1861,7 @@
                 {
                     "accidental": "sharp",
                     "duration": 4,
-                    "pitch": -6
+                    "pitch": -13
                 },
                 {},
                 {},
@@ -2053,7 +2053,7 @@
                 {
                     "accidental": "sharp",
                     "duration": 4,
-                    "pitch": -6
+                    "pitch": -13
                 },
                 {},
                 {},
@@ -2279,7 +2279,7 @@
             "bass": [
                 {
                     "duration": 4,
-                    "pitch": -6
+                    "pitch": -13
                 },
                 {},
                 {},
@@ -2789,7 +2789,7 @@
                 {
                     "accidental": "sharp",
                     "duration": 4,
-                    "pitch": -6
+                    "pitch": -13
                 },
                 {},
                 {},
@@ -2991,7 +2991,7 @@
                 {
                     "accidental": "sharp",
                     "duration": 4,
-                    "pitch": -6
+                    "pitch": -13
                 },
                 {},
                 {},
@@ -3182,7 +3182,7 @@
                 {
                     "accidental": "sharp",
                     "duration": 4,
-                    "pitch": -6
+                    "pitch": -13
                 },
                 {},
                 {},
@@ -3399,7 +3399,7 @@
             "bass": [
                 {
                     "duration": 4,
-                    "pitch": -6
+                    "pitch": -13
                 },
                 {},
                 {},
@@ -4250,7 +4250,7 @@
                 {
                     "accidental": "sharp",
                     "duration": 4,
-                    "pitch": -6
+                    "pitch": -13
                 },
                 {},
                 {},
@@ -4453,7 +4453,7 @@
                 {
                     "accidental": "sharp",
                     "duration": 4,
-                    "pitch": -6
+                    "pitch": -13
                 },
                 {},
                 {},
@@ -4646,7 +4646,7 @@
                 {
                     "accidental": "sharp",
                     "duration": 4,
-                    "pitch": -6
+                    "pitch": -13
                 },
                 {},
                 {},
@@ -4880,7 +4880,7 @@
             "bass": [
                 {
                     "duration": 4,
-                    "pitch": -6
+                    "pitch": -13
                 },
                 {},
                 {},
