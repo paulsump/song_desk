@@ -68,7 +68,7 @@ class SongNotifier with ChangeNotifier {
   void forward() {
     ++_currentSongIndex;
 
-    if (titles.length <= _currentSongIndex ) {
+    if (titles.length <= _currentSongIndex) {
       _currentSongIndex = 0;
     }
     _playAndSavePreferences();
@@ -99,9 +99,7 @@ class SongNotifier with ChangeNotifier {
     for (final entry in _persist.songs.entries) {
       final scheduler = Scheduler();
 
-      final name = entry.key;
-      _schedulers[name] = scheduler;
-
+      _schedulers[entry.key] = scheduler;
       _scheduleNotes(scheduler, entry.value!);
     }
 
@@ -148,6 +146,10 @@ class SongNotifier with ChangeNotifier {
 
       _addQuavers(bar.arp, song, b, pads, quaverDuration, scheduler,
           (semitone) => _instruments['Arp']!.getPlayer(semitone, 5), 'arp');
+
+      if (bar.repeatRight > 0) {
+        //TODO ADD RepeatEvent(duration:song.repaeatDurations[0]);
+      }
 
       if (bar.pad) {
         ++pads;

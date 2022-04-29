@@ -1,9 +1,11 @@
-# song_desk
+# "Song Desk"
 
 - Plays backing and beat for some reggae, pop, soul and bossa nova songs.  
 - Uses sampled piano and double bass rather than MIDI.  
 
-## TODO UI
+## TODO 
+
+### UI
 
 - volume mixer
 - go to bar (need full ui?)  
@@ -11,12 +13,12 @@
 - dark mode (save battery)
 - button pause  
 
-# TODO logic bugs
+### Logic bugs
 
 fix duration bug  
   /// TODO removing this wantStartPlay fixes the tests  
 
-# TODO logic
+### Logic
 
 - 	need play bass when endChord  
 
@@ -57,23 +59,23 @@ fix duration bug
 
 setVolume is done on instrument's samples, which will be overwritten if i add a voice mixer  
 
-# TODO easy
+### Easy
 
 - check all todos e.g.  
   //TODO TRiplets  
   // TODO CALL audioPlayer.dispose()  
 
-# TODO Tricky
+### Tricky
 
 - or at least stop the timer!...  
 - don't stop when phone goes black. - find out what this is called eg. lock.  
   audioplayer play "stayAwake"  
 
-# TODO Later
+### Later
 
 - Ultimately to create, arrange, transpose songs.  
 
-# TODO Maybe
+### Maybe
 
 - volume mixer vs volume encapsulation?  
   I need to have a factor to take the  
