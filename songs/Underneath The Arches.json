@@ -15,6 +15,22 @@
                     "pitch": 7
                 }
             ],
+            "bass": [
+                {
+                    "pitch": -7
+                },
+                {},
+                {},
+                {}
+            ],
+            "bat": [
+                {
+                    "pitch": -6
+                },
+                {},
+                {},
+                {}
+            ],
             "chord": "Bb",
             "chordForBb": "Bb",
             "chordForG#": "G#",
@@ -107,6 +123,22 @@
                 {
                     "pitch": 3
                 }
+            ],
+            "bass": [
+                {
+                    "pitch": -10
+                },
+                {},
+                {},
+                {}
+            ],
+            "bat": [
+                {
+                    "pitch": -6
+                },
+                {},
+                {},
+                {}
             ],
             "chord": "F7",
             "chordShape": "^^",

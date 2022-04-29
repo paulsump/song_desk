@@ -16,6 +16,22 @@
                     "pitch": 4
                 }
             ],
+            "bass": [
+                {
+                    "pitch": -10
+                },
+                {},
+                {},
+                {}
+            ],
+            "bat": [
+                {
+                    "pitch": -6
+                },
+                {},
+                {},
+                {}
+            ],
             "chord": "F#-",
             "chordForAC": "F#-7",
             "chordForCD#": "A-7",
@@ -95,6 +111,14 @@
                 {
                     "pitch": 4
                 }
+            ],
+            "bass": [
+                {
+                    "pitch": -13
+                },
+                {},
+                {},
+                {}
             ],
             "chord": "F#-",
             "chordShape": "^^",

@@ -15,6 +15,14 @@
                     "pitch": 1
                 }
             ],
+            "bass": [
+                {
+                    "pitch": -5
+                },
+                {},
+                {},
+                {}
+            ],
             "chord": "D-7",
             "chordForF": "D-7",
             "chordShape": " ^",
@@ -71,6 +79,14 @@
                 {
                     "pitch": 8
                 }
+            ],
+            "bass": [
+                {
+                    "pitch": -6
+                },
+                {},
+                {},
+                {}
             ],
             "chord": "C",
             "chordForF": "C",
@@ -129,6 +145,14 @@
                 {
                     "pitch": 5
                 }
+            ],
+            "bass": [
+                {
+                    "pitch": -9
+                },
+                {},
+                {},
+                {}
             ],
             "chord": "G",
             "chordForF": "G",

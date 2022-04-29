@@ -148,6 +148,8 @@ class SongNotifier with ChangeNotifier {
       _addQuavers(bar.arp, song, b, pads, quaverDuration, scheduler,
           (semitone) => _instruments['Arp']!.getPlayer(semitone, 5), 'arp');
 
+      // TODO Honour endSongEnd
+
       if (bar.repeatRight > 0) {
         scheduler.add(RepeatEvent(
           startTime: Duration(milliseconds: b * barDuration),
@@ -169,7 +171,7 @@ class SongNotifier with ChangeNotifier {
     }
 
     //TODO TRIPLET Count in
-    ++b;
+    b += 8;
     _addCountInEvents(scheduler, b, quaverDuration, false);
 
     b += 2;

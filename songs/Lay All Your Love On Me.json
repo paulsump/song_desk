@@ -15,6 +15,14 @@
                     "pitch": 2
                 }
             ],
+            "bass": [
+                {
+                    "pitch": -11
+                },
+                {},
+                {},
+                {}
+            ],
             "chord": "E-7/E",
             "chordShape": "^^",
             "gaps": [
@@ -159,6 +167,14 @@
                     "pitch": 8
                 }
             ],
+            "bass": [
+                {
+                    "pitch": -13
+                },
+                {},
+                {},
+                {}
+            ],
             "chord": "C",
             "chordShape": "^^",
             "gaps": [
@@ -214,6 +230,14 @@
                 {
                     "pitch": 7
                 }
+            ],
+            "bass": [
+                {
+                    "pitch": -7
+                },
+                {},
+                {},
+                {}
             ],
             "chord": "B",
             "chordShape": "^^",

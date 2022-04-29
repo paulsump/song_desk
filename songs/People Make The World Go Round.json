@@ -15,6 +15,16 @@
                     "pitch": 7
                 }
             ],
+            "bass": [
+                {
+                    "pitch": -9
+                },
+                {},
+                {
+                    "pitch": -8
+                },
+                {}
+            ],
             "chord": "A-9",
             "chordShape": "_ ",
             "gaps": [
@@ -51,6 +61,14 @@
                 {
                     "pitch": -1
                 }
+            ],
+            "bass": [
+                {},
+                {},
+                {
+                    "pitch": -9
+                },
+                {}
             ],
             "gaps": [
                 "backing"
@@ -94,6 +112,18 @@
                     "pitch": 7
                 }
             ],
+            "bass": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {
+                    "pitch": -6
+                },
+                {
+                    "pitch": -5
+                }
+            ],
             "chord": "A-11",
             "chordShape": "_ ",
             "gaps": [
@@ -112,6 +142,14 @@
                 {
                     "pitch": -1
                 }
+            ],
+            "bass": [
+                {
+                    "pitch": -6
+                },
+                {},
+                {},
+                {}
             ],
             "chordShape": "__",
             "gaps": [
@@ -141,6 +179,16 @@
                     "pitch": 7
                 }
             ],
+            "bass": [
+                {
+                    "pitch": -9
+                },
+                {},
+                {
+                    "pitch": -8
+                },
+                {}
+            ],
             "chord": "A-9",
             "chordShape": "_ ",
             "gaps": [
@@ -159,6 +207,14 @@
                 {
                     "pitch": -1
                 }
+            ],
+            "bass": [
+                {},
+                {},
+                {
+                    "pitch": -9
+                },
+                {}
             ],
             "gaps": [
                 "backing"
@@ -187,6 +243,18 @@
                     "pitch": 7
                 }
             ],
+            "bass": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {
+                    "pitch": -6
+                },
+                {
+                    "pitch": -5
+                }
+            ],
             "chord": "A-11",
             "chordShape": "_ ",
             "gaps": [
@@ -205,6 +273,14 @@
                 {
                     "pitch": -1
                 }
+            ],
+            "bass": [
+                {
+                    "pitch": -6
+                },
+                {},
+                {},
+                {}
             ],
             "blockEnd": true,
             "chordShape": "__",
@@ -3101,6 +3177,22 @@
                     "pitch": 3
                 }
             ],
+            "bass": [
+                {
+                    "pitch": -10
+                },
+                {},
+                {},
+                {}
+            ],
+            "bat": [
+                {
+                    "pitch": -6
+                },
+                {},
+                {},
+                {}
+            ],
             "chord": "FM7",
             "chordShape": " ^",
             "gaps": [
@@ -3166,6 +3258,22 @@
                 {
                     "pitch": -4
                 },
+                {}
+            ],
+            "bass": [
+                {
+                    "pitch": -12
+                },
+                {},
+                {},
+                {}
+            ],
+            "bat": [
+                {
+                    "pitch": -6
+                },
+                {},
+                {},
                 {}
             ],
             "chord": "D-7",

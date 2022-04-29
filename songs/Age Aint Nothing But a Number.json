@@ -17,7 +17,7 @@
             ],
             "bass": [
                 {
-                    "pitch": -4
+                    "pitch": -11
                 },
                 {},
                 {},
@@ -145,7 +145,7 @@
             ],
             "bass": [
                 {
-                    "pitch": -6
+                    "pitch": -13
                 },
                 {},
                 {},
@@ -4626,7 +4626,7 @@
     ],
     "strum": "Reggae",
     "swing": 40,
-    "tempo": 130,
+    "tempo": 120,
     "words": 1,
     "youtube": "https://www.youtube.com/watch?v=rRwhm-B6yNI&list=PLcYIUjYxFNR7IJBqd2tnZNAkF_g7Iwn2I&ab_channel=AaliyahVEVO"
 }

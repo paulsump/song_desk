@@ -15,6 +15,16 @@
                     "pitch": 4
                 }
             ],
+            "bass": [
+                {
+                    "pitch": -6
+                },
+                {},
+                {
+                    "pitch": -11
+                },
+                {}
+            ],
             "chord": "F#-/C#",
             "chordShape": "^^",
             "gaps": [
@@ -50,6 +60,14 @@
                 {
                     "pitch": 4
                 }
+            ],
+            "bass": [
+                {
+                    "pitch": -10
+                },
+                {},
+                {},
+                {}
             ],
             "chord": "F#-",
             "chordShape": "^^",
@@ -125,6 +143,20 @@
                     "pitch": 3
                 }
             ],
+            "bass": [
+                {
+                    "pitch": -7
+                },
+                {
+                    "pitch": -7
+                },
+                {
+                    "pitch": -8
+                },
+                {
+                    "pitch": -7
+                }
+            ],
             "chord": "E/B",
             "chordShape": "^^",
             "gaps": [
@@ -175,6 +207,16 @@
                     "pitch": 4
                 }
             ],
+            "bass": [
+                {
+                    "pitch": -6
+                },
+                {},
+                {
+                    "pitch": -11
+                },
+                {}
+            ],
             "chord": "F#-/C#",
             "chordShape": "^^",
             "gaps": [
@@ -210,6 +252,14 @@
                 {
                     "pitch": 4
                 }
+            ],
+            "bass": [
+                {
+                    "pitch": -10
+                },
+                {},
+                {},
+                {}
             ],
             "chord": "F#-",
             "chordShape": "^^",
@@ -252,6 +302,16 @@
                     "pitch": 3
                 }
             ],
+            "bass": [
+                {
+                    "pitch": -7
+                },
+                {
+                    "pitch": -7
+                },
+                {},
+                {}
+            ],
             "chord": "E/B",
             "chordShape": "^^",
             "gaps": [
@@ -287,6 +347,16 @@
                 {
                     "pitch": 3
                 }
+            ],
+            "bass": [
+                {
+                    "pitch": -4
+                },
+                {
+                    "pitch": -4
+                },
+                {},
+                {}
             ],
             "blockEnd": true,
             "chord": "E/E",

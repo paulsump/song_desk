@@ -16,6 +16,22 @@
                     "pitch": 4
                 }
             ],
+            "bass": [
+                {
+                    "pitch": -10
+                },
+                {},
+                {},
+                {}
+            ],
+            "bat": [
+                {
+                    "pitch": -6
+                },
+                {},
+                {},
+                {}
+            ],
             "chord": "F#",
             "chordForBb": "G-7",
             "chordShape": "^^",

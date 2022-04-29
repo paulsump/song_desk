@@ -16,6 +16,22 @@
                     "pitch": 4
                 }
             ],
+            "bass": [
+                {
+                    "pitch": -11
+                },
+                {},
+                {},
+                {}
+            ],
+            "bat": [
+                {
+                    "pitch": -6
+                },
+                {},
+                {},
+                {}
+            ],
             "chord": "E-9",
             "chordForD#EF": "F-9",
             "chordForDD#E": "E-9",
@@ -95,6 +111,22 @@
                 {
                     "pitch": 5
                 }
+            ],
+            "bass": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "bat": [
+                {
+                    "pitch": -6
+                },
+                {},
+                {},
+                {}
             ],
             "chord": "A7",
             "chordForD#EF": "Bb7",

@@ -23,6 +23,22 @@
                     "triplet": true
                 }
             ],
+            "bass": [
+                {
+                    "pitch": -13
+                },
+                {},
+                {},
+                {}
+            ],
+            "bat": [
+                {
+                    "pitch": -6
+                },
+                {},
+                {},
+                {}
+            ],
             "chord": "CM7",
             "chordForD": "DM7",
             "chordForD#": "D#M7",
@@ -169,6 +185,22 @@
                 {
                     "triplet": true
                 }
+            ],
+            "bass": [
+                {
+                    "pitch": -9
+                },
+                {},
+                {},
+                {}
+            ],
+            "bat": [
+                {
+                    "pitch": -6
+                },
+                {},
+                {},
+                {}
             ],
             "chord": "GM7",
             "chordForD": "AM7",
@@ -320,6 +352,22 @@
                 {
                     "triplet": true
                 }
+            ],
+            "bass": [
+                {
+                    "pitch": -13
+                },
+                {},
+                {},
+                {}
+            ],
+            "bat": [
+                {
+                    "pitch": -6
+                },
+                {},
+                {},
+                {}
             ],
             "chord": "CM7",
             "chordForD": "DM7",
@@ -519,6 +567,22 @@
                     "triplet": true
                 }
             ],
+            "bass": [
+                {
+                    "pitch": -9
+                },
+                {},
+                {},
+                {}
+            ],
+            "bat": [
+                {
+                    "pitch": -6
+                },
+                {},
+                {},
+                {}
+            ],
             "chord": "GM7",
             "chordForD": "AM7",
             "chordForD#": "BbM7",
@@ -706,6 +770,22 @@
                     "triplet": true
                 }
             ],
+            "bass": [
+                {
+                    "pitch": -13
+                },
+                {},
+                {},
+                {}
+            ],
+            "bat": [
+                {
+                    "pitch": -6
+                },
+                {},
+                {},
+                {}
+            ],
             "chord": "CM7",
             "chordForD": "DM7",
             "chordForD#": "D#M7",
@@ -882,6 +962,22 @@
                 {
                     "triplet": true
                 }
+            ],
+            "bass": [
+                {
+                    "pitch": -9
+                },
+                {},
+                {},
+                {}
+            ],
+            "bat": [
+                {
+                    "pitch": -6
+                },
+                {},
+                {},
+                {}
             ],
             "chord": "GM7",
             "chordForD": "AM7",
@@ -1060,6 +1156,22 @@
                 {
                     "triplet": true
                 }
+            ],
+            "bass": [
+                {
+                    "pitch": -13
+                },
+                {},
+                {},
+                {}
+            ],
+            "bat": [
+                {
+                    "pitch": -6
+                },
+                {},
+                {},
+                {}
             ],
             "chord": "CM7",
             "chordForD": "DM7",
@@ -1259,6 +1371,22 @@
                     "triplet": true
                 }
             ],
+            "bass": [
+                {
+                    "pitch": -9
+                },
+                {},
+                {},
+                {}
+            ],
+            "bat": [
+                {
+                    "pitch": -6
+                },
+                {},
+                {},
+                {}
+            ],
             "chord": "GM7",
             "chordForD": "AM7",
             "chordForD#": "BbM7",
@@ -1448,6 +1576,22 @@
                     "triplet": true
                 }
             ],
+            "bass": [
+                {
+                    "pitch": -7
+                },
+                {},
+                {},
+                {}
+            ],
+            "bat": [
+                {
+                    "pitch": -6
+                },
+                {},
+                {},
+                {}
+            ],
             "chord": "B-9",
             "chordForD": "DM7",
             "chordForD#": "D#M7",
@@ -1539,6 +1683,22 @@
                     "triplet": true
                 }
             ],
+            "bass": [
+                {
+                    "pitch": -11
+                },
+                {},
+                {},
+                {}
+            ],
+            "bat": [
+                {
+                    "pitch": -6
+                },
+                {},
+                {},
+                {}
+            ],
             "chord": "E-7",
             "chordShape": "^^",
             "shareds": [
@@ -1626,6 +1786,22 @@
                 {
                     "triplet": true
                 }
+            ],
+            "bass": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "bat": [
+                {
+                    "pitch": -6
+                },
+                {},
+                {},
+                {}
             ],
             "chord": "A-7",
             "chordForD": "AM7",

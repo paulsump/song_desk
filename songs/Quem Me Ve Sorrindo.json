@@ -16,6 +16,22 @@
                     "pitch": 7
                 }
             ],
+            "bass": [
+                {
+                    "pitch": -13
+                },
+                {},
+                {},
+                {}
+            ],
+            "bat": [
+                {
+                    "pitch": -6
+                },
+                {},
+                {},
+                {}
+            ],
             "chord": "C7",
             "chordForG#": "D#7",
             "chordShape": "_ ",
@@ -65,6 +81,22 @@
                     "pitch": 5
                 }
             ],
+            "bass": [
+                {
+                    "pitch": -7
+                },
+                {},
+                {},
+                {}
+            ],
+            "bat": [
+                {
+                    "pitch": -6
+                },
+                {},
+                {},
+                {}
+            ],
             "chord": "Bb7",
             "chordForG#": "C#7",
             "chordShape": " _",
@@ -112,6 +144,22 @@
                 {
                     "pitch": 7
                 }
+            ],
+            "bass": [
+                {
+                    "pitch": -13
+                },
+                {},
+                {},
+                {}
+            ],
+            "bat": [
+                {
+                    "pitch": -6
+                },
+                {},
+                {},
+                {}
             ],
             "chord": "C7",
             "chordForG#": "D#7",

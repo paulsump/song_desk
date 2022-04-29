@@ -16,6 +16,22 @@
                     "pitch": 6
                 }
             ],
+            "bass": [
+                {
+                    "pitch": -9
+                },
+                {},
+                {},
+                {}
+            ],
+            "bat": [
+                {
+                    "pitch": -6
+                },
+                {},
+                {},
+                {}
+            ],
             "chord": "G-9/G",
             "chordForD#": "C-7",
             "chordForG": "E-7",

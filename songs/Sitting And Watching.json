@@ -15,6 +15,30 @@
                     "pitch": 2
                 }
             ],
+            "bass": [
+                {
+                    "duration": 2,
+                    "pitch": -11
+                },
+                {},
+                {},
+                {
+                    "duration": 1,
+                    "pitch": -7
+                }
+            ],
+            "bat": [
+                {
+                    "duration": 2,
+                    "pitch": -6
+                },
+                {},
+                {},
+                {
+                    "duration": 1,
+                    "pitch": -2
+                }
+            ],
             "chord": "EM7/E",
             "chordForF": "F",
             "chordForG": "G",
@@ -53,6 +77,30 @@
                 {
                     "pitch": 2
                 }
+            ],
+            "bass": [
+                {
+                    "duration": 2,
+                    "pitch": -6
+                },
+                {},
+                {
+                    "pitch": -4
+                },
+                {}
+            ],
+            "bat": [
+                {
+                    "duration": 2,
+                    "pitch": -1
+                },
+                {},
+                {
+                    "accidental": "natural",
+                    "duration": 1,
+                    "pitch": 1
+                },
+                {}
             ],
             "chord": "EM7/C#",
             "chordForG": "G/E",
@@ -99,6 +147,30 @@
                     "pitch": 4
                 }
             ],
+            "bass": [
+                {
+                    "duration": 2,
+                    "pitch": -10
+                },
+                {},
+                {},
+                {
+                    "duration": 1,
+                    "pitch": -6
+                }
+            ],
+            "bat": [
+                {
+                    "duration": 2,
+                    "pitch": -6
+                },
+                {},
+                {},
+                {
+                    "duration": 1,
+                    "pitch": -2
+                }
+            ],
             "chord": "F#-",
             "chordForF": "G-",
             "chordForG": "A-",
@@ -137,6 +209,37 @@
                 {
                     "pitch": 4
                 }
+            ],
+            "bass": [
+                {
+                    "duration": 1,
+                    "pitch": -3
+                },
+                {
+                    "duration": 1,
+                    "pitch": -4
+                },
+                {
+                    "duration": 1,
+                    "pitch": -6
+                },
+                {}
+            ],
+            "bat": [
+                {
+                    "accidental": "natural",
+                    "duration": 1,
+                    "pitch": 1
+                },
+                {
+                    "duration": 1,
+                    "pitch": 0
+                },
+                {
+                    "duration": 1,
+                    "pitch": -2
+                },
+                {}
             ],
             "chord": "F#-",
             "chordForG": "A-7",
@@ -187,6 +290,30 @@
                     "pitch": 2
                 }
             ],
+            "bass": [
+                {
+                    "duration": 2,
+                    "pitch": -11
+                },
+                {},
+                {},
+                {
+                    "duration": 1,
+                    "pitch": -7
+                }
+            ],
+            "bat": [
+                {
+                    "duration": 2,
+                    "pitch": -6
+                },
+                {},
+                {},
+                {
+                    "duration": 1,
+                    "pitch": -2
+                }
+            ],
             "chord": "EM7/E",
             "chordForF": "F",
             "chordForG": "G",
@@ -226,6 +353,31 @@
                 {
                     "pitch": -4
                 }
+            ],
+            "bass": [
+                {
+                    "duration": 2,
+                    "pitch": -6
+                },
+                {},
+                {
+                    "duration": 1,
+                    "pitch": -4
+                },
+                {}
+            ],
+            "bat": [
+                {
+                    "duration": 2,
+                    "pitch": -1
+                },
+                {},
+                {
+                    "accidental": "natural",
+                    "duration": 1,
+                    "pitch": 1
+                },
+                {}
             ],
             "chordShape": "_ ",
             "chordShapeForG": "_ ",
@@ -273,6 +425,30 @@
                     "pitch": 4
                 }
             ],
+            "bass": [
+                {
+                    "duration": 2,
+                    "pitch": -10
+                },
+                {},
+                {},
+                {
+                    "duration": 1,
+                    "pitch": -6
+                }
+            ],
+            "bat": [
+                {
+                    "duration": 2,
+                    "pitch": -6
+                },
+                {},
+                {},
+                {
+                    "duration": 1,
+                    "pitch": -2
+                }
+            ],
             "chord": "F#-",
             "chordForF": "G-",
             "chordForG": "A-",
@@ -307,6 +483,37 @@
                 {
                     "pitch": -3
                 }
+            ],
+            "bass": [
+                {
+                    "duration": 1,
+                    "pitch": -3
+                },
+                {
+                    "duration": 1,
+                    "pitch": -4
+                },
+                {
+                    "duration": 1,
+                    "pitch": -6
+                },
+                {}
+            ],
+            "bat": [
+                {
+                    "accidental": "natural",
+                    "duration": 1,
+                    "pitch": 1
+                },
+                {
+                    "duration": 1,
+                    "pitch": 0
+                },
+                {
+                    "duration": 1,
+                    "pitch": -2
+                },
+                {}
             ],
             "chordShape": " _",
             "chordShapeForG": " _",

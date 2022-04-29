@@ -15,6 +15,16 @@
                     "pitch": 2
                 }
             ],
+            "bass": [
+                {
+                    "duration": 1,
+                    "lyric": "",
+                    "pitch": -9
+                },
+                {},
+                {},
+                {}
+            ],
             "chord": "EM7/E",
             "chordForD": "DM7",
             "chordForE": "E",
@@ -89,6 +99,16 @@
                 {
                     "pitch": 4
                 }
+            ],
+            "bass": [
+                {
+                    "duration": 1,
+                    "lyric": "",
+                    "pitch": -10
+                },
+                {},
+                {},
+                {}
             ],
             "chord": "F#-",
             "chordForD": "E-7",
@@ -165,6 +185,16 @@
                     "pitch": 2
                 }
             ],
+            "bass": [
+                {
+                    "duration": 1,
+                    "lyric": "",
+                    "pitch": -9
+                },
+                {},
+                {},
+                {}
+            ],
             "chord": "EM7/E",
             "chordForD": "DM7",
             "chordForE": "E",
@@ -236,6 +266,16 @@
                 {
                     "pitch": 4
                 }
+            ],
+            "bass": [
+                {
+                    "duration": 1,
+                    "lyric": "",
+                    "pitch": -10
+                },
+                {},
+                {},
+                {}
             ],
             "chord": "F#-",
             "chordForD": "E-7",
@@ -322,7 +362,7 @@
                 {
                     "duration": 1,
                     "lyric": "",
-                    "pitch": -2
+                    "pitch": -9
                 },
                 {},
                 {},
@@ -368,7 +408,7 @@
                 {
                     "duration": 1,
                     "lyric": "",
-                    "pitch": -1
+                    "pitch": -8
                 },
                 {}
             ],
@@ -426,7 +466,7 @@
                 {
                     "duration": 1,
                     "lyric": "",
-                    "pitch": -3
+                    "pitch": -10
                 },
                 {},
                 {},
@@ -485,7 +525,7 @@
                 {
                     "duration": 1,
                     "lyric": "",
-                    "pitch": -1
+                    "pitch": -8
                 },
                 {}
             ],
@@ -541,7 +581,7 @@
                 {
                     "duration": 1,
                     "lyric": "",
-                    "pitch": -2
+                    "pitch": -9
                 },
                 {},
                 {},
@@ -587,7 +627,7 @@
                 {
                     "duration": 1,
                     "lyric": "",
-                    "pitch": -1
+                    "pitch": -8
                 },
                 {}
             ],
@@ -635,7 +675,7 @@
                 {
                     "duration": 1,
                     "lyric": "",
-                    "pitch": -3
+                    "pitch": -10
                 },
                 {},
                 {},

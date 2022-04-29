@@ -17,6 +17,22 @@
                     "pitch": 4
                 }
             ],
+            "bass": [
+                {
+                    "pitch": -11
+                },
+                {},
+                {},
+                {}
+            ],
+            "bat": [
+                {
+                    "pitch": -6
+                },
+                {},
+                {},
+                {}
+            ],
             "chord": "E-9",
             "chordForBb": "D-9",
             "chordForC": "E-9",
@@ -69,6 +85,22 @@
                 {
                     "pitch": 5
                 }
+            ],
+            "bass": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "bat": [
+                {
+                    "pitch": -6
+                },
+                {},
+                {},
+                {}
             ],
             "chord": "A7+",
             "chordForBb": "G7+",
@@ -131,6 +163,22 @@
                     "pitch": 3
                 }
             ],
+            "bass": [
+                {
+                    "pitch": -12
+                },
+                {},
+                {},
+                {}
+            ],
+            "bat": [
+                {
+                    "pitch": -6
+                },
+                {},
+                {},
+                {}
+            ],
             "chord": "D-9",
             "chordForBb": "C-9",
             "chordForC": "D-9",
@@ -184,6 +232,22 @@
                     "pitch": 5
                 }
             ],
+            "bass": [
+                {
+                    "pitch": -9
+                },
+                {},
+                {},
+                {}
+            ],
+            "bat": [
+                {
+                    "pitch": -6
+                },
+                {},
+                {},
+                {}
+            ],
             "chord": "G7b9",
             "chordForBb": "F7b9",
             "chordForC": "G7b9",
@@ -216,6 +280,22 @@
                 {
                     "pitch": -2
                 }
+            ],
+            "bass": [
+                {
+                    "pitch": -7
+                },
+                {},
+                {},
+                {}
+            ],
+            "bat": [
+                {
+                    "pitch": -4
+                },
+                {},
+                {},
+                {}
             ],
             "blockEnd": true,
             "gaps": [
@@ -3643,7 +3723,7 @@
         "Outro"
     ],
     "strum": "Bossa",
-    "tempo": 140,
+    "tempo": 130,
     "voiceOctaves": {
         "vocal": 1
     },

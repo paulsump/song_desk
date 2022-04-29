@@ -15,6 +15,15 @@
                     "pitch": 7
                 }
             ],
+            "bass": [
+                {
+                    "duration": 1,
+                    "pitch": -6
+                },
+                {},
+                {},
+                {}
+            ],
             "chord": "CM7",
             "chordForBbGBb": "BbM7",
             "chordForCAC": "CM7",
@@ -45,49 +54,14 @@
                     "pitch": 7
                 }
             ],
-            "chord": "CM7/G",
-            "chordShape": "^^",
-            "gaps": [
-                "backing",
-                "vocal"
-            ]
-        },
-        {
-            "arp": [
+            "bass": [
                 {
-                    "pitch": 1
+                    "duration": 1,
+                    "pitch": -9
                 },
-                {
-                    "pitch": 3
-                },
-                {
-                    "pitch": 5
-                },
-                {
-                    "pitch": 7
-                }
-            ],
-            "chord": "CM7",
-            "chordShape": "^^",
-            "gaps": [
-                "backing",
-                "vocal"
-            ]
-        },
-        {
-            "arp": [
-                {
-                    "pitch": -2
-                },
-                {
-                    "pitch": 3
-                },
-                {
-                    "pitch": 5
-                },
-                {
-                    "pitch": 7
-                }
+                {},
+                {},
+                {}
             ],
             "chord": "CM7/G",
             "chordShape": "^^",
@@ -111,6 +85,15 @@
                     "pitch": 7
                 }
             ],
+            "bass": [
+                {
+                    "duration": 1,
+                    "pitch": -6
+                },
+                {},
+                {},
+                {}
+            ],
             "chord": "CM7",
             "chordShape": "^^",
             "gaps": [
@@ -132,6 +115,77 @@
                 {
                     "pitch": 7
                 }
+            ],
+            "bass": [
+                {
+                    "duration": 1,
+                    "pitch": -9
+                },
+                {},
+                {},
+                {}
+            ],
+            "chord": "CM7/G",
+            "chordShape": "^^",
+            "gaps": [
+                "backing",
+                "vocal"
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": 1
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "pitch": 5
+                },
+                {
+                    "pitch": 7
+                }
+            ],
+            "bass": [
+                {
+                    "duration": 1,
+                    "pitch": -6
+                },
+                {},
+                {},
+                {}
+            ],
+            "chord": "CM7",
+            "chordShape": "^^",
+            "gaps": [
+                "backing",
+                "vocal"
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": -2
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "pitch": 5
+                },
+                {
+                    "pitch": 7
+                }
+            ],
+            "bass": [
+                {
+                    "duration": 1,
+                    "pitch": -9
+                },
+                {},
+                {},
+                {}
             ],
             "chord": "CM7/G",
             "chordShape": "^^",
@@ -157,6 +211,16 @@
                 {
                     "pitch": 7
                 }
+            ],
+            "bass": [
+                {},
+                {},
+                {
+                    "accidental": "sharp",
+                    "duration": 1,
+                    "pitch": -10
+                },
+                {}
             ],
             "chord": "B/F#",
             "chordForBbGBb": "A",
@@ -188,6 +252,15 @@
                     "accidental": "sharp",
                     "pitch": -3
                 }
+            ],
+            "bass": [
+                {
+                    "duration": 1,
+                    "pitch": -7
+                },
+                {},
+                {},
+                {}
             ],
             "blockEnd": true,
             "gaps": [

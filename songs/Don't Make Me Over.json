@@ -15,6 +15,22 @@
                     "pitch": 2
                 }
             ],
+            "bass": [
+                {
+                    "pitch": -12
+                },
+                {},
+                {},
+                {}
+            ],
+            "bat": [
+                {
+                    "pitch": -6
+                },
+                {},
+                {},
+                {}
+            ],
             "chord": "D",
             "chordForC": "C",
             "chordForE": "E/E",
@@ -140,6 +156,22 @@
                 {
                     "pitch": 5
                 }
+            ],
+            "bass": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "bat": [
+                {
+                    "pitch": -6
+                },
+                {},
+                {},
+                {}
             ],
             "chord": "A76",
             "chordForE": "B76",
@@ -270,6 +302,22 @@
                     "triplet": true
                 }
             ],
+            "bass": [
+                {
+                    "pitch": -12
+                },
+                {},
+                {},
+                {}
+            ],
+            "bat": [
+                {
+                    "pitch": -6
+                },
+                {},
+                {},
+                {}
+            ],
             "chord": "D",
             "chordForC": "C",
             "chordForE": "E/E",
@@ -357,6 +405,22 @@
                     "triplet": true
                 }
             ],
+            "bass": [
+                {
+                    "pitch": -10
+                },
+                {},
+                {},
+                {}
+            ],
+            "bat": [
+                {
+                    "pitch": -6
+                },
+                {},
+                {},
+                {}
+            ],
             "chord": "F#-",
             "chordForC": "E-7/E",
             "chordForE": "G#-",
@@ -436,6 +500,22 @@
                 {
                     "triplet": true
                 }
+            ],
+            "bass": [
+                {
+                    "pitch": -13
+                },
+                {},
+                {},
+                {}
+            ],
+            "bat": [
+                {
+                    "pitch": -6
+                },
+                {},
+                {},
+                {}
             ],
             "chord": "C#-7",
             "chordForC": "B-7",
@@ -525,6 +605,22 @@
                     "triplet": true
                 }
             ],
+            "bass": [
+                {
+                    "pitch": -9
+                },
+                {},
+                {},
+                {}
+            ],
+            "bat": [
+                {
+                    "pitch": -6
+                },
+                {},
+                {},
+                {}
+            ],
             "chord": "G",
             "chordForC": "F",
             "chordForE": "A",
@@ -608,6 +704,22 @@
                 {
                     "triplet": true
                 }
+            ],
+            "bass": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "bat": [
+                {
+                    "pitch": -6
+                },
+                {},
+                {},
+                {}
             ],
             "chord": "A76",
             "chordForC": "G7",
@@ -694,6 +806,22 @@
             "pad": true
         },
         {
+            "bass": [
+                {
+                    "pitch": -8
+                },
+                {},
+                {},
+                {}
+            ],
+            "bat": [
+                {
+                    "pitch": -6
+                },
+                {},
+                {},
+                {}
+            ],
             "harmony": [
                 {},
                 {},
@@ -761,6 +889,22 @@
                 {
                     "triplet": true
                 }
+            ],
+            "bass": [
+                {
+                    "pitch": -12
+                },
+                {},
+                {},
+                {}
+            ],
+            "bat": [
+                {
+                    "pitch": -6
+                },
+                {},
+                {},
+                {}
             ],
             "chord": "D",
             "chordForC": "C",
@@ -895,6 +1039,22 @@
                 {
                     "pitch": 2
                 }
+            ],
+            "bass": [
+                {
+                    "pitch": -12
+                },
+                {},
+                {},
+                {}
+            ],
+            "bat": [
+                {
+                    "pitch": -6
+                },
+                {},
+                {},
+                {}
             ],
             "gaps": [
                 "backing"

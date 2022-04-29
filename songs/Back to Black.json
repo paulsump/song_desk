@@ -15,6 +15,16 @@
                     "pitch": 8
                 }
             ],
+            "bass": [
+                {
+                    "pitch": -7
+                },
+                {},
+                {},
+                {
+                    "pitch": -7
+                }
+            ],
             "chord": "B-9",
             "chordForC": "A-9",
             "chordForF": "D-",
@@ -48,6 +58,16 @@
                 },
                 {
                     "pitch": 0
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -7
+                },
+                {},
+                {},
+                {
+                    "pitch": -7
                 }
             ],
             "gaps": [
@@ -89,6 +109,16 @@
                     "pitch": 8
                 }
             ],
+            "bass": [
+                {
+                    "pitch": -7
+                },
+                {},
+                {},
+                {
+                    "pitch": -7
+                }
+            ],
             "chordForC": "A-9/A",
             "chordShape": " ^",
             "chordShapeForC": " ^",
@@ -122,6 +152,14 @@
                 {
                     "pitch": 8
                 }
+            ],
+            "bass": [
+                {},
+                {
+                    "pitch": -8
+                },
+                {},
+                {}
             ],
             "chord": "B-9/A",
             "chordForC": "A-9/G",
@@ -163,6 +201,16 @@
                     "pitch": 4
                 }
             ],
+            "bass": [
+                {
+                    "pitch": -11
+                },
+                {},
+                {},
+                {
+                    "pitch": -11
+                }
+            ],
             "chord": "E-79",
             "chordForC": "D-7",
             "chordForF": "G-",
@@ -196,6 +244,16 @@
                 },
                 {
                     "pitch": -4
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -11
+                },
+                {},
+                {},
+                {
+                    "pitch": -11
                 }
             ],
             "gaps": [
@@ -237,6 +295,16 @@
                     "pitch": 4
                 }
             ],
+            "bass": [
+                {
+                    "pitch": -11
+                },
+                {},
+                {},
+                {
+                    "pitch": -11
+                }
+            ],
             "chordForC": "D-7/D",
             "gaps": [
                 "backing"
@@ -268,6 +336,14 @@
                 {
                     "pitch": 4
                 }
+            ],
+            "bass": [
+                {},
+                {
+                    "pitch": -10
+                },
+                {},
+                {}
             ],
             "chord": "E-79/F#",
             "chordForC": "D-7/E",
@@ -308,6 +384,16 @@
                     "pitch": 4
                 }
             ],
+            "bass": [
+                {
+                    "pitch": -9
+                },
+                {},
+                {},
+                {
+                    "pitch": -9
+                }
+            ],
             "chord": "GM7",
             "chordForC": "FM7",
             "chordForF": "Bb",
@@ -341,6 +427,16 @@
                 },
                 {
                     "pitch": -2
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -9
+                },
+                {},
+                {},
+                {
+                    "pitch": -9
                 }
             ],
             "gaps": [
@@ -382,6 +478,16 @@
                     "pitch": 4
                 }
             ],
+            "bass": [
+                {
+                    "pitch": -9
+                },
+                {},
+                {},
+                {
+                    "pitch": -9
+                }
+            ],
             "gaps": [
                 "backing"
             ],
@@ -411,6 +517,16 @@
                 },
                 {
                     "pitch": 4
+                }
+            ],
+            "bass": [
+                {},
+                {
+                    "pitch": -12
+                },
+                {},
+                {
+                    "pitch": -9
                 }
             ],
             "chord": "GM7/E",
@@ -457,6 +573,16 @@
                     "pitch": 3
                 }
             ],
+            "bass": [
+                {
+                    "pitch": -10
+                },
+                {},
+                {},
+                {
+                    "pitch": -10
+                }
+            ],
             "chord": "F#7",
             "chordForC": "E7",
             "chordForF": "A",
@@ -492,6 +618,14 @@
                 {
                     "pitch": -3
                 }
+            ],
+            "bass": [
+                {
+                    "pitch": -10
+                },
+                {},
+                {},
+                {}
             ],
             "gaps": [
                 "backing"
@@ -532,6 +666,16 @@
                     "pitch": 3
                 }
             ],
+            "bass": [
+                {
+                    "pitch": -10
+                },
+                {},
+                {},
+                {
+                    "pitch": -10
+                }
+            ],
             "chord": "F#7/A",
             "chordForC": "E7/E",
             "chordShape": "__",
@@ -567,6 +711,17 @@
                 },
                 {
                     "pitch": 3
+                }
+            ],
+            "bass": [
+                {},
+                {
+                    "pitch": -8
+                },
+                {},
+                {
+                    "accidental": "flat",
+                    "pitch": -7
                 }
             ],
             "blockEnd": true,
