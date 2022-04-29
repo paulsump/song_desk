@@ -20,6 +20,7 @@ fix duration bug
 
 ### Logic
 
+- count in from start instead because of play, playNext
   
 - 	need play bass when endChord  
 
