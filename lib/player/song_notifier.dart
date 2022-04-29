@@ -111,7 +111,8 @@ class SongNotifier with ChangeNotifier {
   }
 
   void _scheduleNotes(scheduler, Song song) {
-    final quaverDuration = 30000 ~/ song.tempo;
+    final int quaverDuration = 30000 ~/ song.tempo;
+    final int barDuration = quaverDuration * 4;
 
     AudioPlayer _piano4(semitone) =>
         _instruments['Piano']!.getPlayer(semitone, 4);
@@ -148,7 +149,15 @@ class SongNotifier with ChangeNotifier {
           (semitone) => _instruments['Arp']!.getPlayer(semitone, 5), 'arp');
 
       if (bar.repeatRight > 0) {
-        //TODO ADD RepeatEvent(duration:song.repaeatDurations[0]);
+        scheduler.add(RepeatEvent(
+            startTime: Duration(milliseconds: b * barDuration),
+            duration:
+                Duration(milliseconds: bar.repeatDuration * barDuration)));
+      } else if (bar.ending != null) {
+        scheduler.add(EndingEvent(
+            startTime: Duration(milliseconds: b * barDuration),
+            duration:
+                Duration(milliseconds: bar.endingDuration * barDuration)));
       }
 
       if (bar.pad) {

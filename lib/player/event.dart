@@ -73,3 +73,24 @@ class FunctionEvent extends Event {
   @override
   void play() => function();
 }
+
+/// A marker to skip backwards or forwards in time.
+class _TimeJumpEvent extends Event {
+  _TimeJumpEvent({required Duration startTime, required Duration duration})
+      : super(startTime: startTime, duration: duration);
+
+  @override
+  void play() {}
+}
+
+/// A marker to go back in time.
+class RepeatEvent extends _TimeJumpEvent {
+  RepeatEvent({required Duration startTime, required Duration duration})
+      : super(startTime: startTime, duration: duration);
+}
+
+/// A marker to go forwards in time.
+class EndingEvent extends _TimeJumpEvent {
+  EndingEvent({required Duration startTime, required Duration duration})
+      : super(startTime: startTime, duration: duration);
+}

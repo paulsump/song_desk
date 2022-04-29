@@ -9,9 +9,6 @@ class Song {
   final Map<int, String> _keyChangesAtBigStaveIndices;
   final bool _doubleTime;
 
-  final _repeatDurations = <int>[];
-  final _endingDurations = <int>[];
-
   Song.fromJson(Map<String, dynamic> json)
       : bars = List<Bar>.from(json["bars"].map((bar) => Bar.fromJson(bar))),
         swing = json.containsKey('swing') ? json['swing'] : 0,
@@ -74,9 +71,8 @@ class Song {
       }
 
       if (bar.repeatRight != 0) {
-        for (int n = 0; n < bar.repeatRight; ++n) {
-          _repeatDurations.add(b - previousLeftIndex!);
-        }
+//TODO USE repeatCount = bar.repeatRight;
+        bar.repeatDuration = b - previousLeftIndex!;
       }
     }
   }
@@ -95,7 +91,7 @@ class Song {
           // when find a ending1, track backwards to first found ending2
           ending1Index = b;
         } else {
-          _endingDurations.add(b - ending1Index!);
+          bar.endingDuration = b - ending1Index!;
         }
       }
     }
@@ -124,6 +120,9 @@ class Bar {
   final int repeatRight;
 
   final String? ending;
+
+  int repeatDuration = 0;
+  int endingDuration = 0;
 
   Bar.fromJson(Map<String, dynamic> json)
       : chord = json['chord'],
