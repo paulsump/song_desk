@@ -10,7 +10,6 @@
 - volume mixer
 - go to bar (need full ui?)  
   would be nice to scrub
-- dark mode (save battery)
 - button pause  
 
 ### Logic bugs

@@ -14,6 +14,7 @@ import 'package:song_desk/player/calc_duration.dart';
 import 'package:song_desk/player/event.dart';
 import 'package:song_desk/player/samples.dart';
 import 'package:song_desk/player/scheduler.dart';
+import 'package:song_desk/preferences.dart';
 
 const noWarn = out;
 
@@ -95,6 +96,17 @@ class SongNotifier with ChangeNotifier {
     }
 
     await _convert.init();
+    rescheduleAllSongNotes();
+
+    await _loadPreferences();
+    _playFun = playFun;
+
+    play();
+    notifyListeners();
+  }
+
+  void rescheduleAllSongNotes() {
+    _schedulers.clear();
 
     for (final entry in _persist.songs.entries) {
       final scheduler = Scheduler();
@@ -102,12 +114,6 @@ class SongNotifier with ChangeNotifier {
       _schedulers[entry.key] = scheduler;
       _scheduleNotes(scheduler, entry.value!);
     }
-
-    await _loadPreferences();
-    _playFun = playFun;
-
-    play();
-    notifyListeners();
   }
 
   void _scheduleNotes(scheduler, Song song) {
@@ -170,11 +176,14 @@ class SongNotifier with ChangeNotifier {
       }
     }
 
-    //TODO TRIPLET Count in
-    b += 8;
-    _addCountInEvents(scheduler, b, quaverDuration, false);
+    if (Preferences.isMuted('countIn')) {
+      b += 8;
 
-    b += 2;
+      //TODO TRIPLET Count in
+      _addCountInEvents(scheduler, b, quaverDuration, false);
+      b += 2;
+    }
+
     _addPlayNextEvent(scheduler, quaverDuration * b * 4);
   }
 

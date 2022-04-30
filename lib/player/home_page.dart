@@ -123,8 +123,14 @@ class _HomePageState extends State<HomePage>
               value: Preferences.isMuted(voice),
               onChanged: (bool? value) {
                 setState(() {
-                  // TODO fix pref seems to get lost
                   Preferences.toggleMute(voice);
+
+                  if ('countIn' == voice) {
+                    final songNotifier =
+                        getSongNotifier(context, listen: false);
+
+                    songNotifier.rescheduleAllSongNotes();
+                  }
                 });
               },
             )
