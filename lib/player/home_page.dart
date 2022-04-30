@@ -73,21 +73,24 @@ class _HomePageState extends State<HomePage>
     return Scaffold(
       key: _scaffoldKey,
       body: Center(
-        child: ListView.builder(
-            controller: _scrollController,
-            itemCount: SongNotifier.titles.length,
-            itemBuilder: (context, index) {
-              final String title = SongNotifier.titles[index];
-              return ListTile(
-                onLongPress: () => songNotifier.playIndex(index),
-                title: Text(
-                  title,
-                  style: songNotifier.currentSongTitle == title
-                      ? Theme.of(context).textTheme.headline4
-                      : Theme.of(context).textTheme.headline6,
-                ),
-              );
-            }),
+        child: !songNotifier.isReady
+            ? Text('Loading Songs...',
+                style: Theme.of(context).textTheme.headline4)
+            : ListView.builder(
+                controller: _scrollController,
+                itemCount: SongNotifier.titles.length,
+                itemBuilder: (context, index) {
+                  final String title = SongNotifier.titles[index];
+                  return ListTile(
+                    onLongPress: () => songNotifier.playIndex(index),
+                    title: Text(
+                      title,
+                      style: songNotifier.currentSongTitle == title
+                          ? Theme.of(context).textTheme.headline4
+                          : Theme.of(context).textTheme.headline6,
+                    ),
+                  );
+                }),
       ),
       floatingActionButton: !songNotifier.isReady
           ? _buildMenuButton()
@@ -144,7 +147,7 @@ class _Button extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(top: 48.0),
+      padding: const EdgeInsets.only(top: 28.0),
       child: FloatingActionButton(onPressed: fun, child: Icon(icon)),
     );
   }

@@ -19,7 +19,7 @@ class Scheduler {
   void update(Duration currentTime_) {
     Duration currentTime = currentTime_;
 
-    int repeatCount = 0;
+    // int repeatCount = 0;
 
     for (final event in _events) {
       if (event is AudioEvent) {
@@ -27,7 +27,7 @@ class Scheduler {
           continue;
         }
       } else if (event is RepeatEvent) {
-        final Duration endTime = currentTime;
+        // final Duration endTime = currentTime;
         // currentTime -= event.duration!;
 
         // TODO reset events so that they are audible.
@@ -38,7 +38,7 @@ class Scheduler {
         // }
 
         //TODO USE repeatCount
-        repeatCount = event.count;
+        // repeatCount = event.count;
       } else if (event is EndingEvent) {
         // currentTime += event.duration!;
       }
