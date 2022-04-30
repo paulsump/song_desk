@@ -39,4 +39,9 @@ class Preferences {
 
   static List<String> _getStringList(String key) =>
       _instance.getStringList(key) ?? <String>[];
+
+  static int? getInt(String key) => _instance.getInt(key);
+
+  static void setInt(String key, int value) =>
+      unawaited(_instance.setInt(key, value));
 }

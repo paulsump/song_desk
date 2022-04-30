@@ -8,7 +8,7 @@
 ### UI
 
 - volume mixer
-- go to bar (need full ui?)  
+- go to bar (need full ui or just hack move time half way forward?)
   would be nice to scrub
 - button pause  
 
@@ -56,7 +56,7 @@ fix duration bug
 
 - Repeats  
   want to alter time somehow - simpler and would work for visual too.  
-  schedular takes off time in update if hit repeat  
+  scheduler takes off time in update if hit repeat  
     Golden Lady   
     O Mundo e um Moinho   
   Silly Games  (needs Endings too)  
@@ -66,7 +66,6 @@ setVolume is done on instrument's samples, which will be overwritten if i add a 
 ### Easy
 
 - check all todos e.g.  
-  //TODO TRiplets  
   // TODO CALL audioPlayer.dispose()  
 
 ### Tricky

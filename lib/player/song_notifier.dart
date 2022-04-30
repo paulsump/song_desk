@@ -79,7 +79,7 @@ class SongNotifier with ChangeNotifier {
     play();
 
     notifyListeners();
-    unawaited(_savePreferences());
+    Preferences.setInt('currentSongIndex', _currentSongIndex);
   }
 
   void play() {
@@ -98,7 +98,7 @@ class SongNotifier with ChangeNotifier {
     await _convert.init();
     rescheduleAllSongNotes();
 
-    await _loadPreferences();
+    _currentSongIndex = Preferences.getInt('currentSongIndex') ?? 0;
     _playFun = playFun;
 
     play();
@@ -179,7 +179,7 @@ class SongNotifier with ChangeNotifier {
 
     if (!Preferences.isMuted('countIn')) {
       b += 8;
-out('paul');
+      out('paul');
       final bool triplet =
           ['How Can You Mend A Broken Heart'].contains(songName);
 
@@ -269,23 +269,6 @@ out('paul');
       return song.swing / 600;
     }
     return 0;
-  }
-
-  //TODO use Preferences
-  Future<void> _loadPreferences() async {
-    final preferences = await SharedPreferences.getInstance();
-
-    final int? currentSongIndex = preferences.getInt('currentSongIndex');
-
-    if (currentSongIndex != null) {
-      _currentSongIndex = currentSongIndex;
-    }
-  }
-
-  Future<void> _savePreferences() async {
-    final preferences = await SharedPreferences.getInstance();
-
-    unawaited(preferences.setInt('currentSongIndex', _currentSongIndex));
   }
 
   /// Count in with 5 kicks.
