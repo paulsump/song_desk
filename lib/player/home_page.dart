@@ -91,25 +91,13 @@ class _HomePageState extends State<HomePage>
       ),
       floatingActionButton: !songNotifier.isReady
           ? _buildMenuButton()
-          : Row(
+          : Column(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
-                FloatingActionButton(
-                  onPressed: songNotifier.back,
-                  child: const Icon(Icons.skip_previous),
-                ),
-                FloatingActionButton(
-                  onPressed: songNotifier.play,
-                  child: const Icon(Icons.play_arrow_rounded),
-                ),
-                FloatingActionButton(
-                  onPressed: songNotifier.forward,
-                  child: const Icon(Icons.skip_next),
-                ),
-                FloatingActionButton(
-                  onPressed: _stop,
-                  child: const Icon(Icons.stop),
-                ),
+                _Button(fun: songNotifier.back, icon: Icons.skip_previous),
+                _Button(fun: songNotifier.play, icon: Icons.play_arrow_rounded),
+                _Button(fun: songNotifier.forward, icon: Icons.skip_next),
+                _Button(fun: _stop, icon: Icons.stop),
                 _buildMenuButton(),
               ],
             ),
@@ -139,14 +127,29 @@ class _HomePageState extends State<HomePage>
     );
   }
 
-  FloatingActionButton _buildMenuButton() => FloatingActionButton(
-        onPressed: () => _scaffoldKey.currentState!.openEndDrawer(),
-        child: const Icon(Icons.menu),
-      );
+  Widget _buildMenuButton() => _Button(
+      fun: () => _scaffoldKey.currentState!.openEndDrawer(), icon: Icons.menu);
+}
+
+class _Button extends StatelessWidget {
+  const _Button({
+    Key? key,
+    required this.fun,
+    required this.icon,
+  }) : super(key: key);
+
+  final VoidCallback fun;
+  final IconData icon;
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.only(top: 48.0),
+      child: FloatingActionButton(onPressed: fun, child: Icon(icon)),
+    );
+  }
 }
 
 extension StringExtension on String {
-  String capitalize() {
-    return "${this[0].toUpperCase()}${substring(1)}";
-  }
+  String capitalize() => '${this[0].toUpperCase()}${substring(1)}';
 }

@@ -19,15 +19,12 @@ fix duration bug
 
 ### Logic
 
-- Triplet count in  
-  How Can You Mend A Broken Heart  
-
 - honour STEADY  
   Back to Black  
 
 - count in from start instead because of play, playNext
   
-- 	need play bass when endChord  
+- play bass of endChord  
 
 - no: Create audioPlayer in getPlayer(), but then event would need to dispose()  
 

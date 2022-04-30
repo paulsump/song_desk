@@ -177,13 +177,13 @@ class SongNotifier with ChangeNotifier {
       }
     }
 
-    if (Preferences.isMuted('countIn')) {
+    if (!Preferences.isMuted('countIn')) {
       b += 8;
-
+out('paul');
       final bool triplet =
           ['How Can You Mend A Broken Heart'].contains(songName);
 
-      _addCountInEvents(scheduler, b, quaverDuration, false);
+      _addCountInEvents(scheduler, b, quaverDuration, triplet);
       b += 2;
     } else {
       b += 2;
