@@ -79,7 +79,7 @@ class _HomePageState extends State<HomePage>
             itemBuilder: (context, index) {
               final String title = SongNotifier.titles[index];
               return ListTile(
-                onTap: () => songNotifier.playIndex(index),
+                onLongPress: () => songNotifier.playIndex(index),
                 title: Text(
                   title,
                   style: songNotifier.currentSongTitle == title
