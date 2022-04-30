@@ -6,7 +6,7 @@ import 'package:song_desk/player/home_page.dart';
 import 'package:song_desk/player/song_notifier.dart';
 import 'package:song_desk/preferences.dart';
 
-void main() async{
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   await Preferences.init();
@@ -19,14 +19,17 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MultiProvider(
-        providers: [
-          ChangeNotifierProvider(create: (_) => SongNotifier()),
-        ],
-        child: MaterialApp(
+      providers: [
+        ChangeNotifierProvider(create: (_) => SongNotifier()),
+      ],
+      child: MaterialApp(
         home: WillPopScope(
           onWillPop: () async => false,
           child: const HomePage(),
         ),
+        theme: ThemeData(),
+        darkTheme: ThemeData.dark(),
+        themeMode: ThemeMode.system,
       ),
     );
   }
