@@ -109,14 +109,15 @@ class SongNotifier with ChangeNotifier {
     _schedulers.clear();
 
     for (final entry in _persist.songs.entries) {
-      final scheduler = Scheduler();
-
-      _schedulers[entry.key] = scheduler;
-      _scheduleNotes(scheduler, entry.value!);
+      _scheduleNotes(entry.key, entry.value!);
     }
   }
 
-  void _scheduleNotes(scheduler, Song song) {
+  void _scheduleNotes(String songName, Song song) {
+    final scheduler = Scheduler();
+
+    _schedulers[songName] = scheduler;
+
     final int quaverDuration = 30000 ~/ song.tempo;
     final int barDuration = quaverDuration * 4;
 
@@ -180,7 +181,10 @@ class SongNotifier with ChangeNotifier {
       b += 8;
 
       //TODO TRIPLET Count in
+      //  How Can You Mend A Broken Heart
       _addCountInEvents(scheduler, b, quaverDuration, false);
+      b += 2;
+    } else {
       b += 2;
     }
 
