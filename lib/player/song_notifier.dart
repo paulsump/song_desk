@@ -148,7 +148,7 @@ class SongNotifier with ChangeNotifier {
       _addQuavers(bar.arp, song, b, pads, quaverDuration, scheduler,
           (semitone) => _instruments['Arp']!.getPlayer(semitone, 5), 'arp');
 
-      // TODO Honour endSongEnd
+      // TODO Honour songEnd
 
       if (bar.repeatRight > 0) {
         scheduler.add(RepeatEvent(
