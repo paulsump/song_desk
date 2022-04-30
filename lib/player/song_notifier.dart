@@ -180,8 +180,9 @@ class SongNotifier with ChangeNotifier {
     if (Preferences.isMuted('countIn')) {
       b += 8;
 
-      //TODO TRIPLET Count in
-      //  How Can You Mend A Broken Heart
+      final bool triplet =
+          ['How Can You Mend A Broken Heart'].contains(songName);
+
       _addCountInEvents(scheduler, b, quaverDuration, false);
       b += 2;
     } else {
