@@ -19,6 +19,8 @@ fix duration bug
 
 ### Logic
 
+hats
+
 octave bass
 - arp come in and out randomly (on, off, long or short duration)
   
