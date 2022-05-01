@@ -111,7 +111,7 @@ class _HomePageState extends State<HomePage>
             CheckboxListTile(
               title: Text(voice.capitalize(),
                   style: const TextStyle(fontSize: 28)),
-              value: Preferences.isMuted(voice),
+              value: !Preferences.isMuted(voice),
               onChanged: (bool? value) {
                 setState(() {
                   Preferences.toggleMute(voice);

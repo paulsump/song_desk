@@ -118,7 +118,7 @@ class SongNotifier with ChangeNotifier {
 
     _schedulers[songName] = scheduler;
 
-    final int quaverDuration = 30000 ~/ song.tempo;
+    final int quaverDuration = 40000 ~/ song.tempo;
     final int barDuration = quaverDuration * 4;
 
     AudioPlayer _piano4(semitone) =>
