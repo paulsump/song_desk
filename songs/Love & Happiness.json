@@ -784,6 +784,7 @@
             ],
             "bass": [
                 {
+                    "duration": 2,
                     "pitch": -12
                 },
                 {},
@@ -792,6 +793,7 @@
             ],
             "bat": [
                 {
+                    "duration": 2,
                     "pitch": -6
                 },
                 {},
@@ -806,6 +808,7 @@
         {
             "bass": [
                 {
+                    "duration": 2,
                     "pitch": -12
                 },
                 {},
@@ -814,6 +817,7 @@
             ],
             "bat": [
                 {
+                    "duration": 2,
                     "pitch": -6
                 },
                 {},
@@ -858,6 +862,7 @@
             ],
             "bass": [
                 {
+                    "duration": 2,
                     "pitch": -13
                 },
                 {},
@@ -866,6 +871,7 @@
             ],
             "bat": [
                 {
+                    "duration": 2,
                     "pitch": -6
                 },
                 {},
@@ -880,6 +886,7 @@
         {
             "bass": [
                 {
+                    "duration": 2,
                     "pitch": -13
                 },
                 {},
@@ -890,6 +897,7 @@
             ],
             "bat": [
                 {
+                    "duration": 2,
                     "pitch": -6
                 },
                 {},
@@ -935,6 +943,7 @@
             ],
             "bass": [
                 {
+                    "duration": 1,
                     "pitch": -10
                 },
                 {},
@@ -943,6 +952,7 @@
             ],
             "bat": [
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {},
@@ -957,6 +967,7 @@
         {
             "bass": [
                 {
+                    "duration": 2,
                     "pitch": -10
                 },
                 {},
@@ -967,6 +978,7 @@
             ],
             "bat": [
                 {
+                    "duration": 2,
                     "pitch": -6
                 },
                 {},
@@ -1004,6 +1016,7 @@
             ],
             "bass": [
                 {
+                    "duration": 1,
                     "pitch": -10
                 },
                 {},
@@ -1012,6 +1025,7 @@
             ],
             "bat": [
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {},
@@ -1045,6 +1059,7 @@
                     "pitch": -10
                 },
                 {
+                    "duration": 1,
                     "pitch": -10
                 },
                 {}
@@ -1057,6 +1072,7 @@
                     "pitch": -6
                 },
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {}
@@ -1093,6 +1109,7 @@
             ],
             "bass": [
                 {
+                    "duration": 2,
                     "pitch": -12
                 },
                 {},
@@ -1101,6 +1118,7 @@
             ],
             "bat": [
                 {
+                    "duration": 2,
                     "pitch": -6
                 },
                 {},
@@ -1118,20 +1136,24 @@
         {
             "bass": [
                 {
+                    "duration": 1,
                     "pitch": -12
                 },
                 {},
                 {
+                    "duration": 1,
                     "pitch": -12
                 },
                 {}
             ],
             "bat": [
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {},
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {}
@@ -1166,6 +1188,7 @@
             ],
             "bass": [
                 {
+                    "duration": 2,
                     "pitch": -13
                 },
                 {},
@@ -1174,6 +1197,7 @@
             ],
             "bat": [
                 {
+                    "duration": 2,
                     "pitch": -6
                 },
                 {},
@@ -1191,6 +1215,7 @@
         {
             "bass": [
                 {
+                    "duration": 2,
                     "pitch": -13
                 },
                 {},
@@ -1199,6 +1224,7 @@
             ],
             "bat": [
                 {
+                    "duration": 2,
                     "pitch": -6
                 },
                 {},
@@ -1242,6 +1268,7 @@
             ],
             "bass": [
                 {
+                    "duration": 2,
                     "pitch": -10
                 },
                 {},
@@ -1250,6 +1277,7 @@
             ],
             "bat": [
                 {
+                    "duration": 2,
                     "pitch": -6
                 },
                 {},
@@ -1284,20 +1312,24 @@
             ],
             "bass": [
                 {
+                    "duration": 1,
                     "pitch": -10
                 },
                 {},
                 {
+                    "duration": 1,
                     "pitch": -10
                 },
                 {}
             ],
             "bat": [
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {},
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {}
@@ -1336,20 +1368,24 @@
             ],
             "bass": [
                 {
+                    "duration": 1,
                     "pitch": -10
                 },
                 {},
                 {
+                    "duration": 1,
                     "pitch": -10
                 },
                 {}
             ],
             "bat": [
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {},
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {}
@@ -1368,6 +1404,7 @@
             ],
             "bass": [
                 {
+                    "duration": 1,
                     "pitch": -10
                 },
                 {},
@@ -1376,6 +1413,7 @@
             ],
             "bat": [
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {},
@@ -1424,6 +1462,7 @@
             ],
             "bass": [
                 {
+                    "duration": 2,
                     "pitch": -8
                 },
                 {},
@@ -1432,6 +1471,7 @@
             ],
             "bat": [
                 {
+                    "duration": 2,
                     "pitch": -6
                 },
                 {},
@@ -1469,20 +1509,24 @@
             ],
             "bass": [
                 {
+                    "duration": 1,
                     "pitch": -8
                 },
                 {},
                 {
+                    "duration": 1,
                     "pitch": -8
                 },
                 {}
             ],
             "bat": [
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {},
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {}
@@ -1521,6 +1565,7 @@
             ],
             "bass": [
                 {
+                    "duration": 1,
                     "pitch": -8
                 },
                 {},
@@ -1529,6 +1574,7 @@
             ],
             "bat": [
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {},
@@ -1539,6 +1585,7 @@
         {
             "bass": [
                 {
+                    "duration": 2,
                     "pitch": -8
                 },
                 {},
@@ -1547,6 +1594,7 @@
             ],
             "bat": [
                 {
+                    "duration": 2,
                     "pitch": -6
                 },
                 {},
@@ -1591,6 +1639,7 @@
             ],
             "bass": [
                 {
+                    "duration": 2,
                     "pitch": -8
                 },
                 {},
@@ -1599,6 +1648,7 @@
             ],
             "bat": [
                 {
+                    "duration": 2,
                     "pitch": -6
                 },
                 {},
@@ -1624,20 +1674,24 @@
             ],
             "bass": [
                 {
+                    "duration": 1,
                     "pitch": -8
                 },
                 {},
                 {
+                    "duration": 1,
                     "pitch": -8
                 },
                 {}
             ],
             "bat": [
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {},
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {}
@@ -1677,28 +1731,27 @@
             ],
             "bass": [
                 {
+                    "duration": 1,
                     "pitch": -8
                 },
                 {},
-                {
-                    "pitch": -8
-                },
+                {},
                 {}
             ],
             "bat": [
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {},
-                {
-                    "pitch": -6
-                },
+                {},
                 {}
             ]
         },
         {
             "bass": [
                 {
+                    "duration": 2,
                     "pitch": -8
                 },
                 {},
@@ -1707,6 +1760,7 @@
             ],
             "bat": [
                 {
+                    "duration": 2,
                     "pitch": -6
                 },
                 {},
@@ -1761,6 +1815,7 @@
             ],
             "bass": [
                 {
+                    "duration": 4,
                     "pitch": -10
                 },
                 {},
@@ -1769,6 +1824,7 @@
             ],
             "bat": [
                 {
+                    "duration": 4,
                     "pitch": -6
                 },
                 {},
@@ -1806,6 +1862,7 @@
                 {},
                 {},
                 {
+                    "duration": 1,
                     "pitch": -4
                 },
                 {}
@@ -1814,6 +1871,7 @@
                 {},
                 {},
                 {
+                    "duration": 1,
                     "pitch": 0
                 },
                 {}
@@ -1844,6 +1902,7 @@
             ],
             "bass": [
                 {
+                    "duration": 1,
                     "pitch": -11
                 },
                 {},
@@ -1852,6 +1911,7 @@
             ],
             "bat": [
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {},
@@ -1866,6 +1926,7 @@
         {
             "bass": [
                 {
+                    "duration": 1,
                     "pitch": -11
                 },
                 {},
@@ -1874,6 +1935,7 @@
             ],
             "bat": [
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {},
@@ -1917,6 +1979,7 @@
             ],
             "bass": [
                 {
+                    "duration": 2,
                     "pitch": -10
                 },
                 {},
@@ -1925,6 +1988,7 @@
             ],
             "bat": [
                 {
+                    "duration": 2,
                     "pitch": -6
                 },
                 {},
@@ -1962,6 +2026,7 @@
                 {},
                 {},
                 {
+                    "duration": 1,
                     "pitch": -4
                 },
                 {}
@@ -1970,6 +2035,7 @@
                 {},
                 {},
                 {
+                    "duration": 1,
                     "pitch": 0
                 },
                 {}
@@ -2000,20 +2066,24 @@
             ],
             "bass": [
                 {
+                    "duration": 1,
                     "pitch": -11
                 },
                 {},
                 {
+                    "duration": 1,
                     "pitch": -11
                 },
                 {}
             ],
             "bat": [
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {},
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {}
@@ -2026,6 +2096,7 @@
         {
             "bass": [
                 {
+                    "duration": 1,
                     "pitch": -11
                 },
                 {},
@@ -2034,6 +2105,7 @@
             ],
             "bat": [
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {},
@@ -2088,6 +2160,7 @@
             ],
             "bass": [
                 {
+                    "duration": 4,
                     "pitch": -10
                 },
                 {},
@@ -2096,6 +2169,7 @@
             ],
             "bat": [
                 {
+                    "duration": 4,
                     "pitch": -6
                 },
                 {},
@@ -2133,6 +2207,7 @@
                 {},
                 {},
                 {
+                    "duration": 1,
                     "pitch": -4
                 },
                 {}
@@ -2141,6 +2216,7 @@
                 {},
                 {},
                 {
+                    "duration": 1,
                     "pitch": 0
                 },
                 {}
@@ -2171,6 +2247,7 @@
             ],
             "bass": [
                 {
+                    "duration": 1,
                     "pitch": -11
                 },
                 {},
@@ -2179,6 +2256,7 @@
             ],
             "bat": [
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {},
@@ -2193,6 +2271,7 @@
         {
             "bass": [
                 {
+                    "duration": 1,
                     "pitch": -11
                 },
                 {},
@@ -2201,6 +2280,7 @@
             ],
             "bat": [
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {},
@@ -2262,20 +2342,24 @@
             "bass": [
                 {
                     "accidental": "natural",
+                    "duration": 1,
                     "pitch": -13
                 },
                 {},
                 {
+                    "duration": 1,
                     "pitch": -7
                 },
                 {}
             ],
             "bat": [
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {},
                 {
+                    "duration": 1,
                     "pitch": 0
                 },
                 {}
@@ -2322,6 +2406,7 @@
                 {},
                 {},
                 {
+                    "duration": 2,
                     "pitch": -7
                 },
                 {}
@@ -2330,6 +2415,7 @@
                 {},
                 {},
                 {
+                    "duration": 2,
                     "pitch": -6
                 },
                 {}
@@ -2364,6 +2450,7 @@
             ],
             "bass": [
                 {
+                    "duration": 1,
                     "pitch": -8
                 },
                 {},
@@ -2374,6 +2461,7 @@
             ],
             "bat": [
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {},
@@ -2390,6 +2478,7 @@
         {
             "bass": [
                 {
+                    "duration": 2,
                     "pitch": -8
                 },
                 {},
@@ -2398,6 +2487,7 @@
             ],
             "bat": [
                 {
+                    "duration": 2,
                     "pitch": -6
                 },
                 {},
@@ -2452,6 +2542,7 @@
                 },
                 {},
                 {
+                    "duration": 1,
                     "pitch": -7
                 },
                 {}
@@ -2462,6 +2553,7 @@
                 },
                 {},
                 {
+                    "duration": 1,
                     "pitch": 0
                 },
                 {}
@@ -2552,6 +2644,7 @@
             ],
             "bass": [
                 {
+                    "duration": 1,
                     "pitch": -8
                 },
                 {},
@@ -2560,6 +2653,7 @@
             ],
             "bat": [
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {},
@@ -2576,6 +2670,7 @@
                 {},
                 {},
                 {
+                    "duration": 1,
                     "pitch": -8
                 },
                 {}
@@ -2584,6 +2679,7 @@
                 {},
                 {},
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {}
@@ -2713,6 +2809,7 @@
             ],
             "bass": [
                 {
+                    "duration": 2,
                     "pitch": -12
                 },
                 {},
@@ -2721,6 +2818,7 @@
             ],
             "bat": [
                 {
+                    "duration": 2,
                     "pitch": -6
                 },
                 {},
@@ -2735,6 +2833,7 @@
         {
             "bass": [
                 {
+                    "duration": 2,
                     "pitch": -12
                 },
                 {},
@@ -2743,6 +2842,7 @@
             ],
             "bat": [
                 {
+                    "duration": 2,
                     "pitch": -6
                 },
                 {},
@@ -2784,6 +2884,7 @@
             ],
             "bass": [
                 {
+                    "duration": 2,
                     "pitch": -13
                 },
                 {},
@@ -2792,6 +2893,7 @@
             ],
             "bat": [
                 {
+                    "duration": 2,
                     "pitch": -6
                 },
                 {},
@@ -2815,6 +2917,7 @@
         {
             "bass": [
                 {
+                    "duration": 2,
                     "pitch": -13
                 },
                 {},
@@ -2825,6 +2928,7 @@
             ],
             "bat": [
                 {
+                    "duration": 2,
                     "pitch": -6
                 },
                 {},
@@ -2859,6 +2963,7 @@
             ],
             "bass": [
                 {
+                    "duration": 1,
                     "pitch": -10
                 },
                 {},
@@ -2867,6 +2972,7 @@
             ],
             "bat": [
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {},
@@ -2900,6 +3006,7 @@
         {
             "bass": [
                 {
+                    "duration": 2,
                     "pitch": -10
                 },
                 {},
@@ -2910,6 +3017,7 @@
             ],
             "bat": [
                 {
+                    "duration": 2,
                     "pitch": -6
                 },
                 {},
@@ -2956,6 +3064,7 @@
             ],
             "bass": [
                 {
+                    "duration": 1,
                     "pitch": -10
                 },
                 {},
@@ -2964,6 +3073,7 @@
             ],
             "bat": [
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {},
@@ -2990,6 +3100,7 @@
                     "pitch": -10
                 },
                 {
+                    "duration": 1,
                     "pitch": -10
                 },
                 {}
@@ -3002,6 +3113,7 @@
                     "pitch": -6
                 },
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {}
@@ -3046,6 +3158,7 @@
             ],
             "bass": [
                 {
+                    "duration": 2,
                     "pitch": -12
                 },
                 {},
@@ -3054,6 +3167,7 @@
             ],
             "bat": [
                 {
+                    "duration": 2,
                     "pitch": -6
                 },
                 {},
@@ -3068,20 +3182,24 @@
         {
             "bass": [
                 {
+                    "duration": 1,
                     "pitch": -12
                 },
                 {},
                 {
+                    "duration": 1,
                     "pitch": -12
                 },
                 {}
             ],
             "bat": [
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {},
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {}
@@ -3123,6 +3241,7 @@
             ],
             "bass": [
                 {
+                    "duration": 2,
                     "pitch": -13
                 },
                 {},
@@ -3131,6 +3250,7 @@
             ],
             "bat": [
                 {
+                    "duration": 2,
                     "pitch": -6
                 },
                 {},
@@ -3154,6 +3274,7 @@
         {
             "bass": [
                 {
+                    "duration": 2,
                     "pitch": -13
                 },
                 {},
@@ -3162,6 +3283,7 @@
             ],
             "bat": [
                 {
+                    "duration": 2,
                     "pitch": -6
                 },
                 {},
@@ -3194,6 +3316,7 @@
             ],
             "bass": [
                 {
+                    "duration": 2,
                     "pitch": -10
                 },
                 {},
@@ -3202,6 +3325,7 @@
             ],
             "bat": [
                 {
+                    "duration": 2,
                     "pitch": -6
                 },
                 {},
@@ -3235,20 +3359,24 @@
         {
             "bass": [
                 {
+                    "duration": 1,
                     "pitch": -10
                 },
                 {},
                 {
+                    "duration": 1,
                     "pitch": -10
                 },
                 {}
             ],
             "bat": [
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {},
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {}
@@ -3291,20 +3419,24 @@
             ],
             "bass": [
                 {
+                    "duration": 1,
                     "pitch": -10
                 },
                 {},
                 {
+                    "duration": 1,
                     "pitch": -10
                 },
                 {}
             ],
             "bat": [
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {},
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {}
@@ -3323,6 +3455,7 @@
         {
             "bass": [
                 {
+                    "duration": 1,
                     "pitch": -10
                 },
                 {},
@@ -3331,6 +3464,7 @@
             ],
             "bat": [
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {},
@@ -3370,6 +3504,7 @@
             ],
             "bass": [
                 {
+                    "duration": 2,
                     "pitch": -10
                 },
                 {},
@@ -3378,6 +3513,7 @@
             ],
             "bat": [
                 {
+                    "duration": 2,
                     "pitch": -6
                 },
                 {},
@@ -3407,20 +3543,24 @@
             ],
             "bass": [
                 {
+                    "duration": 1,
                     "pitch": -10
                 },
                 {},
                 {
+                    "duration": 1,
                     "pitch": -10
                 },
                 {}
             ],
             "bat": [
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {},
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {}
@@ -3461,6 +3601,7 @@
             ],
             "bass": [
                 {
+                    "duration": 2,
                     "pitch": -10
                 },
                 {},
@@ -3469,6 +3610,7 @@
             ],
             "bat": [
                 {
+                    "duration": 2,
                     "pitch": -6
                 },
                 {},
@@ -3490,6 +3632,7 @@
             ],
             "bass": [
                 {
+                    "duration": 2,
                     "pitch": -10
                 },
                 {},
@@ -3498,6 +3641,7 @@
             ],
             "bat": [
                 {
+                    "duration": 2,
                     "pitch": -6
                 },
                 {},
@@ -3538,6 +3682,7 @@
             ],
             "bass": [
                 {
+                    "duration": 2,
                     "pitch": -10
                 },
                 {},
@@ -3546,6 +3691,7 @@
             ],
             "bat": [
                 {
+                    "duration": 2,
                     "pitch": -6
                 },
                 {},
@@ -3568,20 +3714,24 @@
             ],
             "bass": [
                 {
+                    "duration": 1,
                     "pitch": -10
                 },
                 {},
                 {
+                    "duration": 1,
                     "pitch": -10
                 },
                 {}
             ],
             "bat": [
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {},
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {}
@@ -3622,20 +3772,24 @@
             ],
             "bass": [
                 {
+                    "duration": 1,
                     "pitch": -10
                 },
                 {},
                 {
+                    "duration": 1,
                     "pitch": -10
                 },
                 {}
             ],
             "bat": [
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {},
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {}
@@ -3646,6 +3800,7 @@
         {
             "bass": [
                 {
+                    "duration": 1,
                     "pitch": -10
                 },
                 {},
@@ -3654,6 +3809,7 @@
             ],
             "bat": [
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {},
@@ -3689,6 +3845,7 @@
             ],
             "bass": [
                 {
+                    "duration": 2,
                     "pitch": -10
                 },
                 {},
@@ -3697,6 +3854,7 @@
             ],
             "bat": [
                 {
+                    "duration": 2,
                     "pitch": -6
                 },
                 {},
@@ -3726,6 +3884,7 @@
             ],
             "bass": [
                 {
+                    "duration": 1,
                     "pitch": -10
                 },
                 {},
@@ -3736,6 +3895,7 @@
             ],
             "bat": [
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {},
@@ -3782,6 +3942,7 @@
             ],
             "bass": [
                 {
+                    "duration": 2,
                     "pitch": -10
                 },
                 {},
@@ -3790,6 +3951,7 @@
             ],
             "bat": [
                 {
+                    "duration": 2,
                     "pitch": -6
                 },
                 {},
@@ -3811,6 +3973,7 @@
             ],
             "bass": [
                 {
+                    "duration": 2,
                     "pitch": -10
                 },
                 {},
@@ -3819,6 +3982,7 @@
             ],
             "bat": [
                 {
+                    "duration": 2,
                     "pitch": -6
                 },
                 {},
@@ -3859,6 +4023,7 @@
             ],
             "bass": [
                 {
+                    "duration": 2,
                     "pitch": -10
                 },
                 {},
@@ -3867,6 +4032,7 @@
             ],
             "bat": [
                 {
+                    "duration": 2,
                     "pitch": -6
                 },
                 {},
@@ -3889,6 +4055,7 @@
             ],
             "bass": [
                 {
+                    "duration": 1,
                     "pitch": -10
                 },
                 {},
@@ -3899,6 +4066,7 @@
             ],
             "bat": [
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {},
@@ -3943,20 +4111,24 @@
             ],
             "bass": [
                 {
+                    "duration": 1,
                     "pitch": -10
                 },
                 {},
                 {
+                    "duration": 1,
                     "pitch": -10
                 },
                 {}
             ],
             "bat": [
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {},
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {}
@@ -4030,6 +4202,7 @@
             ],
             "bass": [
                 {
+                    "duration": 2,
                     "pitch": -12
                 },
                 {},
@@ -4038,6 +4211,7 @@
             ],
             "bat": [
                 {
+                    "duration": 2,
                     "pitch": -6
                 },
                 {},
@@ -4052,6 +4226,7 @@
         {
             "bass": [
                 {
+                    "duration": 2,
                     "pitch": -12
                 },
                 {},
@@ -4060,6 +4235,7 @@
             ],
             "bat": [
                 {
+                    "duration": 2,
                     "pitch": -6
                 },
                 {},
@@ -4104,6 +4280,7 @@
             ],
             "bass": [
                 {
+                    "duration": 2,
                     "pitch": -13
                 },
                 {},
@@ -4112,6 +4289,7 @@
             ],
             "bat": [
                 {
+                    "duration": 2,
                     "pitch": -6
                 },
                 {},
@@ -4135,6 +4313,7 @@
         {
             "bass": [
                 {
+                    "duration": 2,
                     "pitch": -13
                 },
                 {},
@@ -4145,6 +4324,7 @@
             ],
             "bat": [
                 {
+                    "duration": 2,
                     "pitch": -6
                 },
                 {},
@@ -4190,6 +4370,7 @@
             ],
             "bass": [
                 {
+                    "duration": 1,
                     "pitch": -10
                 },
                 {},
@@ -4198,6 +4379,7 @@
             ],
             "bat": [
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {},
@@ -4232,6 +4414,7 @@
         {
             "bass": [
                 {
+                    "duration": 2,
                     "pitch": -10
                 },
                 {},
@@ -4242,6 +4425,7 @@
             ],
             "bat": [
                 {
+                    "duration": 2,
                     "pitch": -6
                 },
                 {},
@@ -4290,6 +4474,7 @@
             ],
             "bass": [
                 {
+                    "duration": 1,
                     "pitch": -10
                 },
                 {},
@@ -4298,6 +4483,7 @@
             ],
             "bat": [
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {},
@@ -4328,6 +4514,7 @@
                     "pitch": -10
                 },
                 {
+                    "duration": 1,
                     "pitch": -10
                 },
                 {}
@@ -4340,6 +4527,7 @@
                     "pitch": -6
                 },
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {}
@@ -4376,6 +4564,7 @@
             ],
             "bass": [
                 {
+                    "duration": 2,
                     "pitch": -12
                 },
                 {},
@@ -4384,6 +4573,7 @@
             ],
             "bat": [
                 {
+                    "duration": 2,
                     "pitch": -6
                 },
                 {},
@@ -4401,20 +4591,24 @@
         {
             "bass": [
                 {
+                    "duration": 1,
                     "pitch": -12
                 },
                 {},
                 {
+                    "duration": 1,
                     "pitch": -12
                 },
                 {}
             ],
             "bat": [
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {},
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {}
@@ -4449,6 +4643,7 @@
             ],
             "bass": [
                 {
+                    "duration": 2,
                     "pitch": -13
                 },
                 {},
@@ -4457,6 +4652,7 @@
             ],
             "bat": [
                 {
+                    "duration": 2,
                     "pitch": -6
                 },
                 {},
@@ -4483,6 +4679,7 @@
         {
             "bass": [
                 {
+                    "duration": 2,
                     "pitch": -13
                 },
                 {},
@@ -4491,6 +4688,7 @@
             ],
             "bat": [
                 {
+                    "duration": 2,
                     "pitch": -6
                 },
                 {},
@@ -4534,6 +4732,7 @@
             ],
             "bass": [
                 {
+                    "duration": 2,
                     "pitch": -10
                 },
                 {},
@@ -4542,6 +4741,7 @@
             ],
             "bat": [
                 {
+                    "duration": 2,
                     "pitch": -6
                 },
                 {},
@@ -4576,20 +4776,24 @@
             ],
             "bass": [
                 {
+                    "duration": 1,
                     "pitch": -10
                 },
                 {},
                 {
+                    "duration": 1,
                     "pitch": -10
                 },
                 {}
             ],
             "bat": [
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {},
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {}
@@ -4628,20 +4832,24 @@
             ],
             "bass": [
                 {
+                    "duration": 1,
                     "pitch": -10
                 },
                 {},
                 {
+                    "duration": 1,
                     "pitch": -10
                 },
                 {}
             ],
             "bat": [
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {},
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {}
@@ -4660,6 +4868,7 @@
             ],
             "bass": [
                 {
+                    "duration": 1,
                     "pitch": -10
                 },
                 {},
@@ -4668,6 +4877,7 @@
             ],
             "bat": [
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {},
