@@ -19,6 +19,7 @@ fix duration bug
 
 ### Logic
 
+octave bass
 - arp come in and out randomly (on, off, long or short duration)
   
 - honour STEADY  
