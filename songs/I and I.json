@@ -17,10 +17,12 @@
             ],
             "bass": [
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {},
                 {
+                    "duration": 1,
                     "pitch": -11
                 },
                 {}
@@ -63,6 +65,7 @@
             ],
             "bass": [
                 {
+                    "duration": 2,
                     "pitch": -10
                 },
                 {},
@@ -115,15 +118,6 @@
             "gaps": [
                 "backing"
             ],
-            "guitar": [
-                {
-                    "lyric": "",
-                    "pitch": -4
-                },
-                {},
-                {},
-                {}
-            ],
             "repitch": {
                 "vocal": -7
             }
@@ -209,10 +203,12 @@
             ],
             "bass": [
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {},
                 {
+                    "duration": 1,
                     "pitch": -11
                 },
                 {}
@@ -255,6 +251,7 @@
             ],
             "bass": [
                 {
+                    "duration": 2,
                     "pitch": -10
                 },
                 {},
@@ -307,6 +304,7 @@
                     "pitch": -7
                 },
                 {
+                    "duration": 1,
                     "pitch": -7
                 },
                 {},
@@ -353,6 +351,7 @@
                     "pitch": -4
                 },
                 {
+                    "duration": 1,
                     "pitch": -4
                 },
                 {},
@@ -416,11 +415,13 @@
             ],
             "bass": [
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {},
                 {
-                    "pitch": -11
+                    "duration": 1,
+                    "pitch": -13
                 },
                 {}
             ],
@@ -452,6 +453,7 @@
             ],
             "bass": [
                 {
+                    "duration": 2,
                     "pitch": -10
                 },
                 {},
@@ -590,11 +592,13 @@
             ],
             "bass": [
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {},
                 {
-                    "pitch": -11
+                    "duration": 1,
+                    "pitch": -13
                 },
                 {}
             ],
@@ -626,6 +630,7 @@
             ],
             "bass": [
                 {
+                    "duration": 2,
                     "pitch": -10
                 },
                 {},
@@ -659,11 +664,10 @@
             ],
             "bass": [
                 {
+                    "duration": 1,
                     "pitch": -7
                 },
-                {
-                    "pitch": -7
-                },
+                {},
                 {},
                 {}
             ],
@@ -694,13 +698,17 @@
             ],
             "bass": [
                 {
-                    "pitch": -4
+                    "pitch": -9
+                },
+                {
+                    "pitch": -7
                 },
                 {
                     "pitch": -4
                 },
-                {},
-                {}
+                {
+                    "pitch": -7
+                }
             ],
             "blockEnd": true,
             "chordShape": "^^",
@@ -745,11 +753,13 @@
             ],
             "bass": [
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {},
                 {
-                    "pitch": -11
+                    "duration": 1,
+                    "pitch": -13
                 },
                 {}
             ],
@@ -781,6 +791,7 @@
             ],
             "bass": [
                 {
+                    "duration": 2,
                     "pitch": -10
                 },
                 {},
@@ -919,11 +930,13 @@
             ],
             "bass": [
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {},
                 {
-                    "pitch": -11
+                    "duration": 1,
+                    "pitch": -13
                 },
                 {}
             ],
@@ -953,6 +966,7 @@
             ],
             "bass": [
                 {
+                    "duration": 2,
                     "pitch": -10
                 },
                 {},
@@ -999,6 +1013,7 @@
                     "pitch": -7
                 },
                 {
+                    "duration": 1,
                     "pitch": -7
                 },
                 {},
@@ -1035,6 +1050,7 @@
                     "pitch": -4
                 },
                 {
+                    "duration": 1,
                     "pitch": -4
                 },
                 {},
@@ -1078,10 +1094,12 @@
             ],
             "bass": [
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {},
                 {
+                    "duration": 1,
                     "pitch": -13
                 },
                 {}
@@ -1117,6 +1135,7 @@
             ],
             "bass": [
                 {
+                    "duration": 2,
                     "pitch": -10
                 },
                 {},
@@ -1235,10 +1254,12 @@
             ],
             "bass": [
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {},
                 {
+                    "duration": 1,
                     "pitch": -13
                 },
                 {}
@@ -1264,6 +1285,7 @@
             ],
             "bass": [
                 {
+                    "duration": 2,
                     "pitch": -10
                 },
                 {},
@@ -1393,10 +1415,12 @@
             ],
             "bass": [
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {},
                 {
+                    "duration": 1,
                     "pitch": -13
                 },
                 {}
@@ -1422,6 +1446,7 @@
             ],
             "bass": [
                 {
+                    "duration": 2,
                     "pitch": -10
                 },
                 {},
@@ -1549,10 +1574,12 @@
             ],
             "bass": [
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {},
                 {
+                    "duration": 1,
                     "pitch": -13
                 },
                 {}
@@ -1578,6 +1605,7 @@
             ],
             "bass": [
                 {
+                    "duration": 2,
                     "pitch": -10
                 },
                 {},
@@ -1707,10 +1735,12 @@
             ],
             "bass": [
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {},
                 {
+                    "duration": 1,
                     "pitch": -13
                 },
                 {}
@@ -1745,6 +1775,7 @@
             ],
             "bass": [
                 {
+                    "duration": 2,
                     "pitch": -10
                 },
                 {},
@@ -1872,10 +1903,12 @@
             ],
             "bass": [
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {},
                 {
+                    "duration": 1,
                     "pitch": -13
                 },
                 {}
@@ -1901,6 +1934,7 @@
             ],
             "bass": [
                 {
+                    "duration": 2,
                     "pitch": -10
                 },
                 {},
@@ -2075,6 +2109,7 @@
                     "pitch": -7
                 },
                 {
+                    "duration": 1,
                     "pitch": -7
                 },
                 {},
@@ -2138,6 +2173,7 @@
                     "pitch": -8
                 },
                 {
+                    "duration": 1,
                     "pitch": -8
                 },
                 {}
@@ -2285,6 +2321,7 @@
                     "pitch": -7
                 },
                 {
+                    "duration": 1,
                     "pitch": -7
                 },
                 {},
@@ -2332,6 +2369,7 @@
                     "pitch": -8
                 },
                 {
+                    "duration": 1,
                     "pitch": -8
                 },
                 {}
@@ -2478,6 +2516,7 @@
                     "pitch": -8
                 },
                 {
+                    "duration": 1,
                     "pitch": -8
                 },
                 {},
@@ -2595,6 +2634,7 @@
                     "pitch": -8
                 },
                 {
+                    "duration": 1,
                     "pitch": -8
                 },
                 {},
@@ -2728,6 +2768,7 @@
                     "pitch": -7
                 },
                 {
+                    "duration": 1,
                     "pitch": -7
                 },
                 {},
@@ -2846,6 +2887,7 @@
                     "pitch": -7
                 },
                 {
+                    "duration": 1,
                     "pitch": -7
                 },
                 {},
@@ -2973,6 +3015,7 @@
                     "pitch": -8
                 },
                 {
+                    "duration": 1,
                     "pitch": -8
                 },
                 {},
@@ -3089,6 +3132,7 @@
                     "pitch": -8
                 },
                 {
+                    "duration": 1,
                     "pitch": -8
                 },
                 {},
@@ -3156,10 +3200,12 @@
                     "pitch": -7
                 },
                 {
+                    "duration": 1,
                     "pitch": -10
                 },
                 {},
                 {
+                    "duration": 1,
                     "pitch": -10
                 }
             ],
@@ -3223,6 +3269,7 @@
                     "pitch": -10
                 },
                 {
+                    "duration": 1,
                     "pitch": -7
                 },
                 {}
@@ -3286,6 +3333,7 @@
                     "pitch": -7
                 },
                 {
+                    "duration": 1,
                     "pitch": -7
                 },
                 {},
@@ -3394,10 +3442,12 @@
             ],
             "bass": [
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {},
                 {
+                    "duration": 1,
                     "pitch": -13
                 },
                 {}
@@ -3432,6 +3482,7 @@
             ],
             "bass": [
                 {
+                    "duration": 2,
                     "pitch": -10
                 },
                 {},
@@ -3549,10 +3600,12 @@
             ],
             "bass": [
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {},
                 {
+                    "duration": 1,
                     "pitch": -13
                 },
                 {}
@@ -3578,6 +3631,7 @@
             ],
             "bass": [
                 {
+                    "duration": 2,
                     "pitch": -10
                 },
                 {},
@@ -3707,10 +3761,12 @@
             ],
             "bass": [
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {},
                 {
+                    "duration": 1,
                     "pitch": -13
                 },
                 {}
@@ -3736,6 +3792,7 @@
             ],
             "bass": [
                 {
+                    "duration": 2,
                     "pitch": -10
                 },
                 {},
@@ -3863,10 +3920,12 @@
             ],
             "bass": [
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {},
                 {
+                    "duration": 1,
                     "pitch": -13
                 },
                 {}
@@ -3892,6 +3951,7 @@
             ],
             "bass": [
                 {
+                    "duration": 2,
                     "pitch": -10
                 },
                 {},
@@ -4021,10 +4081,12 @@
             ],
             "bass": [
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {},
                 {
+                    "duration": 1,
                     "pitch": -13
                 },
                 {}
@@ -4059,6 +4121,7 @@
             ],
             "bass": [
                 {
+                    "duration": 2,
                     "pitch": -10
                 },
                 {},
@@ -4186,10 +4249,12 @@
             ],
             "bass": [
                 {
+                    "duration": 1,
                     "pitch": -6
                 },
                 {},
                 {
+                    "duration": 1,
                     "pitch": -13
                 },
                 {}
@@ -4215,6 +4280,7 @@
             ],
             "bass": [
                 {
+                    "duration": 2,
                     "pitch": -10
                 },
                 {},

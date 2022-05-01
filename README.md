@@ -19,6 +19,8 @@ fix duration bug
 
 ### Logic
 
+- arp come in and out randomly (on, off, long or short duration)
+  
 - honour STEADY  
   Back to Black  
 
