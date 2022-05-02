@@ -1,5 +1,6 @@
 import 'package:song_desk/out.dart';
 import 'package:song_desk/player/event.dart';
+import 'package:song_desk/player/mutes.dart';
 import 'package:song_desk/preferences.dart';
 
 const noWarn = out;
@@ -20,10 +21,14 @@ class Scheduler {
     Duration currentTime = currentTime_;
 
     // int repeatCount = 0;
+    Mutes.update(currentTime);
 
     for (final event in _events) {
       if (event is AudioEvent) {
         if (Preferences.isMuted(event.voice)) {
+          continue;
+        }
+        if (Mutes.isMuted(event.voice)) {
           continue;
         }
       } else if (event is RepeatEvent) {
