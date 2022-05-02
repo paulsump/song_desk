@@ -5,7 +5,6 @@ import 'dart:async';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 import 'package:song_desk/loader/convert.dart';
 import 'package:song_desk/loader/persist.dart';
 import 'package:song_desk/loader/song.dart';
@@ -217,6 +216,8 @@ class SongNotifier with ChangeNotifier {
           }
 
           if (duration != null) {
+            duration -= offset;
+
             duration *= quaverDuration;
           }
 
