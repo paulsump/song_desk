@@ -207,9 +207,8 @@ class SongNotifier with ChangeNotifier {
           int t = quaverDuration * b * 4 +
               q * (triplet ? (quaverDuration * 4) ~/ 3 : quaverDuration);
 
-          if (!triplet) {
-            t += (quaverDuration * panOffset(q, song, voice)).round();
-          }
+          final double offset = panOffset(q, song, voice, triplet);
+          t += (quaverDuration * offset).round();
 
           double? duration = quaver.duration;
 
@@ -228,20 +227,23 @@ class SongNotifier with ChangeNotifier {
     }
   }
 
-  void _addNote(
-      scheduler, int t, AudioPlayer audioPlayer, double? duration, String voice) {
+  void _addNote(scheduler, int t, AudioPlayer audioPlayer, double? duration,
+      String voice) {
     scheduler.add(
       AudioEvent(
         startTime: Duration(milliseconds: t),
-        duration: duration != null ? Duration(milliseconds: duration.toInt()) : null,
+        duration:
+            duration != null ? Duration(milliseconds: duration.toInt()) : null,
         audioPlayer: audioPlayer,
         voice: voice,
       ),
     );
   }
 
-  double panOffset(int q, Song song, voice) {
-    if (voice == 'arp') {
+  double panOffset(int q, Song song, String voice, bool triplet) {
+    if (triplet) {
+      return 0;
+    } else if (voice == 'arp') {
       final x = 0.06 * q;
 
       if (song.boomClapOrDoubleReggae()) {
