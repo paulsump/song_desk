@@ -7403,6 +7403,7 @@
                 {
                     "accidental": "sharp",
                     "duration": 0.7,
+                    "fakeAccidental": "sharp",
                     "pitch": -5
                 }
             ],
@@ -7702,6 +7703,7 @@
                 {
                     "accidental": "sharp",
                     "duration": 0.7,
+                    "fakeAccidental": "sharp",
                     "pitch": -5
                 }
             ],
@@ -8022,6 +8024,7 @@
                 {
                     "accidental": "sharp",
                     "duration": 0.7,
+                    "fakeAccidental": "sharp",
                     "pitch": -5
                 }
             ],
@@ -8341,6 +8344,7 @@
                 {
                     "accidental": "sharp",
                     "duration": 0.7,
+                    "fakeAccidental": "sharp",
                     "pitch": -5
                 }
             ],

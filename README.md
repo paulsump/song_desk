@@ -19,7 +19,7 @@ fix duration bug
 
 ### Logic
 
-hats
+-  fix countIn
 
 octave bass
 - arp come in and out randomly (on, off, long or short duration)
@@ -95,3 +95,4 @@ setVolume is done on instrument's samples, which will be overwritten if i add a 
   // TODO MAYBE Map voices to player functions  
   // final _playerFuns = <String, dynamic>{};  
 
+- hats
