@@ -211,7 +211,7 @@ class SongNotifier with ChangeNotifier {
             t += (quaverDuration * panOffset(q, song, voice)).round();
           }
 
-          int? duration = quaver.duration;
+          double? duration = quaver.duration;
 
           if (duration == null && voice == 'bass') {
             duration = calcDuration(b, q, voice, song.bars);
@@ -229,11 +229,11 @@ class SongNotifier with ChangeNotifier {
   }
 
   void _addNote(
-      scheduler, int t, AudioPlayer audioPlayer, int? duration, String voice) {
+      scheduler, int t, AudioPlayer audioPlayer, double? duration, String voice) {
     scheduler.add(
       AudioEvent(
         startTime: Duration(milliseconds: t),
-        duration: duration != null ? Duration(milliseconds: duration) : null,
+        duration: duration != null ? Duration(milliseconds: duration.toInt()) : null,
         audioPlayer: audioPlayer,
         voice: voice,
       ),

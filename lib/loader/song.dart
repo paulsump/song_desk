@@ -229,13 +229,13 @@ class Quaver {
   final String? accidental;
   final bool triplet;
 
-  final int? duration;
+  final double? duration;
 
   Quaver.fromJson(Map<String, dynamic> json)
       : pitch = json['pitch'],
         accidental = json['accidental'],
         triplet = json.containsKey('triplet'),
-        duration = json['duration'];
+        duration = json['duration']?.toDouble();
 
   @override
   String toString() {

@@ -8,7 +8,7 @@ import 'package:song_desk/loader/song.dart';
 
 /// Calculate the duration of the note from the gap to the next note
 /// If the gap is bigger than 12 then returns null
-int? calcDuration(
+double? calcDuration(
   int fromBarIndex,
   int fromQuaverIndex,
   String voice,
@@ -28,13 +28,13 @@ int? calcDuration(
         }
       }
 
-      final int duration = toQ - fromQ;
-      // TODO Always duration, so return 16
+      final double duration = (toQ - fromQ).toDouble();
+      // TODO Always have a duration -  so return 16
       return 12 < duration ? null : duration;
     }
   }
 
-  // TODO Always duration, so return 16
+  // TODO Always have a duration -  so return 16
   return null;
 }
 
