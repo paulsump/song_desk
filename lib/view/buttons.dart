@@ -1,13 +1,8 @@
 // © 2022, Paul Sumpner <sumpner@hotmail.com>
 
-import 'dart:async';
-
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:song_desk/out.dart';
 import 'package:song_desk/player/song_notifier.dart';
-import 'package:song_desk/view/mute_list_view.dart';
-import 'package:song_desk/view/song_list_view.dart';
 
 const noWarn = out;
 

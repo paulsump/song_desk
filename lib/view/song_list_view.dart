@@ -21,7 +21,10 @@ class SongListView extends StatelessWidget {
               songNotifier.currentSongPositionFactor));
     }
 
-    return ListView.builder(
+    return !songNotifier.isReady
+        ? Text('Loading Songs...',
+        style: Theme.of(context).textTheme.headline4)
+        : ListView.builder(
         controller: _scrollController,
         itemCount: SongNotifier.titles.length,
         itemBuilder: (context, index) {

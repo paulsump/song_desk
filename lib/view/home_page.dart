@@ -64,20 +64,13 @@ class _HomePageState extends State<HomePage>
 
   @override
   Widget build(BuildContext context) {
-    final songNotifier = getSongNotifier(context, listen: true);
-
     return Scaffold(
       key: Buttons.scaffoldStateKey,
       body: Center(
-        child: !songNotifier.isReady
-            ? Text('Loading Songs...',
-                style: Theme.of(context).textTheme.headline4)
-            : SongListView(),
+        child: SongListView(),
       ),
       floatingActionButton: const Buttons(),
       endDrawer: const Drawer(child: MuteListView()),
     );
   }
-
 }
-
