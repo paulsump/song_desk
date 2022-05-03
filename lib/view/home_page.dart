@@ -66,9 +66,23 @@ class _HomePageState extends State<HomePage>
   Widget build(BuildContext context) {
     return Scaffold(
       key: Buttons.scaffoldStateKey,
-      body: SongListView(),
+      body: Column(
+        children: [
+          const Expanded(child: MuteTimingsView()),
+          Expanded(child: SongListView()),
+        ],
+      ),
       floatingActionButton: const Buttons(),
       endDrawer: const Drawer(child: MuteListView()),
     );
+  }
+}
+
+class MuteTimingsView extends StatelessWidget {
+  const MuteTimingsView({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container();
   }
 }
