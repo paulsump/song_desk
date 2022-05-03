@@ -41,7 +41,7 @@ class SongNotifier with ChangeNotifier {
   final _convert = Convert();
 
   bool get isReady => _schedulers.isNotEmpty;
-  late VoidCallback _playFun;
+  late VoidCallback _playFun, _stopFun;
 
   void update(Duration time) {
     if (_schedulers.containsKey(currentSongTitle)) {
@@ -87,7 +87,12 @@ class SongNotifier with ChangeNotifier {
     _currentScheduler.play();
   }
 
-  Future<void> init(VoidCallback playFun) async {
+  void stop() => _stopFun();
+
+  Future<void> init({
+    required VoidCallback playFun,
+    required VoidCallback stopFun,
+  }) async {
     await _persist.loadSongs();
 
     for (final Instrument instrument in _instruments.values) {
@@ -98,7 +103,9 @@ class SongNotifier with ChangeNotifier {
     rescheduleAllSongNotes();
 
     _currentSongIndex = Preferences.getInt('currentSongIndex') ?? 0;
+
     _playFun = playFun;
+    _stopFun = stopFun;
 
     play();
     notifyListeners();

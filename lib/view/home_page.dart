@@ -6,7 +6,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:song_desk/out.dart';
 import 'package:song_desk/player/song_notifier.dart';
-import 'package:song_desk/preferences.dart';
 import 'package:song_desk/view/mute_list_view.dart';
 import 'package:song_desk/view/song_list_view.dart';
 
@@ -36,11 +35,14 @@ class _HomePageState extends State<HomePage>
     WidgetsBinding.instance!.addPostFrameCallback((_) {
       final songNotifier = getSongNotifier(context, listen: false);
 
-      unawaited(songNotifier.init(() {
-        _playTime = _time;
+      unawaited(songNotifier.init(
+        playFun: () {
+          _playTime = _time;
 
-        playing = true;
-      }));
+          playing = true;
+        },
+        stopFun: () => playing = false,
+      ));
 
       _ticker = createTicker((elapsed) {
         _time = elapsed;
@@ -59,8 +61,6 @@ class _HomePageState extends State<HomePage>
     _ticker.dispose();
     super.dispose();
   }
-
-  void _stop() => playing = false;
 
   @override
   Widget build(BuildContext context) {
@@ -82,7 +82,7 @@ class _HomePageState extends State<HomePage>
                 _Button(fun: songNotifier.back, icon: Icons.skip_previous),
                 _Button(fun: songNotifier.play, icon: Icons.play_arrow_rounded),
                 _Button(fun: songNotifier.forward, icon: Icons.skip_next),
-                _Button(fun: _stop, icon: Icons.stop),
+                _Button(fun: songNotifier.stop, icon: Icons.stop),
                 _buildMenuButton(),
               ],
             ),
