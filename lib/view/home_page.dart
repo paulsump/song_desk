@@ -7,6 +7,7 @@ import 'package:flutter/scheduler.dart';
 import 'package:song_desk/out.dart';
 import 'package:song_desk/player/song_notifier.dart';
 import 'package:song_desk/preferences.dart';
+import 'package:song_desk/view/mute_list_view.dart';
 import 'package:song_desk/view/song_list_view.dart';
 
 const noWarn = out;
@@ -85,29 +86,7 @@ class _HomePageState extends State<HomePage>
                 _buildMenuButton(),
               ],
             ),
-      endDrawer: Drawer(
-          child: ListView(
-        children: [
-          for (final voice in allMutes)
-            CheckboxListTile(
-              title: Text(voice.capitalize(),
-                  style: const TextStyle(fontSize: 28)),
-              value: !Preferences.isMuted(voice),
-              onChanged: (bool? value) {
-                setState(() {
-                  Preferences.toggleMute(voice);
-
-                  if ('countIn' == voice) {
-                    final songNotifier =
-                        getSongNotifier(context, listen: false);
-
-                    songNotifier.rescheduleAllSongNotes();
-                  }
-                });
-              },
-            )
-        ],
-      )),
+      endDrawer: const Drawer(child: MuteListView()),
     );
   }
 
@@ -133,8 +112,4 @@ class _Button extends StatelessWidget {
       child: FloatingActionButton(onPressed: fun, child: Icon(icon)),
     );
   }
-}
-
-extension StringExtension on String {
-  String capitalize() => '${this[0].toUpperCase()}${substring(1)}';
 }
