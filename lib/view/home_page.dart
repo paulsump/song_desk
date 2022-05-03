@@ -25,7 +25,7 @@ class _HomePageState extends State<HomePage>
   Duration _playTime = Duration.zero;
 
   bool playing = false;
-  final GlobalKey<ScaffoldState> scaffoldStateKey = GlobalKey();
+  final GlobalKey<ScaffoldState> _scaffoldStateKey = GlobalKey();
 
   final _scrollController = ScrollController();
 
@@ -73,7 +73,7 @@ class _HomePageState extends State<HomePage>
     }
 
     return Scaffold(
-      key: scaffoldStateKey,
+      key: _scaffoldStateKey,
       body: Center(
         child: !songNotifier.isReady
             ? Text('Loading Songs...',
@@ -133,7 +133,7 @@ class _HomePageState extends State<HomePage>
   }
 
   Widget _buildMenuButton() => _Button(
-      fun: () => scaffoldStateKey.currentState!.openEndDrawer(), icon: Icons.menu);
+      fun: () => _scaffoldStateKey.currentState!.openEndDrawer(), icon: Icons.menu);
 }
 
 class _Button extends StatelessWidget {
