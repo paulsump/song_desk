@@ -19,6 +19,19 @@ fix duration bug
 
 ### Logic
 
+- Record currentTime into Mute for 3 voices, saved for next playback
+  later can drag to massage.
+  
+- Mutes overrides current
+  show all 3 voices mute track at once
+  or perhaps random is more fun.
+  try a few things and see how random it can be
+    e.g can come in randomly but must go to end of stave
+
+- show 3 lines of dots (bass, kick, chord)
+  they're flat to save space but can edit if _expanded_
+  
+  
 -  fix countIn
 
 octave bass
