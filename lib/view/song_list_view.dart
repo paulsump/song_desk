@@ -21,23 +21,25 @@ class SongListView extends StatelessWidget {
               songNotifier.currentSongPositionFactor));
     }
 
-    return !songNotifier.isReady
-        ? Text('Loading Songs...',
-        style: Theme.of(context).textTheme.headline4)
-        : ListView.builder(
-        controller: _scrollController,
-        itemCount: SongNotifier.titles.length,
-        itemBuilder: (context, index) {
-          final String title = SongNotifier.titles[index];
-          return ListTile(
-            onLongPress: () => songNotifier.playIndex(index),
-            title: Text(
-              title,
-              style: songNotifier.currentSongTitle == title
-                  ? Theme.of(context).textTheme.headline4
-                  : Theme.of(context).textTheme.headline6,
-            ),
-          );
-        });
+    return Center(
+      child: !songNotifier.isReady
+          ? Text('Loading Songs...',
+          style: Theme.of(context).textTheme.headline4)
+          : ListView.builder(
+          controller: _scrollController,
+          itemCount: SongNotifier.titles.length,
+          itemBuilder: (context, index) {
+            final String title = SongNotifier.titles[index];
+            return ListTile(
+              onLongPress: () => songNotifier.playIndex(index),
+              title: Text(
+                title,
+                style: songNotifier.currentSongTitle == title
+                    ? Theme.of(context).textTheme.headline4
+                    : Theme.of(context).textTheme.headline6,
+              ),
+            );
+          }),
+    );
   }
 }

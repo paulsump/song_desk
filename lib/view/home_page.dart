@@ -66,9 +66,7 @@ class _HomePageState extends State<HomePage>
   Widget build(BuildContext context) {
     return Scaffold(
       key: Buttons.scaffoldStateKey,
-      body: Center(
-        child: SongListView(),
-      ),
+      body: SongListView(),
       floatingActionButton: const Buttons(),
       endDrawer: const Drawer(child: MuteListView()),
     );
