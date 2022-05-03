@@ -31,6 +31,7 @@ fix duration bug
 - show 3 lines of dots (bass, kick, chord)
   they're flat to save space but can edit if _expanded_
   
+- separate Instrument for backing, harmony and voice iff they clash notes.
   
 -  fix countIn
 
