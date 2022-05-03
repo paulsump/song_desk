@@ -7,6 +7,7 @@ import 'package:flutter/scheduler.dart';
 import 'package:song_desk/out.dart';
 import 'package:song_desk/player/song_notifier.dart';
 import 'package:song_desk/preferences.dart';
+import 'package:song_desk/view/song_list_view.dart';
 
 const noWarn = out;
 
@@ -26,8 +27,6 @@ class _HomePageState extends State<HomePage>
 
   bool playing = false;
   final GlobalKey<ScaffoldState> _scaffoldStateKey = GlobalKey();
-
-  final _scrollController = ScrollController();
 
   @override
   void initState() {
@@ -66,33 +65,13 @@ class _HomePageState extends State<HomePage>
   Widget build(BuildContext context) {
     final songNotifier = getSongNotifier(context, listen: true);
 
-    if (songNotifier.isReady) {
-      WidgetsBinding.instance?.addPostFrameCallback((_) =>
-          _scrollController.jumpTo(_scrollController.position.maxScrollExtent *
-              songNotifier.currentSongPositionFactor));
-    }
-
     return Scaffold(
       key: _scaffoldStateKey,
       body: Center(
         child: !songNotifier.isReady
             ? Text('Loading Songs...',
                 style: Theme.of(context).textTheme.headline4)
-            : ListView.builder(
-                controller: _scrollController,
-                itemCount: SongNotifier.titles.length,
-                itemBuilder: (context, index) {
-                  final String title = SongNotifier.titles[index];
-                  return ListTile(
-                    onLongPress: () => songNotifier.playIndex(index),
-                    title: Text(
-                      title,
-                      style: songNotifier.currentSongTitle == title
-                          ? Theme.of(context).textTheme.headline4
-                          : Theme.of(context).textTheme.headline6,
-                    ),
-                  );
-                }),
+            : SongListView(),
       ),
       floatingActionButton: !songNotifier.isReady
           ? _buildMenuButton()
@@ -133,7 +112,8 @@ class _HomePageState extends State<HomePage>
   }
 
   Widget _buildMenuButton() => _Button(
-      fun: () => _scaffoldStateKey.currentState!.openEndDrawer(), icon: Icons.menu);
+      fun: () => _scaffoldStateKey.currentState!.openEndDrawer(),
+      icon: Icons.menu);
 }
 
 class _Button extends StatelessWidget {
