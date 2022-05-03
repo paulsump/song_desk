@@ -85,20 +85,8 @@
                 },
                 {},
                 {
-                    "pitch": -4
-                },
-                {}
-            ],
-            "bat": [
-                {
-                    "duration": 2,
-                    "pitch": -1
-                },
-                {},
-                {
-                    "accidental": "natural",
                     "duration": 1,
-                    "pitch": 1
+                    "pitch": -4
                 },
                 {}
             ],

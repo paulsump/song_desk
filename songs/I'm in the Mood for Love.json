@@ -2,22 +2,82 @@
     "aboveDKey": "D#",
     "bars": [
         {
-            "pad": true
+            "arp": [
+                {
+                    "pitch": 1
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "pitch": 5
+                },
+                {
+                    "pitch": 7
+                }
+            ],
+            "bass": [
+                {
+                    "pitch": -13
+                },
+                {},
+                {},
+                {}
+            ],
+            "bat": [
+                {
+                    "pitch": -6
+                },
+                {},
+                {},
+                {}
+            ],
+            "chord": "CM7",
+            "chordShape": " _"
         },
         {
-            "pad": true
+            "arp": [
+                {},
+                {
+                    "pitch": 5
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "pitch": 1
+                }
+            ]
         },
         {
-            "pad": true
+            "arp": [
+                {
+                    "pitch": 1
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "pitch": 5
+                },
+                {
+                    "pitch": 7
+                }
+            ]
         },
         {
-            "pad": true
-        },
-        {
-            "pad": true
-        },
-        {
-            "pad": true
+            "arp": [
+                {},
+                {
+                    "pitch": 5
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "pitch": 1
+                }
+            ]
         },
         {
             "arp": [
@@ -49,8 +109,37 @@
                 {},
                 {},
                 {}
+            ]
+        },
+        {
+            "arp": [
+                {},
+                {
+                    "pitch": 5
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "pitch": 1
+                }
+            ]
+        },
+        {
+            "arp": [
+                {
+                    "pitch": 1
+                },
+                {
+                    "pitch": 3
+                },
+                {
+                    "pitch": 5
+                },
+                {
+                    "pitch": 7
+                }
             ],
-            "chord": "CM7",
             "chordShape": " _",
             "kit": [
                 {},
@@ -7861,7 +7950,7 @@
     "source1": "https://www.youtube.com/watch?v=88Ekr8tHABg&ab_channel=the78prof",
     "stars": 3,
     "staveLabels": [
-        "Guitar",
+        "",
         "",
         "Intro",
         "",
