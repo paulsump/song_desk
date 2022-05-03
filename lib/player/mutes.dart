@@ -1,14 +1,10 @@
-
-/// Randomly mute voices
+/// TODO Randomly mute voices
 class Mutes {
-  static late Mutes _instance;
-
   static final list = <String>[];
 
   static bool isMuted(String voice) => list.contains(voice);
 
   static void toggleMute(String voice) async {
-
     if (list.contains(voice)) {
       list.remove(voice);
     } else {
