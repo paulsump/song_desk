@@ -19,7 +19,9 @@ fix duration bug
 
 ### Logic
 
-- Record currentTime into Mute for 3 voices, saved for next playback
+- mutedPlay so that doesn't catch up when unmute
+  
+- 3 buttons Record currentTime into Mute for 3 voices, saved for next playback
   later can drag to massage.
   
 - Mutes overrides current
@@ -90,7 +92,7 @@ setVolume is done on instrument's samples, which will be overwritten if i add a 
 ### Tricky
 
 - or at least stop the timer!...  
-- don't stop when phone goes black. - find out what this is called eg. lock.  
+- don't stop when phone goes black. - find out what this is called eg. lock.  didChangeAppLifecycleState?
   audioplayer play "stayAwake"  
 
 ### Later

@@ -54,6 +54,9 @@ class Scheduler {
         if (event.startTime < currentTime && currentTime < endTime) {
           if (event.wantStartPlay) {
             event.play();
+            // out(event);
+            // out(currentTime);
+            // out('${event.startTime < currentTime}\n');
           }
         } else {
           // TODO removing this wantStartPlay fixes the tests
