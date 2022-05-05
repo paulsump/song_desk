@@ -5,10 +5,10 @@ import 'package:song_desk/loader/song.dart';
 import 'package:song_desk/player/song_notifier.dart';
 import 'package:song_desk/view/screen_adjust.dart';
 
-const backColor = Color(0xffFFFFFF);
-const chordColor = Colors.black;
-const phraseColor = chordColor;
-const darkColor = Color(0xff121212);
+// const backColor = Color(0xffFFFFFF);
+// const chordColor = Colors.black;
+// const phraseColor = chordColor;
+// const darkColor = Color(0xff121212);
 const phraseSize = 8.0;
 const chordSize = phraseSize + 2.0;
 
@@ -31,14 +31,14 @@ class SongView extends StatelessWidget {
       for (int pageIndex = 0; pageIndex < pageCount; ++pageIndex)
         Expanded(
           child: Padding(
-            padding: EdgeInsets.only(left: 0.0), //TODO calc total padding
+            padding: const EdgeInsets.only(left: 0.0), //TODO calc total padding
 
             child: Card(
               shape: RoundedRectangleBorder(
                 borderRadius:
                     BorderRadius.circular(0.0), //TODO calc total padding
               ),
-              color: backColor,
+              // color: backColor,
               // todo remove builder
               child: ListView.builder(
                 shrinkWrap: true,
@@ -91,7 +91,7 @@ class SongView extends StatelessWidget {
           _getChord(song, barIndex),
           // textAlign: TextAlign.left,
           style: const TextStyle(
-            color: chordColor,
+            // color: chordColor,
             fontSize: chordSize,
             fontWeight: FontWeight.bold,
           ),
@@ -119,8 +119,7 @@ class SongView extends StatelessWidget {
           overflow: TextOverflow.ellipsis,
           style: const TextStyle(
             fontSize: phraseSize,
-            // fontFamily: 'Roboto',
-            color: phraseColor,
+            // color: phraseColor,
             fontWeight: FontWeight.bold,
           ),
         ),
