@@ -27,18 +27,17 @@ class SongView extends StatelessWidget {
     }
     final Song song = songNotifier.currentSong;
 
-    final border = RoundedRectangleBorder(
-      borderRadius: BorderRadius.circular(0.0), //TODO calc total padding
-    );
-    const padding = EdgeInsets.only(left: 0.0); //TODO calc total padding
-
     return Row(children: [
       for (int pageIndex = 0; pageIndex < pageCount; ++pageIndex)
         Expanded(
           child: Padding(
-            padding: padding,
+            padding: EdgeInsets.only(left: 0.0), //TODO calc total padding
+
             child: Card(
-              shape: border,
+              shape: RoundedRectangleBorder(
+                borderRadius:
+                    BorderRadius.circular(0.0), //TODO calc total padding
+              ),
               color: backColor,
               // todo remove builder
               child: ListView.builder(
