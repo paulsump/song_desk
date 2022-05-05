@@ -27,13 +27,13 @@ class SongView extends StatelessWidget {
     return Row(children: [
       for (int pageIndex = 0; pageIndex < (portrait ? 1 : 2); ++pageIndex)
         Expanded(
-          //TODO remove listviews
-          child: ListView.builder(
-            shrinkWrap: true,
-            itemCount: _getStaveCount(song),
-            itemBuilder: (context, staveIndex) => _buildStave(song,
-                staveIndex, pageIndex, getScreenSize(context), portrait),
-          ),
+          child: Column(children: [
+            for (int staveIndex = 0;
+                staveIndex < _getStaveCount(song);
+                ++staveIndex)
+              _buildStave(song, staveIndex, pageIndex, getScreenSize(context),
+                  portrait),
+          ]),
         ),
     ]);
   }
@@ -44,7 +44,9 @@ class SongView extends StatelessWidget {
 
     return SizedBox(
       height: screenSize.height / _getStaveCount(song),
-      child: ListView.builder(
+      child:
+      //TODO REMOVE listview
+      ListView.builder(
         itemCount: 8,
         physics: const NeverScrollableScrollPhysics(),
         scrollDirection: Axis.horizontal,
