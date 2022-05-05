@@ -68,7 +68,7 @@ class _HomePageState extends State<HomePage>
       key: Buttons.scaffoldStateKey,
       body: Column(
         children: [
-          const Expanded(child: MuteTimingsView()),
+          // const Expanded(child: MuteTimingsView()),
           Expanded(child: SongListView()),
         ],
       ),
