@@ -67,12 +67,12 @@ class _HomePageState extends State<HomePage>
     return Scaffold(
       key: Buttons.scaffoldStateKey,
       body: Column(
-        children: [
-          // const Expanded(child: MuteTimingsView()),
-          Expanded(child: SongListView()),
+        children: const [
+          Expanded(child: MuteTimingsView()),
         ],
       ),
       floatingActionButton: const Buttons(),
+      drawer: Drawer(child: SongListView()),
       endDrawer: const Drawer(child: MuteListView()),
     );
   }

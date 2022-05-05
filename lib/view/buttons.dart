@@ -16,22 +16,30 @@ class Buttons extends StatelessWidget {
     final songNotifier = getSongNotifier(context, listen: true);
 
     return !songNotifier.isReady
-        ? _buildMenuButton()
+        ? _buildMenuButtons()
         : Column(
+            crossAxisAlignment: CrossAxisAlignment.end,
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
               _Button(fun: songNotifier.back, icon: Icons.skip_previous),
               _Button(fun: songNotifier.play, icon: Icons.play_arrow_rounded),
               _Button(fun: songNotifier.forward, icon: Icons.skip_next),
               _Button(fun: songNotifier.stop, icon: Icons.stop),
-              _buildMenuButton(),
+              _buildMenuButtons(),
             ],
           );
   }
 
-  Widget _buildMenuButton() => _Button(
-      fun: () => scaffoldStateKey.currentState!.openEndDrawer(),
-      icon: Icons.menu);
+  Widget _buildMenuButtons() => Row(
+        mainAxisAlignment: MainAxisAlignment.end,
+        children: [
+          _buildMenuButton(scaffoldStateKey.currentState!.openDrawer),
+          _buildMenuButton(scaffoldStateKey.currentState!.openEndDrawer),
+        ],
+      );
+
+  Widget _buildMenuButton(VoidCallback fun) =>
+      _Button(fun: fun, icon: Icons.menu);
 }
 
 class _Button extends StatelessWidget {
