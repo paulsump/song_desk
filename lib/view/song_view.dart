@@ -22,9 +22,10 @@ class SongView extends StatelessWidget {
       return Container();
     }
     final Song song = songNotifier.currentSong;
+    bool portrait = isPortrait(context);
 
     return Row(children: [
-      for (int pageIndex = 0; pageIndex < pageCount; ++pageIndex)
+      for (int pageIndex = 0; pageIndex < (portrait ? 1 : 2); ++pageIndex)
         Expanded(
           child: Padding(
             padding: const EdgeInsets.only(left: 0.0), //TODO calc total padding
@@ -38,8 +39,8 @@ class SongView extends StatelessWidget {
               child: ListView.builder(
                 shrinkWrap: true,
                 itemCount: _getStaveCount(song),
-                itemBuilder: (context, staveIndex) => _buildStave(
-                    song, staveIndex, pageIndex, getScreenSize(context)),
+                itemBuilder: (context, staveIndex) => _buildStave(song,
+                    staveIndex, pageIndex, getScreenSize(context), portrait),
               ),
             ),
           ),
@@ -47,8 +48,8 @@ class SongView extends StatelessWidget {
     ]);
   }
 
-  Widget _buildStave(
-      Song song, int staveIndex, int pageIndex, Size screenSize) {
+  Widget _buildStave(Song song, int staveIndex, int pageIndex, Size screenSize,
+      bool portrait) {
     staveIndex += pageIndex * _getStaveCount(song);
 
     return SizedBox(
@@ -59,18 +60,24 @@ class SongView extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         shrinkWrap: true,
         //TODO REMOVE builder
-        itemBuilder: (context, columnIndex) =>
-            _buildBar(song, staveIndex, columnIndex, screenSize.width),
+        itemBuilder: (context, columnIndex) => _buildBar(
+            song, staveIndex, columnIndex, screenSize.width, portrait),
       ),
     );
   }
 
-  Widget _buildBar(
-      Song song, int staveIndex, int columnIndex, double screenWidth) {
-    int barIndex = staveIndex * 8 + columnIndex;
+  Widget _buildBar(Song song, int staveIndex, int columnIndex,
+      double screenWidth, bool portrait) {
+    final int barIndex = staveIndex * 8 + columnIndex;
+
+    double width = screenWidth / (8 * pageCount);
+
+    if (portrait) {
+      width *= 2;
+    }
 
     return SizedBox(
-      width: screenWidth / (8 * pageCount),
+      width: width,
       child: Column(
         children: _buildTexts(song, barIndex),
       ),
