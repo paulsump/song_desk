@@ -15,7 +15,7 @@ double? calcDuration(
   List<Bar> bars,
 ) {
   final int fromQ = fromBarIndex * 4 + fromQuaverIndex;
-  int? fromPitch = _getPitchAt(fromQ, voice, bars);
+  final int? fromPitch = _getPitchAt(fromQ, voice, bars);
 
   for (int toQ = 1 + fromQ; toQ < 4 * bars.length; ++toQ) {
     int? toPitch = _getPitchAt(toQ, voice, bars);
@@ -39,9 +39,9 @@ double? calcDuration(
 }
 
 int? _getPitchAt(int Q, String voice, List<Bar> bars) {
-  int barIndex = Q ~/ 4;
+  final int barIndex = Q ~/ 4;
 
-  int quaverIndex = Q % 4;
+  final int quaverIndex = Q % 4;
   final List<Quaver>? quavers = bars[barIndex].getQuavers(voice);
 
   return quavers?[quaverIndex].pitch;

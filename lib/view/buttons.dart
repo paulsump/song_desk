@@ -35,11 +35,8 @@ class Buttons extends StatelessWidget {
 }
 
 class _Button extends StatelessWidget {
-  const _Button({
-    Key? key,
-    required this.fun,
-    required this.icon,
-  }) : super(key: key);
+  const _Button({Key? key, required this.fun, required this.icon})
+      : super(key: key);
 
   final VoidCallback fun;
   final IconData icon;
