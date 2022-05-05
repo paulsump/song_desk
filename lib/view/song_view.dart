@@ -16,6 +16,23 @@ class SongView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    return isPortrait(context)
+        ? _buildSinglePage(context)
+        : _buildPage(context, 2);
+  }
+
+  Widget _buildSinglePage(BuildContext context) {
+    final PageController controller = PageController();
+    return PageView(
+      controller: controller,
+      children: <Widget>[
+        _buildPage(context, 0),
+        _buildPage(context, 1),
+      ],
+    );
+  }
+
+  Widget _buildPage(BuildContext context, int page) {
     final songNotifier = getSongNotifier(context, listen: true);
 
     if (!songNotifier.isReady) {
@@ -25,7 +42,9 @@ class SongView extends StatelessWidget {
     bool portrait = isPortrait(context);
 
     return Row(children: [
-      for (int pageIndex = 0; pageIndex < (portrait ? 1 : 2); ++pageIndex)
+      for (int pageIndex = portrait ? page : 0;
+          pageIndex < (portrait ? page + 1 : 2);
+          ++pageIndex)
         Expanded(
           child: Column(children: [
             for (int staveIndex = 0;
@@ -45,8 +64,8 @@ class SongView extends StatelessWidget {
     return SizedBox(
       height: screenSize.height / _getStaveCount(song),
       child:
-      //TODO REMOVE listview
-      ListView.builder(
+          //TODO REMOVE listview
+          ListView.builder(
         itemCount: 8,
         physics: const NeverScrollableScrollPhysics(),
         scrollDirection: Axis.horizontal,
