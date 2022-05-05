@@ -27,22 +27,12 @@ class SongView extends StatelessWidget {
     return Row(children: [
       for (int pageIndex = 0; pageIndex < (portrait ? 1 : 2); ++pageIndex)
         Expanded(
-          child: Padding(
-            padding: const EdgeInsets.only(left: 0.0), //TODO calc total padding
-
-            child: Card(
-              shape: RoundedRectangleBorder(
-                borderRadius:
-                    BorderRadius.circular(0.0), //TODO calc total padding
-              ),
-              // todo remove builder
-              child: ListView.builder(
-                shrinkWrap: true,
-                itemCount: _getStaveCount(song),
-                itemBuilder: (context, staveIndex) => _buildStave(song,
-                    staveIndex, pageIndex, getScreenSize(context), portrait),
-              ),
-            ),
+          //TODO remove listviews
+          child: ListView.builder(
+            shrinkWrap: true,
+            itemCount: _getStaveCount(song),
+            itemBuilder: (context, staveIndex) => _buildStave(song,
+                staveIndex, pageIndex, getScreenSize(context), portrait),
           ),
         ),
     ]);

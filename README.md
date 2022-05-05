@@ -7,6 +7,7 @@
 
 ### UI
 
+- page swapper button in portrait
 - volume mixer
 - go to bar (need full ui or just hack move time half way forward?)
   would be nice to scrub
