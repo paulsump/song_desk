@@ -5,8 +5,8 @@ import 'package:song_desk/loader/song.dart';
 import 'package:song_desk/player/song_notifier.dart';
 import 'package:song_desk/view/screen_adjust.dart';
 
-const phraseSize = 8.0;
-const chordSize = phraseSize + 2.0;
+const _phraseSize = 8.0;
+const _chordSize = _phraseSize + 2.0;
 
 /// Displays chords and some words of the current song.
 class SongView extends StatelessWidget {
@@ -86,7 +86,7 @@ class SongView extends StatelessWidget {
           _getChord(song, barIndex),
           // textAlign: TextAlign.left,
           style: const TextStyle(
-            fontSize: chordSize,
+            fontSize: _chordSize,
             fontWeight: FontWeight.bold,
           ),
         ),
@@ -112,7 +112,7 @@ class SongView extends StatelessWidget {
           phrase,
           overflow: TextOverflow.ellipsis,
           style: const TextStyle(
-            fontSize: phraseSize,
+            fontSize: _phraseSize,
             fontWeight: FontWeight.bold,
           ),
         ),
