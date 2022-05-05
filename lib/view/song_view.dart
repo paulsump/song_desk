@@ -31,10 +31,9 @@ class SongView extends StatelessWidget {
       borderRadius: BorderRadius.circular(0.0), //TODO calc total padding
     );
     const padding = EdgeInsets.only(left: 0.0); //TODO calc total padding
-    var children = <Widget>[];
 
-    for (int pageIndex = 0; pageIndex < pageCount; ++pageIndex) {
-      children.add(
+    return Row(children: [
+      for (int pageIndex = 0; pageIndex < pageCount; ++pageIndex)
         Expanded(
           child: Padding(
             padding: padding,
@@ -51,12 +50,7 @@ class SongView extends StatelessWidget {
             ),
           ),
         ),
-      );
-    }
-    return Row(
-      // mainAxisSize: MainAxisSize.min,
-      children: children,
-    );
+    ]);
   }
 
   Widget _buildStave(
