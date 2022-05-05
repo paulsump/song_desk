@@ -1,9 +1,9 @@
 // © 2022, Paul Sumpner <sumpner@hotmail.com>
 
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-import 'package:song_desk/loader/persist.dart';
 import 'package:song_desk/loader/song.dart';
+import 'package:song_desk/player/song_notifier.dart';
+import 'package:song_desk/view/screen_adjust.dart';
 
 const backColor = Color(0xffFFFFFF);
 const chordColor = Colors.black;
@@ -12,89 +12,90 @@ const darkColor = Color(0xff121212);
 const phraseSize = 8.0;
 const chordSize = phraseSize + 2.0;
 
+/// Displays chords and some words of the current song.
 class SongView extends StatelessWidget {
   static const int pageCount = 2; // TODO iff device witch > 400
 
-  final String name;
-  const SongView({required this.name, Key? key}) : super(key: key);
+  const SongView({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Consumer<Persist>(
-      builder: (BuildContext context, value, Widget? child) {
-        final border = RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(0.0),//TODO calc total padding
-        );
-        const padding = EdgeInsets.only(left :0.0);//TODO calc total padding
-        var children = <Widget>[];
+    final songNotifier = getSongNotifier(context, listen: true);
 
-        for (int pageIndex = 0; pageIndex < pageCount; ++pageIndex) {
-          children.add(
-            Expanded(
-              child: Padding(
-                padding: padding,
-                child: Card(
-                  shape: border,
-                  color: backColor,
-                  child: ListView.builder(
-                    shrinkWrap: true,
-                    itemCount: _getStaveCount(context),
-                    itemBuilder: (context, staveIndex) =>
-                        _buildStave(context, staveIndex, pageIndex),
-                  ),
-                ),
+    if (!songNotifier.isReady) {
+      return Container();
+    }
+    final Song song = songNotifier.currentSong;
+
+    final border = RoundedRectangleBorder(
+      borderRadius: BorderRadius.circular(0.0), //TODO calc total padding
+    );
+    const padding = EdgeInsets.only(left: 0.0); //TODO calc total padding
+    var children = <Widget>[];
+
+    for (int pageIndex = 0; pageIndex < pageCount; ++pageIndex) {
+      children.add(
+        Expanded(
+          child: Padding(
+            padding: padding,
+            child: Card(
+              shape: border,
+              color: backColor,
+              // todo remove builder
+              child: ListView.builder(
+                shrinkWrap: true,
+                itemCount: _getStaveCount(song),
+                itemBuilder: (context, staveIndex) => _buildStave(
+                    song, staveIndex, pageIndex, getScreenSize(context)),
               ),
             ),
-          );
-        }
-        return Row(
-          // mainAxisSize: MainAxisSize.min,
-          children: children,
-        );
-      },
+          ),
+        ),
+      );
+    }
+    return Row(
+      // mainAxisSize: MainAxisSize.min,
+      children: children,
     );
   }
 
-  Widget _buildStave(BuildContext context, int staveIndex, int pageIndex) {
-    staveIndex += pageIndex * _getStaveCount(context);
-
-    final m = MediaQuery.of(context);
-    //TODO calc total padding
-    double height = m.size.height - m.padding.top - 44;
+  Widget _buildStave(
+      Song song, int staveIndex, int pageIndex, Size screenSize) {
+    staveIndex += pageIndex * _getStaveCount(song);
 
     return SizedBox(
-      height: height / _getStaveCount(context),
+      height: screenSize.height / _getStaveCount(song),
       child: ListView.builder(
         itemCount: 8,
         physics: const NeverScrollableScrollPhysics(),
         scrollDirection: Axis.horizontal,
         shrinkWrap: true,
+        //TODO REMOVE builder
         itemBuilder: (context, columnIndex) =>
-            _buildBar(context, staveIndex, columnIndex),
+            _buildBar(song, staveIndex, columnIndex, screenSize.width),
       ),
     );
   }
 
-  Widget _buildBar(BuildContext context, int staveIndex, int columnIndex) {
-    final size = MediaQuery.of(context).size;
-    double width = size.width;
-
+  Widget _buildBar(
+      Song song, int staveIndex, int columnIndex, double screenWidth) {
     int barIndex = staveIndex * 8 + columnIndex;
+
     return SizedBox(
-      width: width / (8 * pageCount),
+      width: screenWidth / (8 * pageCount),
       child: Column(
-        children: _buildTexts(context, barIndex),
+        children: _buildTexts(song, barIndex),
       ),
     );
   }
 
-  List<Widget> _buildTexts(BuildContext context, int barIndex) {
+  List<Widget> _buildTexts(Song song, int barIndex) {
     List<Widget> list = <Widget>[];
     list.add(
       Align(
         alignment: Alignment.topLeft,
         child: Text(
-          _getChord(context, barIndex),
+          _getChord(song, barIndex),
           // textAlign: TextAlign.left,
           style: const TextStyle(
             color: chordColor,
@@ -106,16 +107,16 @@ class SongView extends StatelessWidget {
     );
 
     for (int i = 0; i < 4; ++i) {
-      String? phrase = _getPhrase(context, barIndex, i);
+      String? phrase = _getPhrase(song, barIndex, i);
 
       if (phrase != null) {
-        list.add(_buildPhrase(context, phrase));
+        list.add(_buildPhrase(song, phrase));
       }
     }
     return list;
   }
 
-  Align _buildPhrase(BuildContext context, String phrase) {
+  Align _buildPhrase(Song song, String phrase) {
     return Align(
       alignment: Alignment.topLeft,
       child: Container(
@@ -134,35 +135,30 @@ class SongView extends StatelessWidget {
     );
   }
 
-  Bar? _getBar(BuildContext context, int barIndex) {
-    Song? song = context.watch<Persist>().songs[name];
-    final bars = song?.bars;
+  Bar? _getBar(Song song, int barIndex) {
+    final bars = song.bars;
 
-    if (bars == null) {
-      return null;
-    }
     if (barIndex >= bars.length) {
       return null;
     }
     return bars[barIndex];
   }
 
-  String _getChord(BuildContext context, int barIndex) {
-    final Bar? bar = _getBar(context, barIndex);
+  String _getChord(Song song, int barIndex) {
+    final Bar? bar = _getBar(song, barIndex);
     return bar?.chord ?? "";
   }
 
-  int _getStaveCount(BuildContext context) {
-    Song? song = context.watch<Persist>().songs[name];
+  int _getStaveCount(Song song) {
     // int count = (song?.bars.length ?? 0) ~/ 8;
     // return count ~/ pageCount; // TODO maths from Mel
-    double count = (song?.bars.length ?? 0) / 8;
+    double count = song.bars.length / 8;
     count = count.ceilToDouble() / pageCount;
     return count.ceil();
   }
 
-  String? _getPhrase(BuildContext context, int barIndex, int verse) {
-    final Bar? bar = _getBar(context, barIndex);
+  String? _getPhrase(Song song, int barIndex, int verse) {
+    final Bar? bar = _getBar(song, barIndex);
 
     List<String>? phrases = bar?.phrases;
     return (phrases != null && verse < phrases.length) ? phrases[verse] : null;

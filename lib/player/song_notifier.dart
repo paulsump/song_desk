@@ -25,9 +25,11 @@ class SongNotifier with ChangeNotifier {
   Scheduler get _currentScheduler => _schedulers[currentSongTitle]!;
 
   String get currentSongTitle => titles[_currentSongIndex];
-  int _currentSongIndex = 0;
+  Song get currentSong => _persist.songs[currentSongTitle]!;
 
   double get currentSongPositionFactor => _currentSongIndex / titles.length;
+  int _currentSongIndex = 0;
+
   final _schedulers = <String, Scheduler>{};
 
   final _instruments = <String, Instrument>{

@@ -7,6 +7,7 @@ import 'package:song_desk/loader/song.dart';
 import 'package:song_desk/out.dart';
 
 class Persist {
+  //TODO remove nullable from Song
   final songs = <String, Song?>{};
 
   static const folderPath = 'songs/';

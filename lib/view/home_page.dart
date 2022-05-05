@@ -9,6 +9,7 @@ import 'package:song_desk/player/song_notifier.dart';
 import 'package:song_desk/view/buttons.dart';
 import 'package:song_desk/view/mute_list_view.dart';
 import 'package:song_desk/view/song_list_view.dart';
+import 'package:song_desk/view/song_view.dart';
 
 const noWarn = out;
 
@@ -68,21 +69,12 @@ class _HomePageState extends State<HomePage>
       key: Buttons.scaffoldStateKey,
       body: Column(
         children: const [
-          Expanded(child: MuteTimingsView()),
+          Expanded(child: SongView()),
         ],
       ),
       floatingActionButton: const Buttons(),
       drawer: Drawer(child: SongListView()),
       endDrawer: const Drawer(child: MuteListView()),
     );
-  }
-}
-
-class MuteTimingsView extends StatelessWidget {
-  const MuteTimingsView({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Container();
   }
 }
