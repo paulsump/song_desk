@@ -16,30 +16,28 @@ class SongListView extends StatelessWidget {
     final songNotifier = getSongNotifier(context, listen: true);
 
     if (songNotifier.isReady) {
-      WidgetsBinding.instance?.addPostFrameCallback((_) =>
-          _scrollController.jumpTo(_scrollController.position.maxScrollExtent *
-              songNotifier.currentSongPositionFactor));
+      WidgetsBinding.instance.addPostFrameCallback((_) => _scrollController
+          .jumpTo(_scrollController.position.maxScrollExtent * songNotifier.currentSongPositionFactor));
     }
 
     return Center(
       child: !songNotifier.isReady
-          ? Text('Loading Songs...',
-          style: Theme.of(context).textTheme.headline4)
+          ? Text('Loading Songs...', style: Theme.of(context).textTheme.headline4)
           : ListView.builder(
-          controller: _scrollController,
-          itemCount: SongNotifier.titles.length,
-          itemBuilder: (context, index) {
-            final String title = SongNotifier.titles[index];
-            return ListTile(
-              onLongPress: () => songNotifier.playIndex(index),
-              title: Text(
-                title,
-                style: songNotifier.currentSongTitle == title
-                    ? Theme.of(context).textTheme.headline4
-                    : Theme.of(context).textTheme.headline6,
-              ),
-            );
-          }),
+              controller: _scrollController,
+              itemCount: SongNotifier.titles.length,
+              itemBuilder: (context, index) {
+                final String title = SongNotifier.titles[index];
+                return ListTile(
+                  onLongPress: () => songNotifier.playIndex(index),
+                  title: Text(
+                    title,
+                    style: songNotifier.currentSongTitle == title
+                        ? Theme.of(context).textTheme.headline4
+                        : Theme.of(context).textTheme.headline6,
+                  ),
+                );
+              }),
     );
   }
 }

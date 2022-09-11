@@ -20,8 +20,7 @@ class HomePage extends StatefulWidget {
   State<HomePage> createState() => _HomePageState();
 }
 
-class _HomePageState extends State<HomePage>
-    with SingleTickerProviderStateMixin {
+class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin {
   late final Ticker _ticker;
 
   Duration _time = Duration.zero;
@@ -33,7 +32,7 @@ class _HomePageState extends State<HomePage>
   void initState() {
     super.initState();
 
-    WidgetsBinding.instance!.addPostFrameCallback((_) {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
       final songNotifier = getSongNotifier(context, listen: false);
 
       unawaited(songNotifier.init(
